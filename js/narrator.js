@@ -184,47 +184,56 @@
     return { voice: state.voice, rate: state.rate * mood.rate, pitch: (chunk.dialogue ? PACE.dialoguePitch : PACE.pitch) * mood.pitch, volume: mood.volume };
   }
 
-  // ───────────── ambience ─────────────
-  // A low, slowly breathing drone with a hint of wind, built with Web Audio.
-  const Ambience = {
-    ctx: null, master: null,
-    start() {
-      try {
-        if (!this.ctx) this.build();
-        this.ctx.resume();
-        this.master.gain.cancelScheduledValues(this.ctx.currentTime);
-        this.master.gain.setTargetAtTime(0.06, this.ctx.currentTime, 1.5);
-      } catch (e) { /* audio unavailable */ }
-    },
-    stop() {
-      if (!this.ctx) return;
-      this.master.gain.cancelScheduledValues(this.ctx.currentTime);
-      this.master.gain.setTargetAtTime(0, this.ctx.currentTime, 0.6);
-    },
-    build() {
-      const ctx = (this.ctx = new (window.AudioContext || window.webkitAudioContext)());
-      const master = (this.master = ctx.createGain());
-      master.gain.value = 0;
-      master.connect(ctx.destination);
-      // Drone: a low fifth, slightly detuned.
-      [[55, 0.5], [82.4, 0.32], [110.3, 0.12]].forEach(([f, g]) => {
-        const o = ctx.createOscillator(), gn = ctx.createGain();
-        o.type = "sine"; o.frequency.value = f; gn.gain.value = g;
-        o.connect(gn).connect(master); o.start();
-      });
-      // Wind: brown noise through a slowly sweeping low-pass filter.
-      const len = ctx.sampleRate * 4, buf = ctx.createBuffer(1, len, ctx.sampleRate), d = buf.getChannelData(0);
-      let last = 0;
-      for (let i = 0; i < len; i++) { last = (last + 0.02 * (Math.random() * 2 - 1)) / 1.02; d[i] = last * 3.5; }
-      const noise = ctx.createBufferSource(); noise.buffer = buf; noise.loop = true;
-      const lp = ctx.createBiquadFilter(); lp.type = "lowpass"; lp.frequency.value = 420; lp.Q.value = 0.7;
-      const ng = ctx.createGain(); ng.gain.value = 0.9;
-      const lfo = ctx.createOscillator(), lfoGain = ctx.createGain();
-      lfo.frequency.value = 0.07; lfoGain.gain.value = 220;
-      lfo.connect(lfoGain).connect(lp.frequency); lfo.start();
-      noise.connect(lp).connect(ng).connect(master); noise.start();
-    },
-  };
+  // ───────────── soundscape ─────────────
+  // Ambience beds and sound effects come from window.Soundscape. While narrating
+  // they follow the voice; while reading silently they follow the scroll position.
+  const Sound = window.Soundscape;
+
+  // Attach each {{sfx}} marker to the word that follows it.
+  function linkEffects(prose) {
+    let pending = [];
+    prose.querySelectorAll(".w, .sfx").forEach((n) => {
+      if (n.classList.contains("sfx")) pending.push(n.dataset.sfx);
+      else if (pending.length) { n.dataset.sfx = pending.join(" "); pending = []; }
+    });
+  }
+
+  const ambienceOf = (el) => (el && el.closest("[data-ambience]") ? el.closest("[data-ambience]").dataset.ambience : "silence");
+
+  function fireWord(w) {
+    if (!w || !w.dataset.sfx || state.fired.has(w.dataset.i)) return;
+    state.fired.add(w.dataset.i);
+    w.dataset.sfx.split(" ").forEach((name) => Sound.sfx(name));
+  }
+
+  function startSound() {
+    if (!Sound || !state || !state.soundOn) return;
+    if (!Sound.start()) return;
+    Sound.setVolume(state.soundVolume);
+    if (state.playing) Sound.setBed(state.chunks[state.ci].ambience);
+    else followScroll(true);
+  }
+
+  // Reading silently: the paragraph under the reading line sets the ambience, and
+  // effects fire as their words scroll past it.
+  function followScroll(initial) {
+    if (!state || !state.soundOn || state.playing || !Sound || !Sound.enabled) return;
+    const line = window.innerHeight * 0.45;
+    const blocks = [...state.prose.children].filter((b) => b.dataset.ambience);
+    const here = blocks.find((b) => b.getBoundingClientRect().bottom > line) || blocks[blocks.length - 1];
+    if (here) Sound.setBed(here.dataset.ambience);
+    // At the very bottom of the page the last lines can't reach the reading line,
+    // so anything still visible fires there.
+    const atBottom = window.scrollY + window.innerHeight >= document.documentElement.scrollHeight - 4;
+    state.sfxWords.forEach((w) => {
+      const top = w.getBoundingClientRect().top;
+      const prev = state.prevTops.get(w);
+      state.prevTops.set(w, top);
+      if (initial) return;
+      if (prev !== undefined && prev >= line && top < line) fireWord(w);
+      else if (atBottom && top < window.innerHeight && top >= line) fireWord(w);
+    });
+  }
 
   // ───────────── playback ─────────────
 
@@ -279,12 +288,22 @@
     u.pitch = Math.max(0.1, Math.min(2, v.pitch));
     u.volume = v.volume;
     if (!chunk.isTitle) highlight(chunk, k);
+    if (state.soundOn && Sound) {
+      Sound.setBed(chunk.ambience);
+      if (!chunk.isTitle) {
+        fireWord(chunk.words[k]);
+        // Without word timing from the voice, play the chunk's effects as it begins.
+        if (!state.boundaryOK) chunk.words.slice(k).forEach(fireWord);
+      }
+    }
     u.onboundary = (e) => {
       if (gen !== state.gen || chunk.isTitle || (e.name && e.name !== "word")) return;
       const abs = base + e.charIndex;
       let j = 0;
       while (j + 1 < chunk.offsets.length && chunk.offsets[j + 1] <= abs) j++;
+      state.boundaryOK = true;
       highlight(chunk, j);
+      fireWord(chunk.words[j]);
     };
     u.onend = () => {
       if (gen !== state.gen || !state.playing) return;
@@ -309,7 +328,8 @@
     state.prose.classList.add("narrating");
     state.ui.root.classList.add("active");
     setPlayIcon();
-    if (state.ambience) Ambience.start();
+    state.fired = new Set();
+    if (state.soundOn) startSound();
     if (withTitle && state.chunks[0].isTitle) speakChunk(0, 0);
     else { const ci = chunkIndexFor(wordIndex); speakChunk(ci, Math.max(wordIndex, state.chunks[ci].start)); }
   }
@@ -320,8 +340,9 @@
     state.gen++;
     clearTimeout(state.timer);
     synth.cancel(); // cancel + resume-from-word is more reliable across browsers than synth.pause()
-    Ambience.stop();
     setPlayIcon();
+    state.prevTops = new Map();
+    followScroll(true); // keep the soundscape going, now following the page
   }
 
   function stop(finished) {
@@ -345,6 +366,16 @@
     const ci = Math.max(0, Math.min(state.chunks.length - 1, chunkIndexFor(state.current) + dir));
     const target = state.chunks[ci].isTitle ? 0 : state.chunks[ci].start;
     if (state.playing) playFrom(target); else { setCurrent(target); highlight(state.chunks[chunkIndexFor(target)], 0); }
+  }
+
+  function setSoundIcon() {
+    const b = state.ui.sound;
+    if (!Sound) { b.style.display = "none"; return; }
+    b.innerHTML = state.soundOn
+      ? `<svg viewBox="0 0 24 24"><path d="M4 9h4l5-4v14l-5-4H4z"/><path d="M16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>`
+      : `<svg viewBox="0 0 24 24"><path d="M4 9h4l5-4v14l-5-4H4z"/><path d="M16.5 9.5l5 5M21.5 9.5l-5 5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>`;
+    b.classList.toggle("off", !state.soundOn);
+    b.setAttribute("aria-pressed", state.soundOn);
   }
 
   function setPlayIcon() {
@@ -393,6 +424,7 @@
           <div class="nar-label"><span class="nar-title">Listen to this chapter</span><span class="nar-time"></span></div>
           <input class="nar-progress" type="range" min="0" value="0" aria-label="Narration position">
         </div>
+        <button class="nar-btn nar-sound" aria-label="Soundscape" title="Soundscape: ambience and sound effects"></button>
         <details class="nar-settings">
           <summary aria-label="Narration settings" title="Settings">
             <svg viewBox="0 0 24 24"><path d="M4 7h10M18 7h2M4 17h4M12 17h8"/><circle cx="16" cy="7" r="2"/><circle cx="10" cy="17" r="2"/></svg></summary>
@@ -405,7 +437,7 @@
               </select></label>
             <label class="inline"><input type="checkbox" class="nar-cast"> Character voices for dialogue</label>
             <details class="nar-castlist"><summary>Who's voicing whom</summary><ul></ul></details>
-            <label class="inline"><input type="checkbox" class="nar-amb"> Ambient drone</label>
+            <label>Soundscape volume <input type="range" class="nar-svol" min="0" max="1" step="0.05"></label>
             <label class="inline"><input type="checkbox" class="nar-follow" checked> Scroll with the narration</label>
             <p class="muted small">While narration is on, click any word to jump there. The voice depends on your device. Narrator voices like Daniel or Ryan sound best.</p>
           </div>
@@ -413,7 +445,7 @@
       </div>`;
     const q = (s) => root.querySelector(s);
     return { root, play: q(".nar-play"), back: q(".nar-back"), fwd: q(".nar-fwd"), progress: q(".nar-progress"),
-      time: q(".nar-time"), voice: q(".nar-voice"), rate: q(".nar-rate"), amb: q(".nar-amb"), follow: q(".nar-follow"),
+      time: q(".nar-time"), voice: q(".nar-voice"), rate: q(".nar-rate"), svol: q(".nar-svol"), sound: q(".nar-sound"), follow: q(".nar-follow"),
       castToggle: q(".nar-cast"), castList: q(".nar-castlist ul") };
   }
 
@@ -425,21 +457,26 @@
       return;
     }
     const words = wrapWords(prose);
+    linkEffects(prose);
     const ui = buildUI();
     state = {
       article, prose, words, ui, key: opts.key,
-      chunks: buildChunks(prose, words, opts.title),
+      chunks: buildChunks(prose, words, opts.title).map((c) => ({ ...c, ambience: ambienceOf(c.words[0] || prose.firstElementChild) })),
       current: 0, ci: 0, gen: 0, playing: false, timer: null, utterance: null,
       voice: null,
       rate: Number(localStorage.getItem("narrator.rate") || PACE.rate),
-      ambience: localStorage.getItem("narrator.ambience") !== "0",
+      soundOn: !!window.Soundscape && localStorage.getItem("narrator.sound") !== "0",
+      soundVolume: Number(localStorage.getItem("narrator.soundVolume") || 0.7),
+      fired: new Set(), prevTops: new Map(), sfxWords: [], boundaryOK: false,
       characterVoices: localStorage.getItem("narrator.cast") !== "0",
       cast: {},
       follow: true,
     };
     ui.progress.max = Math.max(0, words.length - 1);
+    state.sfxWords = words.filter((w) => w.dataset.sfx);
     ui.rate.value = String(state.rate);
-    ui.amb.checked = state.ambience;
+    ui.svol.value = String(state.soundVolume);
+    setSoundIcon();
     ui.castToggle.checked = state.characterVoices;
     fillVoiceSelect();
     setPlayIcon();
@@ -464,11 +501,27 @@
       localStorage.setItem("narrator.rate", ui.rate.value);
       if (state.playing) playFrom(state.current);
     });
-    ui.amb.addEventListener("change", () => {
-      state.ambience = ui.amb.checked;
-      localStorage.setItem("narrator.ambience", state.ambience ? "1" : "0");
-      state.ambience && state.playing ? Ambience.start() : Ambience.stop();
+    ui.sound.addEventListener("click", () => {
+      state.soundOn = !state.soundOn;
+      localStorage.setItem("narrator.sound", state.soundOn ? "1" : "0");
+      setSoundIcon();
+      if (state.soundOn) startSound(); else Sound && Sound.stop();
     });
+    ui.svol.addEventListener("input", () => {
+      state.soundVolume = Number(ui.svol.value);
+      localStorage.setItem("narrator.soundVolume", ui.svol.value);
+      if (Sound) Sound.setVolume(state.soundVolume);
+    });
+    // Browsers only allow audio after a click or key press, so start on the first one.
+    state.unlock = () => { if (state && state.soundOn && Sound && !Sound.enabled) startSound(); };
+    document.addEventListener("pointerdown", state.unlock, { once: true });
+    document.addEventListener("keydown", state.unlock, { once: true });
+    state.onScroll = () => {
+      if (state.scrollQueued) return;
+      state.scrollQueued = true;
+      requestAnimationFrame(() => { if (state) { state.scrollQueued = false; followScroll(false); } });
+    };
+    window.addEventListener("scroll", state.onScroll, { passive: true });
     ui.follow.addEventListener("change", () => (state.follow = ui.follow.checked));
     ui.castToggle.addEventListener("change", () => {
       state.characterVoices = ui.castToggle.checked;
@@ -504,6 +557,10 @@
     if (!state) return;
     pause();
     clearHighlight();
+    if (Sound) Sound.stop();
+    window.removeEventListener("scroll", state.onScroll);
+    document.removeEventListener("pointerdown", state.unlock);
+    document.removeEventListener("keydown", state.unlock);
     state.ui.root.remove();
     document.removeEventListener("keydown", onKey);
     document.body.classList.remove("has-narrator");

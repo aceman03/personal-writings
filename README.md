@@ -39,7 +39,12 @@ It uses the browser's built-in speech voices, so it's free and needs no setup:
 - Scenes and lines carry a mood that bends the speed, pitch, volume and pauses:
   calm, warm, awe, wonder, hushed, whisper, shaken, tense, urgent, dread, grief,
   stern, dry and menacing.
-- An optional low ambient drone plays under the narration.
+- A soundscape plays scene ambience (dawn wind and birdsong, a stone temple, the
+  river, a night tower, crickets and owls, a forge, a steppe campfire, the howling
+  Thornwall, and the abyss) plus sound effects at key moments. Everything is
+  synthesized live in `js/soundscape.js` with the Web Audio API, so there are no
+  audio files. It follows the narration, or the scroll position when reading
+  silently. Toggle it with the speaker button, and set its volume in settings.
 - It remembers where you stopped in each chapter.
 
 How it sounds depends on the voices your device has installed.
@@ -52,7 +57,15 @@ Readers never see these tags. They only steer the voice-over.
 {{mood: dread}}                              on its own line: narrator mood from here on
 {{corvel}}"Is it a bad one?"{{/}}            who says a line (a voice profile id)
 {{corvel, hushed}}"Is it a bad one?"{{/}}    ...and how they say it
+{{ambience: temple}}                         on its own line: the soundscape from here on
+{{sfx: bells}}                               inline: a sound effect at that point
 ```
+
+Ambience beds: dawn-city, lore, dread, temple, quiet-room, lecture-hall, tower-night,
+forest-night, forge, steppe-fire, wall-night, wall-silent, hollow, abyss, silence.
+
+Sound effects: light-swell, spell-hum, chalk, pen, door-lock, candle-out, ripple, bell,
+bells, glow-fade, rumble, laugh.
 
 ## Files
 
