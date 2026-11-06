@@ -139,6 +139,12 @@
           ${next ? `<a href="${chapterHref(series, book, next)}">${chapterLabel(next.number)} →</a>` : `<span class="muted">Next chapter coming soon</span>`}
         </nav>
       </article>`));
+    if (window.Narrator) {
+      window.Narrator.attach(app.querySelector(".chapter"), {
+        title: `${chapterLabel(c.number)}. ${c.title}.`,
+        key: `${series.slug}/${book.number}/${c.number}`,
+      });
+    }
   }
 
   function renderExtra(series, id, rest) {
@@ -161,6 +167,7 @@
   }
 
   function route() {
+    if (window.Narrator) window.Narrator.detach();
     const parts = location.hash.replace(/^#\/?/, "").split("/").filter(Boolean);
     window.scrollTo(0, 0);
     if (parts.length === 0) return renderHome();

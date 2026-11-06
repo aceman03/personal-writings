@@ -23,6 +23,21 @@ You can also download the repo and open `index.html` in a browser; there is no b
   anatomy of a circle, the Vaelic glyph lexicon, how conduits behave, fireball
   variants, and an interactive circle workshop.
 
+## Voice-over
+
+Every chapter has a narration player along the bottom of the page (`js/narrator.js`).
+It uses the browser's built-in speech voices, so it's free and needs no setup:
+
+- Play and pause, skip a sentence back or forward, or drag the progress bar.
+- Once narration has started, click any word to jump there. Space toggles play.
+- It prefers a deep, unhurried storyteller voice (Daniel, Ryan, George, Google UK
+  English Male and similar), reads a little slower and lower than normal, pauses
+  longer at paragraph and scene breaks, and shifts slightly for dialogue.
+- An optional low ambient drone plays under the narration.
+- It remembers where you stopped in each chapter.
+
+How it sounds depends on the voices your device has installed.
+
 ## Files
 
 ```
