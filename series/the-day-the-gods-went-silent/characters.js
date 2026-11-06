@@ -154,6 +154,30 @@
     },
   ];
 
+  // Voice-over casting. Each speaking character gets a profile; the narrator picks the
+  // best match from the voices on the reader's device. Mood is their default manner.
+  const VOICES = {
+    sereth:          { gender: "female", age: "old",   accent: "en-GB", pitch: 0.95, mood: "stern" },
+    "oren-vasse":    { gender: "male",   age: "old",   accent: "en-GB", pitch: 1.0,  mood: "warm" },
+    corvel:          { gender: "male",   age: "child", accent: "en-GB", mood: "calm" },
+    "edda-marsh":    { gender: "female", age: "young", accent: "en-GB", mood: "calm" },
+    "teodric-hale":  { gender: "male",   age: "old",   accent: "en-GB", pitch: 0.92, mood: "dry" },
+    "ilsabet-corrow":{ gender: "female", age: "adult", accent: "en-GB", pitch: 0.95, mood: "dry" },
+    tyriel:          { gender: "female", age: "old",   accent: "en-GB", pitch: 1.05, rate: 0.9, mood: "calm" },
+    "hagra-stonebrow": { gender: "female", age: "adult", accent: "en-GB", pitch: 0.85, mood: "stern" },
+    urzag:           { gender: "male",   age: "adult", accent: "en-US", pitch: 0.7, rate: 0.9, mood: "stern" },
+    "hask-morrow":   { gender: "male",   age: "adult", accent: "en-GB", pitch: 0.9, mood: "dry" },
+    // Minor, unnamed speakers (not listed on the Characters page)
+    "young-dawnwarden": { gender: "male",   age: "young", accent: "en-GB", mood: "shaken" },
+    "student":          { gender: "female", age: "young", accent: "en-US", mood: "calm" },
+    "queen":            { gender: "female", age: "adult", accent: "en-GB", mood: "stern" },
+  };
+  CHARACTERS.forEach((c) => { if (VOICES[c.id]) c.voice = VOICES[c.id]; });
+  window.VOICE_PROFILES = Object.assign(window.VOICE_PROFILES || {}, VOICES);
+  window.VOICE_NAMES = Object.assign(window.VOICE_NAMES || {},
+    Object.fromEntries(CHARACTERS.map((c) => [c.id, c.name])),
+    { "young-dawnwarden": "A young Dawnwarden", student: "A second-year student", queen: "The queen" });
+
   const GROUPS = ["Solmere", "The Collegium of Halvenreach", "Beyond the Hearthlands", "The Gods"];
   const SERIES = "the-day-the-gods-went-silent";
   const art = (c) => (c.image ? `<img src="${c.image}" alt="${c.name}" class="portrait">` : c.portrait());

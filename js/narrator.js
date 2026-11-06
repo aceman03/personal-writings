@@ -21,6 +21,61 @@
   const PACE = { rate: 0.9, pitch: 0.82, dialoguePitch: 0.95 };
   const GAP = { sentence: 120, paragraph: 650, scene: 1600, title: 1100 };
 
+  // How each mood bends the voice. Multipliers on rate and pitch; volume is absolute.
+  // `gap` stretches the pauses after a sentence in that mood.
+  const MOODS = {
+    calm:     { rate: 1.0,  pitch: 1.0,  volume: 1.0,  gap: 1.0 },
+    warm:     { rate: 0.96, pitch: 1.04, volume: 1.0,  gap: 1.0 },
+    awe:      { rate: 0.86, pitch: 1.05, volume: 0.95, gap: 1.35 },
+    hushed:   { rate: 0.86, pitch: 0.96, volume: 0.6,  gap: 1.25 },
+    whisper:  { rate: 0.82, pitch: 0.94, volume: 0.42, gap: 1.3 },
+    shaken:   { rate: 0.92, pitch: 1.08, volume: 0.8,  gap: 1.2 },
+    tense:    { rate: 1.08, pitch: 1.0,  volume: 1.0,  gap: 0.8 },
+    urgent:   { rate: 1.18, pitch: 1.08, volume: 1.0,  gap: 0.6 },
+    dread:    { rate: 0.84, pitch: 0.9,  volume: 0.85, gap: 1.5 },
+    grief:    { rate: 0.8,  pitch: 0.9,  volume: 0.75, gap: 1.6 },
+    stern:    { rate: 0.94, pitch: 0.94, volume: 1.0,  gap: 1.0 },
+    menacing: { rate: 0.74, pitch: 0.78, volume: 0.9,  gap: 1.8 },
+    wonder:   { rate: 0.9,  pitch: 1.08, volume: 0.95, gap: 1.2 },
+    dry:      { rate: 1.02, pitch: 0.97, volume: 1.0,  gap: 0.9 },
+  };
+  const moodOf = (name) => MOODS[name] || MOODS.calm;
+
+  // ───────────── character voice casting ─────────────
+  // Character voice profiles come from window.VOICE_PROFILES (set by each series):
+  //   { gender: "female" | "male", age: "child" | "young" | "adult" | "old",
+  //     accent: "en-GB" | "en-US" | ..., pitch: 1.0, rate: 1.0, mood: "warm" }
+  const FEMALE = /Samantha|Karen|Moira|Tessa|Serena|Fiona|Victoria|Kate|Susan|Martha|Allison|Ava|Zira|Hazel|Libby|Sonia|Jenny|Aria|Emma|Michelle|Natasha|Clara|Ana\b|Joanna|Salli|Kimberly|Nicky|Veena|Female|Woman|Zoe|Amy|Olivia|Maisie|Abbi|Bella|Hollie/i;
+  const MALE = /Daniel|Arthur|Oliver|Alex\b|Fred|Tom\b|Aaron|Rishi|Gordon|Lee\b|George|Ryan|Thomas|Guy|Christopher|Eric|Davis|Andrew|Brian|Roger|Steffan|David|Mark|James|Male|Man\b|Liam|William|Noah|Ethan|Alfie|Elliot/i;
+  const AGE = { child: { pitch: 1.35, rate: 1.04 }, young: { pitch: 1.1, rate: 1.02 }, adult: { pitch: 1, rate: 1 }, old: { pitch: 0.88, rate: 0.9 } };
+  const genderOf = (v) => (FEMALE.test(v.name) ? "female" : MALE.test(v.name) ? "male" : "unknown");
+
+  function castVoices(narratorVoice) {
+    const profiles = window.VOICE_PROFILES || {};
+    const cast = {};
+    const used = new Map(); // voice name -> times assigned
+    Object.entries(profiles).forEach(([id, p]) => {
+      let pool = voices.filter((v) => genderOf(v) === p.gender);
+      if (!pool.length) pool = voices.filter((v) => genderOf(v) === "unknown");
+      if (!pool.length) pool = voices.slice();
+      const score = (v) =>
+        (v === narratorVoice ? 6 : 0) + (used.get(v.name) || 0) * 3 +
+        (p.accent && !v.lang.toLowerCase().startsWith(p.accent.toLowerCase()) ? 1 : 0) -
+        (/natural|neural|online|premium|enhanced/i.test(v.name) ? 1 : 0);
+      const pick = pool.slice().sort((a, b) => score(a) - score(b))[0] || narratorVoice;
+      if (pick) used.set(pick.name, (used.get(pick.name) || 0) + 1);
+      const age = AGE[p.age || "adult"];
+      // Same voice as someone else? Nudge the pitch so they still sound distinct.
+      const nudge = pick ? 1 + ((used.get(pick.name) - 1) % 3) * 0.06 * (p.gender === "male" ? -1 : 1) : 1;
+      cast[id] = {
+        voice: pick, mood: p.mood,
+        pitch: age.pitch * (p.pitch || 1) * nudge,
+        rate: age.rate * (p.rate || 1),
+      };
+    });
+    return cast;
+  }
+
   let state = null;
   let voices = [];
 
@@ -73,33 +128,60 @@
   const opensQuote = (t) => /^["“]/.test(t);
   const closesQuote = (t) => /["”][.,!?;:]*$/.test(t) && !/^["“][^"”]*$/.test(t);
 
-  // Group words into speakable chunks: sentences, split again at dialogue boundaries.
+  // Group words into speakable chunks: sentences, split again wherever the speaker
+  // changes. Each chunk knows its speaker (null = narrator) and mood.
   function buildChunks(prose, words, title) {
     const chunks = [];
-    const push = (ws, gap, dialogue) => {
+    const push = (ws, gap, info) => {
       if (!ws.length) return;
       const offsets = [];
       let text = "";
       ws.forEach((w, k) => { offsets.push(text.length); text += (k ? " " : "") + w.textContent; offsets[k] += k ? 1 : 0; });
-      chunks.push({ start: Number(ws[0].dataset.i), words: ws, text, offsets, gap, dialogue });
+      const m = moodOf(info.mood);
+      chunks.push({ start: Number(ws[0].dataset.i), words: ws, text, offsets, gap: Math.round(gap * m.gap), ...info });
     };
     if (title) chunks.push({ start: 0, words: [], text: title, offsets: [], gap: GAP.title, dialogue: false, isTitle: true });
 
     [...prose.children].forEach((block) => {
       if (block.tagName === "HR") { if (chunks.length) chunks[chunks.length - 1].gap = GAP.scene; return; }
+      const blockMood = block.dataset.mood || "";
       const ws = [...block.querySelectorAll(".w")];
-      let cur = [], inQuote = false;
+      let cur = [], curKey = null, inQuote = false;
+      // Who is speaking this word? Marked dialogue wins; unmarked quotes are "someone".
+      const infoFor = (w) => {
+        const say = w.closest(".say");
+        if (say) return { key: "say:" + say.dataset.speaker + ":" + (say.dataset.mood || ""), dialogue: true,
+          speaker: say.dataset.speaker, mood: say.dataset.mood || blockMood };
+        if (inQuote) return { key: "quote", dialogue: true, speaker: null, mood: blockMood };
+        return { key: "narration", dialogue: false, speaker: null, mood: blockMood };
+      };
+      let curInfo = null;
       ws.forEach((w, k) => {
         const t = w.textContent;
-        if (opensQuote(t) && !inQuote && cur.length) { push(cur, GAP.sentence, false); cur = []; }
-        if (opensQuote(t)) inQuote = true;
-        cur.push(w);
+        if (!w.closest(".say") && opensQuote(t)) inQuote = true;
+        const info = infoFor(w);
+        if (cur.length && info.key !== curKey) { push(cur, GAP.sentence, curInfo); cur = []; }
+        cur.push(w); curKey = info.key; curInfo = info;
         const last = k === ws.length - 1;
-        if (inQuote && closesQuote(t)) { push(cur, last ? GAP.paragraph : GAP.sentence, true); cur = []; inQuote = false; return; }
-        if (endsSentence(t) || last) { push(cur, last ? GAP.paragraph : GAP.sentence, inQuote); cur = []; }
+        if (!w.closest(".say") && inQuote && closesQuote(t)) { push(cur, last ? GAP.paragraph : GAP.sentence, curInfo); cur = []; inQuote = false; return; }
+        if (endsSentence(t) || last) { push(cur, last ? GAP.paragraph : GAP.sentence, curInfo); cur = []; }
       });
     });
     return chunks;
+  }
+
+  // Voice, rate, pitch and volume for a chunk: who is speaking, then how they feel.
+  function voiceFor(chunk) {
+    const mood = moodOf(chunk.mood);
+    if (chunk.dialogue && state.characterVoices) {
+      const c = chunk.speaker && state.cast[chunk.speaker];
+      if (c) {
+        const m = chunk.mood ? mood : moodOf(c.mood);
+        return { voice: c.voice || state.voice, rate: state.rate * c.rate * m.rate, pitch: Math.min(2, c.pitch * m.pitch), volume: m.volume };
+      }
+      return { voice: state.voice, rate: state.rate * mood.rate, pitch: PACE.dialoguePitch * mood.pitch, volume: mood.volume };
+    }
+    return { voice: state.voice, rate: state.rate * mood.rate, pitch: (chunk.dialogue ? PACE.dialoguePitch : PACE.pitch) * mood.pitch, volume: mood.volume };
   }
 
   // ───────────── ambience ─────────────
@@ -191,9 +273,11 @@
     const base = chunk.isTitle ? 0 : chunk.offsets[k];
     const text = chunk.text.slice(base);
     const u = new SpeechSynthesisUtterance(text);
-    u.voice = state.voice; u.lang = state.voice ? state.voice.lang : "en-GB";
-    u.rate = state.rate;
-    u.pitch = chunk.dialogue ? PACE.dialoguePitch : PACE.pitch;
+    const v = chunk.isTitle ? { voice: state.voice, rate: state.rate, pitch: PACE.pitch, volume: 1 } : voiceFor(chunk);
+    u.voice = v.voice; u.lang = v.voice ? v.voice.lang : "en-GB";
+    u.rate = Math.max(0.5, Math.min(2, v.rate));
+    u.pitch = Math.max(0.1, Math.min(2, v.pitch));
+    u.volume = v.volume;
     if (!chunk.isTitle) highlight(chunk, k);
     u.onboundary = (e) => {
       if (gen !== state.gen || chunk.isTitle || (e.name && e.name !== "word")) return;
@@ -217,6 +301,8 @@
 
   function playFrom(wordIndex, withTitle) {
     if (!state.voice) state.voice = bestVoice();
+    state.cast = castVoices(state.voice);
+    renderCastList();
     clearTimeout(state.timer);
     synth.cancel();
     state.playing = true;
@@ -270,6 +356,19 @@
     state.ui.root.classList.toggle("playing", state.playing);
   }
 
+  // Lists the characters who speak in this chapter and the voice cast for each.
+  function renderCastList() {
+    const names = window.VOICE_NAMES || {};
+    const speakers = [...new Set([...state.prose.querySelectorAll(".say")].map((s) => s.dataset.speaker))];
+    const short = (v) => (v ? v.name.replace(/^(Microsoft|Google)\s+/, "").replace(/\s+Online.*$/, "") : "Default");
+    state.ui.castList.innerHTML =
+      `<li><strong>Narrator</strong>: ${short(state.voice)}</li>` +
+      speakers.map((id) => {
+        const c = state.cast[id];
+        return `<li><strong>${names[id] || id}</strong>: ${c ? short(c.voice) : short(state.voice)}</li>`;
+      }).join("");
+  }
+
   function fillVoiceSelect() {
     const sel = state.ui.voice;
     if (!voices.length) { sel.innerHTML = `<option>Default voice</option>`; return; }
@@ -304,6 +403,8 @@
                 <option value="0.8">Slow</option><option value="0.9" selected>Storyteller</option>
                 <option value="1">Normal</option><option value="1.15">Brisk</option><option value="1.3">Fast</option>
               </select></label>
+            <label class="inline"><input type="checkbox" class="nar-cast"> Character voices for dialogue</label>
+            <details class="nar-castlist"><summary>Who's voicing whom</summary><ul></ul></details>
             <label class="inline"><input type="checkbox" class="nar-amb"> Ambient drone</label>
             <label class="inline"><input type="checkbox" class="nar-follow" checked> Scroll with the narration</label>
             <p class="muted small">While narration is on, click any word to jump there. The voice depends on your device. Narrator voices like Daniel or Ryan sound best.</p>
@@ -312,7 +413,8 @@
       </div>`;
     const q = (s) => root.querySelector(s);
     return { root, play: q(".nar-play"), back: q(".nar-back"), fwd: q(".nar-fwd"), progress: q(".nar-progress"),
-      time: q(".nar-time"), voice: q(".nar-voice"), rate: q(".nar-rate"), amb: q(".nar-amb"), follow: q(".nar-follow") };
+      time: q(".nar-time"), voice: q(".nar-voice"), rate: q(".nar-rate"), amb: q(".nar-amb"), follow: q(".nar-follow"),
+      castToggle: q(".nar-cast"), castList: q(".nar-castlist ul") };
   }
 
   function attach(article, opts) {
@@ -331,11 +433,14 @@
       voice: null,
       rate: Number(localStorage.getItem("narrator.rate") || PACE.rate),
       ambience: localStorage.getItem("narrator.ambience") !== "0",
+      characterVoices: localStorage.getItem("narrator.cast") !== "0",
+      cast: {},
       follow: true,
     };
     ui.progress.max = Math.max(0, words.length - 1);
     ui.rate.value = String(state.rate);
     ui.amb.checked = state.ambience;
+    ui.castToggle.checked = state.characterVoices;
     fillVoiceSelect();
     setPlayIcon();
 
@@ -365,6 +470,16 @@
       state.ambience && state.playing ? Ambience.start() : Ambience.stop();
     });
     ui.follow.addEventListener("change", () => (state.follow = ui.follow.checked));
+    ui.castToggle.addEventListener("change", () => {
+      state.characterVoices = ui.castToggle.checked;
+      localStorage.setItem("narrator.cast", state.characterVoices ? "1" : "0");
+      if (state.playing) playFrom(state.current);
+    });
+    ui.root.querySelector(".nar-settings").addEventListener("toggle", () => {
+      if (!state.voice) state.voice = bestVoice();
+      state.cast = castVoices(state.voice);
+      renderCastList();
+    });
 
     // Click a word to jump there, once narration has been started.
     prose.addEventListener("click", (e) => {

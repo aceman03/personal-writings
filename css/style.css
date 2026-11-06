@@ -298,3 +298,7 @@ body.has-narrator { padding-bottom: 96px; }
 .nar-panel p { margin: 6px 0 0; line-height: 1.4; }
 @media (max-width: 600px) { .nar-btn { display: none; } .nar-inner { gap: 10px; } .nar-panel { width: 260px; } }
 @media (prefers-reduced-motion: reduce) { .narrator.playing .nar-play { animation: none; } }
+.nar-castlist { margin: 0 0 10px 26px; font-size: .88rem; }
+.nar-castlist summary { cursor: pointer; color: var(--muted); }
+.nar-castlist ul { margin: 6px 0 0; padding-left: 16px; max-height: 140px; overflow: auto; }
+.nar-panel { max-height: 70vh; overflow: auto; }

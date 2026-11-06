@@ -33,10 +33,26 @@ It uses the browser's built-in speech voices, so it's free and needs no setup:
 - It prefers a deep, unhurried storyteller voice (Daniel, Ryan, George, Google UK
   English Male and similar), reads a little slower and lower than normal, pauses
   longer at paragraph and scene breaks, and shifts slightly for dialogue.
+- Dialogue is read in a voice cast for each character (gender, age, accent and pitch
+  from the character's voice profile in `characters.js`), chosen from the voices on
+  the reader's device. Settings shows who's voicing whom.
+- Scenes and lines carry a mood that bends the speed, pitch, volume and pauses:
+  calm, warm, awe, wonder, hushed, whisper, shaken, tense, urgent, dread, grief,
+  stern, dry and menacing.
 - An optional low ambient drone plays under the narration.
 - It remembers where you stopped in each chapter.
 
 How it sounds depends on the voices your device has installed.
+
+### Narration markup in chapter text
+
+Readers never see these tags. They only steer the voice-over.
+
+```
+{{mood: dread}}                              on its own line: narrator mood from here on
+{{corvel}}"Is it a bad one?"{{/}}            who says a line (a voice profile id)
+{{corvel, hushed}}"Is it a bad one?"{{/}}    ...and how they say it
+```
 
 ## Files
 

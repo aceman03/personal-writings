@@ -20,7 +20,7 @@
   const plural = (n, w) => `${n} ${w}${n === 1 ? "" : "s"}`;
 
   // Approximate printed pages: ~275 words per page in a typical trade paperback.
-  const pages = (text) => Math.max(1, Math.round(text.trim().split(/\s+/).length / 275));
+  const pages = (text) => Math.max(1, Math.round(text.replace(/\{\{[^}]*\}\}/g, " ").trim().split(/\s+/).length / 275));
 
   function el(html) {
     const t = document.createElement("template");
