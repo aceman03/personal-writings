@@ -5,25 +5,37 @@ Books written chapter by chapter, published as a small static website.
 **Read it online:** https://aceman03.github.io/personal-writings/ (once GitHub Pages is turned on).
 You can also download the repo and open `index.html` in a browser; there is no build step.
 
-## Pages
+## Structure
 
-- **Home**: every book in the library.
-- **Book**: its chapter list, plus any extra sections the book defines.
-- **The Day the Gods Went Silent** extras:
-  - **World Map**: an interactive map of Caelmar. Click a place to read about it, and
-    toggle "after the Silence" to watch the Thornwall go dark.
-  - **Spellcrafting**: the Spellcrafter's Codex. It covers the two parts of magic,
-    the anatomy of a circle, the Vaelic glyph lexicon, how conduits behave (curves
-    against angles, angle sharpness, thickness, tapering, glyph size, flow direction,
-    the Seal), fireball variants, and an interactive circle workshop.
+- **Home**: every series in the library.
+- **Series**: its books, plus series-wide extras.
+- **Book**: its chapters, with an approximate printed page count for each.
+
+### The Day the Gods Went Silent
+
+- **Book One: The Last Dawn**
+- **World Map**: an interactive map of Caelmar. Click a place to read about it, and
+  toggle "after the Silence" to watch the Thornwall go dark.
+- **Spellcrafting**: the Spellcrafter's Codex. It covers the two parts of magic, the
+  anatomy of a circle, the Vaelic glyph lexicon, how conduits behave, fireball
+  variants, and an interactive circle workshop.
+
+## Files
+
+```
+series/library.js                         registry of series and books
+series/<series>/book-N/chapter-NN.js      chapter text (Markdown)
+series/<series>/map.js, spellcraft.js...  series-wide extras
+```
 
 ## Adding a chapter
 
-1. Create `books/<slug>/chapter-NN.js` that calls
-   `registerChapter("<slug>", { number, title, body })`, where `body` is Markdown.
+1. Create `series/<series>/book-N/chapter-NN.js` that calls
+   `registerChapter("<series>", N, { number, title, body })`, where `body` is Markdown.
 2. Add a `<script>` tag for it in `index.html`.
 
-## Adding a book
+## Adding a book or series
 
-Add an entry to `books/books.js`. Extra pages are optional: list them in `extras`
-and register a render function on `window.EXTRAS[slug][id]`.
+Add a book to a series' `books` list in `series/library.js`, or add a new series
+entry. Series extras are optional: list them in `extras` and register a render
+function on `window.EXTRAS[seriesSlug][id]`.

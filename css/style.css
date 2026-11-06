@@ -222,3 +222,13 @@ button:hover { background: #3c3347; }
 .meter.danger .meter-fill { background: linear-gradient(90deg, #7a2a20, var(--danger)); }
 .notes { padding-left: 20px; font-size: .92rem; color: #d8cdb9; }
 .notes li { margin-bottom: 6px; }
+
+/* ── Series & books ── */
+.volume-list { display: grid; gap: 16px; max-width: 760px; margin: 0 auto; }
+.volume { display: block; text-decoration: none; color: inherit; padding: 22px 26px; background: linear-gradient(160deg, #2c2534, #1d1a23); border: 1px solid var(--line); border-left: 6px solid #a8833f; border-radius: 6px; }
+.volume:hover { border-color: var(--gold); }
+.volume h2 { margin: 4px 0 8px; color: var(--gold-2); font-size: 1.6rem; }
+.volume p { margin: 0 0 10px; color: #d4cab8; }
+.book-number { display: block; font-size: .35em; letter-spacing: .25em; text-transform: uppercase; color: var(--gold); margin-bottom: 6px; }
+.chapter-header .book-genre { display: block; margin-bottom: 10px; }
+.ch-pages { margin-left: auto; font-size: .85rem; color: var(--muted); white-space: nowrap; }
