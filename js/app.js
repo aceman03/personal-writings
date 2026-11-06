@@ -4,7 +4,7 @@
 //   #/s/<series>                         series page: its books + extras tabs
 //   #/s/<series>/book/<n>                a book: its chapters
 //   #/s/<series>/book/<n>/chapter/<m>    a chapter
-//   #/s/<series>/<extraId>               a series extra (map, spellcraft, ...)
+//   #/s/<series>/<extraId>[/...]         a series extra (characters, map, ...); extra path parts are passed through
 (function () {
   const app = document.getElementById("app");
   // Series extras register themselves here: EXTRAS[seriesSlug][id] = fn(container, series)
@@ -141,7 +141,7 @@
       </article>`));
   }
 
-  function renderExtra(series, id) {
+  function renderExtra(series, id, rest) {
     const extra = series.extras.find((e) => e.id === id);
     const fn = window.EXTRAS[series.slug] && window.EXTRAS[series.slug][id];
     if (!extra || !fn) return renderNotFound();
@@ -152,7 +152,7 @@
         ${seriesNav(series, id)}
         <div class="extra-body"></div>
       </section>`));
-    fn(app.querySelector(".extra-body"), series);
+    fn(app.querySelector(".extra-body"), series, rest);
   }
 
   function renderNotFound() {
@@ -175,7 +175,7 @@
       if (parts[4] === "chapter") return renderChapter(series, book, Number(parts[5]));
       return renderNotFound();
     }
-    return renderExtra(series, parts[2]);
+    return renderExtra(series, parts[2], parts.slice(3));
   }
 
   window.addEventListener("hashchange", route);

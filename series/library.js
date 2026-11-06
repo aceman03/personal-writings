@@ -16,6 +16,7 @@ window.LIBRARY = {
         "Then, one morning, they stopped. The Hollow Choir did not.",
       status: "In progress",
       extras: [
+        { id: "characters", label: "Characters" },
         { id: "map", label: "World Map" },
         { id: "spellcraft", label: "Spellcrafting" },
       ],

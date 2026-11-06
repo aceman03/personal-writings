@@ -14,6 +14,9 @@ You can also download the repo and open `index.html` in a browser; there is no b
 ### The Day the Gods Went Silent
 
 - **Book One: The Last Dawn**
+- **Characters**: everyone introduced so far, each with a portrait and a spoiler-free
+  description. Characters live in `characters.js`. Portraits are drawn in code by
+  `portraits.js`, and any character can use real artwork by setting `image`.
 - **World Map**: an interactive map of Caelmar. Click a place to read about it, and
   toggle "after the Silence" to watch the Thornwall go dark.
 - **Spellcrafting**: the Spellcrafter's Codex. It covers the two parts of magic, the
