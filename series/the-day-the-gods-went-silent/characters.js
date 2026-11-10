@@ -276,7 +276,7 @@
   window.VOICE_NAMES = Object.assign(window.VOICE_NAMES || {},
     Object.fromEntries(CHARACTERS.map((c) => [c.id, c.name])),
     { "young-dawnwarden": "A young Dawnwarden", student: "A second-year student", queen: "The queen",
-      toman: "Sir Toman", queen: "Queen Isolde", rhoan: "Crown Prince Rhoan", greaves: "High Chancellor Greaves", wrenna: "Mother Wrenna", nurse: "Corvel's nursemaid", steward: "A palace steward", "market-mother": "A mother in the market", penn: "Lady Ysolde Penn", collum: "Collum the trapper", "meg-ashby": "Meg Ashby" });
+      toman: "Sir Toman", queen: "Queen Isolde", rhoan: "Crown Prince Rhoan", greaves: "High Chancellor Greaves", wrenna: "Mother Wrenna", nurse: "Corvel's nursemaid", steward: "A palace steward", "market-mother": "A mother in the market", penn: "Lady Agathe Penn", collum: "Collum the trapper", "meg-ashby": "Meg Ashby" });
 
   const GROUPS = ["Solmere", "The Collegium of Halvenreach", "Greywatch", "Beyond the Hearthlands", "The Gods"];
   const SERIES = "the-day-the-gods-went-silent";

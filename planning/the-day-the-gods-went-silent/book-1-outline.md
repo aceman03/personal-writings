@@ -221,7 +221,7 @@ and Aldric feels Aurem for a heartbeat.
 |---|---|
 | 1 | Sereth, Oren, Corvel, Edda, Hale, Ilsabet, Tyriel, Hagra, Urzag, Hask |
 | 2 | Aldric, Nyx, Pip, Dagny, Toman, Brother Fen, Collum |
-| 4 | King Haldren, Queen Isolde, Crown Prince Rhoan, High Chancellor Orvald Greaves, Mother Wrenna, Lady Ysolde Penn, Archprelate Maudrin, Magus Perrin Quill |
+| 4 | King Haldren, Queen Isolde, Crown Prince Rhoan, High Chancellor Orvald Greaves, Mother Wrenna, Lady Agathe Penn, Archprelate Maudrin, Magus Perrin Quill |
 | 6 | Lord-Commander Ressa Kell |
 | 7 | Brokk Ironmantle |
 | 8 | Vessa |

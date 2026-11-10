@@ -54,7 +54,7 @@ Behind him, in the gallery, two of the palace stewards were talking in low voice
 
 {{steward, hushed}}"The Houses of Mending have closed their doors. The healers can't heal. There were two hundred sick in the courtyards at dawn and they're turning them away now, and the crowd's trying to break in."{{/}}
 
-{{steward, hushed}}"And the Collegium hedge-shops? On Lantern Street?"{{/}}
+{{steward, hushed}}"And the Collegium hedge-shops? On Tallow Street?"{{/}}
 
 {{steward, hushed}}"Mobbed. Anyone who knows two words of Vaelic is the most important person in the city this morning. I saw a woman offer a hedge-mage her house for a fever-charm."{{/}}
 
@@ -250,7 +250,7 @@ Corvel had not slept much. He had lain awake thinking about the little boy's whi
 
 The councilors came in one by one, bowed to the empty chair and then, after a moment's visible hesitation, to him. Corvel watched every one of them.
 
-He had known most of them all his life, and he had tasted every one of them lie at some time or another, over small things and large ones. There was Lady Ysolde Penn, Mistress of the Coin, who lied about money the way other people breathed. There was Archprelate Maudrin of the temples, enormous and tired, who lied mostly to himself. There was Magus Perrin Quill, the Collegium's envoy to the court, who almost never lied, because he almost never said anything. There were a handful of lords and two generals left behind by the Lord Marshal.
+He had known most of them all his life, and he had tasted every one of them lie at some time or another, over small things and large ones. There was Lady Agathe Penn, Mistress of the Coin, who lied about money the way other people breathed. There was Archprelate Maudrin of the temples, enormous and tired, who lied mostly to himself. There was Magus Perrin Quill, the Collegium's envoy to the court, who almost never lied, because he almost never said anything. There were a handful of lords and two generals left behind by the Lord Marshal.
 
 And there was the High Chancellor.
 
