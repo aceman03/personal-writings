@@ -64,9 +64,13 @@ The grooves filled with pale blue light, slowly, from the center outward. The li
 
 There was a blessing. That much was certain. Oren could feel the Warden in the room, the familiar weight at his back that had been with him for forty years, and he could feel it turn its attention toward the boy with something that, in a person, he would have called fondness. But the light was thin. There was no flare, no sudden brightness, nothing for a crowd to gasp at.
 
+Every blessed person described their blessing the same way: as a **presence**. It was a warmth at the back, a hand on the shoulder, a voice too soft to make out that was nonetheless always there. A blessing drew on nothing inside the body. A paladin of Thalen could raise his shield and feel his god raise it with him, and a harvest-priestess of Lyssa could kneel in a dying field and feel the goddess kneel beside her. They never tired, because the power wasn't theirs. They were only the doorway it walked through. That was why the blessed ruled.
+
+Oren had also seen the other side of it. What the gods gave, they could take back. He had watched a knight of his own order break an oath and feel his sword go dim in his hand, and he had known a priestess who lied in Lyssa's name and woke the next morning with nothing at her back. The Bright Court expected virtue. The Hollow Choir demanded obedience, and the orc warbands of the Ashen Steppe told stories of champions who had disobeyed Karrog and been left screaming as their own strength turned inside them and tore its way out. A blessing was a gift with a leash, and every blessed child learned that early.
+
 {{mood: calm}}
 
-{{oren-vasse, warm}}"What do you feel?"{{/}} Oren asked.
+Oren turned his attention back to the boy on the glyph. {{oren-vasse, warm}}"What do you feel?"{{/}}
 
 The prince frowned. {{corvel, hushed}}"Nothing, Father. Only..."{{/}} He looked at the queen, then at the two royal guards by the door, then at Oren himself. {{corvel}}"Only that the guard on the left told my mother this morning that he slept well. He didn't. I knew it when he said it."{{/}}
 
@@ -109,22 +113,6 @@ The queen drew a sharp breath. Oren didn't look at her.
 {{oren-vasse, warm}}"Your Highness,"{{/}} he said, {{oren-vasse, warm}}"the Warden doesn't make bad ones."{{/}}
 
 The boy studied him for a long moment, the way he had studied the guard. Then something in his thin shoulders loosened, because he could tell that it was true.
-
----
-
-{{mood: stern}}
-
-{{ambience: lore}}
-
-What the gods gave, though, they could take back.
-
-{{mood: calm}}
-
-A blessing cost the blessed no strength. It drew on nothing inside the body. Those who carried one described it as a **presence**: a warmth at the back, a hand on the shoulder, a voice too soft to make out that was nonetheless always there. A paladin of Thalen could raise his shield and feel his god raise it with him. A harvest-priestess of Lyssa could kneel in a dying field and feel the goddess kneel beside her. They never tired, because the power wasn't theirs. They were only the doorway it walked through.
-
-That was why the blessed ruled. But every blessed child also learned, early, that a door could be shut. A knight broke his oath, and his sword dimmed in his hand. A priestess lied in her god's name, and the warmth at her back was gone by morning. The Bright Court expected virtue. The Hollow Choir demanded obedience, and the orc warbands of the Ashen Steppe told stories of champions who had disobeyed Karrog and been left screaming as their own strength turned inside them and tore its way out.
-
-A blessing was a gift with a leash, and everyone knew it.
 
 ---
 
@@ -202,11 +190,9 @@ Later that same afternoon, two floors above Edda's quiet room, Magus Hale drew a
 
 {{teodric-hale, stern}}"*Ignar ora sae, vos,*"{{/}} he said, touching each part in turn, {{sfx: spell-hum}}and the chalk lines glowed faintly orange for a heartbeat before fading. Half the hall leaned back in their seats.
 
-A spell was a circle: rings of glyphs, nested one inside another, written in **Vaelic**. No one knew who had first spoken it. The elves claimed it had been old when their own tongue was young. The dwarves claimed their ancestors had found it carved into the roots of the mountains. The Collegium scholars, who argued about everything, agreed on only one thing: Vaelic was not a mortal language. It was the language the world itself used to describe what it was made of, and to speak it was to give the world instructions.
+A spell was a circle: rings of glyphs nested one inside another, written in **Vaelic**. The elves said Vaelic had been old when their own tongue was young, and the dwarves said their ancestors had found it carved into the roots of the mountains. The Collegium's scholars agreed only that it wasn't a mortal language at all. It was the language the world used to describe itself, and speaking it gave the world instructions.
 
-A circle could be cast in three ways. It could be **spoken** aloud, which was fast but weak, and useless to a mage with a broken jaw. It could be **traced** in the air with a finger or a staff until the lines burned with pale light, which made it the workhorse of battle mages everywhere. Or it could be **inscribed** into stone or steel or ink, where it would wait, holding its spell, until something triggered it. Inscription was slow to make and the strongest of all.
-
-Most of the Hearthlands ran on inscription, though few people ever thought about it. Wardstones ringed every village, carved by traveling inscribers and recharged each spring. Cold-boxes in the kitchens of the wealthy kept meat fresh through summer. And far to the north, the **Thornwall** ran along the edge of the known world: a hundred and forty miles of black stone carved end to end with circles so dense and so old that no living mage could read all of them. The Thornwall held back the Wildlands and whatever lived beyond them.
+A circle could be **spoken**, which was fast but weak. It could be **traced** in the air until its lines burned with pale light, which was how battle mages fought. Or it could be **inscribed** in stone or steel, where it would wait, holding its spell, until something set it off. Inscription ran half the Hearthlands: wardstones around every village, cold-boxes in rich kitchens, and in the far north the **Thornwall**, a hundred and forty miles of black stone carved end to end with circles so old that no living mage could read them all. The Thornwall held back the Wildlands and whatever lived beyond them.
 
 {{teodric-hale}}"Two rings,"{{/}} Hale said, tapping the board. {{teodric-hale}}"A Second-Class spell."{{/}}
 
@@ -240,33 +226,21 @@ The woman inside had been there for nineteen years, by her own choice, mostly. I
 
 She didn't mind. The room had a good window and a better table, and tonight, as on most nights, the table was covered in somebody else's spell. This one was the Binding of Varrow, an old inherited circle for holding a thing in place.
 
-She had taken it apart. That was what spellcrafters did. Inherited mages memorized circles, and spellcrafters dismantled them. They laid a spell out glyph by glyph and ring by ring, tested each piece alone at great personal risk, and slowly learned what every part of it *did*. Most of what Ilsabet knew had cost her something. The burn scars on her forearms were the least of it.
+She had taken it apart. That was what spellcrafters did. Inherited mages memorized circles. Spellcrafters dismantled them, glyph by glyph and ring by ring, testing each piece alone at great personal risk until they understood what every part of it *did*. Most of what Ilsabet knew had cost her something. The burn scars on her forearms were the least of it.
 
 {{mood: calm}}
 
-The first thing a spellcrafter learned was that every circle was built from parts. There was a **Source**, what the spell was made of: *Ignar*, fire; *Vaesh*, water; *Tol*, stone; *Ael*, life. There was a **Shape**, the form it took: *Dun*, a line; *Ora*, a sphere; *Vell*, a wall. There was a **Command**, what it did: *Sae*, go; *Keth*, hold; *Lo*, mend. There were modifiers for heat, size, speed, duration, color and a hundred other things, most of which no inherited spell had ever used. And around the rim there was always the **Seal**, *Vos*, which locked the spell into stable form and kept it from twisting back upon its maker.
+Every circle, she had learned, was built from parts. A **Source** said what the spell was made of: *Ignar*, fire, or *Tol*, stone, or *Ael*, life. A **Shape** gave it form, a **Command** told it what to do, modifiers refined it, and the **Seal**, *Vos*, closed the rim and kept the whole thing from twisting back on its maker.
 
-The second thing a spellcrafter learned was that the glyphs were only half of a circle. The other half was the **lines**.
+But the glyphs were only half a circle. The other half was the lines between them, which inherited mages treated as decoration. Spellcrafters called them **conduits**, because mana flowed along them from the center to the rim, and how they carried it changed everything. Curves carried it smoothly, for wards and mending and anything meant to last. Sharp angles made it pile up and burst out of the corner harder and faster, which was where a spell got its punch. Thick lines carried more and cost more. Even the direction mattered. Clockwise flow pushed outward, for anything thrown. Counter-clockwise flow pulled inward, for anything meant to hold.
 
-Inherited mages thought of the lines as decoration, the bits you drew between the words. Spellcrafters knew better. The lines were **conduits**, and mana flowed along them from the Source at the center outward to the Seal at the rim. *How* the lines carried that flow changed everything. Curved conduits carried mana smoothly and cheaply, which made them good for anything meant to last or soothe: wards, mending, barriers. Angled conduits redirected the flow abruptly, and at each corner the mana piled up and compressed and left the bend harder and faster than it had arrived. That was where a spell got its punch. The sharper the angle, the more violent the compression. A right angle was the inherited standard. An acute bend could turn a fireball into a lance. Anything sharper than about twenty-five degrees, a knife bend, was likely to crack the conduit under load and spray raw mana in every direction.
+Every inherited spell was simply the first arrangement someone, long ago, had found that worked. It was very rarely the best one. Ilsabet's own fireball was still a two-ring, Second-Class spell by the Collegium's measure, but she had tightened its curves and tucked one extra glyph in among the Commands. It cost a third of the mana of the Common Fireball. With a different glyph in the same place, it burned white-blue and went through iron plate. On paper it was the same spell Hale taught his second-years. In practice it could outmatch the Fourth-Class spells of most of the Magi in the building. The class system measured how *complex* a circle was. It had never once measured how *good* one was.
 
-The thickness of a line set how much mana it carried at once, which meant more power for a heavier draw on the well. A line that narrowed as it ran outward sped the flow like a nozzle. A line that widened slowed and spread it. The *size* of each glyph relative to its neighbors set how much of the spell it governed: a large Source meant more substance, and a large modifier meant more of its effect. Even the direction mattered. Clockwise flow pushed mana outward, which suited anything launched. Counter-clockwise flow drew it inward, which suited anything meant to hold.
+That was what made spellcrafters valuable, and what made them dangerous. A mage who could build any spell could build spells that should never exist. Some were given towers and titles. Some were given locked doors. Over the centuries, a few had simply disappeared.
 
-Every inherited spell had been built by someone, once, who had stumbled onto one way of arranging all of this that worked. Everyone since had copied them. It was very rarely the best way.
+Ilsabet had found the flaw in the Lesser Ward of Halt in her second year in the tower. The Magus who had tried to improve it hadn't made a foolish change. He had made a clever one: a sharp bend in the Command line to make the ward snap shut faster. But the Command was *Lo*, mend, and life-born magic did not tolerate being bent hard. The line had cracked. Students were told he had been found as a smear of ash. The truth, as far as Ilsabet could work it out, was worse: the ward had mended him into something that wasn't a person anymore, and someone had burned what was left. She had written the answer in cipher in her notebook years ago. Nobody had ever asked her for it.
 
-Ilsabet's own fireball was still two rings, still Second-Class by the Collegium's measure. But she had tightened the curve of the Shape ring and woven a single Lisse glyph in among the Commands, tucked between them instead of on a ring of its own, so the class didn't change. It drew a third of the mana of the Common Fireball for the same result. With a woven Ardh in place of the Lisse, it burned white-blue, hot enough to melt through iron plate. With a little more work, she could make it split mid-flight, or wait in the air until someone walked under it, or burn green, or burn without light at all. On paper, every one of them was exactly equal to the fireball Hale taught his second-years. In practice, a Second-Class spell in her hands could outmatch a Fourth-Class spell in the hands of any ordinary Magus in the Collegium.
-
-The class system measured how *complex* a circle was. It had never once measured how *good* one was.
-
-Spellcrafters were the most valuable mages in the world, and the most dangerous, because a mage who could build any spell could build spells that should never exist. Some were given towers and titles. Others were given quiet rooms and locked doors. A few, over the centuries, had simply disappeared. Most guarded what they knew in ciphers and trusted no apprentice with the whole of it, and mages had killed each other to steal a single improved circle.
-
-Ilsabet had found the flaw in the Lesser Ward of Halt in her second year in the tower. The Magus who had tried to improve it hadn't made a foolish change. He had made a clever one: an acute bend in the Command conduit to make the ward snap shut faster. But the Command was *Lo*, mend, and life-born magic did not tolerate being bent hard. The conduit had cracked, and the ward had mended him into something that wasn't a person anymore.
-
-She had written the answer in cipher in her notebook years ago. Nobody had ever asked her for it.
-
-There were people who understood circles without any of this work. **Sorcerers** were blessed with fluency in Vaelic. They felt their wells without training and read circles the way other people read faces. Ilsabet had once watched a nine-year-old sorcerer look at a circle she'd spent four years on and point, without hesitation, to the one glyph she had gotten wrong. She had resented the child for a month and then quietly arranged for her to be sent to the Collegium. There were also **priests** who knew a little Vaelic, because a god's name-glyph placed at the heart of a circle in place of a Source turned an ordinary spell into a holy one. The god powered what the priest shaped, and the priest's own well hardly needed to be touched. A healing circle anchored with Lyssa's name could close wounds no mage could touch. A ward anchored with Thalen's could hold against things that laughed at stone.
-
-The greatest anchored circle in the world was the Thornwall. Beneath its thousands of ordinary glyphs, at the heart of every mile of black stone, the first wardens had carved Thalen's name. Mortal magic gave the wall its shape. The Warden's power held it closed.
+**Sorcerers**, blessed by their gods with fluency in Vaelic, could read a circle at a glance without any of this work, which Ilsabet found deeply unfair. Priests used the language too, in their way. A god's name-glyph placed at the heart of a circle, where a Source would go, turned an ordinary spell into a holy one, with the god powering what the priest shaped. A healing circle anchored with Lyssa's name could close wounds no mage could touch. The greatest anchored circle in the world was the Thornwall. Beneath its thousands of ordinary glyphs, at the heart of every mile of black stone, the first wardens had carved Thalen's name. Mortal magic gave the wall its shape. The Warden's power held it closed.
 
 {{mood: hushed}}
 
@@ -316,7 +290,7 @@ In the **Kharn Mountains**, which stood like broken teeth along the north and ea
 
 {{ambience: steppe-fire}}
 
-South of the mountains lay the **Ashen Steppe**, endless grassland gone gray with the ash of old wars, where the orc clans rode and fought and worshipped Karrog the Red Hand. Not every orc was cruel, and not every clan bent its knee to the Hollow Choir. But enough of them did. Every few decades a warlord rose on the Steppe, united the clans and rode north, and every few decades the Hearthlands drove them back at terrible cost. Tonight, at a clan fire under a sky full of stars, a champion of Karrog named Urzag sat with his back to the flames and felt his god's blessing burning between his shoulder blades. It had always burned. Tonight it burned *hotter*, and it was leaning closer, the way a hound leans against the door when it hears footsteps on the other side. Urzag had served Karrog for twenty years and had never once felt his god impatient. He didn't know what it meant. He sharpened his blade and didn't sleep.
+To the southeast, where the mountains ran out, lay the **Ashen Steppe**, endless grassland gone gray with the ash of old wars, where the orc clans rode and fought and worshipped Karrog the Red Hand. Not every orc was cruel, and not every clan bent its knee to the Hollow Choir. But enough of them did. Every few decades a warlord rose on the Steppe, united the clans and rode north, and every few decades the Hearthlands drove them back at terrible cost. Tonight, at a clan fire under a sky full of stars, a champion of Karrog named Urzag sat with his back to the flames and felt his god's blessing burning between his shoulder blades. It had always burned. Tonight it burned *hotter*, and it was leaning closer, the way a hound leans against the door when it hears footsteps on the other side. Urzag had served Karrog for twenty years and had never once felt his god impatient. He didn't know what it meant. He sharpened his blade and didn't sleep.
 
 {{mood: calm}}
 
