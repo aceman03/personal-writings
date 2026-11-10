@@ -28,7 +28,9 @@ Aldric waited, because the light was sometimes slow on cloudy mornings, though t
 
 {{mood: grief}}
 
-He did what knights were trained to do when something went wrong. He stood up.
+His first thought, absurdly, was *What did I do?* Every knight of every order knew what it meant when a blade went dark: an oath broken, a god turning away. He searched himself for the sin and couldn't find one.
+
+Then he did what knights were trained to do when something went wrong. He stood up.
 
 Then he did what eighteen years had trained into his arm, without thinking. He raised it to call the shield.
 
@@ -110,7 +112,7 @@ He had forty soldiers, three knights with no blessings left between them, and th
 
 He didn't have the Shield of Dawn.
 
-The Pale Road ran south from Greywatch through the foothills, a day and a half to Fort Harrow. That was a real fort, a stone one, built on the old bridge over the river Grey. Closer, half a day's walk for strong legs and longer for weak ones, stood the Lantern House, an abandoned waystation with stone walls and a ring of old wardstones. If they left soon, they might reach it by dark.
+The Pale Road ran south from Greywatch through the western foothills of the Kharn Mountains, a day and a half to Fort Harrow. That was a real fort, a stone one, built on the old bridge over the river Grey. Closer, half a day's walk for strong legs and longer for weak ones, stood the Lantern House, an abandoned waystation with stone walls and a ring of old wardstones. If they left soon, they might reach it by dark.
 
 It wasn't a plan. It was a direction.
 
@@ -404,11 +406,13 @@ Nyx raised her hand for a fifth and traced the circle, and the lines came out fa
 
 Empty.
 
+The exhaustion hit her like a dropped sack, all at once, exactly the way the margins of her books had warned. Her knees went, and she was kneeling in the frozen mud before she knew she'd fallen.
+
 {{mood: whisper}}
 
 There was a lesson the books had whispered about, in the margins, in a different and more careful hand. When the well is dry, there is sometimes something beneath it. You can reach past the bottom into the warm place below and pull a spell out of your own blood. It almost never works. When it does, it costs more than you have.
 
-A skirl came over the body of another, straight at her, and Nyx closed her eyes and reached.
+A skirl came over the body of another, straight at her where she knelt, and Nyx closed her eyes and reached.
 
 {{sfx: heartbeat}}It felt like pushing her hand down through ice into something hot and alive and not hers to touch. She heard her own heartbeat, loud as a drum, and felt it stumble. Pain went through her from the ribs outward, bright and enormous. She pulled.
 
@@ -458,7 +462,7 @@ The gold light faded. The circle in the frost went dark, a child's drawing again
 
 {{ambience: night-watch}}
 
-Nyx reached her first, blood still running from her nose, and gathered the girl up against her chest. Pip's skin was cold. But she was breathing, and her eyes opened a little, pale gray and unfocused.
+Nyx reached her first, crawling the last few yards on her hands and knees with blood still running from her nose, and gathered the girl up against her chest. Pip's skin was cold. But she was breathing, and her eyes opened a little, pale gray and unfocused.
 
 {{nyx-thornbriar, whisper}}"Pip. Pip, what was that? What did you say?"{{/}}
 
@@ -490,7 +494,7 @@ It was a footstep.
 
 {{mood: menacing}}
 
-Aldric turned north. Hask was already looking. Beside him, Nyx struggled to her feet with Pip in her arms. Behind them, three hundred people had gone silent again without being told.
+Aldric turned north. Hask was already looking. Beside him, Sir Toman was hauling Nyx to her feet, and she held Pip against her chest as if she would never let go. Behind them, three hundred people had gone silent again without being told.
 
 Far up the Pale Road, beyond the foothills, beyond the dark line where the Thornwall stood dead against the stars, something was rising out of the Wildlands. It was so large that for a moment Aldric took it for a hill, until the hill moved. It stood higher than the trees, higher than the wall itself, a vast black shape that blotted out whole constellations as it straightened.
 

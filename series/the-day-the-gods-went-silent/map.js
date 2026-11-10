@@ -47,7 +47,7 @@
       chapters: ["1.1"] },
     { id: "kharn", name: "The Kharn Mountains", kind: "region", x: 735, y: 255,
       region: "East and north",
-      text: "Broken teeth along the horizon, and home of the dwarves. Few dwarves are blessed and fewer are mages, but their forge-masters carve rune-circles into steel. They call it craft, not magic.",
+      text: "Broken teeth along the north and east of the Hearthlands, and home of the dwarves. Their western foothills stand between Solmere and the Thornwall, and the Pale Road winds through them. Few dwarves are blessed and fewer are mages, but their forge-masters carve rune-circles into steel. They call it craft, not magic.",
       chapters: ["1.1"] },
     { id: "steppe", name: "The Ashen Steppe", kind: "region", x: 805, y: 560,
       region: "South of the mountains",
@@ -103,6 +103,17 @@
       const w = 14 + r() * 14, h = 18 + r() * 22;
       s += `<path d="M${(x - w).toFixed(1)},${y.toFixed(1)} L${x.toFixed(1)},${(y - h).toFixed(1)} L${(x + w).toFixed(1)},${y.toFixed(1)}"/>`;
       s += `<path class="snow" d="M${(x - w * 0.3).toFixed(1)},${(y - h * 0.7).toFixed(1)} L${x.toFixed(1)},${(y - h).toFixed(1)} L${(x + w * 0.3).toFixed(1)},${(y - h * 0.7).toFixed(1)}"/>`;
+    }
+    return s;
+  }
+
+  // The western foothills of the Kharn, between Solmere and the Thornwall.
+  function foothills(r) {
+    let s = "";
+    for (let i = 0; i < 26; i++) {
+      const x = 410 + r() * 150, y = 205 + r() * 70;
+      const w = 9 + r() * 8, h = 10 + r() * 12;
+      s += `<path d="M${(x - w).toFixed(1)},${y.toFixed(1)} L${x.toFixed(1)},${(y - h).toFixed(1)} L${(x + w).toFixed(1)},${y.toFixed(1)}"/>`;
     }
     return s;
   }
@@ -184,6 +195,7 @@
       <g class="wild-trees">${wildlands(r)}</g>
       <g class="forest">${forest(r)}</g>
       <g class="mountains">${mountains(r)}</g>
+      <g class="mountains foothills">${foothills(r)}</g>
       <g class="steppe-marks">${steppe(r)}</g>
       <g class="marsh-marks">${marsh(r)}</g>
       <g class="dune-marks">${dunes(r)}</g>
