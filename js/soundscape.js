@@ -239,6 +239,8 @@ window.Soundscape = (function () {
     "city-panic": (b) => { L.crowd(b, 0.09); L.wind(b, { level: 0.06, cutoff: 600 }); L.crows(b, 7000, 0.03); },
     market: (b) => { L.crowd(b, 0.06); L.fire(b, 0.05); L.wind(b, { level: 0.05, cutoff: 500 }); },
     council: (b) => { L.roomTone(b, 0.1); L.crackle(b, 3, 0.05); L.fire(b, 0.04); },
+    collegium: (b) => { L.roomTone(b, 0.08); L.river(b, 0.05, 900); L.crowd(b, 0.025); },
+    "courtyard-dusk": (b) => { L.wind(b, { level: 0.08, cutoff: 700 }); L.river(b, 0.05, 900); L.crowd(b, 0.03); L.crows(b, 9000, 0.025); },
     silence: () => {},
   };
 
@@ -426,6 +428,25 @@ window.Soundscape = (function () {
       env(g, t, 0.02, 0.7, 2.2); env(og, t, 0.02, 0.22, 2.5);
       s.connect(f).connect(g).connect(master); o.connect(og).connect(master); g.connect(reverbSend);
       s.start(t, 0, 2.6); o.start(t); o.stop(t + 2.8);
+    },
+    "door-unlock"() {
+      const t = now() + 0.05;
+      clang(t, 0.04, 0.2); // key in the lock
+      burst(t + 0.25, { type: "brown", f1: "lowpass", freq: 400, attack: 0.01, peak: 0.45, release: 0.2, wet: 0.4 }); // bolt draws back
+      const o = osc("sawtooth", 95), bp = filter("bandpass", 380, 5), g = gain(0.0001); // the door creaks open
+      o.frequency.setValueAtTime(95, t + 0.7); o.frequency.linearRampToValueAtTime(140, t + 1.6);
+      g.gain.setValueAtTime(0.0001, t + 0.7); g.gain.exponentialRampToValueAtTime(0.05, t + 0.9); g.gain.exponentialRampToValueAtTime(0.0001, t + 1.7);
+      o.connect(bp).connect(g).connect(master); g.connect(reverbSend); o.start(t + 0.7); o.stop(t + 1.8);
+    },
+    hoofbeats() {
+      // A tired horse galloping in over stone, slowing to a stumble.
+      let t = now() + 0.05, gap = 0.16;
+      for (let i = 0; i < 18; i++) {
+        const k = i % 4 === 3 ? 0.5 : 0.12;
+        burst(t, { type: "brown", f1: "lowpass", freq: 900, attack: 0.003, peak: 0.6, release: 0.07, p: -0.3 + i * 0.03, wet: 0.2 });
+        burst(t, { freq: 2600, q: 2, attack: 0.002, peak: 0.12, release: 0.03 });
+        t += i % 4 === 3 ? k : gap; if (i > 10) gap *= 1.15;
+      }
     },
     crowd() {
       // A crowd surging: a swell of murmur and a few sharper shouts.

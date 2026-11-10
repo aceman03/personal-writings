@@ -102,6 +102,23 @@
         clothing: "#2d2a36", trim: "#ff9a4f", outfit: "robe", background: ["#4a2f22", "#140f0c"], aura: "#ff9a4f", stern: true }),
     },
 
+    {
+      id: "ottilie-brandt", name: "Archmagus Ottilie Brandt", epithet: "Head of the Collegium of Halvenreach", group: "The Collegium of Halvenreach",
+      facts: { Race: "Human", Home: "The Collegium of Halvenreach", Power: "Magic. Archmage, one of three living mages who can hold six rings" },
+      firstAppears: "1.5",
+      description: "A tall, raw-boned woman of seventy with white hair cropped short as a soldier's and a face like a weathered cliff. She has run the Collegium for twenty-two years. She is blunt, practical and honest to a fault, and she has not forgotten a single slight the temples ever dealt her island.",
+      portrait: P({ alt: "Archmagus Ottilie Brandt", age: "old", skin: "light", hair: "cropped", hairColor: "#ececec", stern: true,
+        clothing: "#2d3a52", trim: "#8fb7d9", outfit: "mantle", background: ["#2a3550", "#0e1018"], aura: "#8fb7d9" }),
+    },
+    {
+      id: "lark-ellery", name: "Lark Ellery", epithet: "Second-year student", group: "The Collegium of Halvenreach",
+      facts: { Race: "Human", Home: "The Collegium of Halvenreach", Power: "Magic (student)" },
+      firstAppears: "1.1",
+      description: "A sharp-faced second-year with ink on her cuffs and her hair braided tight against her skull. She knows all the Collegium's gossip and deals it out like cards. She once asked Magus Hale, in front of a full lecture hall, which of the words in a spell was the fire.",
+      portrait: P({ alt: "Lark Ellery", age: "young", skin: "tan", hair: "braid", hairColor: "#2a1f18", eyeColor: "#4a6a4a", smile: true,
+        clothing: "#3a3150", trim: "#8fb7d9", outfit: "robe", background: ["#3d3558", "#14121a"] }),
+    },
+
     // ── Beyond the Hearthlands ──
     {
       id: "tyriel", name: "Tyriel", epithet: "Memory-keeper of Ithrel", group: "Beyond the Hearthlands",
@@ -259,6 +276,8 @@
     rhoan:              { gender: "male",   age: "young", accent: "en-GB", mood: "warm" },
     greaves:            { gender: "male",   age: "old",   accent: "en-GB", pitch: 0.95, rate: 0.92, mood: "warm" },
     wrenna:             { gender: "female", age: "old",   accent: "en-GB", pitch: 1.05, rate: 0.9, mood: "warm" },
+    archmagus:          { gender: "female", age: "old",   accent: "en-GB", pitch: 0.88, mood: "stern" },
+    lark:               { gender: "female", age: "young", accent: "en-GB", rate: 1.06, mood: "dry" },
     // Minor speakers (not listed on the Characters page)
     nurse:              { gender: "female", age: "adult", accent: "en-GB", mood: "shaken" },
     steward:            { gender: "male",   age: "adult", accent: "en-GB", mood: "hushed" },
@@ -276,7 +295,7 @@
   window.VOICE_NAMES = Object.assign(window.VOICE_NAMES || {},
     Object.fromEntries(CHARACTERS.map((c) => [c.id, c.name])),
     { "young-dawnwarden": "A young Dawnwarden", student: "A second-year student", queen: "The queen",
-      toman: "Sir Toman", queen: "Queen Isolde", rhoan: "Crown Prince Rhoan", greaves: "High Chancellor Greaves", wrenna: "Mother Wrenna", nurse: "Corvel's nursemaid", steward: "A palace steward", "market-mother": "A mother in the market", penn: "Lady Agathe Penn", collum: "Collum the trapper", "meg-ashby": "Meg Ashby" });
+      toman: "Sir Toman", archmagus: "Archmagus Ottilie Brandt", lark: "Lark Ellery", queen: "Queen Isolde", rhoan: "Crown Prince Rhoan", greaves: "High Chancellor Greaves", wrenna: "Mother Wrenna", nurse: "Corvel's nursemaid", steward: "A palace steward", "market-mother": "A mother in the market", penn: "Lady Agathe Penn", collum: "Collum the trapper", "meg-ashby": "Meg Ashby" });
 
   const GROUPS = ["Solmere", "The Collegium of Halvenreach", "Greywatch", "Beyond the Hearthlands", "The Gods"];
   const SERIES = "the-day-the-gods-went-silent";

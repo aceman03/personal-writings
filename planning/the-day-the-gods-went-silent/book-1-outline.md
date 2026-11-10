@@ -50,8 +50,14 @@ and Aldric feels Aurem for a heartbeat.
 - The council votes to tolerate the Hollow Choir preachers. Magus Quill notes the Chancellor's order for all mages went south before the bells stopped ringing.
 **Cliffhanger:** Without any blessing, Corvel reads it in Greaves's face: the Chancellor is lying. He knew.
 
-### 5. The Unlocked Door
-**POV:** Edda, Ilsabet · **Days 2–4, Halvenreach**
+### 5. The Unlocked Door ✅ *(written)*
+**POV:** Edda, Ilsabet · **Days 2–3, Halvenreach**
+*As written:* crowds on the Collegium bridges and a gouged price for mendings; Hale's sister Agnes, a healer
+who lost Lyssa; Archmagus Ottilie Brandt unlocks Ilsabet's door and trades her the Sealed Archive key and the
+Thornwall records; Ilsabet shows Hale the rubbing and he asks her to keep it quiet; Edda's Light of the
+Lantern-Keeper sets the practice room on fire, and Ilsabet fixes it with hair-thin conduits; Lark Ellery
+(the girl from the third row) is noticed; the relay rider arrives; the order says *the Silence* and its
+registry stamp is dated twenty-three days before it.
 - The Collegium is suddenly the most important building in the Hearthlands. The crown requisitions every mage.
 - Edda is rushed through training because her well is deep. Hale is shaken but steady.
 - The Archmagus unlocks Ilsabet's door for the first time in nineteen years and asks for help.
@@ -224,4 +230,5 @@ and Aldric feels Aurem for a heartbeat.
 | 4 | King Haldren, Queen Isolde, Crown Prince Rhoan, High Chancellor Orvald Greaves, Mother Wrenna, Lady Agathe Penn, Archprelate Maudrin, Magus Perrin Quill |
 | 6 | Lord-Commander Ressa Kell |
 | 7 | Brokk Ironmantle |
+| 5 | Archmagus Ottilie Brandt, Lark Ellery, Mother Agnes Hale (mentioned) |
 | 8 | Vessa |
