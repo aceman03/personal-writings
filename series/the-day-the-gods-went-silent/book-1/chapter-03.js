@@ -86,7 +86,7 @@ Collum didn't look away. He was a hard gray man, and he'd seen more of the Wildl
 
 {{mood: dread}}
 
-Nobody said anything. Aldric, standing in the shadows of the next wagon, watched the faces around Dagny's tailboard and saw it: not everyone thought Collum was wrong. Some of them were looking at the small shape in the blankets the way you'd look at a burning coal that had rolled out of the hearth onto the floor.
+Nobody said anything. Aldric, standing in the shadows of the next wagon, watched the faces around Dagny's tailboard and saw it: not everyone thought Collum was wrong. Some of them were eyeing the small shape in the blankets as they might eye a burning coal that had rolled out of the hearth onto the floor.
 
 {{sfx: quake}}The ground pushed up under their feet. Far behind them, something took one more step.
 
@@ -104,7 +104,7 @@ Nyx was sitting on the edge of the next wagon with her shawl pulled tight around
 
 Aldric stepped out of the shadow, and every head turned.
 
-He hadn't decided until that moment what he would say. He had thought about it for two hours of walking, at the back of the column, with the footsteps coming up through his boots. He had gone round and round it the way you go round a wound with your tongue, and he had gotten nowhere. Was the girl a miracle? He had felt Aurem's hand for one heartbeat in her light, and it had nearly put him on his knees in the frost. Was she a weapon? She had driven off a pack of skirls with a word and a drawing. Was she a danger? Collum might be right. The thing in the north had turned its head toward the gold. He had seen it.
+He hadn't decided until that moment what he would say. He had thought about it for two hours of walking, at the back of the column, with the footsteps coming up through his boots. He had turned it over and over like a coin in his fingers, and gotten nowhere. Was the girl a miracle? He had felt Aurem's hand for one heartbeat in her light, and it had nearly put him on his knees in the frost. Was she a weapon? She had driven off a pack of skirls with a word and a drawing. Was she a danger? Collum might be right. The thing in the north had turned its head toward the gold. He had seen it.
 
 He didn't know which. He suspected she was all three. But standing there in the dark, looking at the faces around the wagon, he realized he didn't have to decide what she was. He only had to decide what he was.
 
@@ -160,7 +160,7 @@ They walked on. Aldric found himself looking at her hands again, wrapped in the 
 
 {{nyx-thornbriar, shaken}}"I don't know."{{/}} She said it simply. {{nyx-thornbriar, shaken}}"Nobody who writes about bloodcasting writes much about afterward. I always assumed that was because the ones who could tell you weren't around to write it down."{{/}}
 
-{{sfx: quake}}The ground pushed up under them again, and Bramble tossed his head, and Pip's blankets shifted in the saddle. Aldric steadied them. The child didn't stir.
+{{sfx: quake}}Another footstep thudded up through the earth, and Bramble tossed his head, and Pip's blankets shifted in the saddle. Aldric steadied them. The child didn't stir.
 
 {{mood: calm}}
 
@@ -226,7 +226,7 @@ They didn't stop to bury Tull either. They couldn't. They wrapped him in his own
 
 It was Hask who worked out the giant, in the last cold hours before dawn.
 
-He'd been counting. Aldric only found out later that he'd been counting all night, at the front of the column, with his hand on the lead horse's bridle and his lips moving. Every time the ground pushed up under his boots, he started over at one and counted heartbeats until the next.
+He'd been counting. Aldric only found out later that he'd been counting all night, at the front of the column, with his hand on the lead horse's bridle and his lips moving. Every time a footstep shuddered up through his boots, he started over at one and counted heartbeats until the next.
 
 He dropped back down the column in the dark to find Aldric, and fell into step beside Bramble, and spoke without preamble, the way he always did.
 

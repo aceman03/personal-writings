@@ -17,7 +17,7 @@ Once a new chapter is started, every chapter before it is **locked**.
 
 | Book | Chapters locked | Locked on |
 |---|---|---|
-| The Day the Gods Went Silent, Book One | 1–5 | 1–4 on 2026-11-10 (style and vocabulary revisions at the author's request, then relocked); 5 on 2026-11-10 when Chapter 6 began |
+| The Day the Gods Went Silent, Book One | 1–5 (Chapter 6 locks when Chapter 7 begins) | 2026-11-10. Unlocked by the author for a cross-chapter revision pass (repeated similes and phrases), then relocked |
 
 Locked chapters change only when the author explicitly asks for a revision pass.
 
@@ -46,6 +46,9 @@ Habits to keep rare (a few deliberate uses per chapter at most):
 - **"very."** Find the stronger word.
 - **"quietly" / "softly" dialogue tags.** The mood markup already tells the narrator; let the line carry it.
 - **Lists of three, "the way you…" similes, and "It was a…" openers.** Vary sentence shape and rhythm.
+- **Watch for repeats across chapters, not just within one.** Before publishing, scan the whole book for
+  phrases and images reused between chapters ("every one of them", "had never once", tongue-in-a-gap and
+  hound similes). Keep a repeat only when it is a deliberate refrain or callback.
 
 ## 6. Vocabulary
 

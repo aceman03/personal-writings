@@ -48,7 +48,7 @@ Nothing came. His arm hung in the cold air, empty, ridiculous, a man waving at n
 
 Aldric turned north, because something in him had already guessed.
 
-From the chapel yard, the Thornwall filled the whole northern sky: a black line of stone nearly as tall as the keep tower, running away east and west until it vanished into the hills. Every night of Aldric's four years, a pale blue glow had run along its top like frost on a blade. He had stopped seeing it his first month, the way you stop seeing a mountain.
+From the chapel yard, the Thornwall filled the whole northern sky: a black line of stone nearly as tall as the keep tower, running away east and west until it vanished into the hills. Every night of Aldric's four years, a pale blue glow had run along its top like frost on a blade. He had stopped seeing it his first month, as a man stops seeing a mountain.
 
 {{sfx: glow-fade}}He saw it now, because it was going out.
 
@@ -86,7 +86,7 @@ They climbed the keep tower together, Aldric taking the narrow stairs two at a t
 
 The edge of the forest was moving.
 
-It took Aldric a moment to understand what he was seeing. There were shapes in the shadows between the first trees, pale and long and low to the ground, and there were a great many of them. They weren't coming out. They lingered just inside the dark, swaying slightly, the way grass sways, and every one of them was turned toward the wall.
+It took Aldric a moment to understand what he was seeing. There were shapes in the shadows between the first trees, pale and long and low to the ground, and there were a great many of them. They weren't coming out. They lingered just inside the dark, swaying slightly, the way grass sways, each one turned toward the wall.
 
 {{hask-morrow, hushed}}"Skirls,"{{/}} Hask said quietly.
 
@@ -160,7 +160,7 @@ Hask set the crate down and eyed the stone as if it had personally offended him.
 
 Aldric didn't move.
 
-He had spent eighteen years believing, without ever needing to think about it, that the power that mattered came from above. He had believed that mages were scavengers who scraped up the leavings, and that a hedge-witch's tricks were a poor and slightly shameful substitute for real power, which was given. He had never once in his life needed a mage.
+He had spent eighteen years believing, without ever needing to think about it, that the power that mattered came from above. He had believed that mages were scavengers who scraped up the leavings, and that a hedge-witch's tricks were a poor and slightly shameful substitute for real power, which was given. In his whole life he had not needed a mage.
 
 {{mood: calm}}
 
@@ -190,7 +190,7 @@ His hand had gone to the back of his neck. He hadn't noticed. He took it away.
 
 {{nyx-thornbriar}}"I know the bell went mad at dawn and the wall went out like a candle and half the town's been screaming at the sky since."{{/}} She sipped her tea. {{nyx-thornbriar, dry}}"And I know that whatever happened to you didn't happen to me. Nothing's different in here."{{/}} She tapped her own chest, just under the ribs. {{nyx-thornbriar, dry}}"Mine never came from up there to begin with."{{/}}
 
-Nyx had never had a teacher, so she'd never learned the polite Collegium words for what she felt. She had taught herself magic from three stolen books, a great deal of trial and error, and the burn on her chin, and she had been begging, buying and borrowing every other book on the subject she could find ever since. To her, the well was like a waterskin slung under her ribs. She could tell full from half from nearly empty by the weight of it, the way you can tell by the heft of a skin how many more days you can walk. She couldn't tell anything finer than that. This morning, it felt as full as it ever did.
+Nyx had never had a teacher, so she'd never learned the polite Collegium words for what she felt. She had taught herself magic from three stolen books, a great deal of trial and error, and the burn on her chin, and she had been begging, buying and borrowing every other book on the subject she could find ever since. To her, the well was like a waterskin slung under her ribs. She could tell full from half from nearly empty by the weight of it, as a traveler judges by the heft of a skin how many more days she can walk. She couldn't tell anything finer than that. This morning, it felt as full as it ever did.
 
 {{aldric-vane, stern}}"The skirls are massing in the treeline. All of them. They'll come over the wall at dusk. I'm taking the town south, down the Pale Road."{{/}}
 
@@ -292,13 +292,13 @@ Aldric rode at the rear, where the danger would come from. Every few minutes, wi
 
 The Thornwall shrank behind them, black against a white sky, until it was only a dark line along the hills. The sun crossed overhead and began to sink toward the west, and every hand's-width it fell seemed to happen faster than the last.
 
-Survival, Aldric was learning, was mostly small problems. An axle cracked on the third wagon and had to be bound with rope and prayer, though the prayer was out of habit. An old man named Wil collapsed on the long climb past Hollin's Ridge and had to be laid in a wagon on top of somebody's flour sacks. Two of the goats escaped and three soldiers wasted twenty minutes catching them, because nobody could stand to hear them bleating as they were left behind. A child lost a shoe. A mule went lame. Every problem was solvable, and every one of them cost minutes, and the minutes were running out.
+Survival, Aldric was learning, was mostly small problems. An axle cracked on the third wagon and had to be bound with rope and prayer, though the prayer was out of habit. An old man named Wil collapsed on the long climb past Hollin's Ridge and had to be laid in a wagon on top of somebody's flour sacks. Two of the goats escaped and three soldiers wasted twenty minutes catching them, because nobody could stand to hear them bleating as they were left behind. A child lost a shoe. A mule went lame. Every problem was solvable, and each one cost minutes, and the minutes were running out.
 
 {{mood: hushed}}
 
 It was Hask who said it out loud, in the middle of the afternoon, riding beside Aldric at the rear.
 
-{{hask-morrow, hushed}}"They hunt by sound,"{{/}} he said, as though continuing a conversation they'd been having for hours. {{hask-morrow, hushed}}"Every warden knows it. It's why they went quiet last night. They were listening for the hum. They'd been listening for it for a thousand years, I'd bet."{{/}} He looked along the column, at the wagons groaning, the wheels creaking, the goats complaining, the children crying, three hundred people talking in frightened voices all at once. {{hask-morrow, dread}}"So what do you suppose they'll be listening for tonight?"{{/}}
+{{hask-morrow, hushed}}"They hunt by sound,"{{/}} he said, as though continuing a conversation they'd been having for hours. {{hask-morrow, hushed}}"Every warden knows it. It's why they went quiet last night. They were listening for the hum. Since before my grandfather's grandfather, I'd bet."{{/}} He looked along the column, at the wagons groaning, the wheels creaking, the goats complaining, the children crying, three hundred people talking in frightened voices all at once. {{hask-morrow, dread}}"So what do you suppose they'll be listening for tonight?"{{/}}
 
 {{mood: stern}}
 
@@ -430,7 +430,7 @@ The line was breaking. Aldric could feel it the way you feel a rope fraying. A s
 
 And then, clear as a struck bell, in a lull between one shriek and the next, a child's voice said a word.
 
-She didn't raise her voice. She said it the way you'd say a word to yourself while reading. But Aldric heard it over everything, as if it had been said directly into his ear, and so did every skirl in the gap. Every pale head swung toward it at once.
+She didn't raise her voice. She spoke it as calmly as someone murmuring a word over a book. But Aldric heard it over everything, as if it had been said directly into his ear, and so did every skirl in the gap. Every pale head swung toward it at once.
 
 Pip was standing in the gap.
 

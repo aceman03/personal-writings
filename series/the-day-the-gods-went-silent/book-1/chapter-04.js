@@ -172,7 +172,7 @@ Corvel frowned. {{corvel}}"I don't understand."{{/}}
 
 {{oren-vasse, warm}}"When he said it. What did he *do*? With his hands, with his face. Think."{{/}}
 
-Corvel thought. It was strange. He had never once in his life needed to think about it, any more than he'd needed to think about breathing. He had always simply known. But when he closed his eyes and remembered the guard's face, two mornings ago, in the corridor outside the Reading Hall, saying *slept like a stone, Your Majesty*...
+Corvel thought. It was strange. He had never needed to think about it, any more than he'd needed to think about breathing. He had always simply known. But when he closed his eyes and remembered the guard's face, two mornings ago, in the corridor outside the Reading Hall, saying *slept like a stone, Your Majesty*...
 
 {{corvel, hushed}}"He smiled,"{{/}} Corvel said slowly. {{corvel, hushed}}"Before he said it. Just before. And he touched his collar. And he said *like a stone* too quickly, as if he'd practiced it."{{/}} He opened his eyes. {{corvel, hushed}}"He always touches his collar. When he lies about cards, too. He lies about cards all the time."{{/}}
 
@@ -258,9 +258,9 @@ It was a cold room despite the fire, paneled in dark wood, with a long table dow
 
 Corvel had not slept much. He had lain awake thinking about the little boy's white forehead.
 
-The councilors filed in one by one, bowed to the empty chair and then, after a moment's visible hesitation, to him. Corvel watched every one of them.
+The councilors filed in one by one, bowed to the empty chair and then, after a moment's visible hesitation, to him. Corvel watched them all.
 
-He had known most of them all his life, and he had tasted every one of them lie at some time or another, over small things and large ones. There was Lady Agathe Penn, Mistress of the Coin, who lied about money the way other people breathed. There was Archprelate Maudrin of the temples, enormous and tired, who lied mostly to himself. There was Magus Perrin Quill, the Collegium's envoy to the court, who almost never lied, because he almost never said anything. There were a handful of lords and two generals left behind by the Lord Marshal.
+He had known most of them all his life, and he had tasted each of them lie at some time or another, over small things and large ones. There was Lady Agathe Penn, Mistress of the Coin, who lied about money the way other people breathed. There was Archprelate Maudrin of the temples, enormous and tired, who lied mostly to himself. There was Magus Perrin Quill, the Collegium's envoy to the court, who almost never lied, because he almost never said anything. There were a handful of lords and two generals left behind by the Lord Marshal.
 
 And there was the High Chancellor.
 

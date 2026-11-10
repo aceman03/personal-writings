@@ -8,7 +8,7 @@ registerChapter("the-day-the-gods-went-silent", 1, {
 
 The footsteps stopped a little after noon on the second day.
 
-Hask noticed first, because Hask had been counting all morning. He was walking at the head of the column with his lips moving, the way he'd walked all night, and then his lips went still and his head came up like a hound's. He counted to a hundred and ten. He counted to two hundred. He raised his fist, and the column ground to a halt on the open slope above the Harrow valley, three hundred people standing in the thin winter sunshine waiting for the ground to push up under their boots.
+Hask noticed first, because Hask had been counting all morning. He was walking at the head of the column with his lips moving, the way he'd walked all night, and then his lips went still and his head came up like a deer's at a snapped twig. He counted to a hundred and ten. He counted to two hundred. He raised his fist, and the column ground to a halt on the open slope above the Harrow valley, three hundred people standing in the thin winter sunshine waiting for the ground to push up under their boots.
 
 It didn't.
 
@@ -88,7 +88,7 @@ They descended into the Harrow valley in the gray morning of the third day, and 
 
 Fort Harrow had been built four hundred years ago by a king who wanted to own the only bridge over the river Grey for forty miles. He had built the fort *on* the bridge. It was a long, squat, ugly fortress of gray stone that sat astride the river on seven great arches, with a gatehouse at either end and a tower in the middle where the arches met. The Grey ran fast and cold beneath it, swollen with snowmelt from the foothills, too deep to ford and too cold to swim. Whoever held Fort Harrow held the road south, and for four hundred years, that had been enough.
 
-{{sfx: crowd}}The north bank in front of the fort was a camp. There were tents and wagons and lean-tos of pine branches, cookfires and latrine trenches and penned animals, spreading back from the gatehouse along the riverbank for half a mile. People huddled in clumps between the tents, gray-faced and staring, and turned to watch the Greywatch column come down the road toward them with no curiosity at all, only a kind of weary recognition.
+{{sfx: crowd}}The north bank in front of the fort was a camp. There were tents and wagons and lean-tos of pine branches, cookfires and latrine trenches and penned animals, spreading back from the gatehouse along the riverbank for half a mile. People huddled in clumps between the tents, hollow-eyed and staring, and turned to watch the Greywatch column come down the road toward them with no curiosity at all, only a kind of weary recognition.
 
 {{hask-morrow, hushed}}"Coldwater,"{{/}} Hask said, beside Aldric, reading the wagon markings. {{hask-morrow, hushed}}"Rook's Ford. Thane's Cross. Oldmere."{{/}} He named the Thornwall settlements one after another, the little towns strung along the wall for fifty miles east and west of Greywatch. {{hask-morrow, dread}}"Every one of them, sir. Everyone who got out."{{/}}
 
@@ -150,7 +150,7 @@ Aldric went still. {{aldric-vane}}"My soldiers."{{/}}
 
 {{mood: grief}}
 
-He regarded her, the gray-eyed woman who had held this bridge for nine days and had ballads written about her, and he understood that she was terrified. He knew it the way you know your own reflection. She had spent twenty years knowing that her line would hold because her god held it. Now her god was gone, and she was standing in her tower with her hands locked behind her back, holding the only line she still knew how to hold.
+He regarded her, the gray-eyed woman who had held this bridge for nine days and had ballads written about her, and he understood that she was terrified. He recognized it as surely as his own reflection. She had spent twenty years knowing that her line would hold because her god held it. Now her god was gone, and she was standing in her tower with her hands locked behind her back, holding the only line she still knew how to hold.
 
 He knew exactly how that felt, and he knew exactly how badly it would end.
 
@@ -246,7 +246,7 @@ Aldric found Magistrate Pell in the guardroom of the north gatehouse, eating a c
 
 He hadn't come to fight. He had thought about it, walking across the bridge with his jaw clenched. He was a big man with a sword and a reputation. Toman and Bram would have stood with him, and perhaps Hask. He could have had Nyx out of that cell by force in five minutes. Then Kell would have had to hang him, or be seen to be unable to, and either way the fort would have torn itself in half, three thousand frightened people with a monster somewhere to the north.
 
-The Shield of Dawn had never once made him choose between force and sense. He had always simply had the force. He was learning, now, about the other thing.
+For eighteen years, the Shield of Dawn had spared him any choice between force and sense. He had always simply had the force. He was learning, now, about the other thing.
 
 {{aldric-vane, stern}}"Magistrate. May I see the order?"{{/}}
 
