@@ -304,3 +304,6 @@ body.has-narrator { padding-bottom: 96px; }
 .nar-panel { max-height: 70vh; overflow: auto; }
 .nar-sound { width: 28px; height: 28px; }
 .nar-sound.off { opacity: .45; }
+.world-map .river.small { stroke-width: 2; }
+.world-map .road { fill: none; stroke: #8a6a3c; stroke-width: 2; stroke-dasharray: 6 4; }
+.marker .landmark-dot { fill: #e9dfc6; stroke: #6b5a3c; stroke-width: 2; }

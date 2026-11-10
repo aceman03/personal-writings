@@ -22,6 +22,18 @@
       region: "The northern edge of the known world",
       text: "A hundred and forty miles of black stone carved with circles too old for any living mage to read, with Thalen's name-glyph at the heart of every mile. It held back the Wildlands for a thousand years. Its glow went out, mile by mile, east to west, on the morning of the Silence.",
       chapters: ["1.1"] },
+    { id: "greywatch", name: "Greywatch", kind: "city", x: 395, y: 178,
+      region: "At the foot of the Thornwall",
+      text: "A frontier fort-town a quarter mile behind the Thornwall, at the northern end of the Pale Road: a stone keep, a timber palisade, a chapel to Aurem and about three hundred people who have all been somewhere better. Built, as the saying goes, to be left.",
+      chapters: ["1.2"] },
+    { id: "lantern-house", name: "The Lantern House", kind: "landmark", x: 372, y: 238,
+      region: "The Pale Road",
+      text: "An abandoned coaching inn half a day's walk south of Greywatch on the Pale Road, four broken stone walls around a courtyard, ringed by six old wardstones.",
+      chapters: ["1.2"] },
+    { id: "fort-harrow", name: "Fort Harrow", kind: "city", x: 392, y: 296,
+      region: "The Pale Road",
+      text: "A stone fort built on the old bridge over the river Grey, a day and a half south of Greywatch.",
+      chapters: ["1.2"] },
     { id: "wildlands", name: "The Wildlands", kind: "region", x: 470, y: 60,
       text: "Whatever lies beyond the Thornwall. No maps survive of it, only stories.",
       chapters: ["1.1"] },
@@ -140,6 +152,8 @@
             ? `<circle r="7" class="city-dot"/><circle r="12" class="city-ring"/>`
             : l.kind === "scar"
             ? `<path d="M-7,-7 L7,7 M7,-7 L-7,7" class="scar-x"/>`
+            : l.kind === "landmark"
+            ? `<rect x="-5" y="-5" width="10" height="10" class="landmark-dot"/>`
             : l.kind === "wall"
             ? `<rect x="-6" y="-6" width="12" height="12" class="wall-dot" transform="rotate(45)"/>`
             : `<circle r="5" class="region-dot"/>`;
@@ -177,6 +191,8 @@
       <path d="M90,560 L120,590 L100,610 L150,630 L130,650 M180,600 L160,630" class="shatter"/>
       <path d="M640,250 C600,300 560,330 540,380 C525,420 535,460 520,500 C505,545 560,580 590,620 C610,650 600,690 610,720" class="river"/>
       <path d="M655,455 C620,470 590,480 560,470" class="river rust"/>
+      <path d="M300,300 C340,290 370,300 392,296 C420,291 450,300 480,318" class="river small"/>
+      <path d="M395,148 L395,178 C388,200 375,220 372,238 C370,260 385,280 392,296 C400,320 440,340 470,360" class="road"/>
       <path d="M300,142 C400,118 520,148 620,124 C720,104 820,138 960,118" class="thornwall-base"/>
       <path d="M300,142 C400,118 520,148 620,124 C720,104 820,138 960,118" class="thornwall-glow" filter="url(#glow)"/>
       <text x="400" y="440" class="region-label">THE HEARTHLANDS</text>

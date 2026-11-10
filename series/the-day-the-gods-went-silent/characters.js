@@ -87,12 +87,46 @@
         clothing: "#4a3a2e", outfit: "furs", emblem: "redhand", background: ["#5a2420", "#140a09"], aura: "#d9452f", scar: true }),
     },
     {
-      id: "hask-morrow", name: "Sergeant Hask Morrow", epithet: "Warden of the Thornwall", group: "Beyond the Hearthlands",
+      id: "hask-morrow", name: "Sergeant Hask Morrow", epithet: "Warden of the Thornwall", group: "Greywatch",
       facts: { Race: "Human", Home: "The Thornwall", Power: "None. A soldier" },
       firstAppears: "1.1",
       description: "A sergeant who has walked the top of the Thornwall for twenty-two years, keeping watch over the Wildlands on the far side. He knows every sound the dark makes at night, and he knows the faint blue hum of the wall's circles so well that he no longer hears it.",
       portrait: P({ alt: "Sergeant Hask Morrow", skin: "brown", hair: "cropped", hairColor: "#2a221c", beard: "stubble", beardColor: "#2a221c", stern: true,
         clothing: "#2b3138", trim: "#7fd0ff", outfit: "cloak", headwear: "helm", emblem: "glyph", background: ["#22323d", "#0b0f13"] }),
+    },
+
+    // ── Greywatch ──
+    {
+      id: "aldric-vane", name: "Sir Aldric Vane", epithet: "Knight-Captain of Greywatch", group: "Greywatch",
+      facts: { Race: "Human", Home: "Greywatch, at the foot of the Thornwall", Power: "Blessed by Aurem the Sunfather. The Shield of Dawn, ranked A-class" },
+      firstAppears: "1.2",
+      description: "A knight of the Order of the Dawn who has commanded the garrison at Greywatch for four years. For eighteen years, Aurem has answered him every sunrise with the Shield of Dawn, a wall of gold light that has never once failed him. He is a blacksmith's son, disciplined, proud, and not fond of mages. He once tried to have the town's hedge-witch driven out of the district.",
+      portrait: P({ alt: "Sir Aldric Vane", skin: "light", hair: "short", hairColor: "#5a4632", beard: "stubble", beardColor: "#5a4632", stern: true, scar: true,
+        clothing: "#e9e1cf", trim: "#d9a441", outfit: "armor", emblem: "sun", background: ["#5a4a2a", "#14100a"] }),
+    },
+    {
+      id: "nyx-thornbriar", name: "Nyx Thornbriar", epithet: "Hedge-witch of Greywatch", group: "Greywatch",
+      facts: { Race: "Half-elf", Home: "A cottage outside the Greywatch palisade", Power: "Magic. Self-taught" },
+      firstAppears: "1.2",
+      description: "A half-elven hedge-witch who taught herself magic from three stolen books, a great deal of trial and error, and the burn on her chin. Greywatch has never wanted her inside its walls, and she has long since stopped caring. Sharp-tongued, stubborn and very good at looking people straight in the eye, she has never had a teacher and doesn't know the proper words for anything. She knows how to make it work anyway.",
+      portrait: P({ alt: "Nyx Thornbriar", build: "elf", skin: "light", hair: "short", hairColor: "#141216", eyeColor: "#3f8a4f", scar: true,
+        clothing: "#5c5866", trim: "#9a93a8", outfit: "cloak", background: ["#2f3a36", "#0d110f"], aura: "#ff9a4f" }),
+    },
+    {
+      id: "pip", name: "Pip", epithet: "A foundling of Greywatch", group: "Greywatch",
+      facts: { Race: "Human", Home: "The Last Lamp inn, Greywatch", Power: "Unknown" },
+      firstAppears: "1.2",
+      description: "A small, quiet girl of eight or nine who arrived in Greywatch two winters ago on a trapper's sled, half-frozen, with no family and no memory of where she came from. Dagny Holt took her in at the Last Lamp, where she helps in the kitchen. She barely speaks, and the town has decided she's simple. She likes to draw in the dirt.",
+      portrait: P({ alt: "Pip", build: "child", skin: "fair", hair: "long", hairColor: "#6b4f36", eyeColor: "#9aa4ad",
+        clothing: "#6b5440", outfit: "tunic", background: ["#2c3550", "#0d0f17"] }),
+    },
+    {
+      id: "dagny-holt", name: "Dagny Holt", epithet: "Keeper of the Last Lamp", group: "Greywatch",
+      facts: { Race: "Human", Home: "The Last Lamp inn, Greywatch", Power: "None" },
+      firstAppears: "1.2",
+      description: "The broad, red-faced, flour-dusted woman who runs the Last Lamp, Greywatch's only inn. She took in an orphaned girl nobody else wanted, and she runs her kitchen the way a sergeant runs a barracks.",
+      portrait: P({ alt: "Dagny Holt", skin: "fair", blush: true, hair: "bun", hairColor: "#8a4b2a", smile: true,
+        clothing: "#7a5a3a", outfit: "apron", background: ["#5a3a24", "#140d08"] }),
     },
 
     // ── The gods ──
@@ -167,7 +201,13 @@
     "hagra-stonebrow": { gender: "female", age: "adult", accent: "en-GB", pitch: 0.85, mood: "stern" },
     urzag:           { gender: "male",   age: "adult", accent: "en-US", pitch: 0.7, rate: 0.9, mood: "stern" },
     "hask-morrow":   { gender: "male",   age: "adult", accent: "en-GB", pitch: 0.9, mood: "dry" },
-    // Minor, unnamed speakers (not listed on the Characters page)
+    "aldric-vane":   { gender: "male",   age: "adult", accent: "en-GB", pitch: 0.9, mood: "stern" },
+    "nyx-thornbriar":{ gender: "female", age: "adult", accent: "en-GB", pitch: 1.0, mood: "dry" },
+    pip:             { gender: "female", age: "child", accent: "en-GB", rate: 0.92, mood: "calm" },
+    "dagny-holt":    { gender: "female", age: "adult", accent: "en-GB", pitch: 0.95, rate: 1.08, mood: "warm" },
+    // Minor speakers (not listed on the Characters page)
+    toman:              { gender: "male",   age: "young", accent: "en-GB", mood: "shaken" },
+    collum:             { gender: "male",   age: "old",   accent: "en-US", pitch: 0.85, mood: "stern" },
     "young-dawnwarden": { gender: "male",   age: "young", accent: "en-GB", mood: "shaken" },
     "student":          { gender: "female", age: "young", accent: "en-US", mood: "calm" },
     "queen":            { gender: "female", age: "adult", accent: "en-GB", mood: "stern" },
@@ -176,9 +216,10 @@
   window.VOICE_PROFILES = Object.assign(window.VOICE_PROFILES || {}, VOICES);
   window.VOICE_NAMES = Object.assign(window.VOICE_NAMES || {},
     Object.fromEntries(CHARACTERS.map((c) => [c.id, c.name])),
-    { "young-dawnwarden": "A young Dawnwarden", student: "A second-year student", queen: "The queen" });
+    { "young-dawnwarden": "A young Dawnwarden", student: "A second-year student", queen: "The queen",
+      toman: "Sir Toman", collum: "Collum the trapper" });
 
-  const GROUPS = ["Solmere", "The Collegium of Halvenreach", "Beyond the Hearthlands", "The Gods"];
+  const GROUPS = ["Solmere", "The Collegium of Halvenreach", "Greywatch", "Beyond the Hearthlands", "The Gods"];
   const SERIES = "the-day-the-gods-went-silent";
   const art = (c) => (c.image ? `<img src="${c.image}" alt="${c.name}" class="portrait">` : c.portrait());
   const appears = (ref) => { const [b, ch] = ref.split("."); return { b, ch, text: `Book ${b}, Chapter ${ch}` }; };

@@ -171,6 +171,30 @@ window.Soundscape = (function () {
     hammer(bed, every = 4200, level = 0.06) {
       bed.every(every, () => { if (Math.random() < 0.7) clang(now() + rand(0, 0.5), level, rand(-0.5, 0.5), bed.out); });
     },
+    crows(bed, every = 6000, level = 0.05) {
+      bed.every(every, () => {
+        if (Math.random() < 0.5) return;
+        const t = now() + 0.1, n = Math.floor(rand(1, 4)), p = pan(rand(-0.8, 0.8)); p.connect(bed.out); p.connect(reverbSend);
+        for (let i = 0; i < n; i++) {
+          const at = t + i * rand(0.35, 0.5), o = osc("sawtooth", rand(520, 640)), bp = filter("bandpass", 1300, 3), g = gain(0.0001);
+          o.frequency.setValueAtTime(o.frequency.value, at); o.frequency.exponentialRampToValueAtTime(o.frequency.value * 0.8, at + 0.25);
+          env(g, at, 0.02, level, 0.22); o.connect(bp).connect(g).connect(p); o.start(at); o.stop(at + 0.3);
+        }
+      });
+    },
+    hooves(bed, level = 0.05) {
+      // Wagons and hooves on a hard road: soft irregular thuds and creaks.
+      bed.every(260, () => {
+        if (Math.random() < 0.45) return;
+        burst(now() + rand(0, 0.2), { type: "brown", f1: "lowpass", freq: rand(250, 450), attack: 0.004, peak: level * rand(0.5, 1.2), release: 0.08, p: rand(-0.6, 0.6), dest: bed.out });
+      });
+      bed.every(3200, () => {
+        if (Math.random() < 0.5) return;
+        const t = now() + 0.1, o = osc("sawtooth", rand(140, 220)), bp = filter("bandpass", 600, 6), g = gain(0.0001);
+        o.frequency.linearRampToValueAtTime(o.frequency.value * 1.3, t + 0.4);
+        env(g, t, 0.1, level * 0.35, 0.35); o.connect(bp).connect(g).connect(bed.out); o.start(t); o.stop(t + 0.6);
+      });
+    },
     rumbleBed(bed, level = 0.25) {
       const s = src(noise("brown", 8)), f = filter("lowpass", 90), g = gain(level);
       s.connect(f).connect(g).connect(bed.out); s.start(); bed.sources.push(s);
@@ -195,6 +219,12 @@ window.Soundscape = (function () {
     "wall-silent": (b) => { L.wind(b, { level: 0.13, cutoff: 380, gusty: 0.3 }); L.pad(b, [61.7, 65.4], 0.03, 0.4); },
     hollow: (b) => { L.wind(b, { level: 0.1, cutoff: 420, gusty: 0.4 }); },
     abyss: (b) => { L.rumbleBed(b, 0.22); L.pad(b, [36.7, 38.9, 55], 0.09, 0.5); },
+    "frontier-dawn": (b) => { L.wind(b, { level: 0.17, cutoff: 520, gusty: 0.7 }); L.crows(b); },
+    evacuation: (b) => { L.wind(b, { level: 0.1, cutoff: 600 }); L.hooves(b, 0.05); L.crows(b, 9000, 0.03); },
+    "birch-wood": (b) => { L.wind(b, { level: 0.08, cutoff: 1400, gusty: 0.8 }); L.crows(b, 11000, 0.025); },
+    "road-dusk": (b) => { L.wind(b, { level: 0.14, cutoff: 480, gusty: 0.6 }); L.hooves(b, 0.035); },
+    "lantern-house": (b) => { L.wind(b, { level: 0.12, cutoff: 420, gusty: 0.5 }); L.pad(b, [110, 164.8], 0.025, 0.2); },
+    "night-watch": (b) => { L.wind(b, { level: 0.1, cutoff: 360, gusty: 0.3 }); L.pad(b, [55, 58.3], 0.05, 0.4); },
     silence: () => {},
   };
 
@@ -240,10 +270,10 @@ window.Soundscape = (function () {
       });
   }
 
-  function burst(t, { type = "white", f1 = "bandpass", freq = 3000, q = 1, attack = 0.005, peak = 0.2, release = 0.05, p = 0, wet = 0 }) {
+  function burst(t, { type = "white", f1 = "bandpass", freq = 3000, q = 1, attack = 0.005, peak = 0.2, release = 0.05, p = 0, wet = 0, dest = null }) {
     const s = src(noise(type, 2), false), f = filter(f1, freq, q), g = gain(0.0001), pn = pan(p);
     env(g, t, attack, peak, release);
-    s.connect(f).connect(g).connect(pn).connect(master);
+    s.connect(f).connect(g).connect(pn).connect(dest || master);
     if (wet) { const w = gain(wet); pn.connect(w).connect(reverbSend); }
     s.start(t, rand(0, 1), attack + release + 0.1);
   }
@@ -323,6 +353,65 @@ window.Soundscape = (function () {
       og.gain.setValueAtTime(0.0001, t); og.gain.exponentialRampToValueAtTime(0.15, t + 3); og.gain.exponentialRampToValueAtTime(0.0001, t + 9);
       s.connect(f).connect(g).connect(master); o.connect(og).connect(master);
       s.start(t); o.start(t); s.stop(t + 9.2); o.stop(t + 9.2);
+    },
+    horn() {
+      const t = now() + 0.05;
+      [0, 1.6].forEach((d) => {
+        const o = osc("sawtooth", 196), o2 = osc("sawtooth", 196.8), lp = filter("lowpass", 900, 1.5), g = gain(0.0001), at = t + d;
+        o.frequency.setValueAtTime(175, at); o.frequency.linearRampToValueAtTime(196, at + 0.25);
+        g.gain.setValueAtTime(0.0001, at); g.gain.exponentialRampToValueAtTime(0.07, at + 0.2);
+        g.gain.setValueAtTime(0.07, at + 1.1); g.gain.exponentialRampToValueAtTime(0.0001, at + 1.5);
+        o.connect(lp); o2.connect(lp); lp.connect(g).connect(master); g.connect(reverbSend);
+        o.start(at); o2.start(at); o.stop(at + 1.6); o2.stop(at + 1.6);
+      });
+    },
+    chitter() {
+      // Dry, rapid clicking from several directions, like a nail drawn along a comb.
+      for (let k = 0; k < 4; k++) {
+        let t = now() + rand(0, 1.2); const p = rand(-0.9, 0.9), n = Math.floor(rand(10, 22));
+        for (let i = 0; i < n; i++) { burst(t, { freq: rand(2200, 3600), q: 3, attack: 0.001, peak: 1.2, release: 0.018, p, wet: 0.3 }); t += rand(0.018, 0.035); }
+      }
+    },
+    fireball() {
+      const t = now();
+      burst(t, { type: "pink", f1: "bandpass", freq: 900, q: 0.8, attack: 0.25, peak: 0.35, release: 0.3 });
+      const s = src(noise("brown", 2), false), f = filter("lowpass", 160), g = gain(0.0001);
+      env(g, t + 0.45, 0.01, 0.9, 0.9); s.connect(f).connect(g).connect(master); g.connect(reverbSend); s.start(t + 0.45, 0, 1.2);
+      SFX.crackleBurst(t + 0.5);
+    },
+    crackleBurst(t0) {
+      for (let i = 0; i < 18; i++) burst((t0 || now()) + rand(0, 1.2), { freq: rand(1800, 4500), q: 1, attack: 0.002, peak: rand(0.05, 0.15), release: 0.02, p: rand(-0.5, 0.5) });
+    },
+    clash() {
+      const t = now() + 0.02;
+      clang(t, 0.09, rand(-0.3, 0.3));
+      burst(t, { freq: 4000, q: 0.7, attack: 0.002, peak: 0.25, release: 0.08 });
+      clang(t + rand(0.35, 0.6), 0.06, rand(-0.3, 0.3));
+    },
+    heartbeat() {
+      let t = now() + 0.05;
+      for (let i = 0; i < 5; i++) {
+        [0, 0.22].forEach((d, k) => {
+          const o = osc("sine", 55), g = gain(0.0001);
+          o.frequency.setValueAtTime(70, t + d); o.frequency.exponentialRampToValueAtTime(40, t + d + 0.12);
+          env(g, t + d, 0.01, k ? 0.2 : 0.3, 0.18); o.connect(g).connect(master); o.start(t + d); o.stop(t + d + 0.3);
+        });
+        t += 0.75 + i * 0.12; // stumbling, slowing
+      }
+    },
+    "gold-circle"() {
+      SFX["light-swell"]();
+      const t = now();
+      [880, 1108.7, 1318.5, 1760].forEach((fr, i) => {
+        const o = osc("sine", fr), g = gain(0.0001), at = t + 0.3 + i * 0.25;
+        env(g, at, 0.01, 0.04, 3.5); o.connect(g).connect(master); g.connect(reverbSend); o.start(at); o.stop(at + 3.6);
+      });
+    },
+    quake() {
+      const t = now(), s = src(noise("brown", 4), false), f = filter("lowpass", 70), g = gain(0.0001), o = osc("sine", 32), og = gain(0.0001);
+      env(g, t, 0.02, 0.7, 2.2); env(og, t, 0.02, 0.22, 2.5);
+      s.connect(f).connect(g).connect(master); o.connect(og).connect(master); g.connect(reverbSend);
+      s.start(t, 0, 2.6); o.start(t); o.stop(t + 2.8);
     },
     laugh() {
       // A low, breathy, far-off "heh... heh... heh" drenched in reverb.

@@ -62,10 +62,11 @@ Readers never see these tags. They only steer the voice-over.
 ```
 
 Ambience beds: dawn-city, lore, dread, temple, quiet-room, lecture-hall, tower-night,
-forest-night, forge, steppe-fire, wall-night, wall-silent, hollow, abyss, silence.
+forest-night, forge, steppe-fire, wall-night, wall-silent, hollow, abyss, frontier-dawn,
+evacuation, birch-wood, road-dusk, lantern-house, night-watch, silence.
 
 Sound effects: light-swell, spell-hum, chalk, pen, door-lock, candle-out, ripple, bell,
-bells, glow-fade, rumble, laugh.
+bells, glow-fade, rumble, laugh, horn, chitter, fireball, clash, heartbeat, gold-circle, quake.
 
 ## Files
 
