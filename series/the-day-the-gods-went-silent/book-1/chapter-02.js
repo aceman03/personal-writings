@@ -40,7 +40,7 @@ Nothing came. His arm hung in the cold air, empty, ridiculous, a man waving at n
 
 {{mood: urgent}}
 
-{{sfx: bell}}Inside the chapel, the bell began to ring. It wasn't the slow dawn peal. Brother Fen was ringing it fast and wrong, the way you'd ring for fire.
+{{sfx: bell}}Inside the chapel, the bell began to ring. Not the slow dawn peal: Brother Fen was ringing it fast and wrong, the way you'd ring for fire.
 
 {{mood: dread}}
 
@@ -136,7 +136,7 @@ A trapper Aldric knew slightly, a hard gray man named Collum, stood in front of 
 
 Aldric had been called worse by better men. {{aldric-vane, dry}}"Then stay with them,"{{/}} he said. {{aldric-vane, dry}}"The skirls will be along at dusk. You can show them what you've got."{{/}}
 
-Collum looked at him for a long moment. Then he looked north, at the wall. Then he went inside and started packing.
+Collum held his eye. Then he looked north, at the wall. Then he went inside and started packing.
 
 It went like that all morning: argument, fear, and the slow, grinding work of making three hundred frightened people do one sensible thing. Soldiers hitched wagons. Women loaded sacks of barley and dried fish. Old men who had sworn they'd die in Greywatch discovered, faced with the possibility, that they'd rather not. Through all of it, the bell kept ringing in Aldric's head, though the chapel had gone quiet.
 
@@ -158,7 +158,7 @@ Hask set the crate down and looked at the stone as if it had personally offended
 
 {{mood: hushed}}
 
-Aldric stood very still.
+Aldric didn't move.
 
 He had spent eighteen years believing, without ever needing to think about it, that the power that mattered came from above. He had believed that mages were scavengers who scraped up the leavings, and that a hedge-witch's tricks were a poor and slightly shameful substitute for real power, which was given. He had never once in his life needed a mage.
 
@@ -180,7 +180,7 @@ Aldric had been part of that. Last winter, a child had died of a fever after her
 
 She was sitting on her doorstep when he came up the path, wrapped in a gray shawl, holding a steaming cup between both hands, and she watched him come the whole way without getting up.
 
-She was half-elven, which showed mostly in the ears and the eyes. Her ears were a little too long and came to a little too much of a point, and her eyes were green and very steady. They were the eyes of someone who had spent her whole life being looked at sideways and had decided long ago to look straight back. Her hair was black and badly cut, and there was ink on her fingers and a small burn on her chin.
+She was half-elven, which showed mostly in the ears and the eyes. Her ears were a little too long and came to a little too much of a point, and her eyes were green and steady. They were the eyes of someone who had spent her whole life being looked at sideways and had decided long ago to look straight back. Her hair was black and badly cut, and there was ink on her fingers and a small burn on her chin.
 
 {{nyx-thornbriar, dry}}"Morning, Knight-Captain,"{{/}} she said. {{nyx-thornbriar, dry}}"Lose something?"{{/}}
 
@@ -198,11 +198,11 @@ Nyx had never had a teacher, so she'd never learned the polite Collegium words f
 
 {{aldric-vane}}"We won't reach Fort Harrow before dark. We might reach the Lantern House. It has a ring of wardstones."{{/}}
 
-{{nyx-thornbriar, dry}}"Had,"{{/}} Nyx said. {{nyx-thornbriar, dry}}"Those stones haven't been charged in ten years. They'd struggle to keep out a determined badger."{{/}}
+{{nyx-thornbriar, dry}}"Had,"{{/}} Nyx said. {{nyx-thornbriar, dry}}"Ten years uncharged. They'd struggle with a determined badger."{{/}}
 
 {{aldric-vane}}"Could you charge them?"{{/}}
 
-She looked at him over the rim of her cup for a long time.
+She studied him over the rim of her cup and let the silence do some work.
 
 {{nyx-thornbriar, stern}}"Say it,"{{/}} she said.
 
@@ -250,7 +250,7 @@ She was eight or nine, small and thin, with straight brown hair and a coat two s
 
 Nyx glanced at the drawing on her way past, and stopped.
 
-It was a circle. Not a child's circle, but a real one, ring inside ring inside ring, with glyphs set at even points around each. Nyx knew enough Vaelic to read most inherited spells, and she could recognize the shapes in the outer rings. There was a Command, and something that might have been a Shape, and the Seal, closed and steady at the rim. But the glyph at the center, where the Source should sit, was nothing she had ever seen. It wasn't in any of her books. It wasn't like any glyph she had ever heard of. And every line in the circle curved. There wasn't a single angle anywhere.
+It was a circle. Not a child's circle, but a real one, ring inside ring inside ring, with glyphs set at even points around each. Nyx knew enough Vaelic to read most inherited spells, and she could recognize the shapes in the outer rings. There was a Command, and something that might have been a Shape, and the Seal, closed and steady at the rim. But the glyph at the center, where the Source should sit, was nothing she had ever seen. It appeared in none of her books, and it looked like no glyph she had ever heard described. And every line in the circle curved. There wasn't a single angle anywhere.
 
 {{nyx-thornbriar, hushed}}"Where did you learn that?"{{/}} Nyx said.
 
@@ -264,7 +264,7 @@ Something cold walked down the back of Nyx's neck.
 
 {{nyx-thornbriar, hushed}}"What what says?"{{/}}
 
-{{pip, calm}}"The voice. It started this morning, when the bells went."{{/}} Pip finally looked up. Her eyes were very pale gray, and completely untroubled. {{pip, calm}}"Everyone else's went quiet. Mine started talking."{{/}}
+{{pip, calm}}"The voice. It started this morning, when the bells went."{{/}} Pip finally looked up. Her eyes were a pale, rain-colored gray, and completely untroubled. {{pip, calm}}"Everyone else's went quiet. Mine started talking."{{/}}
 
 {{nyx-thornbriar, whisper}}"And what does it say?"{{/}}
 
@@ -278,7 +278,7 @@ Dagny Holt was a broad red-faced woman with flour still on her sleeves. She scoo
 
 {{mood: dread}}
 
-Nyx stood alone for a moment beside the circle in the mud. Then, very carefully, she put her boot on it and scuffed it out, every ring and every line, until it was only dirt again. She didn't know why she did it. She only knew she didn't want to leave it there for anything to find.
+Nyx stood alone for a moment beside the circle in the mud. Then, carefully, she put her boot on it and scuffed it out, every ring and every line, until it was only dirt again. She didn't know why she did it. She only knew she didn't want to leave it there for anything to find.
 
 ---
 
@@ -334,7 +334,7 @@ She did the second, and the third. By the fourth she was moving slowly, and by t
 
 She looked at his hand, then at him. He let go.
 
-{{nyx-thornbriar, shaken}}"That's five,"{{/}} she said quietly. Her face was gray. {{nyx-thornbriar, shaken}}"I can feel the bottom of the skin. If I do the sixth, I'll have nothing left. Not a spark."{{/}}
+{{nyx-thornbriar, shaken}}"That's five,"{{/}} she said. Her face was gray. {{nyx-thornbriar, shaken}}"I can feel the bottom of the skin. If I do the sixth, I'll have nothing left. Not a spark."{{/}}
 
 Aldric looked at the sixth stone. It stood on the north side of the circle, between the Lantern House and the road they'd come down. In the dusk, its glyphs were completely dark.
 
@@ -428,9 +428,9 @@ The line was breaking. Aldric could feel it the way you feel a rope fraying. A s
 
 {{mood: hushed}}
 
-And then, very clearly, in a lull between one shriek and the next, a child's voice said a word.
+And then, clear as a struck bell, in a lull between one shriek and the next, a child's voice said a word.
 
-It wasn't loud. It was spoken in an ordinary voice, the way you'd say a word to yourself while reading. But Aldric heard it over everything, as if it had been said directly into his ear, and so did every skirl in the gap. Every pale head swung toward it at once.
+She didn't raise her voice. She said it the way you'd say a word to yourself while reading. But Aldric heard it over everything, as if it had been said directly into his ear, and so did every skirl in the gap. Every pale head swung toward it at once.
 
 Pip was standing in the gap.
 
@@ -446,7 +446,7 @@ Pip finished the last curl of the outer ring, and touched the center, and said t
 
 {{sfx: gold-circle}}The circle lit, and it lit *gold*.
 
-It wasn't the blue of every wardstone in the Hearthlands, or the orange of Nyx's fire. It was gold: warm, deep, morning gold, the exact color of the light that had poured down the Sunspire every day for a thousand years. It ran out along the curved lines of the circle and rose from the frost in a slow column of light. And every skirl in the gap screamed. It was a terrible, high, tearing sound. They turned and fled, scrambling over each other, back up the road into the dark, until the clicking faded into the north and was gone.
+Not the blue of every wardstone in the Hearthlands, nor the orange of Nyx's fire, but gold: warm, deep, morning gold, the exact color of the light that had poured down the Sunspire every day for a thousand years. It ran out along the curved lines of the circle and rose from the frost in a slow column of light. And every skirl in the gap screamed. It was a terrible, high, tearing sound. They turned and fled, scrambling over each other, back up the road into the dark, until the clicking faded into the north and was gone.
 
 In that light, for one heartbeat, Aldric felt it.
 
@@ -466,7 +466,7 @@ Nyx reached her first, crawling the last few yards on her hands and knees with b
 
 {{nyx-thornbriar, whisper}}"Pip. Pip, what was that? What did you say?"{{/}}
 
-{{pip, whisper}}"I said what it said."{{/}} The girl's voice was very small. Her eyes drifted closed again. {{pip, whisper}}"It's still sorry. It says it can't stay."{{/}}
+{{pip, whisper}}"I said what it said."{{/}} The girl's voice was small and hoarse. Her eyes drifted closed again. {{pip, whisper}}"It's still sorry. It says it can't stay."{{/}}
 
 {{nyx-thornbriar, whisper}}"Who? Who can't stay?"{{/}}
 
@@ -474,7 +474,7 @@ But Pip was asleep, or something like it, and didn't answer.
 
 Nyx looked up at Aldric over the child's head. He was standing in the gap with his torn arm hanging at his side and his sword point resting on the frozen ground, staring at the dark circle in the frost. His face was wet. She didn't think he knew.
 
-{{nyx-thornbriar, whisper}}"That wasn't Vaelic,"{{/}} she said quietly. {{nyx-thornbriar, whisper}}"That word. I know Vaelic. It wasn't any language I've ever heard."{{/}}
+{{nyx-thornbriar, whisper}}"That wasn't Vaelic,"{{/}} she said, low. {{nyx-thornbriar, whisper}}"That word. I know Vaelic. It wasn't any language I've ever heard."{{/}}
 
 Aldric didn't answer. He was still looking at the frost.
 
@@ -486,7 +486,7 @@ Aldric didn't answer. He was still looking at the frost.
 
 {{sfx: quake}}Then the ground shook.
 
-It wasn't a tremble this time, like the one in the keep tower that morning. It was a single, enormous, rolling blow that came up through the frozen earth and through their boots and their bones. The wagons jumped. The horses screamed. The dead lantern over the gate swung on its bracket and clanged against the stone.
+This was no tremble like the one in the keep tower that morning. A single, enormous, rolling blow came up through the frozen earth and through their boots and their bones. The wagons jumped. The horses screamed. The dead lantern over the gate swung on its bracket and clanged against the stone.
 
 {{sfx: quake}}A long moment later, it came again.
 

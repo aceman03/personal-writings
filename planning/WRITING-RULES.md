@@ -17,7 +17,9 @@ Once a new chapter is started, every chapter before it is **locked**.
 
 | Book | Chapters locked | Locked on |
 |---|---|---|
-| The Day the Gods Went Silent, Book One | 1–4 | 2026-11-10 |
+| The Day the Gods Went Silent, Book One | 1–4 | 2026-11-10 (style revision at the author's request, then relocked) |
+
+Locked chapters change only when the author explicitly asks for a revision pass.
 
 ## 2. Chapter length
 
@@ -34,3 +36,39 @@ Tied to a major plot point, leading into the next chapter.
 - New characters get a spoiler-free page (only what is known at their first appearance), a portrait and a voice.
 - New places go on the map.
 - Mark the chapter as written in the book outline.
+
+## 5. Prose style
+
+Habits to keep rare (a few deliberate uses per chapter at most):
+
+- **"It wasn't X. It was Y."** and its cousins ("Not X, but Y"). Save it for a real reveal.
+- **"for a long moment" / "for a long time."** Show the length instead: what happens during it.
+- **"very."** Find the stronger word.
+- **"quietly" / "softly" dialogue tags.** The mood markup already tells the narrator; let the line carry it.
+- **Lists of three, "the way you…" similes, and "It was a…" openers.** Vary sentence shape and rhythm.
+
+## 6. Character voices
+
+Every point-of-view character and recurring speaker should be recognizable without a dialogue tag.
+
+| Character | Voice |
+|---|---|
+| **Aldric** | Formal, clipped, a soldier's economy. Dry humor, rarely. Long speeches only when it costs him. |
+| **Nyx** | Sharp and quick. Short sentences, sarcasm as armor, no Collegium vocabulary. |
+| **Hask** | Short and practical. Facts first, fragments, "sir." Never wastes a word. |
+| **Pip** | Simple, calm, literal. Says strange things in an ordinary voice. |
+| **Oren** | Gentle and wise. Questions instead of answers. Old-priest phrasing. |
+| **Corvel** | A twelve-year-old: blunt, observant, sometimes rushed and raw. |
+| **Hale** | Lecturing, precise, certain. |
+| **Ilsabet** | Precise and impatient, technical, contemptuous of sloppiness. |
+| **Greaves** | Warm, polished, never a wrong word; careful repetition when lying. |
+| **Wrenna** | Grandmotherly, reasonable, patient. Never threatens. |
+| **Dagny** | Blunt, warm, bossy. |
+| **Brother Fen** | Fervent, devout, trembling. |
+| **Collum** | Flat and practical, like quoting the price of a pelt. |
+
+## 7. Moral gray
+
+The Hollow Choir and its people should be genuinely tempting, and the Bright Court's institutions
+genuinely flawed. Let readers understand why someone would take a dark blessing. Keep the gray small
+and specific: a cure that works, a temple that charged for healing, a war god who fed starving children.

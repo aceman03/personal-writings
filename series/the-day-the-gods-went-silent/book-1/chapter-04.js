@@ -22,7 +22,7 @@ Corvel waited for the sour taste.
 
 It didn't come.
 
-He lay very still in his bed and listened, the way he had listened all his life, and heard nothing. No sweetness, no sourness, no wrong note. Only the words, sitting in the air, meaning exactly as much as words meant and nothing more. *Everything is going to be all right.* He didn't know if it was true. He couldn't tell.
+He lay rigid in his bed and listened, the way he had listened all his life, and heard nothing. No sweetness, no sourness, no wrong note. Only the words, sitting in the air, meaning exactly as much as words meant and nothing more. *Everything is going to be all right.* He didn't know if it was true. He couldn't tell.
 
 {{mood: dread}}
 
@@ -58,9 +58,9 @@ Behind him, in the gallery, two of the palace stewards were talking in low voice
 
 {{steward, hushed}}"Mobbed. Anyone who knows two words of Vaelic is the most important person in the city this morning. I saw a woman offer a hedge-mage her house for a fever-charm."{{/}}
 
-They went on down the gallery. Corvel listened to them go, and caught himself straining after the sour taste again, the way you keep putting your tongue into the gap where a tooth has been pulled. It wasn't there. Had they been telling the truth? He thought so. He didn't *know*.
+They went on down the gallery. Corvel listened to them go, and caught himself straining after the sour taste again, the way you keep putting your tongue into the gap where a tooth has been pulled. Nothing. Had they been telling the truth? He thought so. He didn't *know*.
 
-He looked down at the smoke over the river market, and thought, very clearly and for the first time in his life: *Anyone can tell me anything now.*
+He looked down at the smoke over the river market, and thought, for the first time in his life: *Anyone can tell me anything now.*
 
 {{mood: dread}}
 
@@ -80,7 +80,7 @@ King Haldren of the Hearthlands knelt alone before the altar of Aurem, in the co
 
 There was no light now. His father knelt with his head bowed and his big hands open on his knees, and he didn't look up when the door opened, and he didn't look up when Corvel's mother came and stood beside Corvel with her hand on his shoulder.
 
-{{queen, grief}}"He's been there since the bells,"{{/}} Queen Isolde said quietly. She was a slender dark woman with tired eyes, and she was the only person Corvel had ever known whose words never once tasted sour. He had always thought that was because she didn't lie. Now he wondered whether she simply lied better than anyone else. Then he hated himself for wondering. {{queen, grief}}"He won't eat. He won't speak to his council. He won't speak to me."{{/}} Her hand tightened on his shoulder. {{queen, grief}}"He keeps asking Aurem what he did wrong."{{/}}
+{{queen, grief}}"He's been there since the bells,"{{/}} Queen Isolde said. She was a slender dark woman with tired eyes, and she was the only person Corvel had ever known whose words never once tasted sour. He had always thought that was because she didn't lie. Now he wondered whether she simply lied better than anyone else. Then he hated himself for wondering. {{queen, grief}}"He won't eat. He won't speak to his council. He won't speak to me."{{/}} Her hand tightened on his shoulder. {{queen, grief}}"He keeps asking Aurem what he did wrong."{{/}}
 
 Corvel looked at his father's broad back, and the bowed golden head, and remembered the Reading Hall yesterday, the ledger and the pen and the letter E. He had been so afraid of what his father would say.
 
@@ -124,7 +124,7 @@ Nothing. The words just sat there.
 
 {{corvel, grief}}"I know,"{{/}} he said, because it was what his brother needed to hear.
 
-{{sfx: horn}}Rhoan went down the steps and mounted, and the horns sounded, and the column moved off through the gates and down into the city. Corvel watched until the last gold sunburst disappeared around the curve of the Kingsway. Then he stood on the steps for a long time afterward, in the cold, not knowing whether his brother had been telling the truth, and understanding for the first time that this was how everyone else had always lived.
+{{sfx: horn}}Rhoan went down the steps and mounted, and the horns sounded, and the column moved off through the gates and down into the city. Corvel watched until the last gold sunburst disappeared around the curve of the Kingsway. Then he stayed on the steps in the cold, not knowing whether his brother had been telling the truth, and understanding for the first time that this was how everyone else had always lived.
 
 ---
 
@@ -146,7 +146,7 @@ Corvel looked at him. He looked for the sourness out of habit, and of course it 
 
 {{mood: hushed}}
 
-{{oren-vasse, hushed}}"You can't hear it anymore,"{{/}} Oren said quietly. It wasn't a question.
+{{oren-vasse, hushed}}"You can't hear it anymore,"{{/}} Oren said. He didn't make it a question.
 
 Corvel's throat closed up. He shook his head.
 
@@ -174,9 +174,9 @@ Corvel frowned. {{corvel}}"I don't understand."{{/}}
 
 Corvel thought. It was strange. He had never once in his life needed to think about it, any more than he'd needed to think about breathing. He had always simply known. But when he closed his eyes and remembered the guard's face, two mornings ago, in the corridor outside the Reading Hall, saying *slept like a stone, Your Majesty*...
 
-{{corvel, hushed}}"He smiled,"{{/}} Corvel said slowly. {{corvel, hushed}}"Before he said it. Just before. And he touched his collar. And he said *like a stone* very quickly, as if he'd practiced it."{{/}} He opened his eyes. {{corvel, hushed}}"He always touches his collar. When he lies about cards, too. He lies about cards all the time."{{/}}
+{{corvel, hushed}}"He smiled,"{{/}} Corvel said slowly. {{corvel, hushed}}"Before he said it. Just before. And he touched his collar. And he said *like a stone* too quickly, as if he'd practiced it."{{/}} He opened his eyes. {{corvel, hushed}}"He always touches his collar. When he lies about cards, too. He lies about cards all the time."{{/}}
 
-Oren was smiling, very slightly.
+The corner of Oren's mouth lifted.
 
 {{oren-vasse, warm}}"Your Highness,"{{/}} he said, {{oren-vasse, warm}}"you've been tasting lies for twelve years. Every lie told in front of you since you were in your cradle. And every one of those times, you were also *watching* the person who told it, whether you meant to or not. A boy can't spend twelve years being told the answers without learning a little of how the questions work."{{/}} He leaned forward. {{oren-vasse, warm}}"The Warden gave you the taste. He didn't give you your eyes. Those are yours. Nobody took them yesterday."{{/}}
 
@@ -196,7 +196,7 @@ Then his face grew serious.
 
 {{ambience: market}}
 
-That evening, against every rule of the palace and very much against the queen's wishes, Oren took him into the city.
+That evening, against every rule of the palace and flatly against the queen's wishes, Oren took him into the city.
 
 They went out by a kitchen gate in borrowed cloaks, Corvel's hood pulled low, Oren's hand on his shoulder. Corvel thought later that Oren had done it on purpose, to show him something before the council met. At the time, it simply felt like the most dangerous thing he had ever done.
 
@@ -204,7 +204,7 @@ They went out by a kitchen gate in borrowed cloaks, Corvel's hood pulled low, Or
 
 She stood on the edge of the dry fountain, a small, soft-faced woman in plain gray robes who called herself Mother Wrenna, with gray hair pinned up neatly under a gray hood. She looked like somebody's grandmother. She was speaking in a gentle, carrying voice, and the crowd had gone quiet to hear her.
 
-{{wrenna, warm}}"I won't tell you the Bright Court has abandoned you,"{{/}} she was saying. {{wrenna, warm}}"I don't know what's happened to them. Perhaps they'll return. I hope they do, for your sakes. But your children are sick *tonight*. Your healers can't heal *tonight*. And I won't stand here and tell you to wait for gods who don't answer, when there are gods who still do."{{/}}
+{{wrenna, warm}}"I won't tell you the Bright Court has abandoned you,"{{/}} she was saying. {{wrenna, warm}}"I don't know what's happened to them. Perhaps they'll return. I hope they do, for your sakes. But your children are sick *tonight*. Your healers can't heal *tonight*. And I won't stand here and tell you to wait for gods who don't answer, when there are gods who still do."{{/}} She paused. {{wrenna, warm}}"Ask yourselves what the Houses of Mending charged for a healing, back when the light still came every morning. A silver mark, wasn't it? Two, for a child? My Lady has never asked anyone for a coin."{{/}}
 
 A murmur went through the crowd. Oren's hand tightened on Corvel's shoulder.
 
@@ -212,11 +212,11 @@ A murmur went through the crowd. Oren's hand tightened on Corvel's shoulder.
 
 {{wrenna, warm}}"I serve the Pale Lady,"{{/}} the woman went on, as if she'd heard him. {{wrenna, warm}}"I know what you've been told about her. I know what you've been taught to fear. But I'll tell you what she offers, and you can decide for yourselves. She offers the Pale Grace. Whoever takes it will never sicken again. Not from fever, not from plague, not from rot. Never. Not you, and not your children."{{/}}
 
-A woman pushed forward through the crowd. She was young and very thin, and she had a child in her arms, a little boy of three or four, limp and flushed with fever, his head lolling against her shoulder.
+A woman pushed forward through the crowd. She was young and gaunt, and she had a child in her arms, a little boy of three or four, limp and flushed with fever, his head lolling against her shoulder.
 
 {{market-mother, grief}}"Please,"{{/}} she said. {{market-mother, grief}}"The House of Mending turned us away. Please."{{/}}
 
-The woman in gray looked at her with what seemed to be enormous kindness. She put out one hand, very gently, and laid two fingers on the little boy's burning forehead.
+The woman in gray looked at her with what seemed to be enormous kindness. She put out one hand, gently, and laid two fingers on the little boy's burning forehead.
 
 {{sfx: glow-fade}}Something passed between them. Corvel couldn't have said what. There was no light, nothing like the gold he'd seen poured down the Sunspire every morning of his life. If anything, it was the opposite: a faint, cold paleness that seemed to draw the color out of the air around her fingers for a moment.
 
@@ -236,6 +236,16 @@ Oren had already seen. His own face had gone gray.
 
 They went back the way they had come, through the pushing, pleading crowd, and behind them the gentle voice went on, offering grace to anyone who wanted it, and a great many people did.
 
+{{mood: grief}}
+
+Halfway back to the kitchen gate, in a dark lane where nobody could see them, Oren stopped walking. He stood with one hand against the wall, breathing hard, and for a moment Corvel thought he was ill.
+
+{{oren-vasse, grief}}"I know that fever,"{{/}} the old priest said at last. {{oren-vasse, grief}}"I've sat with it a hundred times. Children that age don't come back from it once their eyes roll like that. That boy would have been dead by morning."{{/}} He looked down at Corvel, and his face was wretched. {{oren-vasse, grief}}"Forty years I served the Warden, Your Highness, and he never once let me save one. She did it with two fingers and didn't charge a copper."{{/}}
+
+{{corvel, hushed}}"Then is she good?"{{/}} Corvel asked.
+
+{{oren-vasse, grief}}"I don't know,"{{/}} said Oren. {{oren-vasse, grief}}"That's the worst of it. I don't know."{{/}}
+
 ---
 
 {{mood: tense}}
@@ -254,17 +264,17 @@ He had known most of them all his life, and he had tasted every one of them lie 
 
 And there was the High Chancellor.
 
-Orvald Greaves came in last. He was a tall, lean, silver-haired man of about sixty, beautifully dressed in dark gray, with long elegant hands and a voice like warm oil. He had run the Hearthlands, in all but name, for as long as Corvel could remember. His father had trusted Greaves absolutely. Corvel had always rather liked him. He had a dry sense of humor and he remembered your birthday. And in twelve years, Corvel had very rarely tasted him lie. Greaves didn't need to lie. He chose his words too carefully for that.
+Orvald Greaves came in last. He was a tall, lean, silver-haired man of about sixty, beautifully dressed in dark gray, with long elegant hands and a voice like warm oil. He had run the Hearthlands, in all but name, for as long as Corvel could remember. His father had trusted Greaves absolutely. Corvel had always rather liked him. He had a dry sense of humor and he remembered your birthday. And in twelve years, Corvel had rarely tasted him lie. Greaves didn't need to lie. He chose his words too carefully for that.
 
 {{greaves, warm}}"Your Highness."{{/}} Greaves bowed low to him, lower than to the empty chair. {{greaves, warm}}"We're all very grateful. I know this is a great deal to ask of you."{{/}} He smiled, kindly. Then his eyes rested on Corvel's face for just a moment longer than they needed to, thoughtful and measuring. Corvel understood, with a little lurch in his stomach, that Oren had been right. Greaves knew exactly what Corvel had been read for. Greaves was being careful.
 
-Corvel made his face very still and said nothing.
+Corvel kept his face blank and said nothing.
 
 {{mood: calm}}
 
 The council went on for most of the morning. Corvel listened, and watched, and understood perhaps half of it.
 
-They declared martial law in the city, and set the guard to protect the granaries. They set rationing. They heard reports: the Houses of Mending were closed, three temples had been burned, the bridges were barricaded. Lady Penn proposed seizing the grain merchants' stores, and the Archprelate objected, and they argued for a long time. Then Magus Quill rose, which he almost never did, and said in his quiet, precise voice that he wished to confirm the Chancellor's order. Every licensed mage in the Hearthlands was to report to Solmere for the defense of the realm. A rider had carried it south to the Collegium on the first morning, he understood, before the bells had even stopped ringing. The Collegium would comply. He paused. *Every* licensed mage? Including the ones the Collegium kept apart?
+They declared martial law in the city, and set the guard to protect the granaries. They set rationing. They heard reports: the Houses of Mending were closed, three temples had been burned, the bridges were barricaded. Lady Penn proposed seizing the grain merchants' stores, and the Archprelate objected, and they argued in circles. Then Magus Quill rose, which he almost never did, and said in his quiet, precise voice that he wished to confirm the Chancellor's order. Every licensed mage in the Hearthlands was to report to Solmere for the defense of the realm. A rider had carried it south to the Collegium on the first morning, he understood, before the bells had even stopped ringing. The Collegium would comply. He paused. *Every* licensed mage? Including the ones the Collegium kept apart?
 
 {{greaves, warm}}"Including those,"{{/}} said Greaves smoothly. {{greaves, warm}}"We're going to need every one of them, I'm afraid. Especially those."{{/}}
 
@@ -300,7 +310,7 @@ Greaves rose slowly from his chair. He looked around the table, at each of them 
 
 There was no taste. There would never be a taste again, perhaps. But there was the Chancellor's face, and the Chancellor's hands, and Corvel had been watching faces and hands for twelve years without knowing he was doing it.
 
-He saw that Greaves's eyes, which had moved around the table so gravely, had not once looked at Magus Quill, the man who had just told them that the Chancellor's order went south *before the bells had stopped ringing*. Too quickly, Corvel thought. Far too quickly for anyone to have written it after the bells. He saw that Greaves's long right hand, resting on the table, had gone very still. It was a stillness that took effort, the stillness of a man who had decided in advance not to move his hands. He saw that the Chancellor had said *none* three times, when once would have done. And when Greaves's grave, kind eyes came to rest on Corvel's own face, they held there, quite steadily, for exactly as long as it took him to finish speaking. Then they slid away. To the window. To the city. To anywhere else.
+He saw that Greaves's eyes, which had moved around the table so gravely, had not once looked at Magus Quill, the man who had just told them that the Chancellor's order went south *before the bells had stopped ringing*. Too quickly, Corvel thought. Far too quickly for anyone to have written it after the bells. He saw that Greaves's long right hand, resting on the table, had stopped moving entirely. It was a stillness that took effort, the stillness of a man who had decided in advance not to move his hands. He saw that the Chancellor had said *none* three times, when once would have done. And when Greaves's grave, kind eyes came to rest on Corvel's own face, they held there, quite steadily, for exactly as long as it took him to finish speaking. Then they slid away. To the window. To the city. To anywhere else.
 
 *When someone is trying very hard not to give something away,* Oren had said, *watch what they're trying hardest to hide.*
 

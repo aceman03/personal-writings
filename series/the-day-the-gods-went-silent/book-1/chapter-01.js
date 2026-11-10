@@ -54,7 +54,7 @@ An hour after the light, in the Temple of Thalen on the northern edge of Solmere
 
 The Reading Hall was a round stone chamber with no windows. Its floor was a single inscribed circle forty feet across, carved so long ago that the grooves had been worn smooth by centuries of bare feet. At its heart, where an ordinary circle would hold a Source, was the Warden's name-glyph: a shield shape crossed by a single line. When a blessed person stood upon it, the circle woke, and the blessing showed itself in the light.
 
-The boy standing on the glyph was twelve years old, thin and solemn, and trying very hard not to look at his mother. Prince Corvel was the second son of King Haldren. Every royal child was read at twelve. It was the law, and it had been the law for three hundred years.
+The boy standing on the glyph was twelve years old, thin and solemn, and trying hard not to look at his mother. Prince Corvel was the second son of King Haldren. Every royal child was read at twelve. It was the law, and it had been the law for three hundred years.
 
 {{sfx: spell-hum}}Oren lit the circle with a word and watched.
 
@@ -74,7 +74,7 @@ Oren turned his attention back to the boy on the glyph. {{oren-vasse, warm}}"Wha
 
 The prince frowned. {{corvel, hushed}}"Nothing, Father. Only..."{{/}} He looked at the queen, then at the two royal guards by the door, then at Oren himself. {{corvel}}"Only that the guard on the left told my mother this morning that he slept well. He didn't. I knew it when he said it."{{/}}
 
-The guard on the left went very red.
+The guard on the left went red to the ears.
 
 Oren asked the guard three questions. After each answer, the prince said quietly whether it was the truth: *true, true, false.* Oren asked the queen, with her permission, two more. The boy was right both times.
 
@@ -106,13 +106,13 @@ The gods had never asked for the ladder in the first place. Of all the things Or
 
 {{sfx: pen}}Oren wrote a single letter in the ledger: *E.* He blotted it carefully.
 
-{{corvel, hushed}}"Is it a bad one?"{{/}} the prince asked quietly.
+{{corvel, hushed}}"Is it a bad one?"{{/}} the prince asked.
 
 The queen drew a sharp breath. Oren didn't look at her.
 
 {{oren-vasse, warm}}"Your Highness,"{{/}} he said, {{oren-vasse, warm}}"the Warden doesn't make bad ones."{{/}}
 
-The boy studied him for a long moment, the way he had studied the guard. Then something in his thin shoulders loosened, because he could tell that it was true.
+The boy studied him the way he had studied the guard. Then something in his thin shoulders loosened, because he could tell that it was true.
 
 ---
 
@@ -136,7 +136,7 @@ For eleven weeks, Edda had felt nothing but her own heartbeat and the ache in he
 
 {{sfx: ripple}}And then, just below her ribs, there it was.
 
-It was cold. That was the first thing. It felt like the river in early spring, when the snowmelt came down from the mountains and the water was so cold it burned. It was deep, deeper than she'd expected, and dark, and very still. When she leaned her attention toward it, as the teachers had told her to, the surface trembled the way a pond trembles when a fish moves underneath.
+It was cold. That was the first thing. It felt like the river in early spring, when the snowmelt came down from the mountains and the water was so cold it burned. It was deep, deeper than she'd expected, dark and utterly still. When she leaned her attention toward it, as the teachers had told her to, the surface trembled the way a pond trembles when a fish moves underneath.
 
 She gasped and opened her eyes.
 
@@ -202,7 +202,7 @@ There were stories of seventh-ring circles too, but those were only stories.
 
 A girl in the third row raised her hand. {{student}}"Magus, which of the words is the fire?"{{/}}
 
-The hall went quiet. Hale looked at the board for a long moment.
+The hall went quiet. Hale looked at the board, and let the silence stretch.
 
 {{teodric-hale, stern}}"It doesn't matter,"{{/}} he said. {{teodric-hale, stern}}"The circle works. It has worked for a thousand years. You will learn it exactly as I learned it, and exactly as my teacher learned it, and you will draw it faster and steadier and cleaner than anyone else in this room. That is what makes a mage."{{/}} He set down the chalk. {{teodric-hale, dry}}"Do any of you know the story of the Lesser Ward of Halt?"{{/}}
 
@@ -234,7 +234,7 @@ Every circle, she had learned, was built from parts. A **Source** said what the 
 
 But the glyphs were only half a circle. The other half was the lines between them, which inherited mages treated as decoration. Spellcrafters called them **conduits**, because mana flowed along them from the center to the rim, and how they carried it changed everything. Curves carried it smoothly, for wards and mending and anything meant to last. Sharp angles made it pile up and burst out of the corner harder and faster, which was where a spell got its punch. Thick lines carried more and cost more. Even the direction mattered. Clockwise flow pushed outward, for anything thrown. Counter-clockwise flow pulled inward, for anything meant to hold.
 
-Every inherited spell was simply the first arrangement someone, long ago, had found that worked. It was very rarely the best one. Ilsabet's own fireball was still a two-ring, Second-Class spell by the Collegium's measure, but she had tightened its curves and tucked one extra glyph in among the Commands. It cost a third of the mana of the Common Fireball. With a different glyph in the same place, it burned white-blue and went through iron plate. On paper it was the same spell Hale taught his second-years. In practice it could outmatch the Fourth-Class spells of most of the Magi in the building. The class system measured how *complex* a circle was. It had never once measured how *good* one was.
+Every inherited spell was simply the first arrangement someone, long ago, had found that worked. It was rarely the best one. Ilsabet's own fireball was still a two-ring, Second-Class spell by the Collegium's measure, but she had tightened its curves and tucked one extra glyph in among the Commands. It cost a third of the mana of the Common Fireball. With a different glyph in the same place, it burned white-blue and went through iron plate. On paper it was the same spell Hale taught his second-years. In practice it could outmatch the Fourth-Class spells of most of the Magi in the building. The class system measured how *complex* a circle was. It had never once measured how *good* one was.
 
 That was what made spellcrafters valuable, and what made them dangerous. A mage who could build any spell could build spells that should never exist. Some were given towers and titles. Some were given locked doors. Over the centuries, a few had simply disappeared.
 
@@ -266,7 +266,7 @@ A wall built to keep things out would push. This one held, the way a hand holds 
 
 {{ambience: tower-night}}
 
-Ilsabet sat looking at the rubbing for a long time while the candle burned down. Then she opened her notebook to a fresh page and wrote a single line in her own cipher, which only she in all the world could read:
+Ilsabet sat looking at the rubbing until the candle had burned down to a stub. Then she opened her notebook to a fresh page and wrote a single line in her own cipher, which only she in all the world could read:
 
 *What is the Thornwall holding?*
 
@@ -290,7 +290,7 @@ In the **Kharn Mountains**, which stood like broken teeth along the north and ea
 
 {{ambience: steppe-fire}}
 
-To the southeast, where the mountains ran out, lay the **Ashen Steppe**, endless grassland gone gray with the ash of old wars, where the orc clans rode and fought and worshipped Karrog the Red Hand. Not every orc was cruel, and not every clan bent its knee to the Hollow Choir. But enough of them did. Every few decades a warlord rose on the Steppe, united the clans and rode north, and every few decades the Hearthlands drove them back at terrible cost. Tonight, at a clan fire under a sky full of stars, a champion of Karrog named Urzag sat with his back to the flames and felt his god's blessing burning between his shoulder blades. It had always burned. Tonight it burned *hotter*, and it was leaning closer, the way a hound leans against the door when it hears footsteps on the other side. Urzag had served Karrog for twenty years and had never once felt his god impatient. He didn't know what it meant. He sharpened his blade and didn't sleep.
+To the southeast, where the mountains ran out, lay the **Ashen Steppe**, endless grassland gone gray with the ash of old wars, where the orc clans rode and fought and worshipped Karrog the Red Hand. Not every orc was cruel, and not every clan bent its knee to the Hollow Choir. But enough of them did. Every few decades a warlord rose on the Steppe, united the clans and rode north, and every few decades the Hearthlands drove them back at terrible cost. The Hearthlands told those stories one way. The Steppe told them another: of drought years when the southern borders closed and the Bright Court's priests sent prayers instead of grain, and it was Karrog's champions who rode out and came home with enough to keep the children alive. Tonight, at a clan fire under a sky full of stars, a champion of Karrog named Urzag sat with his back to the flames and felt his god's blessing burning between his shoulder blades. It had always burned. Tonight it burned *hotter*, and it was leaning closer, the way a hound leans against the door when it hears footsteps on the other side. Urzag had served Karrog for twenty years and had never once felt his god impatient. He didn't know what it meant. He sharpened his blade and didn't sleep.
 
 {{mood: calm}}
 
@@ -312,7 +312,7 @@ He had walked it for twenty-two years. Beneath his boots the circles glowed thei
 
 Tonight there were no sounds.
 
-Hask stood at the parapet for a long time, listening. The Wildlands were silent. Not one thing howled or called. When he raised his lantern and looked out across the dark ground, he saw that the things that usually crowded at the foot of the wall were gone. They had pulled back a mile or more, into the treeline, and they were waiting.
+Hask stood at the parapet and listened until his ears ached. The Wildlands were silent. Not one thing howled or called. When he raised his lantern and looked out across the dark ground, he saw that the things that usually crowded at the foot of the wall were gone. They had pulled back a mile or more, into the treeline, and they were waiting.
 
 There was no line in the watch log for *too quiet*. Hask wrote *All quiet* and didn't sleep either.
 
@@ -348,7 +348,7 @@ The sun came up over the rooftops of Solmere, pale and ordinary, the way it rose
 
 {{mood: grief}}
 
-The eldest of the Dawnwardens, a woman named Sereth who had climbed those steps every morning for fifty-one years, felt it first. It wasn't pain. It was an *absence*: a cold, empty space at the back of her neck, exactly where the warmth had always been, as if a hand that had rested there her whole life had simply lifted away.
+The eldest of the Dawnwardens, a woman named Sereth who had climbed those steps every morning for fifty-one years, felt it first. Not pain. An *absence*: a cold, empty space at the back of her neck, exactly where the warmth had always been, as if a hand that had rested there her whole life had simply lifted away.
 
 She lowered her arms. Around the ring, one by one, the others did the same. No one spoke. Several of them were weeping, and didn't seem to know it.
 

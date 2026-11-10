@@ -10,7 +10,7 @@ They were out of the Lantern House in a quarter of an hour, which was impossible
 
 Nobody argued. That was the strangest part. Three hundred people who had argued with Aldric all morning about leaving their homes now left their only shelter in the dark without a single complaint. They had felt the ground jump under them. They had seen the two blue lights open above the hills, and they had watched them turn. They threw blankets into wagons, hauled children up onto their hips, and hitched the horses with fingers that couldn't feel the buckles. When Aldric gave the order to move, they were already moving.
 
-Two soldiers of Greywatch had fallen in the gap. A young man named Garrick, who had joined the garrison the spring before and still sent half his pay home to his mother in Halvenreach, lay in the gap beside the dark sixth stone with his spear still in his hands. Another, an older man called Tull, had a skirl's claw marks across his chest and was breathing in a way Aldric didn't like. They laid Tull in a wagon. There was no time to bury Garrick, and nothing to dig with that wouldn't make noise. Aldric closed the boy's eyes with his good hand and said the words for the dead from the Order of the Dawn, very quietly. He didn't know if anyone was listening to them anymore. He said them anyway.
+Two soldiers of Greywatch had fallen in the gap. A young man named Garrick, who had joined the garrison the spring before and still sent half his pay home to his mother in Halvenreach, lay in the gap beside the dark sixth stone with his spear still in his hands. Another, an older man called Tull, had a skirl's claw marks across his chest and was breathing in a way Aldric didn't like. They laid Tull in a wagon. There was no time to bury Garrick, and nothing to dig with that wouldn't make noise. Aldric closed the boy's eyes with his good hand and said the words for the dead from the Order of the Dawn, under his breath. He didn't know if anyone was listening to them anymore. He said them anyway.
 
 {{mood: dread}}
 
@@ -20,7 +20,7 @@ Two soldiers of Greywatch had fallen in the gap. A young man named Garrick, who 
 
 {{mood: grief}}
 
-A young woman fell into step beside Bramble in the first mile, carrying a baby wrapped so tightly in a shawl that only a tuft of dark hair showed. Aldric knew her slightly. Her name was Meg Ashby, and her husband had been a trapper who went beyond the wall one spring and didn't come back. She didn't say anything for a long time. Then she said, very quietly, without looking at him:
+A young woman fell into step beside Bramble in the first mile, carrying a baby wrapped so tightly in a shawl that only a tuft of dark hair showed. Aldric knew her slightly. Her name was Meg Ashby, and her husband had been a trapper who went beyond the wall one spring and didn't come back. For half a mile she said nothing. Then she said, very quietly, without looking at him:
 
 {{meg-ashby, grief}}"It was her. At the stones. It was my Rosie that cried."{{/}}
 
@@ -30,7 +30,7 @@ Aldric looked down at her. She was crying without making a sound, the way everyo
 
 {{aldric-vane, warm}}"Mistress Ashby."{{/}} He kept his voice as low and as gentle as he knew how. {{aldric-vane, warm}}"She's six months old. She woke up in the dark and the cold, surrounded by monsters, and she cried. That's what she's supposed to do. That's what babies are for."{{/}} He held her eyes until she looked at him. {{aldric-vane, warm}}"The skirls came because they're skirls. The wall went dark because of something none of us understands. Garrick died because he stood in a gap so other people wouldn't have to. None of that is your daughter's fault. And none of it is yours."{{/}}
 
-She looked at him for a long moment, and then down at the tuft of dark hair in the shawl. She didn't say anything else. But she walked beside Bramble for the next three miles, and Aldric thought her shoulders were a little straighter when she finally drifted back into the column.
+She searched his face, then looked down at the tuft of dark hair in the shawl. She didn't say anything else. But she walked beside Bramble for the next three miles, and Aldric thought her shoulders were a little straighter when she finally drifted back into the column.
 
 ---
 
@@ -44,7 +44,7 @@ They weren't loud anymore. That was almost worse. On the hill at the Lantern Hou
 
 {{mood: calm}}
 
-Aldric's arm had stopped bleeding, mostly. Nyx had wrapped it at the Lantern House before they left. She did it with linen from a soldier's pack and a few quick, hard tugs that hurt more than the claw had, while still kneeling in the frost with blood drying on her lip. She hadn't said a word while she did it. He hadn't either. He'd watched her hands instead, and thought that they were very steady hands for someone who'd just tried to pull a spell out of her own heart and failed.
+Aldric's arm had stopped bleeding, mostly. Nyx had wrapped it at the Lantern House before they left. She did it with linen from a soldier's pack and a few quick, hard tugs that hurt more than the claw had, while still kneeling in the frost with blood drying on her lip. She hadn't said a word while she did it. He hadn't either. He'd watched her hands instead, and thought that they were steady hands for someone who'd just tried to pull a spell out of her own heart and failed.
 
 {{mood: whisper}}
 
@@ -54,7 +54,7 @@ It was faint and far off to the west, up among the pines on the ridge above the 
 
 Nobody had to be told. Mothers put their hands over their children's mouths. The horses stood with their heads low, shivering. Aldric sat Bramble at the rear with his sword across his knees and listened so hard that his ears rang.
 
-The clicking came again, nearer, from somewhere above them on the ridge. Then another answered it, farther north. Then for a long time there was nothing at all, only the wind in the pines and the slow sound of three hundred people trying not to breathe.
+The clicking came again, nearer, from somewhere above them on the ridge. Then another answered it, farther north. Then nothing, for longer than anyone could stand: only the wind in the pines and the slow sound of three hundred people trying not to breathe.
 
 {{sfx: quake}}Somewhere behind them, the ground pushed up under their feet.
 
@@ -74,7 +74,7 @@ It was being held in whispers, which made it sound worse.
 
 {{dagny-holt, stern}}"Nobody,"{{/}} Dagny Holt was saying, standing at the tailboard of her wagon with her big floury arms folded and her feet planted, {{dagny-holt, stern}}"nobody is touching that girl. Not you, Brother, and not you, Collum Harte, and not anybody else who fancies themselves an expert. She's asleep. She's breathing. She's cold, but so are we all. You can wait for her to wake up like decent people."{{/}}
 
-Pip lay in the back of the wagon behind her, wrapped in three blankets and Dagny's own coat, between a sack of onions and a barrel of salt fish. Her face in the starlight was very pale and very still. Asleep, she looked younger than she was, hardly more than six.
+Pip lay in the back of the wagon behind her, wrapped in three blankets and Dagny's own coat, between a sack of onions and a barrel of salt fish. Her face in the starlight was pale and still as a carving. Asleep, she looked younger than she was, hardly more than six.
 
 {{brother-fen, awe}}"I don't wish to *harm* her, Dagny,"{{/}} Brother Fen whispered. He was a thin man with a thin gray beard, and his hands were shaking. Aldric had seen him afterward at the Lantern House, still on his knees in the courtyard, staring at the gap where the gold light had risen. {{brother-fen, awe}}"You saw it. Everyone saw it. That was His light. That was Aurem's own light, the morning gold, I've seen it every dawn of my life. He has *chosen* her. In all this darkness, He reached down and chose a child."{{/}} His voice cracked. {{brother-fen, awe}}"She should be in Solmere, with the Dawnwardens. She should be protected. She should be—"{{/}}
 
@@ -118,9 +118,9 @@ He looked at Brother Fen. {{aldric-vane}}"And she isn't going to the Dawnwardens
 
 Fen opened his mouth, then closed it again.
 
-Collum looked at Aldric for a long moment. Then, slowly, he nodded, as though Aldric had named a price he didn't like but could understand. {{collum, dry}}"On your head, then, Captain,"{{/}} he said, and walked back to his own wagon.
+Collum weighed him. Then, slowly, he nodded, as though Aldric had named a price he didn't like but could understand. {{collum, dry}}"On your head, then, Captain,"{{/}} he said, and walked back to his own wagon.
 
-The crowd broke up. Dagny let out a breath that seemed to go on for a long time.
+The crowd broke up. Dagny let out a breath she seemed to have been holding since dusk.
 
 {{dagny-holt, warm}}"Thank you,"{{/}} she said. Her voice wobbled. {{dagny-holt, warm}}"I'm not much of anything to her. Not family. I just fed her. But I'd have fought them."{{/}}
 
@@ -138,7 +138,7 @@ She walked badly, like someone recovering from a fever. Aldric slowed his pace t
 
 For a long time, neither of them spoke. The stars turned slowly overhead. The road wound down through a long valley of dark pine, and somewhere off to the left, water ran over stones.
 
-{{nyx-thornbriar, dry}}"You stood in front of me,"{{/}} Nyx said finally, very quietly. {{nyx-thornbriar, dry}}"At the gap. When I was down."{{/}}
+{{nyx-thornbriar, dry}}"You stood in front of me,"{{/}} Nyx said at last. {{nyx-thornbriar, dry}}"At the gap. When I was down."{{/}}
 
 {{aldric-vane}}"I gave you my word."{{/}}
 
@@ -168,15 +168,15 @@ He hadn't meant to say the next thing. He'd been carrying it around for a year w
 
 {{aldric-vane, grief}}"The Weller girl,"{{/}} he said. {{aldric-vane, grief}}"Last winter. The fever."{{/}}
 
-Nyx went very still beside him, though she didn't stop walking.
+Something in Nyx went taut, though she didn't stop walking.
 
 {{aldric-vane, grief}}"I stood in the square and told the whole town you killed her. I said you were a fraud and a grubber, and that your charms were poison. I tried to have you driven out of the district."{{/}} He made himself keep going. {{aldric-vane, grief}}"I learned afterward that she was already dying when her mother came to you. That nothing you did could have saved her, and nothing you did hurt her. I knew that by spring. And I never said so. Not to you, not to the town. I let them go on believing it."{{/}}
 
-{{nyx-thornbriar, hushed}}"Why?"{{/}} Nyx asked. It wasn't an accusation. She sounded honestly curious.
+{{nyx-thornbriar, hushed}}"Why?"{{/}} Nyx asked. No accusation in it. She sounded honestly curious.
 
 Aldric thought about it, as honestly as he could. It had been a day for honesty.
 
-{{aldric-vane, grief}}"Because I'd have had to admit I was wrong about you,"{{/}} he said. {{aldric-vane, grief}}"And if I was wrong about you, I might have been wrong about a great many other things. About what power is, and who deserves it. I had eighteen years of knowing those things. It's very comfortable, knowing things."{{/}}
+{{aldric-vane, grief}}"Because I'd have had to admit I was wrong about you,"{{/}} he said. {{aldric-vane, grief}}"And if I was wrong about you, I might have been wrong about a great many other things. About what power is, and who deserves it. I had eighteen years of knowing those things. It's comfortable, knowing things."{{/}}
 
 They walked for a while without speaking.
 
@@ -198,7 +198,7 @@ Aldric's hand tightened on the reins.
 
 Nyx looked at the small shape in the blankets on the saddle between them.
 
-{{nyx-thornbriar, hushed}}"Then whatever she did,"{{/}} she said slowly, {{nyx-thornbriar, hushed}}"whatever that circle was, it reached your god. Even for a heartbeat. Through whatever is keeping him away from you."{{/}} She pulled her shawl tighter. {{nyx-thornbriar, dread}}"Knight-Captain, I taught myself magic out of three stolen books. I don't know a great deal. But I know that every spell I've ever cast has had a Source, and the Source is the thing the spell is *made of*. Fire, or stone, or life. And that glyph in the middle of her circle wasn't fire, or stone, or life. It wasn't anything I've ever seen."{{/}}
+{{nyx-thornbriar, hushed}}"Then whatever she did,"{{/}} she said slowly, {{nyx-thornbriar, hushed}}"whatever that circle was, it reached your god. Even for a heartbeat. Through whatever is keeping him away from you."{{/}} She pulled her shawl tighter. {{nyx-thornbriar, dread}}"I taught myself out of three stolen books, Knight-Captain. I don't know much. I know this: every spell has a Source. The thing it's *made of*. Fire. Stone. Life. That glyph in the middle of her circle was none of them. Nothing I've ever seen."{{/}}
 
 {{aldric-vane, hushed}}"So what was it made of?"{{/}}
 
@@ -238,11 +238,11 @@ He walked back down the column in the dark to find Aldric, and fell into step be
 
 Aldric felt something cold settle in his stomach. {{aldric-vane}}"Meaning?"{{/}}
 
-{{hask-morrow, stern}}"Meaning it's slow, sir. Slower than us, even with the goats. Every step it takes is a long one, but it only takes one every hundred and ten heartbeats, and a man walking takes about a hundred steps in that time. When we're walking, we pull ahead. Just a little. But every time we stop, it catches up."{{/}} He was quiet a moment. {{hask-morrow, dread}}"We stopped for a quarter of an hour at the stream. And the steps since then have been the loudest they've been since the hill. It's not hurrying. It doesn't need to. It just doesn't stop. Not ever."{{/}}
+{{hask-morrow, stern}}"Meaning it's slow, sir. Slower than us. Even with the goats. Long stride, but one step in a hundred and ten heartbeats. A man takes a hundred in that time. We walk, we gain. A little. We stop, it gains."{{/}} He was quiet a moment. {{hask-morrow, dread}}"We stopped for a quarter of an hour at the stream. And the steps since then have been the loudest they've been since the hill. It's not hurrying. It doesn't need to. It just doesn't stop. Not ever."{{/}}
 
 {{mood: dread}}
 
-Aldric looked back over his shoulder at the north. There was nothing to see, only the black shapes of the hills against a sky that was just beginning, very faintly, to pale in the east.
+Aldric looked back over his shoulder at the north. There was nothing to see, only the black shapes of the hills against a sky that was just beginning, faintly, to pale in the east.
 
 {{aldric-vane, hushed}}"Is it still following the road?"{{/}}
 
@@ -252,7 +252,7 @@ Hask hesitated. It was a strange thing to see in him. He was a man who said what
 
 {{aldric-vane, hushed}}"And?"{{/}}
 
-{{hask-morrow, dread}}"And it didn't, sir. I could hear the steps change direction. Back and forth. Back and forth. It went the long way round, same as us. Every bend in the road."{{/}} Hask looked up at him in the gray light, and his face was very still. {{hask-morrow, dread}}"It's not following the road, Captain. It's following *us*. Exactly where we've been. Like a hound with its nose to the ground."{{/}}
+{{hask-morrow, dread}}"And it didn't, sir. I could hear the steps change direction. Back and forth. Back and forth. It went the long way round, same as us. Every bend in the road."{{/}} Hask looked up at him in the gray light, and his face gave nothing away. {{hask-morrow, dread}}"It's not following the road, Captain. It's following *us*. Exactly where we've been. Like a hound with its nose to the ground."{{/}}
 
 {{sfx: quake}}The ground pushed up under their boots. One hundred and ten heartbeats after the last.
 
@@ -276,9 +276,9 @@ He stopped.
 
 He stood in the road with his hand on the hilt, and he looked at the eastern sky, which was pale gold now and turning brighter, and he did not kneel.
 
-It wasn't anger. He had examined himself carefully all night, and he didn't think he was angry at Aurem. He was too tired and too frightened, and he had felt that hand at his back for one heartbeat at the Lantern House, and he did not believe now that it had been taken from him on purpose. Something had happened. He didn't know what it was. But he knew that the sun was going to come up whether he knelt or not, and he knew that three hundred people needed to keep walking, and he knew that he couldn't do anything for any of them on his knees.
+Not anger. He had examined himself carefully all night, and he didn't think he was angry at Aurem. He was too tired and too frightened, and he had felt that hand at his back for one heartbeat at the Lantern House, and he did not believe now that it had been taken from him on purpose. Something had happened. He didn't know what it was. But he knew that the sun was going to come up whether he knelt or not, and he knew that three hundred people needed to keep walking, and he knew that he couldn't do anything for any of them on his knees.
 
-*If you want me,* he thought, very clearly, toward the brightening east, *you know where to find me. I'll be on the road.*
+*If you want me,* he thought toward the brightening east, *you know where to find me. I'll be on the road.*
 
 The sun came up over the hills, pale and ordinary, the way it rose over the whole silent world. Nothing answered. On the edge of the road, Sir Toman's shoulders shook.
 
@@ -298,7 +298,7 @@ It was a little after sunrise, with the whole column moving again and the gray l
 
 Pip's eyes were open.
 
-She was lying very still in the nest of blankets on Bramble's saddle, looking up at the sky. For a moment, Aldric thought she was still asleep with her eyes open, the way people sometimes are in a fever. Then she blinked, slowly, and turned her head, and looked at him. Her eyes were pale gray, clear and untroubled. There was nothing in them of gold.
+She was lying still in the nest of blankets on Bramble's saddle, looking up at the sky. For a moment, Aldric thought she was still asleep with her eyes open, the way people sometimes are in a fever. Then she blinked, slowly, and turned her head, and looked at him. Her eyes were pale gray, clear and untroubled. There was nothing in them of gold.
 
 {{dagny-holt, warm}}"Pip,"{{/}} said Dagny, and her voice broke on it. {{dagny-holt, warm}}"Oh, Pip. Oh, sweetheart. You gave us such a fright."{{/}}
 
@@ -306,7 +306,7 @@ She was lying very still in the nest of blankets on Bramble's saddle, looking up
 
 Nyx had come up behind Dagny. Aldric didn't know how she'd known. She looked at the child with an expression he couldn't read, something careful and frightened and fierce at once.
 
-{{nyx-thornbriar, hushed}}"Pip,"{{/}} she said quietly. {{nyx-thornbriar, hushed}}"Do you remember last night? The circle you drew in the frost?"{{/}}
+{{nyx-thornbriar, hushed}}"Pip,"{{/}} she said. {{nyx-thornbriar, hushed}}"Do you remember last night? The circle you drew in the frost?"{{/}}
 
 Pip considered this, in the serious way she seemed to consider everything.
 
@@ -316,17 +316,17 @@ Pip considered this, in the serious way she seemed to consider everything.
 
 {{sfx: quake}}The ground pushed up beneath them, faint and heavy and far away. One hundred and ten heartbeats.
 
-Pip felt it. Aldric saw her feel it. She went very still in the blankets. Then, slowly, she sat up in the saddle, though Dagny made a small sound and reached for her, and she turned and looked back up the Pale Road toward the north.
+Pip felt it. Aldric saw her feel it. She stiffened in the blankets. Then, slowly, she sat up in the saddle, though Dagny made a small sound and reached for her, and she turned and looked back up the Pale Road toward the north.
 
 There was nothing to see there but the road, winding away between the hills, and the gray sky above them, and far beyond, too far to really see, the dark line of the dead wall.
 
-Pip looked at it for a long time, quite calmly.
+Pip studied it, quite calmly.
 
 {{mood: menacing}}
 
 {{ambience: night-watch}}
 
-{{nyx-thornbriar, whisper}}"It's following us,"{{/}} Nyx said softly, to no one in particular. {{nyx-thornbriar, whisper}}"Hask says it's following us exactly."{{/}}
+{{nyx-thornbriar, whisper}}"It's following us,"{{/}} Nyx murmured, to no one in particular. {{nyx-thornbriar, whisper}}"Hask says it's following us exactly."{{/}}
 
 {{pip, calm}}"No,"{{/}} said Pip.
 
