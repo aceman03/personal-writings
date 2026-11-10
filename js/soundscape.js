@@ -241,6 +241,9 @@ window.Soundscape = (function () {
     council: (b) => { L.roomTone(b, 0.1); L.crackle(b, 3, 0.05); L.fire(b, 0.04); },
     collegium: (b) => { L.roomTone(b, 0.08); L.river(b, 0.05, 900); L.crowd(b, 0.025); },
     "courtyard-dusk": (b) => { L.wind(b, { level: 0.08, cutoff: 700 }); L.river(b, 0.05, 900); L.crowd(b, 0.03); L.crows(b, 9000, 0.025); },
+    "camp-night": (b) => { L.wind(b, { level: 0.07, cutoff: 900, gusty: 0.5 }); L.owl(b, 12000, 0.03); L.pad(b, [55, 82.4], 0.02, 0.2); },
+    fort: (b) => { L.river(b, 0.09, 1400); L.crowd(b, 0.04); L.wind(b, { level: 0.06, cutoff: 600 }); },
+    "bridge-night": (b) => { L.river(b, 0.11, 1300); L.wind(b, { level: 0.1, cutoff: 450, gusty: 0.5 }); },
     silence: () => {},
   };
 

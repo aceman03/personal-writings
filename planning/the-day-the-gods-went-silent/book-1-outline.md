@@ -70,8 +70,17 @@ registry stamp is dated twenty-three days before it.
 
 ## Part Two: The Road South
 
-### 6. Fort Harrow
-**POV:** Aldric, Nyx · **Days 3–4**
+### 6. Fort Harrow ✅ *(written)*
+**POV:** Aldric, Nyx, Hask · **Day 2 noon → dawn of Day 4**
+*As written:* the footsteps stop at noon on Day 2 (*"It's waiting"*); Pip chooses to stay with Aldric, Nyx and
+Dagny, and describes a white tower full of gold (the Sunspire); Fort Harrow is packed with survivors of the
+Thornwall towns (Thane's Cross lost everyone in its god-warded temple); Lord-Commander Ressa Kell, who lost
+the Unbroken Line, absorbs Aldric's garrison, refuses to evacuate, and learns nothing about Pip (Aldric keeps
+it from her); the royal army went east by the Kingsway and never came; Toman is posted to the north gate;
+Pip tells Nyx the center glyph *"is somebody"*; Nyx is jailed under Kell's misreading of the royal order and
+doesn't break out; Aldric frees her through the law and Magistrate Pell, apologizing publicly; dwarves are
+coming down the passes (*"the stone is humming the wrong way"*).
+**Cliffhanger (as written):** Hask sees three pairs of Thornwall-blue eyes over the northern hills. It stopped to wait for the others.
 - The column reaches Fort Harrow on the bridge over the river Grey. It is not a refuge: overcrowded with refugees from every Thornwall settlement, under a commander (Lord-Commander Ressa Kell, blessed by Thalen) who has lost her nerve along with her blessing.
 - Aldric argues for evacuating further south; Kell refuses and claims command of his soldiers.
 - Nyx is taken into custody as an "unlicensed mage." Aldric keeps his word and gets her out.
@@ -228,7 +237,7 @@ registry stamp is dated twenty-three days before it.
 | 1 | Sereth, Oren, Corvel, Edda, Hale, Ilsabet, Tyriel, Hagra, Urzag, Hask |
 | 2 | Aldric, Nyx, Pip, Dagny, Toman, Brother Fen, Collum |
 | 4 | King Haldren, Queen Isolde, Crown Prince Rhoan, High Chancellor Orvald Greaves, Mother Wrenna, Lady Agathe Penn, Archprelate Maudrin, Magus Perrin Quill |
-| 6 | Lord-Commander Ressa Kell |
+| 6 | Lord-Commander Ressa Kell, Magistrate Corwin Pell |
 | 7 | Brokk Ironmantle |
 | 5 | Archmagus Ottilie Brandt, Lark Ellery, Mother Agnes Hale (mentioned) |
 | 8 | Vessa |

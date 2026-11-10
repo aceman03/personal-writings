@@ -196,6 +196,33 @@
         clothing: "#d9cfb6", trim: "#d9a441", outfit: "robe", emblem: "sun", background: ["#4a3e26", "#120f0a"] }),
     },
 
+    {
+      id: "toman", name: "Sir Toman", epithet: "Knight of the Order of the Dawn", group: "Greywatch",
+      facts: { Race: "Human", Home: "Greywatch", Power: "Blessed by Aurem. Steady hands, ranked C-class" },
+      firstAppears: "1.2",
+      description: "One of the two younger knights under Aldric's command at Greywatch, twenty-two years old. His blessing is a small one, a gift for steady hands, and he is very good with a crossbow. Earnest, devout and brave in the way only young men are.",
+      portrait: P({ alt: "Sir Toman", age: "young", skin: "fair", hair: "short", hairColor: "#a0703a", eyeColor: "#4a6a8a",
+        clothing: "#e9e1cf", trim: "#d9a441", outfit: "armor", emblem: "sun", background: ["#4a4030", "#12100c"] }),
+    },
+
+    // ── Fort Harrow ──
+    {
+      id: "ressa-kell", name: "Lord-Commander Ressa Kell", epithet: "Commander of Fort Harrow", group: "Fort Harrow",
+      facts: { Race: "Human", Home: "Fort Harrow, on the river Grey", Power: "Blessed by Thalen. The Unbroken Line, ranked A-class" },
+      firstAppears: "1.6",
+      description: "A lean, gray-eyed paladin of fifty who wears her breastplate as though she were born in it. For twenty years, any line of soldiers she commanded held where she told it to hold. She once held Fort Harrow's bridge for nine days against a Steppe army with two hundred men, and there are ballads about it.",
+      portrait: P({ alt: "Lord-Commander Ressa Kell", skin: "light", hair: "cropped", hairColor: "#6a6a6a", eyeColor: "#7a8a9a", stern: true, scar: true,
+        clothing: "#2b3138", trim: "#7fc8ff", outfit: "armor", emblem: "shield", background: ["#24323d", "#0b0f13"] }),
+    },
+    {
+      id: "corwin-pell", name: "Magistrate Corwin Pell", epithet: "Crown magistrate on the river Grey", group: "Fort Harrow",
+      facts: { Race: "Human", Home: "Fort Harrow", Power: "None" },
+      firstAppears: "1.6",
+      description: "A thin, worried-looking man in a magistrate's black coat. Last winter, he read a hedge-witch's stack of letters and declined to drive her out of the district, despite a knight's demands. Not a brave man, perhaps. An honest one.",
+      portrait: P({ alt: "Magistrate Corwin Pell", age: "old", skin: "fair", hair: "fringe", hairColor: "#7a6a5a", spectacles: true,
+        clothing: "#1e1c20", trim: "#6a6a72", outfit: "robe", background: ["#2a2a30", "#0d0d10"] }),
+    },
+
     // ── The gods ──
     {
       id: "aurem", name: "Aurem the Sunfather", epithet: "The Bright Court", group: "The Gods",
@@ -278,6 +305,8 @@
     wrenna:             { gender: "female", age: "old",   accent: "en-GB", pitch: 1.05, rate: 0.9, mood: "warm" },
     archmagus:          { gender: "female", age: "old",   accent: "en-GB", pitch: 0.88, mood: "stern" },
     lark:               { gender: "female", age: "young", accent: "en-GB", rate: 1.06, mood: "dry" },
+    kell:               { gender: "female", age: "adult", accent: "en-GB", pitch: 0.9, mood: "stern" },
+    pell:               { gender: "male",   age: "adult", accent: "en-GB", pitch: 1.05, rate: 1.05, mood: "shaken" },
     // Minor speakers (not listed on the Characters page)
     nurse:              { gender: "female", age: "adult", accent: "en-GB", mood: "shaken" },
     steward:            { gender: "male",   age: "adult", accent: "en-GB", mood: "hushed" },
@@ -290,14 +319,17 @@
     "young-dawnwarden": { gender: "male",   age: "young", accent: "en-GB", mood: "shaken" },
     "student":          { gender: "female", age: "young", accent: "en-US", mood: "calm" },
   };
-  CHARACTERS.forEach((c) => { if (VOICES[c.id]) c.voice = VOICES[c.id]; });
+  // Characters whose dialogue tags use a short speaker id.
+  const SPEAKER_ID = { "ressa-kell": "kell", "corwin-pell": "pell", "queen-isolde": "queen", "orvald-greaves": "greaves", "mother-wrenna": "wrenna",
+    "ottilie-brandt": "archmagus", "lark-ellery": "lark" };
+  CHARACTERS.forEach((c) => { const v = VOICES[c.id] || VOICES[SPEAKER_ID[c.id]]; if (v) c.voice = v; });
   window.VOICE_PROFILES = Object.assign(window.VOICE_PROFILES || {}, VOICES);
   window.VOICE_NAMES = Object.assign(window.VOICE_NAMES || {},
     Object.fromEntries(CHARACTERS.map((c) => [c.id, c.name])),
     { "young-dawnwarden": "A young Dawnwarden", student: "A second-year student", queen: "The queen",
-      toman: "Sir Toman", archmagus: "Archmagus Ottilie Brandt", lark: "Lark Ellery", queen: "Queen Isolde", rhoan: "Crown Prince Rhoan", greaves: "High Chancellor Greaves", wrenna: "Mother Wrenna", nurse: "Corvel's nursemaid", steward: "A palace steward", "market-mother": "A mother in the market", penn: "Lady Agathe Penn", collum: "Collum the trapper", "meg-ashby": "Meg Ashby" });
+      toman: "Sir Toman", kell: "Lord-Commander Ressa Kell", pell: "Magistrate Corwin Pell", archmagus: "Archmagus Ottilie Brandt", lark: "Lark Ellery", queen: "Queen Isolde", rhoan: "Crown Prince Rhoan", greaves: "High Chancellor Greaves", wrenna: "Mother Wrenna", nurse: "Corvel's nursemaid", steward: "A palace steward", "market-mother": "A mother in the market", penn: "Lady Agathe Penn", collum: "Collum the trapper", "meg-ashby": "Meg Ashby" });
 
-  const GROUPS = ["Solmere", "The Collegium of Halvenreach", "Greywatch", "Beyond the Hearthlands", "The Gods"];
+  const GROUPS = ["Solmere", "The Collegium of Halvenreach", "Greywatch", "Fort Harrow", "Beyond the Hearthlands", "The Gods"];
   const SERIES = "the-day-the-gods-went-silent";
   const art = (c) => (c.image ? `<img src="${c.image}" alt="${c.name}" class="portrait">` : c.portrait());
   const appears = (ref) => { const [b, ch] = ref.split("."); return { b, ch, text: `Book ${b}, Chapter ${ch}` }; };

@@ -32,8 +32,16 @@
       chapters: ["1.2"] },
     { id: "fort-harrow", name: "Fort Harrow", kind: "city", x: 392, y: 296,
       region: "The Pale Road",
-      text: "A stone fort built on the old bridge over the river Grey, a day and a half south of Greywatch.",
+      text: "A long, squat fortress of gray stone built four hundred years ago astride the river Grey on seven great arches: the only bridge for forty miles. Whoever holds it holds the road south. Its Lord-Commander once held it for nine days against a Steppe army.",
       chapters: ["1.2"] },
+    { id: "thornwall-towns", name: "The Thornwall Towns", kind: "region", x: 560, y: 165,
+      region: "Along the Thornwall, east and west of Greywatch",
+      text: "Coldwater, Rook's Ford, Thane's Cross, Oldmere: small frontier settlements strung along the foot of the wall for fifty miles either side of Greywatch. On the night of the Silence, the skirls came over the wall without warning.",
+      chapters: ["1.6"] },
+    { id: "kingsway", name: "The Kingsway", kind: "landmark", x: 640, y: 300,
+      region: "Solmere to the eastern wall towns",
+      text: "The great royal road out of Solmere, curving east and then north toward the eastern settlements along the Thornwall. Crown Prince Rhoan and the royal army rode out along it on the second day of the Silence.",
+      chapters: ["1.4", "1.6"] },
     { id: "wildlands", name: "The Wildlands", kind: "region", x: 470, y: 60,
       text: "Whatever lies beyond the Thornwall. No maps survive of it, only stories.",
       chapters: ["1.1"] },
@@ -203,6 +211,7 @@
       <path d="M90,560 L120,590 L100,610 L150,630 L130,650 M180,600 L160,630" class="shatter"/>
       <path d="M640,250 C600,300 560,330 540,380 C525,420 535,460 520,500 C505,545 560,580 590,620 C610,650 600,690 610,720" class="river"/>
       <path d="M655,455 C620,470 590,480 560,470" class="river rust"/>
+      <path d="M470,360 C540,350 600,330 640,300 C690,262 740,200 800,150" class="road"/>
       <path d="M300,300 C340,290 370,300 392,296 C420,291 450,300 480,318" class="river small"/>
       <path d="M395,148 L395,178 C388,200 375,220 372,238 C370,260 385,280 392,296 C400,320 440,340 470,360" class="road"/>
       <path d="M300,142 C400,118 520,148 620,124 C720,104 820,138 960,118" class="thornwall-base"/>
