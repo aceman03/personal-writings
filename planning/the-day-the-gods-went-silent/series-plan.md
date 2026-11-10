@@ -92,7 +92,66 @@ The end. Rescuing Pip and rewriting the Accord. Edda holds all seven rings, Brok
 Ilsabet and Nyx craft, Pip speaks the First Tongue, Aldric holds the line. The final choice:
 restore the old order, with its leashes and its ladder of ranks, or write a new Accord
 between gods and mortals as equals.
-**Ends:** The day the gods speak again, on new terms.
+**Ends:** The day the gods speak again, on new terms. Epilogue: the new order of magic, where blessings
+are the whole and magic is the written part of it, with spells that work with the gods' glyphs, without
+them, or both (see *Future note* below).
+
+---
+
+## Future note: the new order of magic (series ending)
+
+> Author's note, added 2026-11-10. Where the world's magic ends up by the close of Book Five.
+
+**Today (Books One–Four), there are two separate systems:**
+- **Blessings:** divine power, given by a god, drawn from nothing in the body, held on a leash.
+- **Magic:** mortal power, learned, drawn from the caster's well, shaped through Vaelic circles.
+
+They overlap only at the edges. Priests can set a god's name-glyph at the heart of a circle in place
+of a Source (Chapter One), and anchored circles like the Thornwall and the healing circles run on the
+god's power.
+
+**Because magic is what saved them,** the story ends with the two systems merged. Mortal circles are
+what kept people alive through the Silence: Nyx's wardstones, Edda's light, Ilsabet's rebuilt
+plague-wards, and finally the seventh-ring circle that rewrites the Accord. So when the gods return,
+people don't go back to simply receiving blessings. **They start writing the gods into their circles.**
+
+**After the series, there is one system, and magic is part of it:**
+- **Blessings remain the overarching system.** Divine power still exists and still comes from the gods.
+- **Magic becomes a subset of it:** the written, learnable way to channel power. A circle can be drawn
+  **with** a god's glyph (anchored, divine power flowing through mortal structure) or **without** one
+  (mortal power from the caster's well, as now).
+- **New glyphs correlate to the gods.** Beyond the old priestly name-glyphs, there is a whole vocabulary
+  of god-glyphs that can sit in a circle's Source, Shape, Command or modifier rings, so a single spell can
+  mix mortal and divine parts.
+
+**What this means in practice: some spells work and some don't, whether or not the gods are present.**
+- A circle anchored to a god works only while that god answers. If the god is silent, absent, bound or
+  unwilling, it fails, exactly as every anchored circle failed on the first morning of the Silence.
+- A mortal circle always works, gods or no gods, limited only by the caster's well and skill.
+- A **hybrid** circle can fail partway: the divine rings go dark and the mortal rings keep running,
+  for a weaker but surviving spell. Building in that fallback becomes the hallmark of good spellcraft
+  after the Silence. Nobody wants to depend on a single thread again.
+- A god's presence doesn't make every spell work, either. A badly drawn anchored circle still fails, and
+  a god can choose not to answer a particular circle or caster.
+
+**Themes this pays off:**
+- *"A blessing is what you do with it."* Divine power becomes something mortals shape, not just receive.
+- The old ladder (F–S ranks, Collegium classes) can't measure the new system, so it falls apart.
+- The lesson of the Silence: never again build a world that runs on one thread someone else can cut.
+- Moral gray carries forward. Writing the gods into circles gives mortals power over how divine power is
+  used. Not everyone, mortal or divine, will think that's a good thing.
+
+**Already seeded in the locked chapters:**
+- Chapter One: priests place a god's name-glyph where a Source would go; the Thornwall is the greatest anchored circle.
+- Chapter One: Ilsabet notices the Thornwall's god-anchored *Keth* rings and asks what it holds.
+- Chapter Two: anchored circles fail while ordinary wardstones keep glowing (*"the gods took their own things with them"*).
+- Chapter Five: Archmagus Brandt sets Ilsabet to rebuild god-anchored wards with ordinary Sources.
+
+**Where to build it:**
+- Book Two: freeing the sliver of Thalen from the giant hints that divine power can be moved through a circle.
+- Book Three: Ilsabet and Nyx learn the First Tongue, the language the gods themselves wrote circles in.
+- Book Four: Vessa and Pip act as voices for Karrog and Aurem; the first deliberate hybrid circles.
+- Book Five: the new Accord is itself the first true hybrid circle, and the epilogue shows the new order in use.
 
 ---
 
