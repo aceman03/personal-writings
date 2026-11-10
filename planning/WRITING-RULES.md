@@ -21,6 +21,21 @@ Once a new chapter is started, every chapter before it is **locked**.
 
 Locked chapters change only when the author explicitly asks for a revision pass.
 
+## 1a. Review every previous chapter before starting the next
+
+Added at the author's request on 2026-11-10. **Before any new chapter is written:**
+
+1. **Reread every previous chapter in full**, from Chapter One onward, not just the last one.
+2. **Check continuity and consistency** across all of them: timeline and day count, head counts and names,
+   geography and distances, the rules of magic and blessings, what each character knows and when,
+   character voices, and setups that still need paying off.
+3. **Check the cross-chapter repetition** of phrases and images (see Prose style).
+4. **Check the site material** (character pages, map, codex, outline) against the chapters.
+5. **Report the findings** before writing. Problems in the most recent chapter are fixed there, since it is
+   still open. Problems in locked chapters are resolved inside the new chapter (Rule 1), unless the author
+   explicitly unlocks them.
+6. **Only then lock the previous chapter and begin the new one**, building on exactly what is on the page.
+
 ## 2. Chapter length
 
 15–20 printed pages (about 4,500–6,000 words). Occasionally as short as 5 pages or as long as 50.
@@ -30,6 +45,8 @@ Locked chapters change only when the author explicitly asks for a revision pass.
 Tied to a major plot point, leading into the next chapter.
 
 ## 4. Before publishing a new chapter
+
+- The full review in Rule 1a must already have been done before writing began.
 
 - Reread the new chapter for logic, timeline and continuity against every locked chapter.
 - Check every narration cue: speakers have voice profiles, sound effects and ambience exist.
