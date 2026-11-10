@@ -195,6 +195,15 @@ window.Soundscape = (function () {
         env(g, t, 0.1, level * 0.35, 0.35); o.connect(bp).connect(g).connect(bed.out); o.start(t); o.stop(t + 0.6);
       });
     },
+    crowd(bed, level = 0.08) {
+      // A distant crowd: band-limited noise with a slow, swelling murmur.
+      const src1 = src(noise("pink", 6)), bp = filter("bandpass", 520, 0.9), lp = filter("lowpass", 1100), g = gain(level);
+      src1.connect(bp).connect(lp).connect(g).connect(bed.out); src1.start(); bed.sources.push(src1);
+      bed.every(1400, () => {
+        g.gain.setTargetAtTime(level * rand(0.6, 1.4), now(), 0.5);
+        bp.frequency.setTargetAtTime(rand(420, 650), now(), 0.4);
+      });
+    },
     rumbleBed(bed, level = 0.25) {
       const s = src(noise("brown", 8)), f = filter("lowpass", 90), g = gain(level);
       s.connect(f).connect(g).connect(bed.out); s.start(); bed.sources.push(s);
@@ -226,6 +235,10 @@ window.Soundscape = (function () {
     "lantern-house": (b) => { L.wind(b, { level: 0.12, cutoff: 420, gusty: 0.5 }); L.pad(b, [110, 164.8], 0.025, 0.2); },
     "night-march": (b) => { L.wind(b, { level: 0.09, cutoff: 380, gusty: 0.4 }); L.hooves(b, 0.02); L.river(b, 0.015, 500); },
     "night-watch": (b) => { L.wind(b, { level: 0.1, cutoff: 360, gusty: 0.3 }); L.pad(b, [55, 58.3], 0.05, 0.4); },
+    palace: (b) => { L.roomTone(b, 0.09); L.pad(b, [98, 146.8], 0.02, 0.15); },
+    "city-panic": (b) => { L.crowd(b, 0.09); L.wind(b, { level: 0.06, cutoff: 600 }); L.crows(b, 7000, 0.03); },
+    market: (b) => { L.crowd(b, 0.06); L.fire(b, 0.05); L.wind(b, { level: 0.05, cutoff: 500 }); },
+    council: (b) => { L.roomTone(b, 0.1); L.crackle(b, 3, 0.05); L.fire(b, 0.04); },
     silence: () => {},
   };
 
@@ -413,6 +426,13 @@ window.Soundscape = (function () {
       env(g, t, 0.02, 0.7, 2.2); env(og, t, 0.02, 0.22, 2.5);
       s.connect(f).connect(g).connect(master); o.connect(og).connect(master); g.connect(reverbSend);
       s.start(t, 0, 2.6); o.start(t); o.stop(t + 2.8);
+    },
+    crowd() {
+      // A crowd surging: a swell of murmur and a few sharper shouts.
+      const t = now(), s1 = src(noise("pink", 6), false), bp = filter("bandpass", 600, 0.8), g = gain(0.0001);
+      g.gain.setValueAtTime(0.0001, t); g.gain.exponentialRampToValueAtTime(0.35, t + 1.2); g.gain.exponentialRampToValueAtTime(0.0001, t + 4.5);
+      s1.connect(bp).connect(g).connect(master); g.connect(reverbSend); s1.start(t, 0, 4.6);
+      for (let i = 0; i < 5; i++) burst(t + rand(0.4, 2.8), { type: "pink", freq: rand(700, 1200), q: 4, attack: 0.04, peak: 0.12, release: 0.25, p: rand(-0.7, 0.7), wet: 0.6 });
     },
     laugh() {
       // A low, breathy, far-off "heh... heh... heh" drenched in reverb.

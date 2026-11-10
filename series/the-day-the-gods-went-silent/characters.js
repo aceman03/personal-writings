@@ -35,6 +35,47 @@
         clothing: "#3c4f7a", trim: "#d9b26a", outfit: "mantle", headwear: "circlet", background: ["#33456b", "#12141c"] }),
     },
 
+    {
+      id: "queen-isolde", name: "Queen Isolde", epithet: "Queen of the Hearthlands", group: "Solmere",
+      facts: { Race: "Human", Home: "The royal palace, Solmere", Power: "Unknown" },
+      firstAppears: "1.1",
+      description: "King Haldren's queen and the mother of Prince Rhoan and Prince Corvel. A slender, dark-haired, tired-eyed woman, quieter than her husband and a good deal more watchful. Corvel has never once heard her lie.",
+      portrait: P({ alt: "Queen Isolde", skin: "tan", hair: "long", hairColor: "#1f1814", eyeColor: "#4a3a2a", headwear: "circlet",
+        clothing: "#3a2f4a", trim: "#d9b26a", outfit: "mantle", background: ["#3a2f4a", "#120f17"], stern: true }),
+    },
+    {
+      id: "king-haldren", name: "King Haldren", epithet: "King of the Hearthlands", group: "Solmere",
+      facts: { Race: "Human", Home: "The royal palace, Solmere", Power: "Blessed by Aurem. The Crown of Dawn, ranked A-class" },
+      firstAppears: "1.4",
+      description: "A tall, broad, golden-haired king who carries the Crown of Dawn, the A-class blessing every king of the Hearthlands has borne for three hundred years. When he walks into a room, the room turns toward him like flowers toward the sun.",
+      portrait: P({ alt: "King Haldren", skin: "light", hair: "short", hairColor: "#c9a043", beard: "full", beardColor: "#c9a043", headwear: "circlet",
+        clothing: "#7a5a1a", trim: "#f0d296", outfit: "mantle", emblem: "sun", background: ["#6a4a1a", "#140e06"], aura: "#ffd36a" }),
+    },
+    {
+      id: "rhoan", name: "Crown Prince Rhoan", epithet: "Heir to the Hearthlands", group: "Solmere",
+      facts: { Race: "Human", Home: "The royal palace, Solmere", Power: "Blessed by Aurem, ranked A-class" },
+      firstAppears: "1.4",
+      description: "Corvel's elder brother, sixteen, tall and golden like their father and kind in a way their father has never had time to be. His blessing read A-class at twelve, bright as a bonfire.",
+      portrait: P({ alt: "Crown Prince Rhoan", build: "human", age: "young", skin: "light", hair: "short", hairColor: "#c9a043", smile: true, headwear: "circlet",
+        clothing: "#e9e1cf", trim: "#d9a441", outfit: "armor", emblem: "sun", background: ["#5a4a2a", "#14100a"] }),
+    },
+    {
+      id: "orvald-greaves", name: "High Chancellor Orvald Greaves", epithet: "First minister of the Hearthlands", group: "Solmere",
+      facts: { Race: "Human", Home: "The royal palace, Solmere", Power: "None known" },
+      firstAppears: "1.4",
+      description: "A tall, lean, silver-haired man of about sixty with long elegant hands and a voice like warm oil. He has run the Hearthlands in all but name for as long as Corvel can remember, and King Haldren trusts him absolutely. He has a dry sense of humor and he remembers your birthday.",
+      portrait: P({ alt: "High Chancellor Orvald Greaves", age: "old", skin: "fair", hair: "short", hairColor: "#c9c9c9", smile: true,
+        clothing: "#3a3a42", trim: "#9a9aa8", outfit: "robe", background: ["#2f2f3a", "#0e0e12"] }),
+    },
+    {
+      id: "mother-wrenna", name: "Mother Wrenna", epithet: "A preacher in gray", group: "Solmere",
+      facts: { Race: "Human", Home: "Unknown", Power: "Blessed by Vhessane the Pale" },
+      firstAppears: "1.4",
+      description: "A small, soft-faced woman in plain gray robes who looks like somebody's grandmother. She preaches in Solmere's river market in a gentle, carrying voice, offering the Pale Grace of Vhessane to anyone who wants it: whoever takes it will never sicken again.",
+      portrait: P({ alt: "Mother Wrenna", age: "old", skin: "fair", hair: "bun", hairColor: "#b8b8b4", smile: true, headwear: "hood", hoodColor: "#6a6a68",
+        clothing: "#7a7a76", outfit: "robe", trim: "#c8d6b0", background: ["#2e3528", "#0b0d09"], aura: "#c8d6b0" }),
+    },
+
     // ── The Collegium ──
     {
       id: "edda-marsh", name: "Edda Marsh", epithet: "First-year student", group: "The Collegium of Halvenreach",
@@ -214,21 +255,28 @@
     "nyx-thornbriar":{ gender: "female", age: "adult", accent: "en-GB", pitch: 1.0, mood: "dry" },
     pip:             { gender: "female", age: "child", accent: "en-GB", rate: 0.92, mood: "calm" },
     "dagny-holt":    { gender: "female", age: "adult", accent: "en-GB", pitch: 0.95, rate: 1.08, mood: "warm" },
+    queen:              { gender: "female", age: "adult", accent: "en-GB", mood: "stern" },
+    rhoan:              { gender: "male",   age: "young", accent: "en-GB", mood: "warm" },
+    greaves:            { gender: "male",   age: "old",   accent: "en-GB", pitch: 0.95, rate: 0.92, mood: "warm" },
+    wrenna:             { gender: "female", age: "old",   accent: "en-GB", pitch: 1.05, rate: 0.9, mood: "warm" },
     // Minor speakers (not listed on the Characters page)
+    nurse:              { gender: "female", age: "adult", accent: "en-GB", mood: "shaken" },
+    steward:            { gender: "male",   age: "adult", accent: "en-GB", mood: "hushed" },
+    "market-mother":    { gender: "female", age: "young", accent: "en-GB", mood: "grief" },
+    penn:               { gender: "female", age: "adult", accent: "en-GB", pitch: 0.95, mood: "dry" },
     "meg-ashby":        { gender: "female", age: "young", accent: "en-GB", mood: "grief" },
     "brother-fen":      { gender: "male",   age: "old",   accent: "en-GB", pitch: 1.05, rate: 0.95, mood: "awe" },
     toman:              { gender: "male",   age: "young", accent: "en-GB", mood: "shaken" },
     collum:             { gender: "male",   age: "old",   accent: "en-US", pitch: 0.85, mood: "stern" },
     "young-dawnwarden": { gender: "male",   age: "young", accent: "en-GB", mood: "shaken" },
     "student":          { gender: "female", age: "young", accent: "en-US", mood: "calm" },
-    "queen":            { gender: "female", age: "adult", accent: "en-GB", mood: "stern" },
   };
   CHARACTERS.forEach((c) => { if (VOICES[c.id]) c.voice = VOICES[c.id]; });
   window.VOICE_PROFILES = Object.assign(window.VOICE_PROFILES || {}, VOICES);
   window.VOICE_NAMES = Object.assign(window.VOICE_NAMES || {},
     Object.fromEntries(CHARACTERS.map((c) => [c.id, c.name])),
     { "young-dawnwarden": "A young Dawnwarden", student: "A second-year student", queen: "The queen",
-      toman: "Sir Toman", collum: "Collum the trapper", "meg-ashby": "Meg Ashby" });
+      toman: "Sir Toman", queen: "Queen Isolde", rhoan: "Crown Prince Rhoan", greaves: "High Chancellor Greaves", wrenna: "Mother Wrenna", nurse: "Corvel's nursemaid", steward: "A palace steward", "market-mother": "A mother in the market", penn: "Lady Ysolde Penn", collum: "Collum the trapper", "meg-ashby": "Meg Ashby" });
 
   const GROUPS = ["Solmere", "The Collegium of Halvenreach", "Greywatch", "Beyond the Hearthlands", "The Gods"];
   const SERIES = "the-day-the-gods-went-silent";

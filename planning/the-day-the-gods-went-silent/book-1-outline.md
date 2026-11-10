@@ -40,15 +40,15 @@ and Aldric feels Aurem for a heartbeat.
 - Dawn of Day 2: no Aurem again. Aldric doesn't kneel this time.
 **Cliffhanger:** Pip wakes, looks north, and says calmly: *"It isn't following us. It's following me."*
 
-### 4. The Empty Throne
+### 4. The Empty Throne ✅ *(written)*
 **POV:** Corvel, Oren · **Days 1–3, Solmere**
-- Solmere in panic: riots at the temples, blessed nobles powerless, a run on the Collegium's hedge-mages.
-- King Haldren, A-class, collapses into despair without his blessing. The royal council governs in his place.
-- Corvel sits in on council because his brother is sent north to the Thornwall. His truth-sense is suddenly dangerous: everyone is lying.
-- Oren becomes his protector and teaches him to keep quiet about what he hears.
-- A preacher of the Hollow Choir appears in the market, offering blessings that still work. Some people take them.
-- High Chancellor Orvald Greaves tells the council the Silence came without warning.
-**Cliffhanger:** Corvel hears it: the Chancellor is lying. He knew.
+- Corvel's truth-sense is a Thalen blessing, so it goes dark with the rest. For the first time in his life, he can't tell when people lie.
+- Solmere in panic: crowds at the temples, the Houses of Mending closed, a run on the hedge-mages.
+- King Haldren, A-class (the Crown of Dawn), kneels in the royal chapel and won't speak. Crown Prince Rhoan rides north with the Lord Marshal; Corvel must sit council as the prince of the blood.
+- Oren, appointed his tutor, shows him that twelve years of tasting lies taught him what they *look* like: *a blessing is what you do with it.* Advice: don't tell the council the gift is gone; careful people are easier to watch.
+- Mother Wrenna of Vhessane offers the Pale Grace in the river market; it cures, and leaves chalk-white marks.
+- The council votes to tolerate the Hollow Choir preachers. Magus Quill notes the Chancellor's order for all mages went south before the bells stopped ringing.
+**Cliffhanger:** Without any blessing, Corvel reads it in Greaves's face: the Chancellor is lying. He knew.
 
 ### 5. The Unlocked Door
 **POV:** Edda, Ilsabet · **Days 2–4, Halvenreach**
@@ -201,7 +201,7 @@ and Aldric feels Aurem for a heartbeat.
 - Aurem speaks through Pip for the first time in full sentences.
 - **Reveal:** The Bright Court didn't abandon the world. The gods were silenced, bound by their own Accord, rewritten by something they cannot name.
 - He can't stay. He's sorry.
-- Corvel exposes the Chancellor publicly, with truth-sense and the timetable. Greaves admits the Hollow Choir promised him the Silence would be brief.
+- Corvel exposes the Chancellor publicly, with what he has learned to read in people and the timetable. Greaves admits the Hollow Choir promised him the Silence would be brief.
 - The giant retreats north, back toward the wall.
 **Cliffhanger:** Greaves, in chains, laughs: *"You think the Choir planned this? The Choir was promised freedom too. We were all promised."*
 
@@ -221,7 +221,7 @@ and Aldric feels Aurem for a heartbeat.
 |---|---|
 | 1 | Sereth, Oren, Corvel, Edda, Hale, Ilsabet, Tyriel, Hagra, Urzag, Hask |
 | 2 | Aldric, Nyx, Pip, Dagny, Toman, Brother Fen, Collum |
-| 4 | King Haldren, High Chancellor Orvald Greaves |
+| 4 | King Haldren, Queen Isolde, Crown Prince Rhoan, High Chancellor Orvald Greaves, Mother Wrenna, Lady Ysolde Penn, Archprelate Maudrin, Magus Perrin Quill |
 | 6 | Lord-Commander Ressa Kell |
 | 7 | Brokk Ironmantle |
 | 8 | Vessa |

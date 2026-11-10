@@ -106,7 +106,7 @@ between gods and mortals as equals.
 | **Sergeant Hask Morrow** | The steady everyman and the party's practical survivor. Dies in Book Two, beyond the wall he guarded for twenty-two years. |
 | **Brokk Ironmantle** | Dwarven forge-master who brings word that something is waking under the mountains. Inscription is his craft, and inscription is how the new Accord will be carved. |
 | **Vessa** | Orc champion of Karrog whose blessing still works. Breaks from Urzag's warband in Book One. Her leash is the series' moral test; in Book Four she becomes Karrog's voice on her own terms. |
-| **Prince Corvel** | The spare prince with truth-sense, graded E. Exposes the council traitor in Book One; becomes a leader in Book Three. |
+| **Prince Corvel** | The spare prince graded E for truth-sense. Loses the blessing at the Silence, and discovers that twelve years of it taught him to read people without it. Exposes the council traitor in Book One; becomes a leader in Book Three by telling who is lying, with no god's help at all. |
 | **Father Oren Vasse** | Corvel's protector and conscience. Holds on to faith in a silent god. |
 | **Edda Marsh** | The fisherman's daughter with a bottomless well. Grows from first-year student to the one person who can hold a seventh ring. |
 | **Ilsabet Corrow** | The spellcrafter who asked what the Thornwall was holding. Unlocked from her tower; becomes the party's scholar. |
