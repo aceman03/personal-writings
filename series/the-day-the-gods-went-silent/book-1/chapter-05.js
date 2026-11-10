@@ -96,7 +96,7 @@ Brandt didn't flinch. {{archmagus, dry}}"Last week I didn't need you."{{/}}
 
 {{ilsabet-corrow, dry}}"At least you're honest."{{/}}
 
-{{archmagus, stern}}"I'm seventy years old and I've run this Collegium for twenty-two of them. I haven't the time to be anything else."{{/}} Something hard came into the cliff of her face. {{archmagus, stern}}"And I'll be honest about the rest of it too. For a thousand years the temples have looked down on this island. We were the grubbers. The scavengers. The second-best. Kings bowed to the blessed and tolerated us. Well. The blessed can't do anything now, and the whole of the Hearthlands is going to discover in the next month exactly how much it needs us."{{/}} Her voice dropped. {{archmagus, stern}}"I intend to make very sure they remember it, afterward."{{/}}
+{{archmagus, stern}}"I'm seventy years old and I've run this Collegium for twenty-two of them. I haven't the time to be anything else."{{/}} Something hard came into the cliff of her face. {{archmagus, stern}}"And I'll be honest about the rest of it too. For a thousand years the temples have looked down on this island. We were the grubbers. The scavengers. The second-best. Kings bowed to an Archmage now and then, when they had to, and to the blessed every day of their lives, and tolerated the rest of us. Well. The blessed can't do anything now, and the whole of the Hearthlands is going to discover in the next month exactly how much it needs us."{{/}} Her voice dropped. {{archmagus, stern}}"I intend to make very sure they remember it, afterward."{{/}}
 
 {{mood: dread}}
 
@@ -306,7 +306,7 @@ They were on the gate walk above the bridgehead, where Hale had sent them to kee
 
 Edda counted it in her head. {{edda-marsh, hushed}}"The first morning. When the bells rang."{{/}}
 
-{{lark, dry}}"Before the bells had stopped, I'd say, by the state of that horse."{{/}} Lark frowned. {{lark}}"That's quick, for a royal order. The palace can't decide what to have for breakfast in under a week."{{/}}
+{{lark, dry}}"First light, to be here by dusk with relays. Before anyone in the palace could have known what was happening, never mind written it down."{{/}} Lark frowned. {{lark}}"That's quick, for a royal order. The palace can't decide what to have for breakfast in under a week."{{/}}
 
 ---
 
