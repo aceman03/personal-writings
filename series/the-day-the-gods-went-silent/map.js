@@ -28,7 +28,7 @@
       chapters: ["1.2"] },
     { id: "lantern-house", name: "The Lantern House", kind: "landmark", x: 372, y: 238,
       region: "The Pale Road",
-      text: "An abandoned coaching inn half a day's walk south of Greywatch on the Pale Road, four broken stone walls around a courtyard, ringed by six old wardstones.",
+      text: "An abandoned coaching inn three hours' walk south of Greywatch on the Pale Road, four broken stone walls around a courtyard, ringed by six old wardstones.",
       chapters: ["1.2"] },
     { id: "fort-harrow", name: "Fort Harrow", kind: "city", x: 392, y: 296,
       region: "The Pale Road",

@@ -24,7 +24,7 @@ The sun cleared the horizon.
 
 The sword stayed cold.
 
-Aldric waited, because the light was sometimes slow on cloudy mornings, though the sky was clear. He waited for the warmth along the blade, for the hand at the back of his neck that had been there since he was twenty. He felt, instead, the place where it should have been. It was a cold, exact absence, as though someone had cut a piece out of him so cleanly that it hadn't hurt yet.
+Aldric waited. On cloudy mornings the light was sometimes slow, and he told himself this was one of those, though the sky was perfectly clear. He waited for the warmth along the blade, for the hand at the back of his neck that had been there since he was twenty. He felt, instead, the place where it should have been. It was a cold, exact absence, as though someone had cut a piece out of him so cleanly that it hadn't hurt yet.
 
 {{mood: grief}}
 
@@ -32,7 +32,7 @@ His first thought, absurdly, was *What did I do?* Every knight of every order kn
 
 Then he did what knights were trained to do when something went wrong. He stood up.
 
-Then he did what eighteen years had trained into his arm, without thinking. He raised it to call the shield.
+And before he could stop it, he did what eighteen years had trained into his arm. He raised it to call the shield.
 
 Nothing came. His arm hung in the cold air, empty, ridiculous, a man waving at nothing.
 
@@ -48,7 +48,7 @@ Nothing came. His arm hung in the cold air, empty, ridiculous, a man waving at n
 
 Aldric turned north, because something in him had already guessed.
 
-From the chapel yard, the Thornwall filled the whole northern sky: a black line of stone higher than the keep, running away east and west until it vanished into the hills. Every night of Aldric's four years, a pale blue glow had run along its top like frost on a blade. He had stopped seeing it his first month, the way you stop seeing a mountain.
+From the chapel yard, the Thornwall filled the whole northern sky: a black line of stone nearly as tall as the keep tower, running away east and west until it vanished into the hills. Every night of Aldric's four years, a pale blue glow had run along its top like frost on a blade. He had stopped seeing it his first month, the way you stop seeing a mountain.
 
 {{sfx: glow-fade}}He saw it now, because it was going out.
 
@@ -82,7 +82,7 @@ Something crossed Hask's face that Aldric didn't like.
 
 {{mood: dread}}
 
-They went up the keep tower together, Aldric taking the narrow stairs two at a time. From the top, you could see over the dead wall to the other side, which Aldric had seen perhaps a dozen times and never once enjoyed. Beyond the wall lay a mile of open ground, frozen and pale, and then the treeline of the Wildlands: black forest so old and so thick that the morning light seemed to stop at its edge.
+They went up the keep tower together, Aldric taking the narrow stairs two at a time. From the top, you could just see over the dead wall to the other side, which Aldric had seen perhaps a dozen times and never once enjoyed. Beyond the wall lay a mile of open ground, frozen and pale, and then the treeline of the Wildlands: black forest so old and so thick that the morning light seemed to stop at its edge.
 
 The edge of the forest was moving.
 
@@ -112,11 +112,11 @@ He had forty soldiers, three knights with no blessings left between them, and th
 
 He didn't have the Shield of Dawn.
 
-The Pale Road ran south from Greywatch through the western foothills of the Kharn Mountains, a day and a half to Fort Harrow. That was a real fort, a stone one, built on the old bridge over the river Grey. Closer, half a day's walk for strong legs and longer for weak ones, stood the Lantern House, an abandoned waystation with stone walls and a ring of old wardstones. If they left soon, they might reach it by dark.
+The Pale Road ran south from Greywatch through the western foothills of the Kharn Mountains, a day and a half to Fort Harrow. That was a real fort, a stone one, built on the old bridge over the river Grey. Closer, three hours on foot for strong legs and longer for weak ones, stood the Lantern House, an abandoned waystation with stone walls and a ring of old wardstones. If they left soon, they might reach it by dark.
 
 It wasn't a plan. It was a direction.
 
-{{aldric-vane, stern}}"We're leaving,"{{/}} he said. {{aldric-vane, stern}}"Everyone. Ring the muster bell. Every wagon, every horse, every mule in town. Food, blankets, water, tools. Nothing else. I want the column on the Pale Road by midday."{{/}}
+{{aldric-vane, stern}}"We're leaving,"{{/}} he said. {{aldric-vane, stern}}"Everyone. Sound the muster horn. Every wagon, every horse, every mule in town. Food, blankets, water, tools. Nothing else. I want the column on the Pale Road by midday."{{/}}
 
 {{hask-morrow}}"They won't like it, sir."{{/}}
 
@@ -176,7 +176,7 @@ The Lantern House had wardstones. They were old and half-dead, and nobody had re
 
 Nyx Thornbriar lived outside the palisade, in a two-room cottage at the edge of the birch wood, because Greywatch hadn't wanted her inside.
 
-Aldric had been part of that. Last winter, a child had died of a fever after her mother bought a charm from Nyx, and Aldric had stood in the town square and called her a grubber and a fraud and a danger to decent people. He had tried to have her driven out of the district. The magistrate in Fort Harrow had refused, mostly because Nyx had brought a stack of signed letters from every trapper she'd ever stitched up after a skirl patrol. The child, it turned out, had already been dying when the charm was bought. Aldric had never apologized.
+Aldric had been part of that. Last winter, a child had died of a fever after her mother bought a charm from Nyx, and Aldric had stood in the town square and called her a grubber and a fraud and a danger to decent people. He had tried to have her driven out of the district. The magistrate in Fort Harrow had refused, mostly because Nyx had brought a stack of signed letters from every trapper and soldier she'd ever stitched up after a run-in with the Wildlands. The child, it turned out, had already been dying when the charm was bought. Aldric had never apologized.
 
 She was sitting on her doorstep when he came up the path, wrapped in a gray shawl, holding a steaming cup between both hands, and she watched him come the whole way without getting up.
 
@@ -286,7 +286,7 @@ Nyx stood alone for a moment beside the circle in the mud. Then, very carefully,
 
 {{ambience: road-dusk}}
 
-The Pale Road ran south through the foothills in long, slow switchbacks, between stands of black pine and bare birch and open slopes of frozen grass. On an ordinary day, a rider leaving Greywatch at noon could make the Lantern House by mid-afternoon. A column of three hundred people with goats and handcarts and grandmothers made it by nothing like mid-afternoon.
+The Pale Road ran south through the foothills in long, slow switchbacks, between stands of black pine and bare birch and open slopes of frozen grass. On an ordinary day, a rider could make the Lantern House in an hour and a walker in three. A column of three hundred people with goats and handcarts and grandmothers was going to need every minute of daylight left.
 
 Aldric rode at the rear, where the danger would come from. Every few minutes, without meaning to, he turned in his saddle to look back at the north.
 
@@ -296,7 +296,7 @@ Survival, Aldric was learning, was mostly small problems. An axle cracked on the
 
 {{mood: hushed}}
 
-It was Hask who worked it out, in the middle of the afternoon, riding beside Aldric at the rear.
+It was Hask who said it out loud, in the middle of the afternoon, riding beside Aldric at the rear.
 
 {{hask-morrow, hushed}}"They hunt by sound,"{{/}} he said, as though continuing a conversation they'd been having for hours. {{hask-morrow, hushed}}"Every warden knows it. It's why they went quiet last night. They were listening for the hum. They'd been listening for it for a thousand years, I'd bet."{{/}} He looked along the column, at the wagons groaning, the wheels creaking, the goats complaining, the children crying, three hundred people talking in frightened voices all at once. {{hask-morrow, dread}}"So what do you suppose they'll be listening for tonight?"{{/}}
 
@@ -406,7 +406,7 @@ Nyx raised her hand for a fifth and traced the circle, and the lines came out fa
 
 Empty.
 
-The exhaustion hit her like a dropped sack, all at once, exactly the way the margins of her books had warned. Her knees went, and she was kneeling in the frozen mud before she knew she'd fallen.
+The exhaustion hit her like a dropped sack, all at once, exactly the way her books had warned. Her knees went, and she was kneeling in the frozen mud before she knew she'd fallen.
 
 {{mood: whisper}}
 
@@ -424,7 +424,7 @@ He didn't look at her. There wasn't time. But he moved half a step to his left, 
 
 {{mood: urgent}}
 
-The line was breaking. Aldric could feel it the way you feel a rope fraying. A soldier went down on his right, then another. The gap was ten yards wide and the skirls were coming through it faster than three men could kill them, and behind him, in the dark courtyard, three hundred people were finally screaming, which only drew more.
+The line was breaking. Aldric could feel it the way you feel a rope fraying. A soldier went down on his right, then another. The gap was ten yards wide and the skirls were coming through it faster than the men in the gap could kill them, and behind him, in the dark courtyard, three hundred people were finally screaming, which only drew more.
 
 {{mood: hushed}}
 
@@ -434,7 +434,7 @@ It wasn't loud. It was spoken in an ordinary voice, the way you'd say a word to 
 
 Pip was standing in the gap.
 
-He never knew how she'd gotten there, past him and past Hask and past the soldiers. She stood in the trampled frost of the dark sixth stone's patch of ground, small in her too-big coat, and she was crouching down. With one finger, without any hurry at all, she drew a circle in the frost.
+He never knew how she'd gotten there, past him and past Hask and past the soldiers. She stood in the trampled frost beside the dark sixth stone, small in her too-big coat, and she was crouching down. With one finger, without any hurry at all, she drew a circle in the frost.
 
 Nyx saw it and stopped breathing. It was the same circle. Every line curved, and that strange glyph sat at the center.
 
@@ -456,7 +456,7 @@ It was warmth at the back of his neck. It was a hand, settling where a hand had 
 
 Then it was gone again, and the cold rushed back into the place where it had been, worse than before.
 
-The gold light faded. The circle in the frost went dark, a child's drawing again. Pip swayed, and her eyes rolled up, and she folded quietly into the snow.
+The gold light faded. The circle in the frost went dark, a child's drawing again. Pip swayed, and her eyes rolled up, and she folded quietly into the frost.
 
 {{mood: hushed}}
 
@@ -486,7 +486,7 @@ Aldric didn't answer. He was still looking at the frost.
 
 {{sfx: quake}}Then the ground shook.
 
-It wasn't a tremble this time, like the one in the keep tower that morning. It was a single, enormous, rolling blow that came up through the frozen earth and through their boots and their bones. The wagons jumped. The horses screamed through their wrapped muzzles. The dead lantern over the gate swung on its bracket and clanged against the stone.
+It wasn't a tremble this time, like the one in the keep tower that morning. It was a single, enormous, rolling blow that came up through the frozen earth and through their boots and their bones. The wagons jumped. The horses screamed. The dead lantern over the gate swung on its bracket and clanged against the stone.
 
 {{sfx: quake}}A long moment later, it came again.
 
