@@ -244,6 +244,8 @@ window.Soundscape = (function () {
     "camp-night": (b) => { L.wind(b, { level: 0.07, cutoff: 900, gusty: 0.5 }); L.owl(b, 12000, 0.03); L.pad(b, [55, 82.4], 0.02, 0.2); },
     fort: (b) => { L.river(b, 0.09, 1400); L.crowd(b, 0.04); L.wind(b, { level: 0.06, cutoff: 600 }); },
     "bridge-night": (b) => { L.river(b, 0.11, 1300); L.wind(b, { level: 0.1, cutoff: 450, gusty: 0.5 }); },
+    "mountain-road": (b) => { L.wind(b, { level: 0.12, cutoff: 800, gusty: 0.7 }); L.hooves(b, 0.025); L.pad(b, [41.2, 61.7], 0.04, 0.3); },
+    "river-crossing": (b) => { L.river(b, 0.1, 1500); L.crowd(b, 0.05); L.hooves(b, 0.03); },
     silence: () => {},
   };
 

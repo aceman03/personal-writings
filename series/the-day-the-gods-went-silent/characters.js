@@ -119,6 +119,16 @@
         clothing: "#3a3150", trim: "#8fb7d9", outfit: "robe", background: ["#3d3558", "#14121a"] }),
     },
 
+    // ── The Kharn ──
+    {
+      id: "brokk-ironmantle", name: "Brokk Ironmantle", epithet: "Forge-master of the Stonebrow hall", group: "Beyond the Hearthlands",
+      facts: { Race: "Dwarf", Home: "The Stonebrow forge-hall, under Kharn-Ostra", Power: "Craft (rune inscription)" },
+      firstAppears: "1.7",
+      description: "A dwarven smith of forty-one, broad as a doorway, with a dark red beard going gray, braided with iron rings, forearms mottled with forge-burns, and one eye half-closed from an old spark. Hagra Stonebrow taught him everything he knows, and she is the only one who still calls him boy. Blunt, proud and touchy about the difference between craft and magic.",
+      portrait: P({ alt: "Brokk Ironmantle", build: "dwarf", skin: "dwarf", hair: "short", hairColor: "#7a3a22", beard: "braided", beardColor: "#7a3a22", stern: true, scar: true,
+        clothing: "#4a3a2e", outfit: "apron", background: ["#4a2e1c", "#140c08"], aura: "#7fd0ff" }),
+    },
+
     // ── Beyond the Hearthlands ──
     {
       id: "tyriel", name: "Tyriel", epithet: "Memory-keeper of Ithrel", group: "Beyond the Hearthlands",
@@ -307,7 +317,9 @@
     lark:               { gender: "female", age: "young", accent: "en-GB", rate: 1.06, mood: "dry" },
     kell:               { gender: "female", age: "adult", accent: "en-GB", pitch: 0.9, mood: "stern" },
     pell:               { gender: "male",   age: "adult", accent: "en-GB", pitch: 1.05, rate: 1.05, mood: "shaken" },
+    brokk:              { gender: "male",   age: "adult", accent: "en-GB", pitch: 0.78, rate: 0.95, mood: "dry" },
     // Minor speakers (not listed on the Characters page)
+    venn:               { gender: "male",   age: "adult", accent: "en-GB", pitch: 1.05, mood: "shaken" },
     nurse:              { gender: "female", age: "adult", accent: "en-GB", mood: "shaken" },
     steward:            { gender: "male",   age: "adult", accent: "en-GB", mood: "hushed" },
     "market-mother":    { gender: "female", age: "young", accent: "en-GB", mood: "grief" },
@@ -320,14 +332,14 @@
     "student":          { gender: "female", age: "young", accent: "en-US", mood: "calm" },
   };
   // Characters whose dialogue tags use a short speaker id.
-  const SPEAKER_ID = { "ressa-kell": "kell", "corwin-pell": "pell", "queen-isolde": "queen", "orvald-greaves": "greaves", "mother-wrenna": "wrenna",
+  const SPEAKER_ID = { "brokk-ironmantle": "brokk", "ressa-kell": "kell", "corwin-pell": "pell", "queen-isolde": "queen", "orvald-greaves": "greaves", "mother-wrenna": "wrenna",
     "ottilie-brandt": "archmagus", "lark-ellery": "lark" };
   CHARACTERS.forEach((c) => { const v = VOICES[c.id] || VOICES[SPEAKER_ID[c.id]]; if (v) c.voice = v; });
   window.VOICE_PROFILES = Object.assign(window.VOICE_PROFILES || {}, VOICES);
   window.VOICE_NAMES = Object.assign(window.VOICE_NAMES || {},
     Object.fromEntries(CHARACTERS.map((c) => [c.id, c.name])),
     { "young-dawnwarden": "A young Dawnwarden", student: "A second-year student", queen: "The queen",
-      toman: "Sir Toman", kell: "Lord-Commander Ressa Kell", pell: "Magistrate Corwin Pell", archmagus: "Archmagus Ottilie Brandt", lark: "Lark Ellery", queen: "Queen Isolde", rhoan: "Crown Prince Rhoan", greaves: "High Chancellor Greaves", wrenna: "Mother Wrenna", nurse: "Corvel's nursemaid", steward: "A palace steward", "market-mother": "A mother in the market", penn: "Lady Agathe Penn", collum: "Collum the trapper", "meg-ashby": "Meg Ashby" });
+      toman: "Sir Toman", brokk: "Brokk Ironmantle", venn: "Master Venn", kell: "Lord-Commander Ressa Kell", pell: "Magistrate Corwin Pell", archmagus: "Archmagus Ottilie Brandt", lark: "Lark Ellery", queen: "Queen Isolde", rhoan: "Crown Prince Rhoan", greaves: "High Chancellor Greaves", wrenna: "Mother Wrenna", nurse: "Corvel's nursemaid", steward: "A palace steward", "market-mother": "A mother in the market", penn: "Lady Agathe Penn", collum: "Collum the trapper", "meg-ashby": "Meg Ashby" });
 
   const GROUPS = ["Solmere", "The Collegium of Halvenreach", "Greywatch", "Fort Harrow", "Beyond the Hearthlands", "The Gods"];
   const SERIES = "the-day-the-gods-went-silent";

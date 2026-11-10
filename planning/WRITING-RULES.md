@@ -17,7 +17,7 @@ Once a new chapter is started, every chapter before it is **locked**.
 
 | Book | Chapters locked | Locked on |
 |---|---|---|
-| The Day the Gods Went Silent, Book One | 1–5 (Chapter 6 locks when Chapter 7 begins) | 2026-11-10. Unlocked by the author for a cross-chapter revision pass (repeated similes and phrases), then relocked |
+| The Day the Gods Went Silent, Book One | 1–6 | 2026-11-10. Unlocked by the author for a cross-chapter revision pass (repeated similes and phrases), then relocked. Chapter 6 locked when Chapter 7 began, after the Rule 1a review |
 
 Locked chapters change only when the author explicitly asks for a revision pass.
 

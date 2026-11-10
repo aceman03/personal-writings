@@ -144,9 +144,9 @@ Aldric went still. {{aldric-vane}}"My soldiers."{{/}}
 
 {{kell, stern}}"Thirty-eight men-at-arms and two knights of the Order of the Dawn. I am the ranking commander on this river and they are under my command, as are you. That is the law, and you know it as well as I do."{{/}} She met his eyes squarely. {{kell, warm}}"I'm sorry. I know what it cost you to bring them here. But I need every spear I can get."{{/}}
 
-{{aldric-vane, stern}}"And the civilians? Three thousand people on the north bank with nothing between them and the Wildlands but a river and your goodwill. Send them south, Lord-Commander. Today. To Solmere."{{/}}
+{{aldric-vane, stern}}"And the civilians? Three thousand people camped on the north bank, with nothing between them and the Wildlands but a ditch and your goodwill. Send them south, Lord-Commander. Today. To Solmere."{{/}}
 
-{{kell, stern}}"Solmere is a city in riot with no food to spare. I've had three riders back from it this week saying so."{{/}} Kell's knuckles whitened. {{kell, stern}}"The refugees stay behind my walls, where I can protect them. That is my decision, Knight-Captain. It isn't open to debate."{{/}}
+{{kell, stern}}"Solmere is a city in riot with no food to spare. I've had three riders back from it this week saying so."{{/}} Kell's knuckles whitened. {{kell, stern}}"The refugees cross to the south bank, behind the river, where I can protect them. The Grey has stopped every army that ever came down that road. They stay on this river. That is my decision, Knight-Captain. It isn't open to debate."{{/}}
 
 {{mood: grief}}
 

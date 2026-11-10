@@ -87,8 +87,17 @@ coming down the passes (*"the stone is humming the wrong way"*).
 - News comes from the Kharn passes: dwarves are coming down out of the mountains.
 **Cliffhanger:** Hask, watching the north from the bridge, sees the giant's blue eyes on the horizon. It is closer than yesterday, and it is not alone.
 
-### 7. Iron and Oath
-**POV:** Brokk (introduction), Aldric · **Day 5**
+### 7. Iron and Oath ✅ *(written)*
+**POV:** Brokk, Aldric, Nyx · **Day 4 and the night after**
+*As written:* Brokk's opening: stone has always hummed downward, and on the morning of the Silence it turned
+upward; the Root Halls under Kharn-Ostra grew warm; Hagra (*"When the stone hums toward you, something is coming
+up"*) leads the Stonebrow and Ironmantle clans down and sends Brokk to Fort Harrow. Kell moves the camp across
+the river and refuses Nyx's help in front of her captains; Aldric explains why. A child named Harrow is born
+under the tower. The camp mutters *mountain-rats*. Pip: *"He can hear it too."* Kell's axe is Hagra's gift after
+the nine-day siege. Brokk will relay the dead bridge wards for valley land south of the Grey (*"My king isn't
+here"*). Brokk and Nyx clash over craft versus magic, then work through the night; she discovers he's been
+feeding mana into every cut all his life. Hask and Brokk compare what stone feels like. Brokk sees Pip's circle
+in Nyx's notebook: beneath the Vaelic in the Root Halls lies an older, curved writing, warm since the Silence.
 - Introduce **Brokk Ironmantle**, a dwarven forge-master who led a column of his clan down from the Kharn.
 - The dwarves weren't driven out by the Silence (few of them were blessed). Something is waking *under* the mountains: deep tunnels warming, stone humming the wrong way.
 - Brokk and Nyx clash, then bond over craft versus magic. He recognizes Hagra Stonebrow's maker's mark on an axe and hates that Nyx calls it spellcraft.
@@ -238,6 +247,6 @@ coming down the passes (*"the stone is humming the wrong way"*).
 | 2 | Aldric, Nyx, Pip, Dagny, Toman, Brother Fen, Collum |
 | 4 | King Haldren, Queen Isolde, Crown Prince Rhoan, High Chancellor Orvald Greaves, Mother Wrenna, Lady Agathe Penn, Archprelate Maudrin, Magus Perrin Quill |
 | 6 | Lord-Commander Ressa Kell, Magistrate Corwin Pell |
-| 7 | Brokk Ironmantle |
+| 7 | Brokk Ironmantle, Master Venn; Hagra Stonebrow appears in Brokk's memory |
 | 5 | Archmagus Ottilie Brandt, Lark Ellery, Mother Agnes Hale (mentioned) |
 | 8 | Vessa |
