@@ -68,19 +68,19 @@ There was a blessing. That much was certain. Oren could feel the Warden in the r
 
 {{oren-vasse, warm}}"What do you feel?"{{/}} Oren asked.
 
-The prince frowned. {{corvel, hushed}}"Nothing, Father. Only..."{{/}} He looked at the queen, then at the two royal guards by the door, then at Oren himself. {{corvel}}"Only that the guard on the left told my mother he slept well last night. He didn't."{{/}}
+The prince frowned. {{corvel, hushed}}"Nothing, Father. Only..."{{/}} He looked at the queen, then at the two royal guards by the door, then at Oren himself. {{corvel}}"Only that the guard on the left told my mother this morning that he slept well. He didn't. I knew it when he said it."{{/}}
 
 The guard on the left went very red.
 
-Oren asked him three questions. The prince answered each one before the guard did: *true, true, false.* Oren asked the queen, with her permission, two more. The boy was right both times.
+Oren asked the guard three questions. After each answer, the prince said quietly whether it was the truth: *true, true, false.* Oren asked the queen, with her permission, two more. The boy was right both times.
 
-Truth-sense. It was a quiet gift, with no light to it, no fire, no shield. Oren had seen perhaps four of them in forty years.
+Truth-sense. It was a quiet gift, with no light to it, no fire, no shield. Oren had seen perhaps four of them in all his years at the temple.
 
 {{sfx: pen}}He took up his pen and the temple ledger, and the queen's eyes followed the pen as if it were a knife.
 
 The temples of the Hearthlands sorted the blessed by letter, from **F** at the bottom to **S** at the top. An F-class blessing was small and quiet, like a farmer who always knew when rain was coming or a midwife whose hands never shook. C-class could heal a wound or turn a blade. A-class belonged to paladins, high priests and battle-saints, who could hold a city gate or raise a dying army to its feet. S-class was spoken of rarely and with reverence: blessings so vast they reshaped the land. Only a handful had ever been recorded.
 
-The ranks were written into law. An F-class could not marry into a noble house. A C-class could serve as a village priest but never sit on a temple council. No one could be crowned king of the Hearthlands without at least an A-class blessing, which was why every royal heir was read at twelve, and why, now and then over the centuries, a royal child who read poorly had quietly disappeared.
+The ranks were written into law. An F-class could not marry into a noble house. A C-class could serve as a village priest but never sit on a temple council. No one could be crowned king of the Hearthlands without at least an A-class blessing, which was why royal Readings mattered so much, and why, now and then over the centuries, a royal child who read poorly had quietly disappeared.
 
 The prince's elder brother had read A-class four years ago, bright as a bonfire. The throne was safe. Still, a king's second son was a spare, and a spare who read low was a spare no one would want.
 
@@ -96,7 +96,7 @@ He thought about Tobbin the Quiet, E-class, whose minor hearth-god had given him
 
 The temples kept those stories and taught them as curiosities, as happy accidents. They had never changed the ladder.
 
-The gods had never asked for the ladder in the first place. Oren had served the Warden for forty years, and of all the things he believed about his god, this was the one he was surest of: Thalen did not measure. To the gods, every blessing was the same. They didn't hand out great gifts and small ones. They gave a gift and chose a hand, and what came after was up to the hand. *A blessing is what you do with it.* The old priests had said that, back before the temples grew rich enough to need ledgers.
+The gods had never asked for the ladder in the first place. Of all the things Oren believed about his god, this was the one he was surest of: Thalen did not measure. To the gods, every blessing was the same. They didn't hand out great gifts and small ones. They gave a gift and chose a hand, and what came after was up to the hand. *A blessing is what you do with it.* The old priests had said that, back before the temples grew rich enough to need ledgers.
 
 {{mood: hushed}}
 
@@ -170,11 +170,11 @@ She closed her eyes again and reached. The cold went down and down. She couldn't
 
 {{mood: warm}}
 
-Hale was quiet for a moment. {{teodric-hale, warm}}"Good,"{{/}} he said at last. {{teodric-hale, warm}}"That's an honest answer, and most first-years don't give one. Now you know what you have."{{/}} He leaned forward and tapped the mat between them with one inky finger, the same way, she would learn later, that he said it to every student. {{teodric-hale, stern}}"Never cast without knowing again."{{/}}
+Hale was quiet for a moment. {{teodric-hale, warm}}"Good,"{{/}} he said at last. {{teodric-hale, warm}}"That's an honest answer, and most first-years don't give one. Now you know what you have."{{/}} He leaned forward and tapped the mat between them with one inky finger. {{teodric-hale, stern}}"Never cast without knowing again."{{/}} She would learn later that he said those words, with that same tap, to every student who ever found their well.
 
 {{mood: calm}}
 
-Learning to feel the well was only the beginning. Next came learning to *read* it: to feel how deep a spell would draw before casting it, and to know the warning signs as the well ran low. First came a pressure behind the eyes and a chill or a heaviness in the limbs. Then glyphs began to flicker and would not hold. Last came the scrape of an empty bottom. Then the exhaustion struck all at once, and a mage dropped where they stood.
+Learning to feel the well was only the beginning. Next came learning to *read* it: to feel how deep a spell would draw before casting it, and to know the warning signs as the well ran low. First came a pressure behind the eyes and a chill or a heaviness in the limbs. Then glyphs began to flicker and would not hold. Finally came the scrape of an empty bottom, and after it the exhaustion, which struck all at once and dropped a mage where they stood.
 
 {{mood: stern}}
 
@@ -194,7 +194,7 @@ Every student remembered the lesson anyway.
 
 {{ambience: lecture-hall}}
 
-That same afternoon, two floors above Edda's quiet room, Magus Hale drew a circle on a slate board for a hall full of second-years.
+Later that same afternoon, two floors above Edda's quiet room, Magus Hale drew a circle on a slate board for a hall full of second-years.
 
 {{teodric-hale}}"The Common Fireball,"{{/}} he said. {{teodric-hale}}"You will learn it this term. Every battle mage in the Hearthlands knows it, and it has killed more people than plague."{{/}}
 
@@ -224,9 +224,9 @@ They all did. Every student did. A Magus had once decided the Lesser Ward of Hal
 
 The spells of Caelmar were passed down by **inheritance**, from master to apprentice and parent to child and page to page in libraries so old the bindings had turned to dust. The Collegium's archives held thousands of them: the Common Fireball, the Stonewall of the Nine Masons, the Lesser and Greater Wards, the Mending Circle, the Light of the Lantern-Keeper, the Binding of Varrow. Students learned them the way a child learns a song in a foreign tongue, every curve and syllable exactly as it had always been.
 
-The world, of course, did not care. To the world, a spark to light a pipe and a firestorm to burn a city were the same thing: an instruction, given and obeyed. The classes, the ranks and the ladder were all mortal inventions, just like the temples' letters.
+The world, of course, did not care. To the world, a spark to light a pipe and a firestorm to burn a city were the same thing: an instruction, given and obeyed. The classes and the ranks were mortal inventions, just like the temples' letters.
 
-The girl in the third row lowered her hand, but she didn't stop looking at the board.
+The girl in the third row didn't ask anything else. But she didn't stop looking at the board.
 
 ---
 
@@ -238,7 +238,7 @@ The girl in the third row lowered her hand, but she didn't stop looking at the b
 
 The woman inside had been there for nineteen years, by her own choice, mostly. Ilsabet Corrow was a **spellcrafter**, one of perhaps two hundred in all of Caelmar, and the Collegium had decided long ago that it was best for everyone if she was given a comfortable room, a generous budget, all the paper she wanted, and a door that locked from the outside.
 
-She didn't mind. The room had a good window and a better table, and tonight, as on most nights, the table was covered in the Lesser Ward of Halt.
+She didn't mind. The room had a good window and a better table, and tonight, as on most nights, the table was covered in somebody else's spell. This one was the Binding of Varrow, an old inherited circle for holding a thing in place.
 
 She had taken it apart. That was what spellcrafters did. Inherited mages memorized circles, and spellcrafters dismantled them. They laid a spell out glyph by glyph and ring by ring, tested each piece alone at great personal risk, and slowly learned what every part of it *did*. Most of what Ilsabet knew had cost her something. The burn scars on her forearms were the least of it.
 
@@ -270,9 +270,9 @@ The greatest anchored circle in the world was the Thornwall. Beneath its thousan
 
 {{mood: hushed}}
 
-The Lesser Ward of Halt had been the night's work, but it wasn't what kept pulling Ilsabet's eyes to the far corner of the table.
+The Binding of Varrow had been the night's work, but it wasn't what kept pulling Ilsabet's eyes to the far corner of the table.
 
-Under a stone paperweight lay a sheet of thin paper, smudged gray with charcoal. A warden's cousin had made it for her two years ago, at no small risk, by pressing the paper against a single section of the Thornwall and rubbing it like a gravestone. It was the only piece of the wall she had ever been able to study, and she had been studying it for two years.
+Under a stone paperweight lay a sheet of thin paper, smudged gray with charcoal. A warden's cousin had made it for her two years ago, at no small risk, by pressing the paper against a single section of the Thornwall and rubbing it like a gravestone. It was the only piece of the wall she had ever been able to study, and for two years it had refused to make sense.
 
 The wardens said the Thornwall kept the Wildlands out. Everyone said so. It was the first thing children were taught about it.
 
@@ -282,7 +282,7 @@ But a ward meant to keep something out *pushed*. Its conduits ran clockwise, out
 
 {{ambience: dread}}
 
-Every conduit in the rubbing ran counter-clockwise, every single one, drawn inward toward Thalen's name at the center. The Command glyph, repeated a hundred times down the length of the paper, was not a ward glyph at all. It was *Keth*.
+Every conduit in the rubbing ran counter-clockwise, every single one, drawn inward toward Thalen's name at the center. She had always put that down to a smudged copy. But tonight, with the Binding of Varrow's glyphs fresh under her hands, she finally recognized the worn shape repeated a hundred times down the length of the paper. The Command glyph was not a ward glyph at all. It was *Keth*.
 
 *Hold.*
 
@@ -306,11 +306,11 @@ Ilsabet sat looking at the rubbing for a long time while the candle burned down.
 
 Elsewhere in Caelmar, the world went about its night.
 
-In the forest of **Ithrel**, a thousand miles of rolling hills west of the Hearthlands, the elves slept in cities grown rather than built, beneath a canopy so thick that the moonlight came through it green. An old memory-keeper named Tyriel couldn't sleep, so she went down to the heartstone of her city, as she sometimes did, and laid her palm on it. The elves lived long and remembered everything, and Ione the Remembering was their goddess. A memory-keeper could touch a stone and see the hands that had shaped it a thousand years before. Tyriel reached back through the stone toward the oldest memory she knew: a city in the far north, before the war of the gods, with white towers and the sound of bells. Every year it was a little fainter. Tonight she could barely hear the bells at all. She felt Ione's presence settle beside her, gentle and familiar, and told herself that was enough.
+In the forest of **Ithrel**, which covered a thousand miles of rolling hills west of the Hearthlands, the elves slept in cities grown rather than built, beneath a canopy so thick that the moonlight came through it green. An old memory-keeper named Tyriel couldn't sleep, so she went down to the heartstone of her city, as she sometimes did, and laid her palm on it. The elves lived long and remembered everything, and Ione the Remembering was their goddess. A memory-keeper could touch a stone and see the hands that had shaped it a thousand years before. Tyriel reached back through the stone toward the oldest memory she knew: a city in the far north, before the war of the gods, with white towers and the sound of bells. Every year it was a little fainter. Tonight she could barely hear the bells at all. She felt Ione's presence settle beside her, gentle and familiar, and told herself that was enough.
 
 {{ambience: forge}}
 
-In the **Kharn Mountains**, which stood like broken teeth along the eastern horizon, a dwarven forge-master named Hagra Stonebrow was carving a rune-circle into an axe-head by lamplight. Few dwarves were blessed and fewer were mages. They had no patience for gods who might change their minds, nor for the long years of study a mage required. What they had instead was craft. Hagra used curves along the cheeks of the axe, where the steel had to last, and sharp angles along the edge, where it had to bite. Her grandmother had taught her that, and her grandmother's grandmother before that. When the axe was finished, it would never dull and never break, and it would go through enchanted plate like bark. If anyone had told Hagra she was doing spellcraft, she would have thrown them out of her forge.
+In the **Kharn Mountains**, which stood like broken teeth along the north and east of the Hearthlands, a dwarven forge-master named Hagra Stonebrow was carving a rune-circle into an axe-head by lamplight. Few dwarves were blessed and fewer were mages. They had no patience for gods who might change their minds, nor for the long years of study a mage required. What they had instead was craft. Hagra used curves along the cheeks of the axe, where the steel had to last, and sharp angles along the edge, where it had to bite. Her grandmother had taught her that, and her grandmother's grandmother before that. When the axe was finished, it would never dull and never break, and it would go through enchanted plate like bark. If anyone had told Hagra she was doing spellcraft, she would have thrown them out of her forge.
 
 {{mood: tense}}
 
@@ -350,7 +350,7 @@ There was no line in the watch log for *too quiet*. Hask wrote *All quiet* and d
 
 That was Caelmar on its last ordinary night.
 
-It was a world of two courts of gods held back by an ancient promise, where power was given and power was earned, and where mortals had built ladders and ranks and classes around both, though neither the gods nor the world had ever asked them to. A prince had been graded E for a gift no one understood. A fisherman's daughter had found a well she couldn't see the bottom of. A spellcrafter in a locked room had written a question no one else alive could read. On the Steppe, a god of war was leaning against the door. On the Thornwall, the Wildlands were holding their breath.
+It was a world of two courts of gods held back by an ancient promise, where power was given and power was earned, and where mortals had built ladders and ranks and classes around both, though neither the gods nor the world had ever asked them to. A prince had been graded E for a gift worth far more than its letter. A fisherman's daughter had found a well she couldn't see the bottom of. A spellcrafter in a locked room had written a question no one else alive could read. On the Steppe, a god of war was leaning against the door. On the Thornwall, the Wildlands were holding their breath.
 
 And every morning, for longer than anyone could remember, the sun had risen because Aurem lifted it, and the Dawnwardens of Solmere caught its first light in their hands. Even the elves, who remembered everything, could not recall a single morning when the gods had not answered.
 
@@ -380,7 +380,7 @@ She lowered her arms. Around the ring, one by one, the others did the same. No o
 
 Below them, in the courtyard of the nearest House of Mending, a healer was kneeling beside a feverish child with her hands pressed to the girl's chest. She had done this ten thousand times. She felt for Lyssa's presence beside her the way she always did, and found nothing there. Beneath her palms, the healing circle she had traced, anchored with the goddess's name, {{sfx: glow-fade}}flickered once, guttered like a candle in a draft, and went dark.
 
-In the Temple of Thalen, Father Oren Vasse woke in his narrow bed knowing that something was wrong before he knew what it was. He reached for the weight at his back, the one that had been there for forty years, and closed his hand on nothing.
+In the Temple of Thalen, Father Oren Vasse was kneeling at his dawn prayers when he knew that something was wrong, before he knew what it was. He reached for the weight at his back, the one that had been there for forty years, and closed his hand on nothing.
 
 {{mood: urgent}}
 
