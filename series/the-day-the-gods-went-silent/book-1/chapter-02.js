@@ -494,7 +494,7 @@ It was a footstep.
 
 {{mood: menacing}}
 
-Aldric turned north. Hask was already looking. Beside him, Sir Toman was hauling Nyx to her feet, and she held Pip against her chest as if she would never let go. Behind them, three hundred people had gone silent again without being told.
+Aldric turned north. Hask was already looking. Beside them, Sir Toman was hauling Nyx to her feet, and she held Pip against her chest as if she would never let go. Behind them, three hundred people had gone silent again without being told.
 
 Far up the Pale Road, beyond the foothills, beyond the dark line where the Thornwall stood dead against the stars, something was rising out of the Wildlands. It was so large that for a moment Aldric took it for a hill, until the hill moved. It stood higher than the trees, higher than the wall itself, a vast black shape that blotted out whole constellations as it straightened.
 

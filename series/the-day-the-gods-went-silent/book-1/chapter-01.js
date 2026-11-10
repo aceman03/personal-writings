@@ -158,7 +158,7 @@ She closed her eyes again and reached. The cold went down and down. She couldn't
 
 {{mood: warm}}
 
-Hale was quiet for a moment. {{teodric-hale, warm}}"Good,"{{/}} he said at last. {{teodric-hale, warm}}"That's an honest answer, and most first-years don't give one. Now you know what you have."{{/}} He leaned forward and tapped the mat between them with one inky finger. {{teodric-hale, stern}}"Never cast without knowing again."{{/}} She would learn later that he said those words, with that same tap, to every student who ever found their well.
+Hale was quiet for a moment. {{teodric-hale, warm}}"Good,"{{/}} he said at last. {{teodric-hale, warm}}"That's an honest answer, and most first-years don't give one. Now you know what you have."{{/}} He leaned forward and tapped the mat between them with one inky finger. {{teodric-hale, stern}}"Never cast without knowing."{{/}} She would learn later that he said those words, with that same tap, to every student who ever found their well.
 
 {{mood: calm}}
 
@@ -188,7 +188,7 @@ Later that same afternoon, two floors above Edda's quiet room, Magus Hale drew a
 
 {{sfx: chalk}}He drew quickly and precisely, the chalk clicking against the board. First came a glyph at the center like a teardrop of flame. Around it went a ring, with a small circled dot repeated three times. Around that went a second ring of three short arrows. Last came a closed outer circle, notched at four points like the face of a compass.
 
-{{teodric-hale, stern}}"*Ignar ora sae, vos,*"{{/}} he said, touching each part in turn, {{sfx: spell-hum}}and the chalk lines glowed faintly orange for a heartbeat before fading. Half the hall leaned back in their seats.
+{{teodric-hale, stern}}"*Ignar ora sae, vos,*"{{/}} he said, touching each part in turn, {{sfx: spell-hum}}and the chalk lines glowed faintly orange for a heartbeat, the way a circle does when it is named but not fed, before fading. Half the hall leaned back in their seats.
 
 A spell was a circle: rings of glyphs nested one inside another, written in **Vaelic**. The elves said Vaelic had been old when their own tongue was young, and the dwarves said their ancestors had found it carved into the roots of the mountains. The Collegium's scholars agreed only that it wasn't a mortal language at all. It was the language the world used to describe itself, and speaking it gave the world instructions.
 
@@ -304,7 +304,7 @@ In the cracks between these places lived everyone else: goblins in the deep mars
 
 And in the far north, on the last watch of the night, Sergeant Hask Morrow walked the top of the Thornwall.
 
-He had walked it for twenty-two years. Beneath his boots the circles glowed their faint, steady blue, mile after mile, all the way to the horizon in both directions, humming so softly that he only heard it now when it stopped. It never stopped. On the far side, the Wildlands stretched away into darkness: black forest and broken hills, and the sounds that came out of them every night. There was howling, and calling, and the scrape of things testing the base of the wall the way they had tested it for a thousand years.
+He had walked it for twenty-two years. Beneath his boots the circles glowed their faint, steady blue, mile after mile, all the way to the horizon in both directions, humming so softly that he would only have noticed it if it ever stopped. It never stopped. On the far side, the Wildlands stretched away into darkness: black forest and broken hills, and the sounds that came out of them every night. There was howling, and calling, and the scrape of things testing the base of the wall the way they had tested it for a thousand years.
 
 {{mood: dread}}
 
@@ -324,7 +324,7 @@ There was no line in the watch log for *too quiet*. Hask wrote *All quiet* and d
 
 That was Caelmar on its last ordinary night.
 
-It was a world of two courts of gods held back by an ancient promise, where power was given and power was earned, and where mortals had built ladders and ranks and classes around both, though neither the gods nor the world had ever asked them to. A prince had been graded E for a gift worth far more than its letter. A fisherman's daughter had found a well she couldn't see the bottom of. A spellcrafter in a locked room had written a question no one else alive could read. On the Steppe, a god of war was leaning against the door. On the Thornwall, the Wildlands were holding their breath.
+It was a world of two courts of gods held back by an ancient promise, where power was given and power was earned, and where mortals had built ladders and ranks and classes around both, though neither the gods nor the world had ever asked them to. A prince had been graded E for a gift worth far more than its letter. A fisherman's daughter had found a well she couldn't see the bottom of. A spellcrafter in a locked room had written a question no one else alive could read. On the Steppe, a god of war was leaning against the door. Beyond the Thornwall, the Wildlands were holding their breath.
 
 And every morning, for longer than anyone could remember, the sun had risen because Aurem lifted it, and the Dawnwardens of Solmere caught its first light in their hands. Even the elves, who remembered everything, could not recall a single morning when the gods had not answered.
 
@@ -372,7 +372,7 @@ From the top of the Sunspire, on the clearest mornings, you could just make out 
 
 {{ambience: wall-silent}}
 
-On top of the wall, Sergeant Hask Morrow watched the blue drain out of the stone beneath his boots. The humming he had stopped hearing years ago fell silent, and the silence was the loudest thing he had ever heard. A mile to the north, in the black treeline of the Wildlands, {{sfx: rumble}}something enormous began to move.
+On top of the wall, Sergeant Hask Morrow watched the blue drain out of the stone beneath his boots. The humming he had stopped hearing years ago fell silent, and the silence was the loudest thing he had ever heard. A mile to the north, somewhere in the black treeline of the Wildlands, he felt {{sfx: rumble}}something enormous begin to move.
 
 {{ambience: hollow}}
 

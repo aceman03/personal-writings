@@ -48,7 +48,7 @@
       id: "teodric-hale", name: "Magus Teodric Hale", epithet: "Teacher at the Collegium", group: "The Collegium of Halvenreach",
       facts: { Race: "Human", Home: "Halvenreach", Power: "Magic. Fourth-ring Magus" },
       firstAppears: "1.1",
-      description: "An old Magus with ink-stained fingers, a burn scar on one hand and the patience of a heron. Hale teaches first-years to find their wells and second-years their first combat spells, and he says the same words to every student who finds their well: \"Never cast without knowing again.\" He believes in learning the inherited circles exactly as they were taught.",
+      description: "An old Magus with ink-stained fingers, a burn scar on one hand and the patience of a heron. Hale teaches first-years to find their wells and second-years their first combat spells, and he says the same words to every student who finds their well: \"Never cast without knowing.\" He believes in learning the inherited circles exactly as they were taught.",
       portrait: P({ alt: "Magus Teodric Hale", age: "old", skin: "tan", hair: "fringe", hairColor: "#e6e1d8", beard: "full", beardColor: "#ece7de",
         clothing: "#3a3150", trim: "#8fb7d9", outfit: "robe", background: ["#3d3558", "#14121a"], stern: true }),
     },
