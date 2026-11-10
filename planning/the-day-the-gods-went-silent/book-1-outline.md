@@ -30,7 +30,7 @@ Skirls attack the Lantern House; Nyx runs dry and bloodcasting fails; Pip lights
 and Aldric feels Aurem for a heartbeat.
 **Cliffhanger:** A giant rises beyond the wall, with Thornwall-blue eyes, and turns toward the gold light.
 
-### 3. The Long Night
+### 3. The Long Night ✅ *(written)*
 **POV:** Aldric · **Night of Day 1 → Day 2**
 - The column flees the Lantern House in the dark, in silence, with the footsteps behind them.
 - Pip won't wake. Dagny refuses to let anyone near her; Brother Fen calls her a miracle; Collum calls her a curse.

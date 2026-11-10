@@ -224,6 +224,7 @@ window.Soundscape = (function () {
     "birch-wood": (b) => { L.wind(b, { level: 0.08, cutoff: 1400, gusty: 0.8 }); L.crows(b, 11000, 0.025); },
     "road-dusk": (b) => { L.wind(b, { level: 0.14, cutoff: 480, gusty: 0.6 }); L.hooves(b, 0.035); },
     "lantern-house": (b) => { L.wind(b, { level: 0.12, cutoff: 420, gusty: 0.5 }); L.pad(b, [110, 164.8], 0.025, 0.2); },
+    "night-march": (b) => { L.wind(b, { level: 0.09, cutoff: 380, gusty: 0.4 }); L.hooves(b, 0.02); L.river(b, 0.015, 500); },
     "night-watch": (b) => { L.wind(b, { level: 0.1, cutoff: 360, gusty: 0.3 }); L.pad(b, [55, 58.3], 0.05, 0.4); },
     silence: () => {},
   };

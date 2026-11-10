@@ -129,6 +129,15 @@
         clothing: "#7a5a3a", outfit: "apron", background: ["#5a3a24", "#140d08"] }),
     },
 
+    {
+      id: "brother-fen", name: "Brother Fen", epithet: "Priest of Greywatch's chapel", group: "Greywatch",
+      facts: { Race: "Human", Home: "The chapel of Aurem, Greywatch", Power: "A small blessing from Aurem" },
+      firstAppears: "1.2",
+      description: "The thin, gray-bearded priest who rings Greywatch's dawn bell and tends its little chapel to Aurem. He has seen the sunrise light every morning of his life, and he believes in it with his whole heart.",
+      portrait: P({ alt: "Brother Fen", age: "old", skin: "light", hair: "fringe", hairColor: "#9a9a96", beard: "full", beardColor: "#a8a8a2",
+        clothing: "#d9cfb6", trim: "#d9a441", outfit: "robe", emblem: "sun", background: ["#4a3e26", "#120f0a"] }),
+    },
+
     // ── The gods ──
     {
       id: "aurem", name: "Aurem the Sunfather", epithet: "The Bright Court", group: "The Gods",
@@ -206,6 +215,8 @@
     pip:             { gender: "female", age: "child", accent: "en-GB", rate: 0.92, mood: "calm" },
     "dagny-holt":    { gender: "female", age: "adult", accent: "en-GB", pitch: 0.95, rate: 1.08, mood: "warm" },
     // Minor speakers (not listed on the Characters page)
+    "meg-ashby":        { gender: "female", age: "young", accent: "en-GB", mood: "grief" },
+    "brother-fen":      { gender: "male",   age: "old",   accent: "en-GB", pitch: 1.05, rate: 0.95, mood: "awe" },
     toman:              { gender: "male",   age: "young", accent: "en-GB", mood: "shaken" },
     collum:             { gender: "male",   age: "old",   accent: "en-US", pitch: 0.85, mood: "stern" },
     "young-dawnwarden": { gender: "male",   age: "young", accent: "en-GB", mood: "shaken" },
@@ -217,7 +228,7 @@
   window.VOICE_NAMES = Object.assign(window.VOICE_NAMES || {},
     Object.fromEntries(CHARACTERS.map((c) => [c.id, c.name])),
     { "young-dawnwarden": "A young Dawnwarden", student: "A second-year student", queen: "The queen",
-      toman: "Sir Toman", collum: "Collum the trapper" });
+      toman: "Sir Toman", collum: "Collum the trapper", "meg-ashby": "Meg Ashby" });
 
   const GROUPS = ["Solmere", "The Collegium of Halvenreach", "Greywatch", "Beyond the Hearthlands", "The Gods"];
   const SERIES = "the-day-the-gods-went-silent";
