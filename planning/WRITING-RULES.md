@@ -17,7 +17,7 @@ Once a new chapter is started, every chapter before it is **locked**.
 
 | Book | Chapters locked | Locked on |
 |---|---|---|
-| The Day the Gods Went Silent, Book One | 1–4 | 2026-11-10 (style revision at the author's request, then relocked) |
+| The Day the Gods Went Silent, Book One | 1–4 | 2026-11-10 (style and vocabulary revisions at the author's request, then relocked) |
 
 Locked chapters change only when the author explicitly asks for a revision pass.
 
@@ -46,6 +46,10 @@ Habits to keep rare (a few deliberate uses per chapter at most):
 - **"very."** Find the stronger word.
 - **"quietly" / "softly" dialogue tags.** The mood markup already tells the narrator; let the line carry it.
 - **Lists of three, "the way you…" similes, and "It was a…" openers.** Vary sentence shape and rhythm.
+- **Generic verbs: came, went, stood, looked, walked, felt.** Reach for the precise verb (*spilled, burst,
+  trudged, lunged, seeped, filed in, ground on, eyed, regarded, crested*). Keep plain verbs where plainness is
+  the point, and keep "said" for dialogue tags; it should stay invisible.
+- **Vocabulary should be rich but never showy.** No thesaurus words a character wouldn't think in.
 
 ## 6. Character voices
 

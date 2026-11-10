@@ -10,13 +10,13 @@ The gods spoke every morning, and the world of Caelmar answered.
 
 In Solmere, the white capital of the Hearthlands, the speaking began before dawn. The Dawnwardens climbed the hundred steps of the Sunspire, eleven of them in gold-trimmed mantles, and stood in a ring at the top with their palms raised to a sky still deep blue. They didn't pray aloud. They had no need to. Aurem the Sunfather knew their hearts as well as he knew the sun he rode, and every morning, just as the eastern sky paled, he answered them.
 
-{{sfx: light-swell}}It started as warmth, a pressure against the skin like a hand laid gently on the back of the neck. Then came the light. It poured out of the Dawnwardens' upturned palms in slow golden rivers, ran down the Sunspire's sides, and spread through the streets below. It soaked into the cobblestones and climbed the walls of bakeries and barracks. Lamplighters who had worked all night snuffed their wicks and went home to sleep. The city's sick, lying on cots in the courtyards of the Houses of Mending, turned their faces toward it the way flowers turn toward the sun. Some of them would rise by midday with their fevers gone.
+{{sfx: light-swell}}It started as warmth, a pressure against the skin like a hand laid gently on the back of the neck. Then came the light. It poured out of the Dawnwardens' upturned palms in slow golden rivers, ran down the Sunspire's sides, and spread through the streets below. It soaked into the cobblestones and climbed the walls of bakeries and barracks. Lamplighters who had worked all night snuffed their wicks and trudged home to bed. The city's sick, lying on cots in the courtyards of the Houses of Mending, turned their faces toward it the way flowers turn toward the sun. Some of them would rise by midday with their fevers gone.
 
 This was a blessing, and in Caelmar blessings were as ordinary as bread.
 
 No one in Solmere thought of the morning light as a miracle, any more than they thought of breathing that way. Children were born under it and old men died under it. Merchants set their prices by it, and soldiers kept their watches by it. The light came because Aurem gave it, and Aurem gave it because he was good, and the goodness of the gods was the first truth every child learned, before their letters and before their numbers.
 
-On the last ordinary morning of the world, the light came as it always had, and no one in Solmere thought it worth remarking on.
+On the last ordinary morning of the world, the light arrived as it always had, and no one in Solmere thought it worth remarking on.
 
 ---
 
@@ -34,7 +34,7 @@ The Hollow Choir dwelt below, in whatever lay beneath the roots of mountains. Ka
 
 {{ambience: dread}}
 
-Long ago, before the oldest histories, the two courts had made war directly upon the world. Nothing of that age survived but scars. The Shattered Coast was one, where the sea still steamed over a cracked and glassy shore. The Bleeding Hills were another, where the red earth stained the rivers rust-colored for a hundred miles downstream. So were the great empty basins in the far north where the elves said cities had once stood, cities so old that even Ione's memory of them had grown faint.
+Long ago, before the oldest histories, the two courts had waged war directly upon the world. Nothing of that age survived but scars. The Shattered Coast was one, where the sea still steamed over a cracked and glassy shore. The Bleeding Hills were another, where the red earth stained the rivers rust-colored for a hundred miles downstream. So were the great empty basins in the far north where the elves claimed cities had once risen, cities so old that even Ione's memory of them had grown faint.
 
 {{mood: calm}}
 
@@ -122,11 +122,11 @@ The boy studied him the way he had studied the guard. Then something in his thin
 
 Three days' ride south of Solmere, in the river-city of Halvenreach, a fisherman's daughter named Edda Marsh sat on a woven mat in a small stone room with her eyes shut, and for the first time in eleven weeks, she felt something.
 
-The Collegium of Halvenreach stood on an island in the middle of the river Halven. Its walls were carved with spirals of glyphs that glowed a faint blue at night, and its students came from every corner of the Hearthlands. None of them were there because a god had chosen them. They were there because they had chosen themselves.
+The Collegium of Halvenreach rose from an island in the middle of the river Halven. Its walls were carved with spirals of glyphs that glowed a faint blue at night, and its students hailed from every corner of the Hearthlands. None of them were there because a god had chosen them. They were there because they had chosen themselves.
 
 On their first day, students weren't taught a single spell. They were brought to rooms like this one, sat on mats, and told to close their eyes and **find the well**.
 
-Magic did not come from the gods. It came from the world: from the heat in the earth, the pull of the tides, the life in green and growing things, the force that held the stars in their courses. It lay everywhere, unclaimed and unshaped, and it lay inside every living person as well. Every mortal in Caelmar, from the beggar to the king, was born with a reservoir of mana somewhere in the body. Some were born with wells as deep as lakes. Others had wells as shallow as a cupped palm, and those could be deepened only through years of patient, painful training.
+Magic did not come from the gods. It welled up from the world: from the heat in the earth, the pull of the tides, the life in green and growing things, the force that held the stars in their courses. It lay everywhere, unclaimed and unshaped, and it lay inside every living person as well. Every mortal in Caelmar, from the beggar to the king, was born with a reservoir of mana somewhere in the body. Some were born with wells as deep as lakes. Others had wells as shallow as a cupped palm, and those could be deepened only through years of patient, painful training.
 
 Size was only half of it. A well could not be felt by instinct. Knowing it was there, and knowing how full it was, had to be *learned*. A man could live his whole life with a lake of mana in his chest and never once suspect it.
 
@@ -136,7 +136,7 @@ For eleven weeks, Edda had felt nothing but her own heartbeat and the ache in he
 
 {{sfx: ripple}}And then, just below her ribs, there it was.
 
-It was cold. That was the first thing. It felt like the river in early spring, when the snowmelt came down from the mountains and the water was so cold it burned. It was deep, deeper than she'd expected, dark and utterly still. When she leaned her attention toward it, as the teachers had told her to, the surface trembled the way a pond trembles when a fish moves underneath.
+It was cold. That was the first thing. It felt like the river in early spring, when the snowmelt poured down from the mountains and the water was so cold it burned. It was deep, deeper than she'd expected, dark and utterly still. When she leaned her attention toward it, as the teachers had told her to, the surface trembled the way a pond trembles when a fish moves underneath.
 
 She gasped and opened her eyes.
 
@@ -152,7 +152,7 @@ Magus Teodric Hale was sitting cross-legged across from her, as he had sat acros
 
 {{mood: hushed}}
 
-She closed her eyes again and reached. The cold went down and down. She couldn't find the bottom.
+She closed her eyes again and reached. The cold plunged down and down. She couldn't find the bottom.
 
 {{edda-marsh, whisper}}"I don't know,"{{/}} she whispered.
 
@@ -162,7 +162,7 @@ Hale was quiet for a moment. {{teodric-hale, warm}}"Good,"{{/}} he said at last.
 
 {{mood: calm}}
 
-Learning to feel the well was only the beginning. Next came learning to *read* it: to feel how deep a spell would draw before casting it, and to know the warning signs as the well ran low. First came a pressure behind the eyes and a chill or a heaviness in the limbs. Then glyphs began to flicker and would not hold. Finally came the scrape of an empty bottom, and after it the exhaustion, which struck all at once and dropped a mage where they stood.
+Learning to feel the well was only the beginning. Next came learning to *read* it: to feel how deep a spell would draw before casting it, and to know the warning signs as the well ran low. It began with a pressure behind the eyes and a chill or a heaviness in the limbs. Then glyphs began to flicker and would not hold. Finally came the scrape of an empty bottom, and after it the exhaustion, which struck all at once and dropped a mage where they stood.
 
 {{mood: stern}}
 
@@ -186,11 +186,11 @@ Later that same afternoon, two floors above Edda's quiet room, Magus Hale drew a
 
 {{teodric-hale}}"The Common Fireball,"{{/}} he said. {{teodric-hale}}"You will learn it this term. Every battle mage in the Hearthlands knows it, and it has killed more people than plague."{{/}}
 
-{{sfx: chalk}}He drew quickly and precisely, the chalk clicking against the board. First came a glyph at the center like a teardrop of flame. Around it went a ring, with a small circled dot repeated three times. Around that went a second ring of three short arrows. Last came a closed outer circle, notched at four points like the face of a compass.
+{{sfx: chalk}}He drew quickly and precisely, the chalk clicking against the board. At the center he set a glyph like a teardrop of flame. Around it he wrapped a ring bearing a small circled dot, repeated three times, and around that a second ring of three short arrows. Last, he closed the whole thing inside an outer circle, notched at four points like the face of a compass.
 
 {{teodric-hale, stern}}"*Ignar ora sae, vos,*"{{/}} he said, touching each part in turn, {{sfx: spell-hum}}and the chalk lines glowed faintly orange for a heartbeat, the way a circle does when it is named but not fed, before fading. Half the hall leaned back in their seats.
 
-A spell was a circle: rings of glyphs nested one inside another, written in **Vaelic**. The elves said Vaelic had been old when their own tongue was young, and the dwarves said their ancestors had found it carved into the roots of the mountains. The Collegium's scholars agreed only that it wasn't a mortal language at all. It was the language the world used to describe itself, and speaking it gave the world instructions.
+A spell was a circle: rings of glyphs nested one inside another, written in **Vaelic**. The elves said Vaelic had been old when their own tongue was young, and the dwarves insisted their ancestors had discovered it carved into the roots of the mountains. The Collegium's scholars agreed only that it wasn't a mortal language at all. It was the language the world used to describe itself, and speaking it gave the world instructions.
 
 A circle could be **spoken**, which was fast but weak. It could be **traced** in the air until its lines burned with pale light, which was how battle mages fought. Or it could be **inscribed** in stone or steel, where it would wait, holding its spell, until something set it off. Inscription ran half the Hearthlands: wardstones around every village, cold-boxes in rich kitchens, and in the far north the **Thornwall**, a hundred and forty miles of black stone carved end to end with circles so old that no living mage could read them all. The Thornwall held back the Wildlands and whatever lived beyond them.
 
@@ -202,7 +202,7 @@ There were stories of seventh-ring circles too, but those were only stories.
 
 A girl in the third row raised her hand. {{student}}"Magus, which of the words is the fire?"{{/}}
 
-The hall went quiet. Hale looked at the board, and let the silence stretch.
+The hall fell silent. Hale regarded the board, and let the silence stretch.
 
 {{teodric-hale, stern}}"It doesn't matter,"{{/}} he said. {{teodric-hale, stern}}"The circle works. It has worked for a thousand years. You will learn it exactly as I learned it, and exactly as my teacher learned it, and you will draw it faster and steadier and cleaner than anyone else in this room. That is what makes a mage."{{/}} He set down the chalk. {{teodric-hale, dry}}"Do any of you know the story of the Lesser Ward of Halt?"{{/}}
 
@@ -234,13 +234,13 @@ Every circle, she had learned, was built from parts. A **Source** said what the 
 
 But the glyphs were only half a circle. The other half was the lines between them, which inherited mages treated as decoration. Spellcrafters called them **conduits**, because mana flowed along them from the center to the rim, and how they carried it changed everything. Curves carried it smoothly, for wards and mending and anything meant to last. Sharp angles made it pile up and burst out of the corner harder and faster, which was where a spell got its punch. Thick lines carried more and cost more. Even the direction mattered. Clockwise flow pushed outward, for anything thrown. Counter-clockwise flow pulled inward, for anything meant to hold.
 
-Every inherited spell was simply the first arrangement someone, long ago, had found that worked. It was rarely the best one. Ilsabet's own fireball was still a two-ring, Second-Class spell by the Collegium's measure, but she had tightened its curves and tucked one extra glyph in among the Commands. It cost a third of the mana of the Common Fireball. With a different glyph in the same place, it burned white-blue and went through iron plate. On paper it was the same spell Hale taught his second-years. In practice it could outmatch the Fourth-Class spells of most of the Magi in the building. The class system measured how *complex* a circle was. It had never once measured how *good* one was.
+Every inherited spell was simply the first arrangement someone, long ago, had found that worked. It was rarely the best one. Ilsabet's own fireball was still a two-ring, Second-Class spell by the Collegium's measure, but she had tightened its curves and tucked one extra glyph in among the Commands. It cost a third of the mana of the Common Fireball. With a different glyph in the same place, it burned white-blue and punched through iron plate. On paper it was the same spell Hale taught his second-years. In practice it could outmatch the Fourth-Class spells of most of the Magi in the building. The class system measured how *complex* a circle was. It had never once measured how *good* one was.
 
 That was what made spellcrafters valuable, and what made them dangerous. A mage who could build any spell could build spells that should never exist. Some were given towers and titles. Some were given locked doors. Over the centuries, a few had simply disappeared.
 
-Ilsabet had found the flaw in the Lesser Ward of Halt in her second year in the tower. The Magus who had tried to improve it hadn't made a foolish change. He had made a clever one: a sharp bend in the Command line to make the ward snap shut faster. But the Command was *Lo*, mend, and life-born magic did not tolerate being bent hard. The line had cracked. Students were told he had been found as a smear of ash. The truth, as far as Ilsabet could work it out, was worse: the ward had mended him into something that wasn't a person anymore, and someone had burned what was left. She had written the answer in cipher in her notebook years ago. Nobody had ever asked her for it.
+Ilsabet had uncovered the flaw in the Lesser Ward of Halt in her second year in the tower. The Magus who had tried to improve it hadn't blundered. He'd been clever: a sharp bend in the Command line to make the ward snap shut faster. But the Command was *Lo*, mend, and life-born magic did not tolerate being bent hard. The line had cracked. Students were told he had been found as a smear of ash. The truth, as far as Ilsabet could work it out, was worse: the ward had mended him into something that wasn't a person anymore, and someone had burned what was left. She had written the answer in cipher in her notebook years ago. Nobody had ever asked her for it.
 
-**Sorcerers**, blessed by their gods with fluency in Vaelic, could read a circle at a glance without any of this work, which Ilsabet found deeply unfair. Priests used the language too, in their way. A god's name-glyph placed at the heart of a circle, where a Source would go, turned an ordinary spell into a holy one, with the god powering what the priest shaped. A healing circle anchored with Lyssa's name could close wounds no mage could touch. The greatest anchored circle in the world was the Thornwall. Beneath its thousands of ordinary glyphs, at the heart of every mile of black stone, the first wardens had carved Thalen's name. Mortal magic gave the wall its shape. The Warden's power held it closed.
+**Sorcerers**, blessed by their gods with fluency in Vaelic, could read a circle at a glance without any of this work, which Ilsabet considered a personal insult. Priests used the language too, in their way. A god's name-glyph placed at the heart of a circle, where a Source would go, turned an ordinary spell into a holy one, with the god powering what the priest shaped. A healing circle anchored with Lyssa's name could close wounds no mage could touch. The greatest anchored circle in the world was the Thornwall. Beneath its thousands of ordinary glyphs, at the heart of every mile of black stone, the first wardens had carved Thalen's name. Mortal magic gave the wall its shape. The Warden's power held it closed.
 
 {{mood: hushed}}
 
@@ -250,7 +250,7 @@ Under a stone paperweight lay a sheet of thin paper, smudged gray with charcoal.
 
 The wardens said the Thornwall kept the Wildlands out. Everyone said so. It was the first thing children were taught about it.
 
-But a ward meant to keep something out *pushed*. Its conduits ran clockwise, outward, driving away whatever came near. Every ward Ilsabet had ever dismantled worked that way.
+But a ward meant to keep something out *pushed*. Its conduits ran clockwise, outward, driving off whatever strayed near. Every ward Ilsabet had ever dismantled worked that way.
 
 {{mood: dread}}
 
@@ -278,9 +278,9 @@ Ilsabet sat looking at the rubbing until the candle had burned down to a stub. T
 
 {{ambience: forest-night}}
 
-Elsewhere in Caelmar, the world went about its night.
+Elsewhere in Caelmar, the world carried on with its night.
 
-In the forest of **Ithrel**, which covered a thousand miles of rolling hills west of the Hearthlands, the elves slept in cities grown rather than built, beneath a canopy so thick that the moonlight came through it green. An old memory-keeper named Tyriel couldn't sleep, so she went down to the heartstone of her city, as she sometimes did, and laid her palm on it. The elves lived long and remembered everything, and Ione the Remembering was their goddess. A memory-keeper could touch a stone and see the hands that had shaped it a thousand years before. Tyriel reached back through the stone toward the oldest memory she knew: a city in the far north, before the war of the gods, with white towers and the sound of bells. Every year it was a little fainter. Tonight she could barely hear the bells at all. She felt Ione's presence settle beside her, gentle and familiar, and told herself that was enough.
+In the forest of **Ithrel**, which covered a thousand miles of rolling hills west of the Hearthlands, the elves slept in cities grown rather than built, beneath a canopy so thick that the moonlight came through it green. An old memory-keeper named Tyriel couldn't sleep, so she descended to the heartstone of her city, as she sometimes did, and laid her palm on it. The elves lived long and remembered everything, and Ione the Remembering was their goddess. A memory-keeper could touch a stone and see the hands that had shaped it a thousand years before. Tyriel reached back through the stone toward the oldest memory she knew: a city in the far north, before the war of the gods, with white towers and the sound of bells. Every year it was a little fainter. Tonight she could barely hear the bells at all. She felt Ione's presence settle beside her, gentle and familiar, and told herself that was enough.
 
 {{ambience: forge}}
 
@@ -290,7 +290,7 @@ In the **Kharn Mountains**, which stood like broken teeth along the north and ea
 
 {{ambience: steppe-fire}}
 
-To the southeast, where the mountains ran out, lay the **Ashen Steppe**, endless grassland gone gray with the ash of old wars, where the orc clans rode and fought and worshipped Karrog the Red Hand. Not every orc was cruel, and not every clan bent its knee to the Hollow Choir. But enough of them did. Every few decades a warlord rose on the Steppe, united the clans and rode north, and every few decades the Hearthlands drove them back at terrible cost. The Hearthlands told those stories one way. The Steppe told them another: of drought years when the southern borders closed and the Bright Court's priests sent prayers instead of grain, and it was Karrog's champions who rode out and came home with enough to keep the children alive. Tonight, at a clan fire under a sky full of stars, a champion of Karrog named Urzag sat with his back to the flames and felt his god's blessing burning between his shoulder blades. It had always burned. Tonight it burned *hotter*, and it was leaning closer, the way a hound leans against the door when it hears footsteps on the other side. Urzag had served Karrog for twenty years and had never once felt his god impatient. He didn't know what it meant. He sharpened his blade and didn't sleep.
+To the southeast, where the mountains ran out, lay the **Ashen Steppe**, endless grassland gone gray with the ash of old wars, where the orc clans rode and fought and worshipped Karrog the Red Hand. Not every orc was cruel, and not every clan bent its knee to the Hollow Choir. But enough of them did. Every few decades a warlord rose on the Steppe, united the clans and rode north, and every few decades the Hearthlands drove them back at terrible cost. The Hearthlands told those stories one way. The Steppe told them another: of drought years when the southern borders closed and the Bright Court's priests sent prayers instead of grain, and it was Karrog's champions who rode out and came home with enough to keep the children alive. Tonight, at a clan fire under a sky full of stars, a champion of Karrog named Urzag sat with his back to the flames and felt his god's blessing burning between his shoulder blades. It had always burned. Tonight it burned *hotter*, and it was leaning closer, the way a hound leans against the door when it hears footsteps on the other side. Urzag had served Karrog for twenty years and had never once sensed his god's impatience. He didn't know what it meant. He sharpened his blade and didn't sleep.
 
 {{mood: calm}}
 
@@ -304,7 +304,7 @@ In the cracks between these places lived everyone else: goblins in the deep mars
 
 And in the far north, on the last watch of the night, Sergeant Hask Morrow walked the top of the Thornwall.
 
-He had walked it for twenty-two years. Beneath his boots the circles glowed their faint, steady blue, mile after mile, all the way to the horizon in both directions, humming so softly that he would only have noticed it if it ever stopped. It never stopped. On the far side, the Wildlands stretched away into darkness: black forest and broken hills, and the sounds that came out of them every night. There was howling, and calling, and the scrape of things testing the base of the wall the way they had tested it for a thousand years.
+He had walked it for twenty-two years. Beneath his boots the circles glowed their faint, steady blue, mile after mile, all the way to the horizon in both directions, humming so softly that he would only have noticed it if it ever stopped. It never stopped. On the far side, the Wildlands stretched away into darkness: black forest and broken hills, and the sounds that crept out of them every night. There was howling, and calling, and the scrape of things testing the base of the wall the way they had tested it for a thousand years.
 
 {{mood: dread}}
 
@@ -344,7 +344,7 @@ The eastern sky paled.
 
 {{ambience: hollow}}
 
-The sun came up over the rooftops of Solmere, pale and ordinary, the way it rose over every other city in the world that had no god to lift it. No gold poured from the Dawnwardens' hands. No light ran down the Sunspire's sides. In the streets below, the lamplighters paused with their snuffers raised, looked up at the tower, and waited.
+The sun crested the rooftops of Solmere, pale and ordinary, the way it rose over every other city in the world that had no god to lift it. No gold poured from the Dawnwardens' hands. No light ran down the Sunspire's sides. In the streets below, the lamplighters paused with their snuffers raised, looked up at the tower, and waited.
 
 {{mood: grief}}
 
@@ -352,7 +352,7 @@ The eldest of the Dawnwardens, a woman named Sereth who had climbed those steps 
 
 She lowered her arms. Around the ring, one by one, the others did the same. No one spoke. Several of them were weeping, and didn't seem to know it.
 
-Below them, in the courtyard of the nearest House of Mending, a healer was kneeling beside a feverish child with her hands pressed to the girl's chest. She had done this ten thousand times. She felt for Lyssa's presence beside her the way she always did, and found nothing there. Beneath her palms, the healing circle she had traced, anchored with the goddess's name, {{sfx: glow-fade}}flickered once, guttered like a candle in a draft, and went dark.
+Below them, in the courtyard of the nearest House of Mending, a healer was kneeling beside a feverish child with her hands pressed to the girl's chest. She had done this ten thousand times. She felt for Lyssa's presence beside her the way she always did, and found nothing there. Beneath her palms, the healing circle she had traced, anchored with the goddess's name, {{sfx: glow-fade}}flickered once, guttered like a candle in a draft, and died.
 
 In the Temple of Thalen, Father Oren Vasse was kneeling at his dawn prayers when he knew that something was wrong, before he knew what it was. He reached for the weight at his back, the one that had been there for forty years, and closed his hand on nothing.
 
@@ -368,7 +368,7 @@ Sereth didn't hear them. She was staring north.
 
 From the top of the Sunspire, on the clearest mornings, you could just make out the line of the Kharn Mountains on the horizon, and beyond them, if you knew where to look, a faint blue shimmer that every child in Solmere had been taught to find: the glow of the Thornwall, a hundred and forty miles of Thalen's wards burning quietly against the dark, as they had burned every day for a thousand years.
 
-{{sfx: glow-fade}}As Sereth watched, the shimmer began to fade. It didn't happen all at once. It went section by section, mile by mile, from east to west, like a row of candles being pinched out by an unseen hand.
+{{sfx: glow-fade}}As Sereth watched, the shimmer began to fade. It didn't happen all at once. The light withdrew section by section, mile by mile, from east to west, like a row of candles being pinched out by an unseen hand.
 
 {{ambience: wall-silent}}
 
@@ -392,7 +392,7 @@ Sereth didn't answer, because in that moment she felt something else.
 
 {{ambience: abyss}}
 
-{{sfx: rumble}}It came from far below, deeper than the roots of the Sunspire, deeper than the roots of the mountains. This time it was not an absence. It was a *presence*, vast and patient and cold, rising toward the surface of the world like something enormous turning over in deep water. It was paying attention for the first time in a thousand years.
+{{sfx: rumble}}It stirred far below, deeper than the roots of the Sunspire, deeper than the roots of the mountains. This time it was not an absence. It was a *presence*, vast and patient and cold, rising toward the surface of the world like something enormous turning over in deep water. It was paying attention for the first time in a thousand years.
 
 The Bright Court had gone silent.
 

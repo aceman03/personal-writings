@@ -8,11 +8,11 @@ registerChapter("the-day-the-gods-went-silent", 1, {
 
 Greywatch had been built to be left.
 
-It sat a quarter mile behind the Thornwall, at the northern end of the Pale Road: a stone keep, a timber palisade, a chapel to Aurem with a bell that rang the dawn, and about three hundred people who had all, at one time or another, been somewhere better. Soldiers came for five-year postings and counted the days. Trappers came for the furs that grew thick this close to the Wildlands and left as soon as they had enough. The ones who stayed were the ones with nowhere else to go.
+It sat a quarter mile behind the Thornwall, at the northern end of the Pale Road: a stone keep, a timber palisade, a chapel to Aurem with a bell that rang the dawn, and about three hundred people who had all, at one time or another, been somewhere better. Soldiers arrived for five-year postings and counted the days. Trappers drifted in for the furs that grew thick this close to the Wildlands and left as soon as they had enough. The ones who stayed were the ones with nowhere else to go.
 
 Knight-Captain Aldric Vane had been there four years. He had stopped counting days in his second.
 
-He was in the chapel yard when the sun came up, as he was every morning, kneeling on the frozen flagstones with his sword laid across his palms. Behind him knelt the two younger knights of his order, Sir Toman and Sir Bram, and a handful of soldiers who had decided that a little holiness before breakfast couldn't hurt. The wind came down off the wall the way it always did, smelling of snow and pine and something older underneath.
+He was in the chapel yard when the sun rose, as he was every morning, kneeling on the frozen flagstones with his sword laid across his palms. Behind him knelt the two younger knights of his order, Sir Toman and Sir Bram, and a handful of soldiers who had decided that a little holiness before breakfast couldn't hurt. The wind spilled down off the wall the way it always did, smelling of snow and pine and something older underneath.
 
 For eighteen years, the dawn had found Aldric like this. And for eighteen years, at the moment the sun cleared the horizon, Aurem had answered.
 
@@ -62,7 +62,7 @@ Nobody in the chapel yard said anything at all.
 
 {{ambience: frontier-dawn}}
 
-Sergeant Hask Morrow came through the north gate ten minutes later at a dead run, which Aldric had never seen him do. Hask was a big, slow, careful man who had walked the top of the Thornwall for twenty-two years and treated hurry as a kind of bad manners.
+Sergeant Hask Morrow burst through the north gate ten minutes later at a dead run, which Aldric had never seen him do. Hask was a big, slow, careful man who had walked the top of the Thornwall for twenty-two years and treated hurry as a kind of bad manners.
 
 {{hask-morrow, urgent}}"Captain."{{/}} He was breathing hard, and his breath smoked in the cold. {{hask-morrow, urgent}}"The wall's dead."{{/}}
 
@@ -82,11 +82,11 @@ Something crossed Hask's face that Aldric didn't like.
 
 {{mood: dread}}
 
-They went up the keep tower together, Aldric taking the narrow stairs two at a time. From the top, you could just see over the dead wall to the other side, which Aldric had seen perhaps a dozen times and never once enjoyed. Beyond the wall lay a mile of open ground, frozen and pale, and then the treeline of the Wildlands: black forest so old and so thick that the morning light seemed to stop at its edge.
+They climbed the keep tower together, Aldric taking the narrow stairs two at a time. From the top, you could just see over the dead wall to the other side, which Aldric had seen perhaps a dozen times and never once enjoyed. Beyond the wall lay a mile of open ground, frozen and pale, and then the treeline of the Wildlands: black forest so old and so thick that the morning light seemed to stop at its edge.
 
 The edge of the forest was moving.
 
-It took Aldric a moment to understand what he was seeing. There were shapes in the shadows between the first trees, pale and long and low to the ground, and there were a great many of them. They weren't coming out. They stood just inside the dark, swaying slightly, the way grass sways, and every one of them was turned toward the wall.
+It took Aldric a moment to understand what he was seeing. There were shapes in the shadows between the first trees, pale and long and low to the ground, and there were a great many of them. They weren't coming out. They lingered just inside the dark, swaying slightly, the way grass sways, and every one of them was turned toward the wall.
 
 {{hask-morrow, hushed}}"Skirls,"{{/}} Hask said quietly.
 
@@ -130,13 +130,13 @@ It wasn't a plan. It was a direction.
 
 {{sfx: horn}}They didn't like it.
 
-Greywatch was not a town that took orders well even on ordinary days, and this was no ordinary day. People came out into the frozen streets half-dressed, staring up at the dead wall, asking each other what had happened in voices that rose higher every time nobody could answer. Brother Fen had stopped ringing the bell and was kneeling in the chapel doorway with his arms spread, praying aloud, louder and louder, as though Aurem might simply have stopped listening and could be shouted back.
+Greywatch was not a town that took orders well even on ordinary days, and this was no ordinary day. People spilled into the frozen streets half-dressed, staring up at the dead wall, asking each other what had happened in voices that rose higher every time nobody could answer. Brother Fen had stopped ringing the bell and was kneeling in the chapel doorway with his arms spread, praying aloud, louder and louder, as though Aurem might simply have stopped listening and could be shouted back.
 
-A trapper Aldric knew slightly, a hard gray man named Collum, stood in front of his own door with his arms folded. {{collum, stern}}"I'm not leaving my furs for some knight who can't even make his sword glow."{{/}}
+A trapper Aldric knew slightly, a hard gray man named Collum, planted himself in front of his own door with his arms folded. {{collum, stern}}"I'm not leaving my furs for some knight who can't even make his sword glow."{{/}}
 
 Aldric had been called worse by better men. {{aldric-vane, dry}}"Then stay with them,"{{/}} he said. {{aldric-vane, dry}}"The skirls will be along at dusk. You can show them what you've got."{{/}}
 
-Collum held his eye. Then he looked north, at the wall. Then he went inside and started packing.
+Collum held his eye. Then he looked north, at the wall. Then he ducked inside and started packing.
 
 It went like that all morning: argument, fear, and the slow, grinding work of making three hundred frightened people do one sensible thing. Soldiers hitched wagons. Women loaded sacks of barley and dried fish. Old men who had sworn they'd die in Greywatch discovered, faced with the possibility, that they'd rather not. Through all of it, the bell kept ringing in Aldric's head, though the chapel had gone quiet.
 
@@ -144,15 +144,15 @@ It went like that all morning: argument, fear, and the slow, grinding work of ma
 
 It was at the north gate, near noon, that he noticed the wardstone.
 
-Every village in the Hearthlands had them: waist-high posts of dark stone set at the edge of town, each one carved with a circle of glyphs that glowed a faint, steady blue. They kept away wolves and lesser things, and a traveling inscriber came through every spring to recharge them. Aldric had walked past this one twice a day for four years.
+Every village in the Hearthlands had them: waist-high posts of dark stone set at the edge of town, each one carved with a circle of glyphs that glowed a faint, steady blue. They kept away wolves and lesser things, and a traveling inscriber passed through every spring to recharge them. Aldric had walked past this one twice a day for four years.
 
 It was still glowing.
 
-He stopped and stared at it, and Hask, who was hauling a crate of arrows toward the nearest wagon, stopped too.
+He halted and stared at it, and Hask, who was hauling a crate of arrows toward the nearest wagon, stopped too.
 
 {{aldric-vane}}"Sergeant. Why is that still lit?"{{/}}
 
-Hask set the crate down and looked at the stone as if it had personally offended him. Then his face cleared.
+Hask set the crate down and eyed the stone as if it had personally offended him. Then his face cleared.
 
 {{hask-morrow}}"Because it isn't the Warden's, sir. The wall was the Warden's. His name's carved in the middle of every mile of it. Village stones are just mage-work. Ordinary glyphs, ordinary mana. Nobody's god in them at all."{{/}} He scratched his beard. {{hask-morrow, dry}}"Seems the gods took their own things with them. They didn't take ours."{{/}}
 
@@ -178,7 +178,7 @@ Nyx Thornbriar lived outside the palisade, in a two-room cottage at the edge of 
 
 Aldric had been part of that. Last winter, a child had died of a fever after her mother bought a charm from Nyx, and Aldric had stood in the town square and called her a grubber and a fraud and a danger to decent people. He had tried to have her driven out of the district. The magistrate in Fort Harrow had refused, mostly because Nyx had brought a stack of signed letters from every trapper and soldier she'd ever stitched up after a run-in with the Wildlands. The child, it turned out, had already been dying when the charm was bought. Aldric had never apologized.
 
-She was sitting on her doorstep when he came up the path, wrapped in a gray shawl, holding a steaming cup between both hands, and she watched him come the whole way without getting up.
+She was sitting on her doorstep when he climbed the path, wrapped in a gray shawl, holding a steaming cup between both hands, and she watched him come the whole way without getting up.
 
 She was half-elven, which showed mostly in the ears and the eyes. Her ears were a little too long and came to a little too much of a point, and her eyes were green and steady. They were the eyes of someone who had spent her whole life being looked at sideways and had decided long ago to look straight back. Her hair was black and badly cut, and there was ink on her fingers and a small burn on her chin.
 
@@ -226,7 +226,7 @@ Nyx set down her cup.
 
 {{aldric-vane, stern}}"You have it."{{/}}
 
-{{nyx-thornbriar}}"Good."{{/}} She stood up, finally, and looked him over: the sword at his hip, the gold sunburst on his surcoat, the arm he had raised that morning at nothing. {{nyx-thornbriar, dry}}"One more question. Can you still use that thing? Without the glow?"{{/}}
+{{nyx-thornbriar}}"Good."{{/}} She rose at last and looked him over: the sword at his hip, the gold sunburst on his surcoat, the arm he had raised that morning at nothing. {{nyx-thornbriar, dry}}"One more question. Can you still use that thing? Without the glow?"{{/}}
 
 Aldric thought about it honestly. It was the first time in eighteen years he'd had to.
 
@@ -274,11 +274,11 @@ Pip considered this seriously, the way she seemed to consider everything.
 
 {{dagny-holt, urgent}}"Pip! Up on the wagon, girl, we're going!"{{/}}
 
-Dagny Holt was a broad red-faced woman with flour still on her sleeves. She scooped Pip up under one arm like a sack of meal and swung her onto the wagon. Pip went without protest, still holding her stick.
+Dagny Holt was a broad red-faced woman with flour still on her sleeves. She scooped Pip up under one arm like a sack of meal and swung her onto the wagon. Pip let herself be hoisted without protest, still clutching her stick.
 
 {{mood: dread}}
 
-Nyx stood alone for a moment beside the circle in the mud. Then, carefully, she put her boot on it and scuffed it out, every ring and every line, until it was only dirt again. She didn't know why she did it. She only knew she didn't want to leave it there for anything to find.
+Nyx lingered alone beside the circle in the mud. Then, carefully, she put her boot on it and scuffed it out, every ring and every line, until it was only dirt again. She didn't know why she did it. She only knew she didn't want to leave it there for anything to find.
 
 ---
 
@@ -302,7 +302,7 @@ It was Hask who said it out loud, in the middle of the afternoon, riding beside 
 
 {{mood: stern}}
 
-Aldric looked at the column the way a skirl would hear it, and felt sick.
+Aldric listened to the column the way a skirl would hear it, and felt sick.
 
 He gave the orders before they reached the next bend. They tore blankets into strips and bound the horses' hooves. They packed the wagon axles with grease and wrapped the goats' bells in rags. And he walked the length of the column himself, from the rear to the front and back again, telling every frightened family the same thing in the same quiet voice. From sundown, nobody spoke. Not a word, not a whisper. Mothers were to keep their hands ready over their children's mouths. If anyone had to cough, they did it into their coats.
 
@@ -316,9 +316,9 @@ People stared at him. Some of them argued, in the furious whispers of people alr
 
 They reached the Lantern House with the sun a finger's width above the western hills.
 
-It had been a coaching inn once, back when the Pale Road carried more traffic than furs and soldiers, and it was a ruin now. It was four broken stone walls around a courtyard, with the roof long gone and a dead lantern still hanging from an iron bracket over the gate. But the walls were thick and mostly whole, and around them, set in a wide circle in the frozen grass, stood six wardstones. They were taller than the ones at Greywatch, and older, and their glyphs were so faded that Aldric could barely see them. The faintest blue glimmer showed in one or two of the deepest grooves, like the last coals of a fire.
+It had been a coaching inn once, back when the Pale Road carried more traffic than furs and soldiers, and it was a ruin now. It was four broken stone walls around a courtyard, with the roof long gone and a dead lantern still hanging from an iron bracket over the gate. But the walls were thick and mostly whole, and around them, set in a wide circle in the frozen grass, rose six wardstones. They were taller than the ones at Greywatch, and older, and their glyphs were so faded that Aldric could barely see them. The faintest blue glimmer showed in one or two of the deepest grooves, like the last coals of a fire.
 
-They drove the wagons inside the walls in a ring and packed the people into the middle. Nyx went straight to the first stone without being asked.
+They drove the wagons inside the walls in a ring and packed the people into the middle. Nyx made straight for the first stone without being asked.
 
 {{mood: calm}}
 
@@ -326,23 +326,23 @@ Aldric had never watched a mage work up close. He didn't know what he expected, 
 
 Where her fingers passed, the grooves filled with light.
 
-It came in slowly, a thread of blue that ran along the old lines and lit them one by one, out from the center toward the rim. When it reached the outermost ring, the whole circle brightened at once, and Aldric heard, or felt, the low hum he had first noticed that morning by its absence. It was smaller than the wall's, much smaller. But it was there.
+It seeped in slowly, a thread of blue that ran along the old lines and lit them one by one, out from the center toward the rim. When it reached the outermost ring, the whole circle brightened at once, and Aldric heard, or felt, the low hum he had first noticed that morning by its absence. It was smaller than the wall's, much smaller. But it was there.
 
 {{sfx: spell-hum}}Nyx sat back on her heels, breathing hard, and moved to the second stone.
 
-She did the second, and the third. By the fourth she was moving slowly, and by the fifth she had to brace herself against the stone with both hands to finish it. When she stood up from the fifth, she swayed, and Aldric caught her arm without thinking.
+She did the second, and the third. By the fourth she was moving slowly, and by the fifth she had to brace herself against the stone with both hands to finish it. When she rose from the fifth, she swayed, and Aldric caught her arm without thinking.
 
 She looked at his hand, then at him. He let go.
 
 {{nyx-thornbriar, shaken}}"That's five,"{{/}} she said. Her face was gray. {{nyx-thornbriar, shaken}}"I can feel the bottom of the skin. If I do the sixth, I'll have nothing left. Not a spark."{{/}}
 
-Aldric looked at the sixth stone. It stood on the north side of the circle, between the Lantern House and the road they'd come down. In the dusk, its glyphs were completely dark.
+Aldric considered the sixth stone. It stood on the north side of the circle, between the Lantern House and the road they'd come down. In the dusk, its glyphs were completely dark.
 
 {{aldric-vane, stern}}"And if you don't do it?"{{/}}
 
 {{nyx-thornbriar, shaken}}"Then there's a gap in the ring. About ten yards wide. Right there."{{/}} She pointed. {{nyx-thornbriar, stern}}"But I'll have enough left for three or four fireballs, if something comes through it. Your choice, Knight-Captain. A whole fence with no one guarding the gate, or a gate with a witch standing in it."{{/}}
 
-Aldric looked at the dark stone. He looked north, where the sky above the hills had gone the deep blue of a bruise. He thought of the Shield of Dawn, and how it had never once made him choose.
+Aldric studied the dark stone. He glanced north, where the sky above the hills had gone the deep blue of a bruise. He thought of the Shield of Dawn, and how it had never once made him choose.
 
 {{aldric-vane, stern}}"The gate,"{{/}} he said. {{aldric-vane, stern}}"I'll stand in it with you."{{/}}
 
@@ -350,7 +350,7 @@ Aldric looked at the dark stone. He looked north, where the sky above the hills 
 
 {{ambience: night-watch}}
 
-The sun went down.
+The sun sank.
 
 ---
 
@@ -358,9 +358,9 @@ The sun went down.
 
 The silence was the hardest thing Aldric had ever done.
 
-Three hundred people sat packed in the dark courtyard of the Lantern House without making a sound. Mothers held children against their chests. Old men pressed their sleeves against their mouths. The horses stood with their wrapped hooves, shivering, and someone had tied the goats' muzzles shut with strips of cloth. The five charged wardstones glowed softly around them, and the sixth stood dark. In the gap beside it, Aldric stood with his sword drawn, and Nyx stood beside him, and behind them stood Hask and Sir Toman and twelve of the best soldiers he had, spears ready, not breathing.
+Three hundred people sat packed in the dark courtyard of the Lantern House without making a sound. Mothers held children against their chests. Old men pressed their sleeves against their mouths. The horses stood with their wrapped hooves, shivering, and someone had tied the goats' muzzles shut with strips of cloth. The five charged wardstones glowed softly around them, and the sixth stood dark. In the gap beside it, Aldric waited with his sword drawn and Nyx at his side, and behind them stood Hask and Sir Toman and twelve of the best soldiers he had, spears ready, not breathing.
 
-The cold came down out of the north. The stars came out. Nothing moved.
+The cold settled down out of the north. The stars pricked out, one by one. Nothing moved.
 
 {{sfx: chitter}}Then, from somewhere on the road above them, came a dry, quick clicking, like a fingernail drawn along a comb.
 
@@ -368,7 +368,7 @@ Another answered it from the left. Then another from the right, nearer.
 
 {{mood: whisper}}
 
-They came out of the dark in a long, pale wave, low to the ground, moving in a way that made Aldric's eyes hurt to follow: too smooth, too fast, six legs rippling. Their split heads swung from side to side, listening. They reached the ring of wardstones and stopped, swaying at the edge of the blue light, and the clicking rose all around the Lantern House like rain beginning on a roof.
+They poured out of the dark in a long, pale wave, low to the ground, moving in a way that made Aldric's eyes hurt to follow: too smooth, too fast, six legs rippling. Their split heads swung from side to side, listening. They reached the ring of wardstones and stopped, swaying at the edge of the blue light, and the clicking rose all around the Lantern House like rain beginning on a roof.
 
 They couldn't see. They could only listen. And for a long, long moment, three hundred people gave them nothing to hear.
 
@@ -382,11 +382,11 @@ They didn't try the lit stones. They knew, somehow. They came for the gap.
 
 {{nyx-thornbriar, urgent}}"*Ignar ora sae, vos!*"{{/}}
 
-{{sfx: fireball}}Nyx's hand came up and drew the circle in the air faster than Aldric could follow, lines of orange light hanging for a heartbeat before they collapsed into a sphere of flame. It hit the first skirl full in its blind face. The thing shrieked, a sound like a kettle screaming, and the ones behind it scattered and came on again.
+{{sfx: fireball}}Nyx's hand snapped up and drew the circle in the air faster than Aldric could follow, lines of orange light hanging for a heartbeat before they collapsed into a sphere of flame. It hit the first skirl full in its blind face. The thing shrieked, a sound like a kettle screaming, and the ones behind it scattered and surged on again.
 
 {{sfx: clash}}Then they were in the gap, and Aldric was fighting.
 
-He fought the way he had always fought, and for the first half-second it nearly killed him. A skirl came at his left side and he raised his arm to call the shield, out of eighteen years of habit, and the arm came up empty. A claw raked across his forearm, through the mail sleeve and into the flesh, and the pain was white and astonishing. He hadn't been cut in a fight in eleven years. He had forgotten what it was like.
+He fought the way he had always fought, and for the first half-second it nearly killed him. A skirl lunged at his left side and he raised his arm to call the shield, out of eighteen years of habit, and the arm came up empty. A claw raked across his forearm, through the mail sleeve and into the flesh, and the pain was white and astonishing. He hadn't been cut in a fight in eleven years. He had forgotten what it was like.
 
 {{mood: tense}}
 
@@ -402,7 +402,7 @@ He remembered quickly. He stopped reaching for what wasn't there and fought with
 
 {{mood: shaken}}
 
-Nyx raised her hand for a fifth and traced the circle, and the lines came out faint and flickering. They hung in the air like smoke and fell apart before they closed. She made a small, shocked sound. She could feel it now: the waterskin under her ribs gone light and flat, the last of it scraped from the bottom.
+Nyx raised her hand for a fifth and traced the circle, and the lines emerged faint and flickering. They hung in the air like smoke and fell apart before they closed. She made a small, shocked sound. She could feel it now: the waterskin under her ribs gone light and flat, the last of it scraped from the bottom.
 
 Empty.
 
@@ -412,9 +412,9 @@ The exhaustion hit her like a dropped sack, all at once, exactly the way her boo
 
 There was a lesson the books had whispered about, in the margins, in a different and more careful hand. When the well is dry, there is sometimes something beneath it. You can reach past the bottom into the warm place below and pull a spell out of your own blood. It almost never works. When it does, it costs more than you have.
 
-A skirl came over the body of another, straight at her where she knelt, and Nyx closed her eyes and reached.
+A skirl scrambled over the body of another, straight at her where she knelt, and Nyx closed her eyes and reached.
 
-{{sfx: heartbeat}}It felt like pushing her hand down through ice into something hot and alive and not hers to touch. She heard her own heartbeat, loud as a drum, and felt it stumble. Pain went through her from the ribs outward, bright and enormous. She pulled.
+{{sfx: heartbeat}}It felt like pushing her hand down through ice into something hot and alive and not hers to touch. She heard her own heartbeat, loud as a drum, and felt it stumble. Pain tore through her from the ribs outward, bright and enormous. She pulled.
 
 Nothing came. Nothing at all. Only the pain, and blood suddenly hot on her lip from her nose, and the skirl's split face opening in front of her.
 
@@ -456,7 +456,7 @@ It was warmth at the back of his neck. It was a hand, settling where a hand had 
 
 Then it was gone again, and the cold rushed back into the place where it had been, worse than before.
 
-The gold light faded. The circle in the frost went dark, a child's drawing again. Pip swayed, and her eyes rolled up, and she folded quietly into the frost.
+The gold light faded. The circle in the frost dimmed to a child's drawing again. Pip swayed, and her eyes rolled up, and she folded quietly into the frost.
 
 {{mood: hushed}}
 
@@ -486,7 +486,7 @@ Aldric didn't answer. He was still looking at the frost.
 
 {{sfx: quake}}Then the ground shook.
 
-This was no tremble like the one in the keep tower that morning. A single, enormous, rolling blow came up through the frozen earth and through their boots and their bones. The wagons jumped. The horses screamed. The dead lantern over the gate swung on its bracket and clanged against the stone.
+This was no tremble like the one in the keep tower that morning. A single, enormous, rolling blow surged up through the frozen earth and through their boots and their bones. The wagons jumped. The horses screamed. The dead lantern over the gate swung on its bracket and clanged against the stone.
 
 {{sfx: quake}}A long moment later, it came again.
 
