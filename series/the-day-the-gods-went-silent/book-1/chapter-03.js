@@ -10,7 +10,7 @@ They were out of the Lantern House in a quarter of an hour, which was impossible
 
 Nobody argued. That was the strangest part. Three hundred people who had argued with Aldric all morning about leaving their homes now left their only shelter in the dark without a single complaint. They had felt the ground jump under them. They had seen the two blue lights open above the hills, and they had watched them turn. They threw blankets into wagons, hauled children up onto their hips, and hitched the horses with fingers that couldn't feel the buckles. When Aldric gave the order to move, they were already moving.
 
-Two soldiers of Greywatch didn't come with them. A young man named Garrick, who had joined the garrison the spring before and still sent half his pay home to his mother in Halvenreach, lay in the gap beside the dark sixth stone with his spear still in his hands. Another, an older man called Tull, had a skirl's claw marks across his chest and was breathing in a way Aldric didn't like. They laid Tull in a wagon. There was no time to bury Garrick, and nothing to dig with that wouldn't make noise. Aldric closed the boy's eyes with his good hand and said the words for the dead from the Order of the Dawn, very quietly. He didn't know if anyone was listening to them anymore. He said them anyway.
+Two soldiers of Greywatch had fallen in the gap. A young man named Garrick, who had joined the garrison the spring before and still sent half his pay home to his mother in Halvenreach, lay in the gap beside the dark sixth stone with his spear still in his hands. Another, an older man called Tull, had a skirl's claw marks across his chest and was breathing in a way Aldric didn't like. They laid Tull in a wagon. There was no time to bury Garrick, and nothing to dig with that wouldn't make noise. Aldric closed the boy's eyes with his good hand and said the words for the dead from the Order of the Dawn, very quietly. He didn't know if anyone was listening to them anymore. He said them anyway.
 
 {{mood: dread}}
 
@@ -26,7 +26,7 @@ A young woman fell into step beside Bramble in the first mile, carrying a baby w
 
 Aldric looked down at her. She was crying without making a sound, the way everyone in the column had learned to do in one afternoon.
 
-{{meg-ashby, grief}}"Your man Garrick,"{{/}} she whispered. {{meg-ashby, grief}}"And Tull. And the rest of them. They came because she cried. I had my hand over her mouth, Captain, I swear I did, but she woke up so fast, and she was so frightened—"{{/}}
+{{meg-ashby, grief}}"Your man Garrick,"{{/}} she whispered. {{meg-ashby, grief}}"And Tull. The skirls came because she cried. I had my hand over her mouth, Captain, I swear I did, but she woke up so fast, and she was so frightened—"{{/}}
 
 {{aldric-vane, warm}}"Mistress Ashby."{{/}} He kept his voice as low and as gentle as he knew how. {{aldric-vane, warm}}"She's six months old. She woke up in the dark and the cold, surrounded by monsters, and she cried. That's what she's supposed to do. That's what babies are for."{{/}} He held her eyes until she looked at him. {{aldric-vane, warm}}"The skirls came because they're skirls. The wall went dark because of something none of us understands. Garrick died because he stood in a gap so other people wouldn't have to. None of that is your daughter's fault. And none of it is yours."{{/}}
 
@@ -74,9 +74,9 @@ It was being held in whispers, which made it sound worse.
 
 {{dagny-holt, stern}}"Nobody,"{{/}} Dagny Holt was saying, standing at the tailboard of her wagon with her big floury arms folded and her feet planted, {{dagny-holt, stern}}"nobody is touching that girl. Not you, Brother, and not you, Collum Harte, and not anybody else who fancies themselves an expert. She's asleep. She's breathing. She's cold, but so are we all. You can wait for her to wake up like decent people."{{/}}
 
-Pip lay in the back of the wagon behind her, wrapped in three blankets and Dagny's own coat, between a sack of onions and a barrel of salt fish. Her face in the starlight was very pale and very still. She looked about six years old.
+Pip lay in the back of the wagon behind her, wrapped in three blankets and Dagny's own coat, between a sack of onions and a barrel of salt fish. Her face in the starlight was very pale and very still. Asleep, she looked younger than she was, hardly more than six.
 
-{{brother-fen, awe}}"I don't wish to *harm* her, Dagny,"{{/}} Brother Fen whispered. He was a thin man with a thin gray beard, and his hands were shaking. Aldric had seen him at the Lantern House, on his knees in the courtyard while the gold light rose. {{brother-fen, awe}}"You saw it. Everyone saw it. That was His light. That was Aurem's own light, the morning gold, I've seen it every dawn of my life. He has *chosen* her. In all this darkness, He reached down and chose a child."{{/}} His voice cracked. {{brother-fen, awe}}"She should be in Solmere, with the Dawnwardens. She should be protected. She should be—"{{/}}
+{{brother-fen, awe}}"I don't wish to *harm* her, Dagny,"{{/}} Brother Fen whispered. He was a thin man with a thin gray beard, and his hands were shaking. Aldric had seen him afterward at the Lantern House, still on his knees in the courtyard, staring at the gap where the gold light had risen. {{brother-fen, awe}}"You saw it. Everyone saw it. That was His light. That was Aurem's own light, the morning gold, I've seen it every dawn of my life. He has *chosen* her. In all this darkness, He reached down and chose a child."{{/}} His voice cracked. {{brother-fen, awe}}"She should be in Solmere, with the Dawnwardens. She should be protected. She should be—"{{/}}
 
 {{collum, stern}}"She should be left by the side of the road,"{{/}} said Collum the trapper.
 
