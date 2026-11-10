@@ -130,7 +130,7 @@ Magic did not come from the gods. It came from the world: from the heat in the e
 
 Size was only half of it. A well could not be felt by instinct. Knowing it was there, and knowing how full it was, had to be *learned*. A man could live his whole life with a lake of mana in his chest and never once suspect it.
 
-For eleven weeks, Edda had felt nothing but her own heartbeat and the ache in her knees. Students who'd arrived after her had already found theirs and moved on. She had begun to wonder whether she had a well at all, or whether she would go home to the docks in spring with nothing to show for a year but a sore back.
+For eleven weeks, Edda had felt nothing but her own heartbeat and the ache in her knees. Students who'd arrived after her had already found theirs and moved on. She had begun to wonder whether she had a well at all, or whether she would go home to the docks in spring with nothing to show for a winter at the Collegium but a sore back.
 
 {{mood: wonder}}
 

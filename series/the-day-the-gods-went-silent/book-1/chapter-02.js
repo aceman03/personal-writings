@@ -190,7 +190,7 @@ His hand had gone to the back of his neck. He hadn't noticed. He took it away.
 
 {{nyx-thornbriar}}"I know the bell went mad at dawn and the wall went out like a candle and half the town's been screaming at the sky since."{{/}} She sipped her tea. {{nyx-thornbriar, dry}}"And I know that whatever happened to you didn't happen to me. Nothing's different in here."{{/}} She tapped her own chest, just under the ribs. {{nyx-thornbriar, dry}}"Mine never came from up there to begin with."{{/}}
 
-Nyx had never had a teacher, so she'd never learned the polite Collegium words for what she felt. She had taught herself magic from three stolen books, a great deal of trial and error, and the burn on her chin. To her, the well was like a waterskin slung under her ribs. She could tell full from half from nearly empty by the weight of it, the way you can tell by the heft of a skin how many more days you can walk. She couldn't tell anything finer than that. This morning, it felt as full as it ever did.
+Nyx had never had a teacher, so she'd never learned the polite Collegium words for what she felt. She had taught herself magic from three stolen books, a great deal of trial and error, and the burn on her chin, and she had been begging, buying and borrowing every other book on the subject she could find ever since. To her, the well was like a waterskin slung under her ribs. She could tell full from half from nearly empty by the weight of it, the way you can tell by the heft of a skin how many more days you can walk. She couldn't tell anything finer than that. This morning, it felt as full as it ever did.
 
 {{aldric-vane, stern}}"The skirls are massing in the treeline. All of them. They'll come over the wall at dusk. I'm taking the town south, down the Pale Road."{{/}}
 
@@ -208,7 +208,7 @@ She looked at him over the rim of her cup for a long time.
 
 {{aldric-vane}}"Say what?"{{/}}
 
-{{nyx-thornbriar, stern}}"Whatever you've come all this way to say. I want to hear the words. I've been waiting all winter."{{/}}
+{{nyx-thornbriar, stern}}"Whatever you've come all this way to say. I want to hear the words. I've been waiting all year."{{/}}
 
 Aldric's jaw tightened. The wind came through the birch trees, and somewhere far off to the north, so faint he might have imagined it, something clicked. It was a dry, rapid sound, like a fingernail drawn along a comb.
 
@@ -250,7 +250,7 @@ She was eight or nine, small and thin, with straight brown hair and a coat two s
 
 Nyx glanced at the drawing on her way past, and stopped.
 
-It was a circle. Not a child's circle, but a real one, ring inside ring inside ring, with glyphs set at even points around each. Nyx knew enough Vaelic to read most inherited spells, and she could recognize the shapes in the outer rings. There was a Command, and something that might have been a Shape, and the Seal, closed and steady at the rim. But the glyph at the center, where the Source should sit, was nothing she had ever seen. It wasn't in any of her three books. It wasn't like any glyph she had ever heard of. And every line in the circle curved. There wasn't a single angle anywhere.
+It was a circle. Not a child's circle, but a real one, ring inside ring inside ring, with glyphs set at even points around each. Nyx knew enough Vaelic to read most inherited spells, and she could recognize the shapes in the outer rings. There was a Command, and something that might have been a Shape, and the Seal, closed and steady at the rim. But the glyph at the center, where the Source should sit, was nothing she had ever seen. It wasn't in any of her books. It wasn't like any glyph she had ever heard of. And every line in the circle curved. There wasn't a single angle anywhere.
 
 {{nyx-thornbriar, hushed}}"Where did you learn that?"{{/}} Nyx said.
 
