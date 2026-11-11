@@ -56,6 +56,10 @@
 
 ## Day 11
 - Before dawn: Vessa cuts Pip and Aldric free (*"Run. I'm coming with you."*). [11]
+- Dawn: escape down the Grey; the party is complete (Aldric, Nyx, Pip, Hask, Brokk, Vessa). Noon: Vessa holds the cleft against Marrak. Afternoon in the hollow; the leash explained. [12]
+
+## Day 12
+- Dawn: the decision to go south to Halvenreach. Night: *"He wants me to bring her to you."* [12]
 
 ## Ahead
 - **Day 19:** the High Dawn rite at the Sunspire.

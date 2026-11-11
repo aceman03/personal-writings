@@ -192,8 +192,18 @@ And it's pulling."*
 
 ## Part Three: Convergence
 
-### 12. Vessa's Bargain
-**POV:** Vessa, Aldric · **Days 11–12**
+### 12. Vessa's Bargain ✅ *(written)*
+**POV:** Vessa, Aldric · **Dawn of Day 11 → night of Day 12**
+*As written:* Karrog's brand burns once and then stops, and Vessa hears him laugh. Down the wheel-race into the
+Grey; Nyx, Hask and Brokk waited in the willows all night. Vessa kills two of the newly blessed (Daro of the
+Kesh) in the alders. The gorse ravine. At noon Marrak and eight champions block the cleft (*"Urzag says come
+home"*); Vessa breaks three of them, and Karrog says *"Yes. Good. Again."*; she spares Marrak. Aldric sees the face
+of the boy at the mill on her, and that she stopped; Brokk: *"Glad she's on our side. Today."* The leash
+explained: power flows while you go where you're pulled; a champion of the Ossa took a day to die. Nyx sees
+herself in Vessa (*"Waiting to see what you'll do"*). Day 12 dawn: they can't go back, and the giant will
+follow Pip away from the camp; Pip: *"Somebody has to tell Dagny."* Nyx names Ilsabet Corrow's banned paper on
+copied circles: Halvenreach.
+**Cliffhanger (as written):** Karrog told Urzag to bring Pip to the Anvil, and told Vessa the opposite: *"He's letting me go. He wants me to bring her to you."* Then she flinches at a laugh only she can hear.
 - The escape, with Urzag's warband in pursuit. Vessa's blessing makes her nearly unstoppable, and Karrog's voice in her head grows louder.
 - Distrust: Aldric won't turn his back on a Karrog champion. Nyx sees a mirror of herself.
 - Vessa explains Karrog's leash: power keeps flowing as long as you obey. She is disobeying, and it hasn't punished her yet.
