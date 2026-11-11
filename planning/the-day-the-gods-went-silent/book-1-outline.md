@@ -167,8 +167,21 @@ Ashby and Rosie stand in front of the pyre first, then Dagny, Pell, Hask, Dunmor
 - Nyx sees, for the first time, what the bargain cost him.
 **Cliffhanger:** In the confusion, Pip is gone. Her tracks lead toward the orc camp.
 
-### 11. The Choice
-**POV:** Aldric · **Days 10–11**
+### 11. The Choice ✅ *(written)*
+**POV:** Aldric · **Dusk of Day 10 → dawn of Day 11**
+*As written:* Aldric, Nyx, Hask and Brokk go on foot; Dagny is held back (*"You bring her back"*); Kell nods.
+Pip's prints walk straight in among six scouts' horses: she went to them. On the march, Brokk names his two dead
+(Orri and Bekka Stonebrow), explains that dwarves raise their cairns young (Hagra eats lunch on hers), and
+wonders what a word is worth if the first writing was needed to hold the gods to theirs; Nyx says *"Thank you"*
+and forbids discussion. Wyck's Mill: red fires, the newly blessed sleepless with red-ember eyes, Pip tied to
+the millstone at Urzag's feet. Plan: Hask drives the horses, Nyx sets a fire, Brokk covers the ford. Aldric
+wades in and Vessa catches him; she tells him Pip walked up to Marrak's horse and said *hello*; 23 of the
+newly blessed have burned out; the red hand is her sister's. Nyx's fire goes up too early; Vessa calls the
+champions and Aldric is taken. Nyx, Hask and Brokk escape into the river. Urzag: *"If my god doesn't have her,
+that will. Which do you think is kinder?"* Tied with Pip, Aldric learns the voice speaks through the center
+glyph and *"says sorry, mostly."* Pip to Vessa: *"You're holding a wolf by the scruff. All night. Every night.
+And it's pulling."*
+**Cliffhanger (as written):** Vessa cuts their bonds, flinches as Karrog's brand burns between her shoulders, and whispers: *"Run. I'm coming with you."*
 - Aldric, Nyx, Hask and Brokk track Pip toward Urzag's camp.
 - They find that Pip walked there herself, because "the voice said to."
 - Infiltration of the orc camp. Vessa finds them first.

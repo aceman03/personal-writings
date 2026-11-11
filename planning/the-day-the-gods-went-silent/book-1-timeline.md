@@ -51,6 +51,11 @@
 - Morning: the mob and the pyre; Aldric keeps his word. Noon: Bram, Fen, 22 Greywatch men and ~1,000 refugees leave south for Solmere.
 - Before dusk: Pip is gone, barefoot, east toward Wyck's Ford and a red fire. [10]
 
+- Dusk: Aldric, Nyx, Hask and Brokk set out on foot after her. Pip has already walked up to Marrak's scouts. [11]
+- Near midnight: Wyck's Mill. Aldric is captured; Nyx, Hask and Brokk escape into the ford; the orcs' ride is delayed to noon. [11]
+
+## Day 11
+- Before dawn: Vessa cuts Pip and Aldric free (*"Run. I'm coming with you."*). [11]
+
 ## Ahead
-- **Days 10–11:** The Choice (the orc camp; Vessa frees Pip). [11]
 - **Day 19:** the High Dawn rite at the Sunspire.
