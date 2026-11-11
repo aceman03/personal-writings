@@ -211,8 +211,21 @@ copied circles: Halvenreach.
 - Decision: go south to Halvenreach to find a spellcrafter who can read Pip's circle.
 **Cliffhanger:** Vessa admits why Karrog hasn't punished her: *"He's letting me go. He wants me to bring her to you."*
 
-### 13. The Collegium
-**POV:** Edda, Ilsabet · **Days 9–13, Halvenreach**
+### 13. The Collegium ✅ *(written)*
+**POV:** Ilsabet, Edda · **Day 9 → dusk of Day 14, Halvenreach to Cray's Ferry**
+*As written:* In the Sealed Archive, the Thornwall's founding papers: the first wardens *copied* the great rings
+from the Elder Stone, given them by the Warden himself, which none of them could read; the *Keth* strokes are a
+translation from another tongue. The Archive register: Orrin Vell, clerk to the High Chancellor, read the
+Thornwall papers 31 days before the Silence. Day 10: twelve crown agents arrive; Brandt reported Edda's well and
+Edda is added to the list; Brandt believes Ilsabet and chooses the crown anyway (*"the first chance we've had in
+a thousand years"*). Ilsabet is locked in the east tower again. Hale's quiet help (*"I didn't teach you anything
+else"*). Edda sets the practice room on fire on purpose, opens Ilsabet's lock with the Lesser Mending, and Tam
+Marsh takes them north up the Halven: Ilsabet wants to put her hands on the Thornwall. Ilsabet teaches Edda to
+rebuild the Light of the Lantern-Keeper. At Elder Wick, Edda heals all day for free and has to leave thirty
+people on the jetty (*"whoever holds the leash on you gets to decide which villages you stop at"*). Cray's Ferry:
+Pip to Edda: *"Yours goes all the way down. Where the old writing is."* Ilsabet can't read Pip's circle: *"It's
+what Vaelic came from."*
+**Cliffhanger (as written):** The *Keth* rings of the rubbing and of Pip's circle match stroke for stroke. The Thornwall was carved from a stone no warden could read, and a nine-year-old is drawing it in the mud from memory.
 - Ilsabet refuses the sealed order to go to Solmere; she is placed under house arrest by royal agents.
 - Edda helps her escape the tower with Hale's quiet help.
 - The two arrive in the river valley just as the party does. Ilsabet sees Pip's circle and recognizes nothing in it, and that is the point: it isn't Vaelic. It's what Vaelic came from.
@@ -220,7 +233,7 @@ copied circles: Halvenreach.
 **Cliffhanger:** Ilsabet lays her Thornwall rubbing beside Pip's circle. The *Keth* rings match exactly. The wall and Pip's circle were written by the same hand.
 
 ### 14. What the Wall Was Holding
-**POV:** Ilsabet, Nyx · **Days 13–14**
+**POV:** Ilsabet, Nyx · **Days 14–15** *(shifted a day: the party reaches Cray's Ferry at dusk of Day 14)*
 - Ilsabet, Nyx and Brokk work the problem together: craft, self-taught magic and spellcraft.
 - First partial reveal: the Thornwall was a binding written in the first writing. It held the Unwritten, giants from before the gods' war, and Thalen powered it.
 - The giant's blue eyes mean Thalen's power is *inside* it.

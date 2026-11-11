@@ -58,8 +58,18 @@
 - Before dawn: Vessa cuts Pip and Aldric free (*"Run. I'm coming with you."*). [11]
 - Dawn: escape down the Grey; the party is complete (Aldric, Nyx, Pip, Hask, Brokk, Vessa). Noon: Vessa holds the cleft against Marrak. Afternoon in the hollow; the leash explained. [12]
 
+## Day 9
+- (Halvenreach) Ilsabet finds the Thornwall's founding papers and Orrin Vell's visit, 31 days before the Silence. [13]
+
+## Day 10
+- (Halvenreach) The crown's agents arrive; Edda is added to the list; Ilsabet is locked up. Night: the fire, the mending on the lock, Tam Marsh's boat north up the Halven. [13]
+
 ## Day 12
 - Dawn: the decision to go south to Halvenreach. Night: *"He wants me to bring her to you."* [12]
+- (The Halven) Elder Wick: Edda heals all day and leaves thirty on the jetty. [13]
+
+## Day 14
+- Dusk: Cray's Ferry. The party meets Ilsabet and Edda; the *Keth* rings match. [13]
 
 ## Ahead
 - **Day 19:** the High Dawn rite at the Sunspire.
