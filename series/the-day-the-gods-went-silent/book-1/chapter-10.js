@@ -34,7 +34,7 @@ By noon, the camp had worked out that the food was gone.
 
 The fort's stores had been in the undercrofts of the bridge, in the long vaulted cellars beneath the gallery, because that was where four hundred years of quartermasters had kept them dry. Grain and salt pork, barrels of dried fish, the winter's cheese. All of it had gone into the Grey with the arches. What was left on the south bank was what people had carried out of the north on their own backs, a week ago, and most of that had been eaten.
 
-Nyx heard the first fight from Dagny's wagon: two men over a sack of oats, and then a woman's voice, shrill, and then more voices, and then the flat smack of somebody being hit. By the time she got there, it was over. A man from Coldwater sat in the mud with his nose bleeding into his beard, and the sack was gone, and nobody had seen who took it.
+{{sfx: crowd}}Nyx heard the first fight from Dagny's wagon: two men over a sack of oats, and then a woman's voice, shrill, and then more voices, and then the flat smack of somebody being hit. By the time she got there, it was over. A man from Coldwater sat in the mud with his nose bleeding into his beard, and the sack was gone, and nobody had seen who took it.
 
 {{collum, dry}}"That's the first,"{{/}} said Collum the trapper, who had been watching it from the shafts of his cart, chewing on a stem of dry grass. {{collum, dry}}"Won't be the last. Three thousand people and four days' food. Somebody's going to do sums."{{/}}
 
@@ -194,7 +194,7 @@ He heard her. He turned his head and met her eyes across the mud, and his face d
 
 {{mood: urgent}}
 
-They took her too, then. She didn't make it easy. She got one man in the eye with her elbow and another in the groin with her knee, and there was a brief, vicious moment in which she thought about the fireball, and reached for it, and found the bottom of the jug: cold, dry, empty, not one spark left. Then somebody hit her on the side of the head and the world went white and ringing, and when it cleared she was on her knees in the mud next to Tamsin with her arms twisted up behind her, and the smell of lamp oil was close enough to taste.
+They took her too, then. She didn't make it easy. She got one man in the eye with her elbow and another in the groin with her knee, and there was a brief, vicious moment in which she thought about the fireball, and reached for it, and found the bottom of the jug: cold, dry, empty, not one spark left. Then somebody {{sfx: heartbeat}}hit her on the side of the head and the world went white and ringing, and when it cleared she was on her knees in the mud next to Tamsin with her arms twisted up behind her, and the smell of lamp oil was close enough to taste.
 
 {{brokk, stern}}"*Let her go.*"{{/}}
 
@@ -202,7 +202,7 @@ Brokk had pushed to the front of the crowd with his four surviving kin behind hi
 
 {{camp-man, menacing}}"And here's the other,"{{/}} somebody said. {{camp-man, menacing}}"The one who held the chisel."{{/}}
 
-The crowd turned toward the dwarves. It was a big crowd now, three or four hundred, and more coming, and there was a sound coming out of it that Nyx had never heard from people before: low, steady, not quite words, like the sound a dog makes before it bites. Five dwarves with hammers. Brokk eyed the crowd, and the crowd eyed Brokk, and Nyx saw him do the sum that Collum had talked about, and saw him come out at the same answer, and saw him plant his feet anyway.
+The crowd turned toward the dwarves. It was a big crowd now, three or four hundred, and more coming, and there was a {{sfx: crowd}}sound coming out of it that Nyx had never heard from people before: low, steady, not quite words, like the sound a dog makes before it bites. Five dwarves with hammers. Brokk eyed the crowd, and the crowd eyed Brokk, and Nyx saw him do the sum that Collum had talked about, and saw him come out at the same answer, and saw him plant his feet anyway.
 
 {{brokk, dry}}"Come on, then,"{{/}} he said. {{brokk, dry}}"I've cut harder stone than you."{{/}}
 
@@ -334,7 +334,7 @@ That was all. Nyx stayed beside him in the cold and found, to her own astonishme
 
 {{ambience: dread}}
 
-Dagny screamed a little before dusk.
+{{sfx: rumble}}Dagny screamed a little before dusk.
 
 It was a sound Nyx had never heard from her: not anger, not fear, but something raw and high that went straight through the camp. Nyx ran. Aldric was ahead of her before she had gone ten steps.
 
