@@ -232,8 +232,19 @@ what Vaelic came from."*
 - Edda and Pip connect immediately. Pip says Edda's well "goes all the way down."
 **Cliffhanger:** Ilsabet lays her Thornwall rubbing beside Pip's circle. The *Keth* rings match exactly. The wall and Pip's circle were written by the same hand.
 
-### 14. What the Wall Was Holding
-**POV:** Ilsabet, Nyx · **Days 14–15** *(shifted a day: the party reaches Cray's Ferry at dusk of Day 14)*
+### 14. What the Wall Was Holding ✅ *(written)*
+**POV:** Ilsabet, Nyx · **Night of Day 14 → dusk of Day 15, Cray's Ferry**
+*As written:* Ilsabet, Nyx and Brokk argue *conduit / line / cut* and read Pip's circle as a machine: every
+conduit runs inward and down, like the wall's. Nyx sees it: the power comes in from the god at the heart and is
+driven *down* through the *Keth* rings. The Thornwall was a binding, a god's power nailed into what it held.
+Brokk's nursery tale: the **Unwritten**, the old stuff that never got a name, big as hills, that couldn't be killed.
+Hask: the giants' eyes are exactly the wall's blue, and their footsteps hummed like the wall. Ilsabet: *"They're
+full of the god who held them."* Brokk cuts one *Keth* ring in stone; it hums downward; only Edda can feed it,
+and it reaches the bottom of her well for the first time. Ilsabet shows Aldric the copied order; Aldric fears for
+Bram and the thousand. Aldric kneels at dawn again (*"so he remembers what he's for"*). Pip draws a seven-ring
+circle in her sleep, stepping up like a stair, with a gold heart: the Sunspire.
+**Cliffhanger (as written):** Collum arrives on Bramble with Dagny's boots for Pip, and news: the giant left the river at moonrise on Day 13, ignored the camp and the child, and is walking down the Pale Road toward Solmere, stopping now and then as if waiting. Four or five days.
+*(Changed from the outline's messenger hawk: Solmere could not have known first.)*
 - Ilsabet, Nyx and Brokk work the problem together: craft, self-taught magic and spellcraft.
 - First partial reveal: the Thornwall was a binding written in the first writing. It held the Unwritten, giants from before the gods' war, and Thalen powered it.
 - The giant's blue eyes mean Thalen's power is *inside* it.

@@ -68,8 +68,15 @@
 - Dawn: the decision to go south to Halvenreach. Night: *"He wants me to bring her to you."* [12]
 - (The Halven) Elder Wick: Edda heals all day and leaves thirty on the jetty. [13]
 
+## Day 13
+- Moonrise: the giant stands up out of the Grey and walks south down the Pale Road toward Solmere. Dunmore sends Collum after the party. [14]
+
 ## Day 14
 - Dusk: Cray's Ferry. The party meets Ilsabet and Edda; the *Keth* rings match. [13]
+- Night: the binding and the Unwritten worked out; Edda feeds the first-writing ring. [14]
+
+## Day 15
+- Afternoon: Pip's seven-ring Sunspire circle. Dusk: Collum arrives; the giant is 4–5 days from Solmere (about Day 19). [14]
 
 ## Ahead
 - **Day 19:** the High Dawn rite at the Sunspire.
