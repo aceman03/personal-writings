@@ -12,6 +12,9 @@
 // - Connects to the device's media controls (Windows media overlay, keyboard
 //   media keys, phone lock screen and notification), so listening carries on
 //   while you use other apps, and you can pause or skip from there.
+// - Plays a recorded narration when the chapter has one (audio/<series>/...,
+//   made with tools/audiobook): a natural neural voice with a cast for the
+//   dialogue. The device's own voice is the fallback, or a choice in settings.
 // - Remembers where you stopped in each chapter.
 (function () {
   const synth = window.speechSynthesis;
@@ -366,8 +369,8 @@
       set("seekto", (d) => handlers.seek(d.seekTime));
     }
 
-    function playing(on) {
-      if (el) { if (on) el.play().catch(() => {}); else el.pause(); }
+    function playing(on, recorded) {
+      if (el) { if (on && !recorded) el.play().catch(() => {}); else el.pause(); }
       if (ms) ms.playbackState = on ? "playing" : "paused";
     }
 
@@ -392,6 +395,7 @@
   const secondsPerWord = () => 60 / (150 * state.rate / PACE.rate);
   function syncPosition() {
     if (!state) return;
+    if (useRec()) { const a = state.rec.el; return Media.position(a.currentTime, state.rec.duration); }
     Media.position(state.current * secondsPerWord(), state.words.length * secondsPerWord());
   }
 
@@ -428,9 +432,111 @@
   }
 
   function remaining() {
+    if (useRec()) {
+      const a = state.rec.el, at = a.currentTime || recTimeForWord(state.current);
+      return `${Math.max(1, Math.round((state.rec.duration - at) / (state.rate / PACE.rate) / 60))} min left`;
+    }
     const left = state.words.length - state.current;
     const mins = Math.max(1, Math.round(left / (150 * state.rate / PACE.rate)));
     return `${mins} min left`;
+  }
+
+  // ───────────── recorded narration ─────────────
+  // The timing map gives each chunk of the plan a start and end time in the
+  // recording. Positions inside a chunk are estimated by character, which is close
+  // enough to follow the voice word by word.
+  const useRec = () => !!(state && state.rec && state.mode === "recorded");
+
+  function loadRecording(opts) {
+    if (!opts.audio) return;
+    if (window.AUDIOBOOK_INDEX && !window.AUDIOBOOK_INDEX[opts.key]) return; // not recorded yet
+    const key = opts.key, done = () => {
+      const m = window.AUDIOBOOKS && window.AUDIOBOOKS[key];
+      if (!state || state.key !== key || !m) return;
+      // Only use it if it was made from this exact text.
+      if (m.chunks !== state.chunks.length || m.starts.some((st, i) => st !== state.chunks[i].start)) return;
+      const el = new Audio();
+      el.preload = "metadata";
+      el.src = m.src;
+      state.rec = { el, times: m.times, duration: m.duration, narrator: m.narrator, lastT: 0 };
+      el.addEventListener("timeupdate", recSync);
+      el.addEventListener("ended", () => { if (state && useRec()) stop(true); });
+      // Paused or resumed from outside the page (headphones unplugged, a call coming in).
+      el.addEventListener("pause", () => { if (state && useRec() && state.playing && !el.ended) pause(); });
+      el.addEventListener("play", () => { if (state && useRec() && !state.playing) playFrom(state.current); });
+      state.recSfx = state.sfxWords.map((w) => ({ w, t: recTimeForWord(Number(w.dataset.i)) }));
+      showMode();
+    };
+    if (window.AUDIOBOOKS && window.AUDIOBOOKS[key]) return done();
+    const tag = document.createElement("script");
+    tag.src = opts.audio + ".js";
+    tag.onload = done;
+    tag.onerror = () => tag.remove(); // no recording for this chapter yet
+    document.head.appendChild(tag);
+  }
+
+  function recTimeForWord(wordIndex, withTitle) {
+    if (!state.rec) return 0;
+    if (withTitle) return 0;
+    const ci = chunkIndexFor(wordIndex), c = state.chunks[ci], [t0, t1] = state.rec.times[ci];
+    const k = Math.max(0, wordIndex - c.start);
+    const frac = c.text.length && c.offsets[k] !== undefined ? c.offsets[k] / c.text.length : 0;
+    return t0 + frac * (t1 - t0);
+  }
+
+  function recChunkAt(t) {
+    const T = state.rec.times;
+    let lo = 0, hi = T.length - 1;
+    while (lo < hi) { const mid = (lo + hi + 1) >> 1; if (T[mid][0] <= t) lo = mid; else hi = mid - 1; }
+    return lo;
+  }
+
+  function recSync() {
+    if (!useRec() || !state.playing) return;
+    const t = state.rec.el.currentTime;
+    const ci = recChunkAt(t), c = state.chunks[ci], [t0, t1] = state.rec.times[ci];
+    state.ci = ci;
+    if (!c.isTitle && c.words.length) {
+      const frac = t1 > t0 ? Math.min(1, Math.max(0, (t - t0) / (t1 - t0))) : 0;
+      let k = 0;
+      while (k + 1 < c.offsets.length && c.offsets[k + 1] / c.text.length <= frac) k++;
+      const key = ci + ":" + k;
+      if (key !== state.recHi) { state.recHi = key; highlight(c, k); }
+    }
+    if (state.soundOn && Sound) {
+      Sound.setBed(c.ambience);
+      // Effects whose moment has just passed. A jump (seeking) doesn't fire the ones skipped over.
+      const last = state.rec.lastT;
+      if (t > last && t - last < 2) state.recSfx.forEach((x) => { if (x.t > last && x.t <= t) fireWord(x.w); });
+    }
+    state.rec.lastT = t;
+  }
+
+  function recLoop() {
+    if (!useRec() || !state.playing) return;
+    if (!document.hidden) recSync();
+    state.recRaf = requestAnimationFrame(recLoop);
+  }
+
+  function recPlay(wordIndex, withTitle) {
+    const a = state.rec.el;
+    a.playbackRate = state.rate / PACE.rate;
+    a.preservesPitch = true;
+    const t = recTimeForWord(wordIndex, withTitle);
+    state.rec.lastT = t;
+    state.recHi = null;
+    try { a.currentTime = t; } catch (e) {}
+    a.play().catch(() => { if (state) { state.playing = false; setPlayIcon(); } });
+    cancelAnimationFrame(state.recRaf);
+    state.recRaf = requestAnimationFrame(recLoop);
+  }
+
+  function showMode() {
+    const ui = state.ui, rec = !!state.rec;
+    ui.modeWrap.hidden = !rec;
+    ui.deviceVoice.hidden = rec && state.mode === "recorded";
+    if (rec) ui.mode.value = state.mode;
+    if (!state.playing) ui.time.textContent = remaining();
   }
 
   function speakChunk(ci, fromWord) {
@@ -492,7 +598,8 @@
     state.fired = new Set();
     if (Sound) { Sound.wake(); Sound.resume(); }
     if (state.soundOn) startSound();
-    Media.playing(true);
+    Media.playing(true, useRec());
+    if (useRec()) return recPlay(wordIndex, withTitle);
     if (withTitle && state.chunks[0].isTitle) speakChunk(0, 0);
     else { const ci = chunkIndexFor(wordIndex); speakChunk(ci, Math.max(wordIndex, state.chunks[ci].start)); }
   }
@@ -503,6 +610,7 @@
     state.gen++;
     cancelWait();
     synth.cancel(); // cancel + resume-from-word is more reliable across browsers than synth.pause()
+    if (state.rec) { cancelAnimationFrame(state.recRaf); if (!state.rec.el.paused) state.rec.el.pause(); }
     setPlayIcon();
     Media.playing(false);
     syncPosition();
@@ -535,6 +643,12 @@
   }
 
   function seekSeconds(sec) {
+    if (useRec()) {
+      const t = Math.max(0, Math.min(state.rec.duration - 0.5, sec));
+      if (state.playing) { state.rec.lastT = t; state.rec.el.currentTime = t; return; }
+      const ci = recChunkAt(t);
+      setCurrent(state.chunks[ci].start); state.rec.el.currentTime = t; syncPosition(); return;
+    }
     const i = Math.max(0, Math.min(state.words.length - 1, Math.round(sec / secondsPerWord())));
     if (state.playing) playFrom(i); else { setCurrent(i); syncPosition(); }
   }
@@ -602,15 +716,19 @@
           <summary aria-label="Narration settings" title="Settings">
             <svg viewBox="0 0 24 24"><path d="M4 7h10M18 7h2M4 17h4M12 17h8"/><circle cx="16" cy="7" r="2"/><circle cx="10" cy="17" r="2"/></svg></summary>
           <div class="nar-panel">
-            <label>Voice <select class="nar-voice"></select></label>
-            <p class="muted small nar-voicetip" hidden>No natural-sounding voices on this device. For a far more human narrator, open the site in Microsoft Edge (its "Natural" voices are free), or on a Mac or iPhone download an "Enhanced" or "Premium" voice in Settings, under Accessibility, Spoken Content.</p>
             <label>Pace
               <select class="nar-rate">
                 <option value="0.82">Slow</option><option value="0.92" selected>Storyteller</option>
                 <option value="1">Normal</option><option value="1.12">Brisk</option><option value="1.25">Fast</option>
               </select></label>
+            <label class="nar-modewrap" hidden>Narration
+              <select class="nar-mode"><option value="recorded">Recorded narrator (natural voice)</option><option value="device">This device's voice</option></select></label>
+            <div class="nar-devicevoice">
+            <label>Voice <select class="nar-voice"></select></label>
+            <p class="muted small nar-voicetip" hidden>No natural-sounding voices on this device. For a far more human narrator, open the site in Microsoft Edge (its "Natural" voices are free), or on a Mac or iPhone download an "Enhanced" or "Premium" voice in Settings, under Accessibility, Spoken Content.</p>
             <label class="inline"><input type="checkbox" class="nar-cast"> Character voices for dialogue</label>
             <details class="nar-castlist"><summary>Who's voicing whom</summary><ul></ul></details>
+            </div>
             <label>Soundscape volume <input type="range" class="nar-svol" min="0" max="1" step="0.05"></label>
             <label class="inline"><input type="checkbox" class="nar-readalong"> Soundscape while reading without narration</label>
             <label class="inline"><input type="checkbox" class="nar-follow" checked> Scroll with the narration</label>
@@ -622,7 +740,8 @@
     return { root, play: q(".nar-play"), back: q(".nar-back"), fwd: q(".nar-fwd"), progress: q(".nar-progress"),
       time: q(".nar-time"), voice: q(".nar-voice"), voiceTip: q(".nar-voicetip"), rate: q(".nar-rate"), svol: q(".nar-svol"),
       sound: q(".nar-sound"), follow: q(".nar-follow"), readAlong: q(".nar-readalong"),
-      castToggle: q(".nar-cast"), castList: q(".nar-castlist ul") };
+      castToggle: q(".nar-cast"), castList: q(".nar-castlist ul"), mode: q(".nar-mode"), modeWrap: q(".nar-modewrap"),
+      deviceVoice: q(".nar-devicevoice") };
   }
 
   function attach(article, opts) {
@@ -649,6 +768,8 @@
       readAlong: localStorage.getItem("narrator.readAlong") === "1",
       fired: new Set(), prevTops: new Map(), sfxWords: [], boundaryOK: false,
       characterVoices: localStorage.getItem("narrator.cast") !== "0",
+      rec: null, recSfx: [], recRaf: 0, recHi: null,
+      mode: localStorage.getItem("narrator.mode") || "recorded",
       cast: {},
       follow: true,
     };
@@ -673,6 +794,15 @@
       ui.root.querySelector(".nar-title").textContent = "Resume where you left off";
     } else ui.time.textContent = remaining();
 
+    loadRecording(opts);
+    ui.mode.addEventListener("change", () => {
+      const was = state.playing;
+      if (was) pause();
+      state.mode = ui.mode.value;
+      localStorage.setItem("narrator.mode", state.mode);
+      showMode();
+      if (was) playFrom(state.current);
+    });
     ui.play.addEventListener("click", toggle);
     ui.back.addEventListener("click", () => skip(-1));
     ui.fwd.addEventListener("click", () => skip(1));
@@ -685,6 +815,7 @@
     ui.rate.addEventListener("change", () => {
       state.rate = Number(ui.rate.value);
       localStorage.setItem("narrator.rate", ui.rate.value);
+      if (useRec()) { state.rec.el.playbackRate = state.rate / PACE.rate; if (!state.playing) ui.time.textContent = remaining(); return; }
       if (state.playing) playFrom(state.current);
     });
     ui.sound.addEventListener("click", () => {
@@ -752,6 +883,7 @@
     clearHighlight();
     if (Sound) { Sound.stop(); Sound.resume(); } // leave the engine unfrozen for the next page
     Media.teardown();
+    if (state.rec) { state.rec.el.pause(); state.rec.el.removeAttribute("src"); state.rec.el.load(); }
     window.removeEventListener("scroll", state.onScroll);
     document.removeEventListener("pointerdown", state.unlock);
     document.removeEventListener("keydown", state.unlock);
@@ -761,5 +893,18 @@
     state = null;
   }
 
-  window.Narrator = { attach, detach, supported };
+  // The reading plan for the attached chapter: what the audiobook builder
+  // (tools/audiobook) records, sentence by sentence, so recorded audio lines up
+  // with the words on the page.
+  function plan() {
+    if (!state) return null;
+    return state.chunks.map((c, i) => ({
+      i, start: c.start, n: c.words.length, text: c.text, isTitle: !!c.isTitle,
+      dialogue: !!c.dialogue, speaker: c.speaker || null, mood: c.mood || "", tag: !!c.tag,
+      gap: c.gap, ambience: c.ambience,
+      sfx: c.words.map((w, k) => w.dataset.sfx ? { k, at: c.text.length ? c.offsets[k] / c.text.length : 0, names: w.dataset.sfx.split(" ") } : null).filter(Boolean),
+    }));
+  }
+
+  window.Narrator = { attach, detach, supported, plan };
 })();

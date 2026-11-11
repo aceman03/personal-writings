@@ -146,6 +146,7 @@
         series: series.title,
         album: `${bookLabel(book.number)}: ${book.subtitle}`,
         key: `${series.slug}/${book.number}/${c.number}`,
+        audio: `audio/${series.slug}/book-${book.number}/chapter-${String(c.number).padStart(2, "0")}`,
       });
     }
   }
