@@ -50,7 +50,7 @@ And Nyx had Pip. Or Pip's circle, at least: seven days of watching the child dra
 
 {{ilsabet-corrow, dry}}"Start with what it does,"{{/}} Ilsabet said. {{ilsabet-corrow, dry}}"Not what it says. We can't read what it says. But a circle is a machine before it's a sentence. Look at it as a machine."{{/}}
 
-So they looked.
+{{sfx: chalk}}So they looked.
 
 It took them until the small hours. Ilsabet traced the conduits; she could not read the glyphs, but she could see which way the channels ran, and how thick they were, and where they joined. Nyx, who had never been taught that a circle *should* look a particular way, saw the shape of the whole thing faster than Ilsabet did, the way someone who has never read music can sometimes hear a tune more clearly than a scholar. And Brokk, who had spent forty years feeling power run through stone, put his palm flat on the chalk on the cottage floor, and shut his good eye, and told them which parts would carry weight.
 
@@ -270,7 +270,7 @@ Rings. More rings than Nyx had ever seen in one circle; she stopped counting at 
 
 And at the center, at the very top of the stair, Pip's finger moved in a small, tight spiral, round and round, pressing the ash down hard.
 
-The ash there began, faintly, to glow.
+{{sfx: gold-circle}}The ash there began, faintly, to glow.
 
 Gold. Sunrise gold, the color of the Lantern House and the tower on the bridge. It welled up out of the gray ash at the heart of the circle like light through a crack in a door, and lit the child's sleeping face from beneath, and the faces of the four of them bending over her.
 
@@ -288,7 +288,7 @@ Behind her, from the doorway, Aldric made a sound she had never heard from him b
 
 {{aldric-vane, hushed}}"The Sunspire,"{{/}} he said.
 
-The gold in the ash flickered, and dimmed, and went out. Pip sighed in her sleep, and drew her hand back under the coats, and slept on.
+{{sfx: glow-fade}}The gold in the ash flickered, and dimmed, and went out. Pip sighed in her sleep, and drew her hand back under the coats, and slept on.
 
 ---
 
@@ -298,7 +298,7 @@ The gold in the ash flickered, and dimmed, and went out. Pip sighed in her sleep
 
 The rider came at dusk on the fifteenth day.
 
-Hask saw him first, from the slope above the cottage: a single horseman on the drove road from the north, coming down toward the ferry at a tired, stumbling trot. Vessa had her spear up before Hask had finished pointing. Aldric came out of the cottage with his sword half drawn.
+{{sfx: hoofbeats}}Hask saw him first, from the slope above the cottage: a single horseman on the drove road from the north, coming down toward the ferry at a tired, stumbling trot. Vessa had her spear up before Hask had finished pointing. Aldric came out of the cottage with his sword half drawn.
 
 Then he stopped, and lowered it, and Nyx saw his face change.
 
