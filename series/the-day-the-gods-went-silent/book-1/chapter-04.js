@@ -172,7 +172,7 @@ Corvel frowned. {{corvel}}"I don't understand."{{/}}
 
 {{oren-vasse, warm}}"When he said it. What did he *do*? With his hands, with his face. Think."{{/}}
 
-Corvel thought. It was strange. He had never needed to think about it, any more than he'd needed to think about breathing. He had always simply known. But when he closed his eyes and remembered the guard's face, two mornings ago, in the corridor outside the Reading Hall, saying *slept like a stone, Your Majesty*...
+Corvel thought. It was strange. He had never needed to think about it. It was like breathing. He had always simply known. But when he closed his eyes and remembered the guard's face, two mornings ago, in the corridor outside the Reading Hall, saying *slept like a stone, Your Majesty*...
 
 {{corvel, hushed}}"He smiled,"{{/}} Corvel said slowly. {{corvel, hushed}}"Before he said it. Just before. And he touched his collar. And he said *like a stone* too quickly, as if he'd practiced it."{{/}} He opened his eyes. {{corvel, hushed}}"He always touches his collar. When he lies about cards, too. He lies about cards all the time."{{/}}
 
@@ -310,7 +310,7 @@ Greaves rose slowly from his chair. He looked around the table, at each of them 
 
 There was no taste. There would never be a taste again, perhaps. But there was the Chancellor's face, and the Chancellor's hands, and Corvel had been watching faces and hands for twelve years without knowing he was doing it.
 
-He saw that Greaves's eyes, which had moved around the table so gravely, had not once looked at Magus Quill, the man who had just told them that the Chancellor's order went south *before the bells had stopped ringing*. Too quickly, Corvel thought. Far too quickly for anyone to have written it after the bells. He saw that Greaves's long right hand, resting on the table, had stopped moving entirely. It was a stillness that took effort, the stillness of a man who had decided in advance not to move his hands. He saw that the Chancellor had said *none* three times, when once would have done. And when Greaves's grave, kind eyes settled on Corvel's own face, they held there, quite steadily, for exactly as long as it took him to finish speaking. Then they slid away. To the window. To the city. To anywhere else.
+He saw that Greaves's eyes, which had moved around the table so gravely, had not once looked at Magus Quill, the man who had just told them that the Chancellor's order went south *before the bells had stopped ringing*. Too quickly, Corvel thought. Far too quickly for anyone to have written it after the bells. He saw that Greaves's long right hand, resting on the table, had stopped moving entirely. It was a stillness that took effort: a man who had decided in advance not to move his hands. He saw that the Chancellor had said *none* three times, when once would have done. And when Greaves's grave, kind eyes settled on Corvel's own face, they held there, quite steadily, until he had finished speaking, and not a moment longer. Then they slid away. To the window. To the city. To anywhere else.
 
 *When someone is trying very hard not to give something away,* Oren had said, *watch what they're trying hardest to hide.*
 

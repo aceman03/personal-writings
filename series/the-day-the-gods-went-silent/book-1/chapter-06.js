@@ -122,7 +122,7 @@ He told her. He told her about the skirls massing in the treeline, and the attac
 
 He did not tell her about Pip.
 
-He had decided it on the road down into the valley, walking beside Bramble with the child's small hands folded on the saddle in front of him. He had turned it over and over and come out each time at the same place. If he told Ressa Kell the thing in the north was following a nine-year-old girl, Kell would do what any commander would do with three thousand refugees to protect. He would have done it himself, a week ago.
+He had decided it on the road down into the valley, walking beside Bramble with the child's small hands folded on the saddle in front of him. He had worried at it all the way down the valley and come out each time at the same place. If he told Ressa Kell the thing in the north was following a nine-year-old girl, Kell would do what any commander would do with three thousand refugees to protect. He would have done it himself, a week ago.
 
 {{mood: tense}}
 
@@ -190,7 +190,7 @@ Nyx sat down beside her on a cold stone. She had wanted to ask this since the La
 
 Pip considered it.
 
-{{pip, calm}}"I don't think so,"{{/}} she said. {{pip, calm}}"It's not a picture of a thing. Like fire. Or stone."{{/}} She touched the center of the circle with the tip of her stick, very lightly. {{pip, hushed}}"It's somebody."{{/}}
+{{pip, calm}}"I don't think so,"{{/}} she said. {{pip, calm}}"It's not a picture of a thing. Like fire. Or stone."{{/}} She touched the center of the circle with the tip of her stick, lightly. {{pip, hushed}}"It's somebody."{{/}}
 
 Nyx studied the glyph while the river ran past and a gull cried somewhere downstream.
 
@@ -260,7 +260,7 @@ Pell blinked at him and passed it across. Aldric read it. He read it twice, the 
 
 Pell opened his mouth, and closed it, and stared at the order as if it had betrayed him.
 
-{{aldric-vane, grief}}"Last winter,"{{/}} Aldric said, more quietly, {{aldric-vane, grief}}"I stood in the square at Greywatch and called that woman a grubber and a fraud and a poisoner of children. I asked you to drive her out of the district. You read her letters and you refused me, and you were right, and I was wrong. I've told her so. Now I'm telling you."{{/}} He leaned forward. {{aldric-vane, stern}}"She charged the wardstones at the Lantern House with her own strength, sir, and stood in the gap beside me when the skirls came, and burned four of them with her bare hands before she fell. There are three hundred people from Greywatch on your riverbank tonight who would be skirl-meat without her. And you have her in a cell under your feet because a frightened commander misread a piece of paper."{{/}}
+{{aldric-vane, grief}}"Last winter,"{{/}} Aldric said, and his voice dropped, {{aldric-vane, grief}}"I stood in the square at Greywatch and called that woman a grubber and a fraud and a poisoner of children. I asked you to drive her out of the district. You read her letters and you refused me, and you were right, and I was wrong. I've told her so. Now I'm telling you."{{/}} He leaned forward. {{aldric-vane, stern}}"She charged the wardstones at the Lantern House with her own strength, sir, and stood in the gap beside me when the skirls came, and burned four of them with her bare hands before she fell. There are three hundred people from Greywatch on your riverbank tonight who would be skirl-meat without her. And you have her in a cell under your feet because a frightened commander misread a piece of paper."{{/}}
 
 {{mood: calm}}
 

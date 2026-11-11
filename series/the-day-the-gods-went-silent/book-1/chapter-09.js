@@ -192,7 +192,7 @@ For eighteen years there had been a light in front of his sword. He had never th
 
 Now there was a sword. Steel and leather and his own two hands. A skirl poured through the arrow slit in front of him, folding its long body through the gap like an eel through a weir, and he put the blade into it under the jaw, where Hask had told him the throat was, and it shrieked and thrashed and slid back out and was gone. Another followed it. He killed that one too.
 
-It was harder than it had ever been. It was slower and heavier, and his arms burned by the third, and nothing flinched from him anymore. But the drills were still there. Twenty years of them, every morning, in every weather, in the chapel yard at Greywatch before the sun came up. They were in his shoulders and his feet and the turn of his wrist, and they had never belonged to Aurem at all.
+It was harder than it had ever been. It was slower and heavier, and his arms burned by the third, and nothing flinched from him anymore. But the drills were still there. Twenty years of them, every morning, in every weather, in every yard of every posting he had ever had, and these last four in the chapel yard at Greywatch before the sun came up. They were in his shoulders and his feet and the turn of his wrist, and they had never belonged to Aurem at all.
 
 *Oh,* he thought, with a kind of distant astonishment, with a skirl's blood running down his sleeve. *These were mine.*
 
@@ -370,7 +370,7 @@ Then it was gone, and the hollow it left behind was worse than the one before.
 
 The giant didn't stop.
 
-At the Lantern House, Pip's light had held it back. Now it walked straight into the gold. It took one stride through the boiling river toward the center tower, and the gold broke over it, and it kept coming. Aldric saw the light run over its shoulders and down its long arms like water over rock. And then, slowly, as gently as a man stooping for something precious dropped in the grass, it reached out one enormous hand toward the child kneeling on the roof.
+Some part of Aldric had hoped the light would turn it, the way it turned the skirls. But the gold had called this thing out of the Wildlands in the first place, and it walked straight into it. It took one stride through the boiling river toward the center tower, and the gold broke over it, and it kept coming. Aldric saw the light run over its shoulders and down its long arms like water over rock. And then, slowly, as gently as a man stooping for something precious dropped in the grass, it reached out one enormous hand toward the child kneeling on the roof.
 
 Its hand closed on the bridge.
 

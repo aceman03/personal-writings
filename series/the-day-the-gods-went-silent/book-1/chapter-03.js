@@ -20,7 +20,7 @@ Two soldiers of Greywatch had fallen in the gap. A young man named Garrick, who 
 
 {{mood: grief}}
 
-A young woman fell into step beside Bramble in the first mile, carrying a baby wrapped so tightly in a shawl that only a tuft of dark hair showed. Aldric knew her slightly. Her name was Meg Ashby, and her husband had been a trapper who went beyond the wall one spring and didn't come back. For half a mile she said nothing. Then she said, very quietly, without looking at him:
+A young woman fell into step beside Bramble in the first mile, carrying a baby wrapped so tightly in a shawl that only a tuft of dark hair showed. Aldric knew her slightly. Her name was Meg Ashby, and her husband had been a trapper who went beyond the wall one spring and didn't come back. For half a mile she said nothing. Then she said, without looking at him:
 
 {{meg-ashby, grief}}"It was her. At the stones. It was my Rosie that cried."{{/}}
 
@@ -50,7 +50,7 @@ Aldric's arm had stopped bleeding, mostly. Nyx had wrapped it at the Lantern Hou
 
 {{sfx: chitter}}An hour past the Lantern House, the clicking returned.
 
-It was faint and far off to the west, up among the pines on the ridge above the road, a dry, rapid rattle like a fingernail drawn along a comb. Hask stopped dead at the head of the column and raised his fist, and the signal went back down the line from hand to hand in the dark, and three hundred people stopped walking.
+It was faint and far off to the west, up among the pines on the ridge above the road, a dry, rapid rattle, the same comb-tooth clicking they had heard above the Lantern House. Hask stopped dead at the head of the column and raised his fist, and the signal went back down the line from hand to hand in the dark, and three hundred people stopped walking.
 
 Nobody had to be told. Mothers put their hands over their children's mouths. The horses stood with their heads low, shivering. Aldric sat Bramble at the rear with his sword across his knees and listened so hard that his ears rang.
 
@@ -308,7 +308,7 @@ Nyx had come up behind Dagny. Aldric didn't know how she'd known. She watched th
 
 {{nyx-thornbriar, hushed}}"Pip,"{{/}} she said. {{nyx-thornbriar, hushed}}"Do you remember last night? The circle you drew in the frost?"{{/}}
 
-Pip considered this, in the serious way she seemed to consider everything.
+Pip considered this gravely.
 
 {{pip, calm}}"Yes,"{{/}} she said. {{pip, calm}}"It told me how. I didn't want to. It said there wasn't anybody else."{{/}}
 

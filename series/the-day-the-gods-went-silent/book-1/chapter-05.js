@@ -38,7 +38,7 @@ There was a knock at the door. Magus Hale stood in the corridor, gray-faced and 
 
 Hale taught them in one of the small practice rooms on the river side of the main hall: eight first-years in a cramped stone chamber with chalk-scarred walls, iron sconces and a single long window above the water.
 
-Edda had never seen him like this. He was the most patient man she knew. For eleven weeks he had sat across from her in the quiet room without once sighing or shifting. Today he paced, and he spoke too fast, and twice he started to draw a glyph on the slate and wiped it out with his sleeve before it was finished.
+Edda had never seen him like this. He was the most patient man she knew. For eleven weeks he had kept her company in the quiet room without once sighing or shifting. Today he paced, and he spoke too fast, and twice he started to draw a glyph on the slate and wiped it out with his sleeve before it was finished.
 
 It was a second-year girl who told her why. She had been sent down to help them, a sharp-faced girl with ink on her cuffs and her hair braided tight against her skull, and she introduced herself as Lark Ellery. In the quarter hour before Hale arrived, she perched on the window ledge with her knees up and gave the first-years the news like someone dealing cards.
 

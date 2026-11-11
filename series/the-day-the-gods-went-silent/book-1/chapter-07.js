@@ -24,7 +24,7 @@ The clan elders had argued for two days. Brokk's old master, Hagra Stonebrow, ha
 
 {{hagra-stonebrow, stern}}"When the stone hums toward you,"{{/}} she said, {{hagra-stonebrow, stern}}"something is coming up."{{/}}
 
-They had left the next morning: every family of the Stonebrow and Ironmantle clans, with their tools and their children and their ponies, filing down the pass roads toward the foothills. Other clans had followed, or gone ahead. Nobody had talked much on the way down.
+They had left the next morning: every family of the Stonebrow and Ironmantle clans, with their tools and their children and their ponies, winding down the pass roads toward the foothills. Other clans had followed, or gone ahead. Nobody had talked much on the way down.
 
 {{mood: calm}}
 
@@ -330,7 +330,7 @@ Nyx saw him go still. Not the stillness of a man reading: the stillness of a man
 
 {{nyx-thornbriar, hushed}}"A girl from Greywatch. Nine years old. She draws it in the dirt. She says nobody taught her."{{/}} Nyx hesitated, then said the rest of it, because there was no one in the world, she thought, more likely to understand it than this man. {{nyx-thornbriar, hushed}}"She drew it in the frost at the Lantern House, in the gap, with a pack of skirls coming through, and it lit gold, Brokk. Sunrise gold. And they ran."{{/}}
 
-Brokk raised his eyes to her over the edge of the notebook. In the lantern-light his face had gone the color of old ash.
+Brokk raised his eyes to her over the edge of the notebook. In the lantern-light his face was gray as old ash.
 
 {{brokk, whisper}}"There's no angle in it,"{{/}} he said. {{brokk, whisper}}"Not one. Every line curves."{{/}}
 

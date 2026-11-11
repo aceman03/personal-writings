@@ -88,7 +88,7 @@ The edge of the forest was moving.
 
 It took Aldric a moment to understand what he was seeing. There were shapes in the shadows between the first trees, pale and long and low to the ground, and there were a great many of them. They weren't coming out. They lingered just inside the dark, swaying slightly, the way grass sways, each one turned toward the wall.
 
-{{hask-morrow, hushed}}"Skirls,"{{/}} Hask said quietly.
+{{hask-morrow, hushed}}"Skirls,"{{/}} Hask said.
 
 Aldric had seen a dead one once. A patrol had brought it back the winter he arrived. It had been longer than a horse and thinner than a dog, with six legs that bent the wrong way and a head like a split gourd, smooth and pale and blind. It had no eyes. The wardens said skirls didn't need them. They hunted by sound, in packs, and they could hear a heartbeat through a closed door.
 
