@@ -25,6 +25,12 @@ You can also download the repo and open `index.html` in a browser; there is no b
 
 ## Voice-over
 
+Chapters with a recording in `audio/` are read by a recorded narrator: a free,
+open-source neural voice (Kokoro), with a cast for the dialogue. It sounds the
+same on every device and keeps playing in the background like any audio track.
+`tools/audiobook/README.md` explains how recordings are made. Chapters without
+one, or readers who prefer it (in settings), get the device voice described below.
+
 Every chapter has a narration player along the bottom of the page (`js/narrator.js`).
 It uses the browser's built-in speech voices, so it's free and needs no setup:
 

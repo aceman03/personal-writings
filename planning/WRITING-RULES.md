@@ -53,6 +53,8 @@ Tied to a major plot point, leading into the next chapter.
 - New characters get a spoiler-free page (only what is known at their first appearance), a portrait and a voice.
 - New places go on the map.
 - Mark the chapter as written in the book outline.
+- Record the narration (`tools/audiobook`, narrator George and Fable blended, two semitones down) and
+  publish it with the chapter. Re-record any chapter whose text changes.
 
 ## 5. Prose style
 
