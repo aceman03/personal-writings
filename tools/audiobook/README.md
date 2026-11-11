@@ -35,7 +35,10 @@ python3 tools/audiobook/render.py --model kokoro-v1.0.onnx --voices voices-v1.0.
 
 ## Voices
 
-The narrator is set with `--narrator`. The cast is in `CAST` at the top of
+The narrator is set with `--narrator`, either one voice (`bm_george`) or a blend
+(`bm_george:0.6+bm_lewis:0.4`). `--narrator-pitch -1.5` lowers the narrator by
+that many semitones, keeping the voice's natural character; the cast is not
+affected. The cast is in `CAST` at the top of
 `render.py`; anyone not listed is cast from their voice profile in the series'
 `characters.js`. Moods from the chapter markup set the pace and loudness of
 each line, and the pauses come from the same plan the device voice uses.

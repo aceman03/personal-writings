@@ -72,7 +72,34 @@ def lang_of(voice):
     return "en-gb" if voice.startswith("b") else "en-us"
 
 
-def render_chapter(kokoro, plan_file, narrator, pace):
+def narrator_style(kokoro, spec):
+    """A voice name, or a blend such as "bm_george:0.6+bm_lewis:0.4"."""
+    if "+" not in spec and ":" not in spec:
+        return spec, spec
+    style, names = 0, []
+    for part in spec.split("+"):
+        name, _, w = part.partition(":")
+        style = style + float(w or 1) * kokoro.get_voice_style(name.strip())
+        names.append(name.strip())
+    return style, names[0]
+
+
+def shift_pitch(audio, semitones):
+    """Lower or raise pitch without changing speed, keeping the voice's formants
+    (so it sounds deeper, not slowed down or cartoonish)."""
+    if not semitones or not len(audio):
+        return audio
+    with tempfile.TemporaryDirectory() as d:
+        a, b = os.path.join(d, "in.wav"), os.path.join(d, "out.wav")
+        sf.write(a, audio, SR)
+        subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", a, "-af",
+                        f"rubberband=pitch={2 ** (semitones / 12)}:formant=preserved:pitchq=quality", b], check=True)
+        out, _ = sf.read(b, dtype="float32")
+    return out
+
+
+def render_chapter(kokoro, plan_file, narrator, pace, narrator_pitch=0.0):
+    narrator_voice, narrator_name = narrator_style(kokoro, narrator)
     data = json.load(open(plan_file))
     plan, profiles = data["plan"], data["profiles"]
     rng = random.Random(data["chapter"])  # the same pauses every time it's rebuilt
@@ -80,12 +107,12 @@ def render_chapter(kokoro, plan_file, narrator, pace):
     for c in plan:
         text = c["text"].strip()
         if c["dialogue"] and c["speaker"]:
-            voice = cast_for(c["speaker"], profiles.get(c["speaker"]), narrator)
+            voice = cast_for(c["speaker"], profiles.get(c["speaker"]), narrator_name)
             prof = profiles.get(c["speaker"]) or {}
             mood = c["mood"] or prof.get("mood") or "calm"
             rate = 1 + ((prof.get("rate") or 1) - 1) * 0.5
         else:
-            voice, mood, rate = narrator, c["mood"] or "calm", 1.0
+            voice, mood, rate = narrator_voice, c["mood"] or "calm", 1.0
         speed, gain = MOOD.get(mood, (1.0, 1.0))
         speed *= pace * rate
         if c["isTitle"]:
@@ -94,8 +121,13 @@ def render_chapter(kokoro, plan_file, narrator, pace):
             speed *= 1.05; gain *= 0.95
         audio = np.zeros(0, dtype=np.float32)
         if any(ch.isalnum() for ch in text):
-            audio, _ = kokoro.create(text, voice=voice, speed=float(max(0.6, min(1.6, speed))), lang=lang_of(voice))
-            audio = audio.astype(np.float32) * gain
+            is_narrator = voice is narrator_voice
+            lang = lang_of(narrator_name if is_narrator else voice)
+            audio, _ = kokoro.create(text, voice=voice, speed=float(max(0.6, min(1.6, speed))), lang=lang)
+            audio = audio.astype(np.float32)
+            if is_narrator:
+                audio = shift_pitch(audio, narrator_pitch)
+            audio = audio * gain
         times.append([round(t, 3), round(t + len(audio) / SR, 3)])
         t += len(audio) / SR
         gap = c["gap"] / 1000 * (0.9 + rng.random() * 0.2)
@@ -131,6 +163,7 @@ def main():
     ap.add_argument("--plans", required=True)
     ap.add_argument("--chapters", nargs="*", type=int)
     ap.add_argument("--narrator", default="bm_george")
+    ap.add_argument("--narrator-pitch", type=float, default=0.0, help="semitones, e.g. -1.5 for a deeper narrator")
     ap.add_argument("--pace", type=float, default=0.97)
     ap.add_argument("--bitrate", default="48k")
     args = ap.parse_args()
@@ -140,7 +173,7 @@ def main():
         files = [f for f in files if int(f[8:10]) in args.chapters]
     for f in files:
         start = time.time()
-        data, track, times = render_chapter(kokoro, os.path.join(args.plans, f), args.narrator, args.pace)
+        data, track, times = render_chapter(kokoro, os.path.join(args.plans, f), args.narrator, args.pace, args.narrator_pitch)
         out_dir = os.path.join(ROOT, "audio", data["series"], f"book-{data['book']}")
         os.makedirs(out_dir, exist_ok=True)
         base = os.path.join(out_dir, f[:-5])
