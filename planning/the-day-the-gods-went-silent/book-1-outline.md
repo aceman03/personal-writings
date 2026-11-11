@@ -251,8 +251,20 @@ circle in her sleep, stepping up like a stair, with a gold heart: the Sunspire.
 - Pip draws a new circle in her sleep: the Sunspire, with a gold center.
 **Cliffhanger:** A messenger hawk from Solmere carries word: the giant has turned east. It's walking straight for the capital.
 
-### 15. The Spare Prince
-**POV:** Corvel, Oren · **Days 10–15, Solmere**
+### 15. The Spare Prince ✅ *(written)*
+**POV:** Corvel, Oren · **Days 4–16, Solmere**
+*As written:* Nobody watches the spare. Greaves starts wearing gloves on Day 5; his fingertips are chalk-white
+(the Pale Grace; he never catches the winter cough). Brother Anselm the sacristan: a woman in gray has come in by
+the chapel's river postern eight times since midsummer and three since the Silence. Day 11, from the organ loft:
+Greaves and Wrenna over the kneeling king (moral gray: Greaves loves the king and believes the realm *"rotted under
+the light for three hundred years"*); the Pale Grace whitens Haldren's temples and he stands, flat and obedient.
+Wrenna looks straight up at the hidden boy. Day 12: Corvel accuses Greaves before the council; Greaves's careful
+repetition; the king: *"Listen to the Chancellor, Corvel. He knows best."* Quill privately: *"You aren't mad"*; the
+mages at the Sunspire are hostages. The queen believes him and makes him promise to run. Day 13: Oren arrested
+for sedition (*"Tell the Chancellor I said so. Twice"*) and whispers *"The study. Tonight. While they're all at the
+Sunspire."* Day 15: Bram's thousand arrive; the relay rider reports the giant four days out; Greaves: *"That would
+be the nineteenth. The High Dawn,"* with satisfaction. Day 16: nearly two hundred mages gathered at the Sunspire.
+**Cliffhanger (as written):** In a false drawer bottom, Greaves's timetable, written a year ago: *Day 1. The Silence... Day 12. The king... Day 15. The mages gathered in Solmere... Day 19. The High Dawn. The Sunspire. The light.* Corvel climbs down the ivy and flees into the city alone.
 - Corvel and Oren secretly investigate the Chancellor.
 - They discover Greaves has been meeting a Hollow Choir priest for months.
 - Corvel confronts the council; no one believes an E-class spare over the High Chancellor.
@@ -335,3 +347,5 @@ circle in her sleep, stepping up like a stair, with a gold heart: the Sunspire.
 | 8 | Vessa, Ryssa, Grandmother Ulla, Gorrath the Burned, Marrak, Edric Saltby |
 | 9 | Ansel Rooke, Tamsin Reed, Captain Dunmore, Captain Lowry |
 | 10 | Sir Bram speaks (first named in 6) |
+| 13 | Tam Marsh, Orrin Vell (named), the crown's agents |
+| 15 | Brother Anselm, Magus Perrin Quill speaks, Archprelate Maudrin speaks |

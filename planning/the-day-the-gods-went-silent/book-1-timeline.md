@@ -44,7 +44,11 @@
 - **Before dawn:** the giant stands in the river and waits; Vessa watches Pip from the north bank. [9]
 - Morning: the red fires leave the north ridge, riding east; at dusk Hask reports it and Collum names Wyck's Ford. The food stores are lost. [10]
 
+## Days 4–8
+- (Solmere) Greaves starts wearing gloves (Day 5); Corvel sees his white fingertips (Day 7). [15]
+
 ## Day 9
+- (Solmere) Brother Anselm tells of the woman in gray at the river postern. [15]
 - Small hours: Pip wakes (*"somebody who needs me"*). Noon: Fen's sermon blames the witches' wards. [10]
 
 ## Day 10
@@ -64,11 +68,16 @@
 ## Day 10
 - (Halvenreach) The crown's agents arrive; Edda is added to the list; Ilsabet is locked up. Night: the fire, the mending on the lock, Tam Marsh's boat north up the Halven. [13]
 
+## Day 11
+- (Solmere) Night: Wrenna gives the king the Pale Grace in the chapel. [15]
+
 ## Day 12
+- (Solmere) Corvel accuses Greaves before the council and loses. Quill; the queen. [15]
 - Dawn: the decision to go south to Halvenreach. Night: *"He wants me to bring her to you."* [12]
 - (The Halven) Elder Wick: Edda heals all day and leaves thirty on the jetty. [13]
 
 ## Day 13
+- (Solmere) Oren arrested for sedition. [15]
 - Moonrise: the giant stands up out of the Grey and walks south down the Pale Road toward Solmere. Dunmore sends Collum after the party. [14]
 
 ## Day 14
@@ -76,7 +85,11 @@
 - Night: the binding and the Unwritten worked out; Edda feeds the first-writing ring. [14]
 
 ## Day 15
+- (Solmere) Bram's thousand arrive; the relay rider: the giant will reach the gates on Day 19. [15]
 - Afternoon: Pip's seven-ring Sunspire circle. Dusk: Collum arrives; the giant is 4–5 days from Solmere (about Day 19). [14]
+
+## Day 16
+- (Solmere) Night: the mages at the Sunspire; Corvel finds the year-old timetable and flees the palace. [15]
 
 ## Ahead
 - **Day 19:** the High Dawn rite at the Sunspire.

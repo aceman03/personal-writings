@@ -391,6 +391,9 @@
     "camp-woman":       { gender: "female", age: "adult", accent: "en-GB", mood: "shaken" },
     "camp-man":         { gender: "male",   age: "adult", accent: "en-GB", pitch: 0.85, mood: "menacing" },
     "tam-marsh":        { gender: "male",   age: "adult", accent: "en-GB", pitch: 0.88, rate: 0.95, mood: "dry" },
+    "king-haldren":     { gender: "male",   age: "adult", accent: "en-GB", pitch: 0.82, rate: 0.9, mood: "stern" },
+    quill:              { gender: "male",   age: "adult", accent: "en-GB", pitch: 1.0, rate: 0.95, mood: "hushed" },
+    maudrin:            { gender: "male",   age: "old",   accent: "en-GB", pitch: 0.8, mood: "stern" },
     collum:             { gender: "male",   age: "old",   accent: "en-US", pitch: 0.85, mood: "stern" },
     "young-dawnwarden": { gender: "male",   age: "young", accent: "en-GB", mood: "shaken" },
     "student":          { gender: "female", age: "young", accent: "en-US", mood: "calm" },
@@ -403,7 +406,7 @@
   window.VOICE_NAMES = Object.assign(window.VOICE_NAMES || {},
     Object.fromEntries(CHARACTERS.map((c) => [c.id, c.name])),
     { "young-dawnwarden": "A young Dawnwarden", student: "A second-year student", queen: "The queen",
-      toman: "Sir Toman", vessa: "Vessa", ryssa: "Ryssa", ulla: "Grandmother Ulla", marrak: "Marrak", edric: "Edric Saltby", brokk: "Brokk Ironmantle", venn: "Master Venn", kell: "Lord-Commander Ressa Kell", pell: "Magistrate Corwin Pell", archmagus: "Archmagus Ottilie Brandt", lark: "Lark Ellery", queen: "Queen Isolde", rhoan: "Crown Prince Rhoan", greaves: "High Chancellor Greaves", wrenna: "Mother Wrenna", nurse: "Corvel's nursemaid", steward: "A palace steward", "market-mother": "A mother in the market", penn: "Lady Agathe Penn", collum: "Collum the trapper", "meg-ashby": "Meg Ashby", soldier: "A soldier of Fort Harrow", "camp-woman": "A woman of Rook's Ford", "camp-man": "A man in the crowd", "tam-marsh": "Tam Marsh, Edda's father" });
+      toman: "Sir Toman", vessa: "Vessa", ryssa: "Ryssa", ulla: "Grandmother Ulla", marrak: "Marrak", edric: "Edric Saltby", brokk: "Brokk Ironmantle", venn: "Master Venn", kell: "Lord-Commander Ressa Kell", pell: "Magistrate Corwin Pell", archmagus: "Archmagus Ottilie Brandt", lark: "Lark Ellery", queen: "Queen Isolde", rhoan: "Crown Prince Rhoan", greaves: "High Chancellor Greaves", wrenna: "Mother Wrenna", nurse: "Corvel's nursemaid", steward: "A palace steward", "market-mother": "A mother in the market", penn: "Lady Agathe Penn", collum: "Collum the trapper", "meg-ashby": "Meg Ashby", soldier: "A soldier of Fort Harrow", "camp-woman": "A woman of Rook's Ford", "camp-man": "A man in the crowd", "tam-marsh": "Tam Marsh, Edda's father", quill: "Magus Perrin Quill", maudrin: "Archprelate Maudrin" });
 
   const GROUPS = ["Solmere", "The Collegium of Halvenreach", "Greywatch", "Fort Harrow", "The Ashen Steppe", "Beyond the Hearthlands", "The Gods"];
   const SERIES = "the-day-the-gods-went-silent";
