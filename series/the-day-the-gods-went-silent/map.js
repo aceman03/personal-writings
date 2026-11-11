@@ -30,7 +30,7 @@
       region: "The Pale Road",
       text: "An abandoned coaching inn three hours' walk south of Greywatch on the Pale Road, four broken stone walls around a courtyard, ringed by six old wardstones.",
       chapters: ["1.2"] },
-    { id: "fort-harrow", name: "Fort Harrow", kind: "city", x: 392, y: 296,
+    { id: "fort-harrow", name: "Fort Harrow", kind: "city", x: 392, y: 296, labelDx: -14, labelDy: 5, labelAnchor: "end",
       region: "The Pale Road",
       text: "A long, squat fortress of gray stone built four hundred years ago astride the river Grey on seven great arches: the only bridge for forty miles. Whoever holds it holds the road south. Its Lord-Commander once held it for nine days against a Steppe army.",
       chapters: ["1.2", "1.6", "1.7", "1.8", "1.9"] },
@@ -54,7 +54,7 @@
       region: "The Hearthlands' Steppe border",
       text: "A hamlet in a fold of the border hills: six farmhouses, a mill on a stream and a shrine to Lyssa.",
       chapters: ["1.8"] },
-    { id: "wycks-ford", name: "Wyck's Ford", kind: "landmark", x: 432, y: 300,
+    { id: "wycks-ford", name: "Wyck's Ford", kind: "landmark", x: 432, y: 300, labelDx: 10, labelDy: 18, labelAnchor: "start",
       region: "The river Grey, east of Fort Harrow",
       text: "Twelve miles east of Fort Harrow, the Grey runs wide and shallow over gravel. In a dry winter a horse can wade it, if its rider knows the line. Smugglers do. The burned shell of Wyck's Mill stands at the head of the ford.",
       chapters: ["1.10", "1.11"] },
@@ -201,7 +201,7 @@
           <g class="marker marker-${l.kind}" data-id="${l.id}" transform="translate(${l.x},${l.y})" tabindex="0" role="button" aria-label="${l.name}">
             <circle r="22" class="hit"/>
             ${icon}
-            <text y="${labelY}" class="label">${l.name}</text>
+            <text x="${l.labelDx || 0}" y="${l.labelDy !== undefined ? l.labelDy : labelY}" class="label"${l.labelAnchor ? ` text-anchor="${l.labelAnchor}" style="text-anchor:${l.labelAnchor}"` : ""}>${l.name}</text>
           </g>`;
       })
       .join("");
@@ -254,6 +254,7 @@
       <div class="map-controls">
         <button class="toggle-silence" aria-pressed="false">Show after the Silence</button>
       </div>
+      <p class="map-hint muted small">Swipe sideways to explore the map.</p>
       <div class="map-layout">
         <div class="map-frame">${buildSVG()}</div>
         <aside class="map-panel">
@@ -275,7 +276,13 @@
           .map((ref) => { const [b, c] = ref.split(".");
             return `<a href="#/s/the-day-the-gods-went-silent/book/${b}/chapter/${c}">Book ${b}, Chapter ${c}</a>`; })
           .join(", ")}</p>` : ""}`;
+      // On a phone the panel sits below the map: bring it into view.
+      if (window.matchMedia("(max-width: 900px)").matches) panel.scrollIntoView({ behavior: "smooth", block: "nearest" });
     }
+
+    // On a phone the map is wider than the screen: start centered on the Hearthlands.
+    const frame = container.querySelector(".map-frame");
+    requestAnimationFrame(() => { frame.scrollLeft = (frame.scrollWidth - frame.clientWidth) * 0.45; });
 
     svg.querySelectorAll(".marker").forEach((m) => {
       m.addEventListener("click", () => select(m.dataset.id));
