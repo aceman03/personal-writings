@@ -147,7 +147,7 @@
         clothing: "#5a4a3a", outfit: "apron", background: ["#5a3420", "#160d08"], aura: "#ff8a3a", stern: true, scar: true }),
     },
     {
-      id: "urzag", name: "Urzag", epithet: "Champion of the Red Hand", group: "Beyond the Hearthlands",
+      id: "urzag", name: "Urzag", epithet: "Champion of the Red Hand", group: "The Ashen Steppe",
       facts: { Race: "Orc", Home: "The Ashen Steppe", Power: "Blessed by Karrog the Red Hand" },
       firstAppears: "1.1",
       description: "An orc champion who has served Karrog, god of war, for twenty years. Urzag carries his god's blessing as a constant burning heat between his shoulder blades, and it makes him tireless in battle. He is a seasoned warrior who knows his god's moods well.",
@@ -231,6 +231,32 @@
       description: "A thin, worried-looking man in a magistrate's black coat. Last winter, he read a hedge-witch's stack of letters and declined to drive her out of the district, despite a knight's demands. Not a brave man, perhaps. An honest one.",
       portrait: P({ alt: "Magistrate Corwin Pell", age: "old", skin: "fair", hair: "fringe", hairColor: "#7a6a5a", spectacles: true,
         clothing: "#1e1c20", trim: "#6a6a72", outfit: "robe", background: ["#2a2a30", "#0d0d10"] }),
+    },
+
+    // ── The Ashen Steppe ──
+    {
+      id: "vessa", name: "Vessa of the Tahrun", epithet: "Champion of the Red Hand", group: "The Ashen Steppe",
+      facts: { Race: "Orc", Home: "The Tahrun clan, on the Ashen Steppe", Power: "Blessed by Karrog the Red Hand" },
+      firstAppears: "1.8",
+      description: "A twenty-two-year-old orc of the Tahrun clan. Two summers ago she held a ravine against a pack of grass-lions with a spear and a broken arm, and at dawn Karrog chose her. She carries his blessing like a wolf held by the scruff: hot, strong and never quite still. Proud, quick to laugh and fiercely protective of her younger sister.",
+      portrait: P({ alt: "Vessa", build: "orc", skin: "orc", age: "young", hair: "braid", hairColor: "#1e1a17", glowEyes: "#d9452f", warpaint: "#b8322a",
+        clothing: "#5a3a2e", outfit: "furs", emblem: "redhand", background: ["#5a2420", "#140a09"], aura: "#d9452f" }),
+    },
+    {
+      id: "ryssa", name: "Ryssa of the Tahrun", epithet: "Vessa's sister", group: "The Ashen Steppe",
+      facts: { Race: "Orc", Home: "The Tahrun clan, on the Ashen Steppe", Power: "None, but she has always wanted one" },
+      firstAppears: "1.8",
+      description: "Sixteen and all elbows, with tusks that haven't finished coming in and a laugh like a jay's. She is going to be taller than her sister. She has spent her whole life watching Karrog choose everyone but her.",
+      portrait: P({ alt: "Ryssa", build: "orc", skin: "orc", age: "young", hair: "braid", hairColor: "#2a221c", smile: true,
+        clothing: "#6a4a32", outfit: "tunic", background: ["#4a3020", "#120c08"] }),
+    },
+    {
+      id: "grandmother-ulla", name: "Grandmother Ulla", epithet: "Elder of the eastern clans", group: "The Ashen Steppe",
+      facts: { Race: "Orc", Home: "The eastern Ashen Steppe", Power: "None. Long memory" },
+      firstAppears: "1.8",
+      description: "Tiny, bent and one-tusked, with a face like a dried apple. She has outlived four husbands, two droughts and most of her grandchildren, and she remembers the Long Drought, when the Hearthlands shut their gates and Karrog's riders came home with flour.",
+      portrait: P({ alt: "Grandmother Ulla", build: "orc", skin: "orc", age: "old", hair: "bun", hairColor: "#c8c8c0", smile: true,
+        clothing: "#5a4a3a", outfit: "cloak", trim: "#8a6a4a", background: ["#3a3020", "#100c08"] }),
     },
 
     // ── The gods ──
@@ -318,7 +344,12 @@
     kell:               { gender: "female", age: "adult", accent: "en-GB", pitch: 0.9, mood: "stern" },
     pell:               { gender: "male",   age: "adult", accent: "en-GB", pitch: 1.05, rate: 1.05, mood: "shaken" },
     brokk:              { gender: "male",   age: "adult", accent: "en-GB", pitch: 0.78, rate: 0.95, mood: "dry" },
+    vessa:              { gender: "female", age: "young", accent: "en-US", pitch: 0.85, mood: "dry" },
+    ryssa:              { gender: "female", age: "young", accent: "en-US", pitch: 1.05, rate: 1.06, mood: "warm" },
+    ulla:               { gender: "female", age: "old",   accent: "en-US", pitch: 0.9, rate: 0.9, mood: "dry" },
     // Minor speakers (not listed on the Characters page)
+    marrak:             { gender: "male",   age: "adult", accent: "en-US", pitch: 0.82, mood: "dry" },
+    edric:              { gender: "male",   age: "adult", accent: "en-GB", pitch: 1.05, mood: "shaken" },
     venn:               { gender: "male",   age: "adult", accent: "en-GB", pitch: 1.05, mood: "shaken" },
     nurse:              { gender: "female", age: "adult", accent: "en-GB", mood: "shaken" },
     steward:            { gender: "male",   age: "adult", accent: "en-GB", mood: "hushed" },
@@ -332,16 +363,16 @@
     "student":          { gender: "female", age: "young", accent: "en-US", mood: "calm" },
   };
   // Characters whose dialogue tags use a short speaker id.
-  const SPEAKER_ID = { "brokk-ironmantle": "brokk", "ressa-kell": "kell", "corwin-pell": "pell", "queen-isolde": "queen", "orvald-greaves": "greaves", "mother-wrenna": "wrenna",
+  const SPEAKER_ID = { "grandmother-ulla": "ulla", "brokk-ironmantle": "brokk", "ressa-kell": "kell", "corwin-pell": "pell", "queen-isolde": "queen", "orvald-greaves": "greaves", "mother-wrenna": "wrenna",
     "ottilie-brandt": "archmagus", "lark-ellery": "lark" };
   CHARACTERS.forEach((c) => { const v = VOICES[c.id] || VOICES[SPEAKER_ID[c.id]]; if (v) c.voice = v; });
   window.VOICE_PROFILES = Object.assign(window.VOICE_PROFILES || {}, VOICES);
   window.VOICE_NAMES = Object.assign(window.VOICE_NAMES || {},
     Object.fromEntries(CHARACTERS.map((c) => [c.id, c.name])),
     { "young-dawnwarden": "A young Dawnwarden", student: "A second-year student", queen: "The queen",
-      toman: "Sir Toman", brokk: "Brokk Ironmantle", venn: "Master Venn", kell: "Lord-Commander Ressa Kell", pell: "Magistrate Corwin Pell", archmagus: "Archmagus Ottilie Brandt", lark: "Lark Ellery", queen: "Queen Isolde", rhoan: "Crown Prince Rhoan", greaves: "High Chancellor Greaves", wrenna: "Mother Wrenna", nurse: "Corvel's nursemaid", steward: "A palace steward", "market-mother": "A mother in the market", penn: "Lady Agathe Penn", collum: "Collum the trapper", "meg-ashby": "Meg Ashby" });
+      toman: "Sir Toman", vessa: "Vessa", ryssa: "Ryssa", ulla: "Grandmother Ulla", marrak: "Marrak", edric: "Edric Saltby", brokk: "Brokk Ironmantle", venn: "Master Venn", kell: "Lord-Commander Ressa Kell", pell: "Magistrate Corwin Pell", archmagus: "Archmagus Ottilie Brandt", lark: "Lark Ellery", queen: "Queen Isolde", rhoan: "Crown Prince Rhoan", greaves: "High Chancellor Greaves", wrenna: "Mother Wrenna", nurse: "Corvel's nursemaid", steward: "A palace steward", "market-mother": "A mother in the market", penn: "Lady Agathe Penn", collum: "Collum the trapper", "meg-ashby": "Meg Ashby" });
 
-  const GROUPS = ["Solmere", "The Collegium of Halvenreach", "Greywatch", "Fort Harrow", "Beyond the Hearthlands", "The Gods"];
+  const GROUPS = ["Solmere", "The Collegium of Halvenreach", "Greywatch", "Fort Harrow", "The Ashen Steppe", "Beyond the Hearthlands", "The Gods"];
   const SERIES = "the-day-the-gods-went-silent";
   const art = (c) => (c.image ? `<img src="${c.image}" alt="${c.name}" class="portrait">` : c.portrait());
   const appears = (ref) => { const [b, ch] = ref.split("."); return { b, ch, text: `Book ${b}, Chapter ${ch}` }; };

@@ -204,6 +204,17 @@ window.Soundscape = (function () {
         bp.frequency.setTargetAtTime(rand(420, 650), now(), 0.4);
       });
     },
+    drums(bed, level = 0.12, bpm = 96) {
+      // A steady ritual drumbeat: low thumps with an off-beat accent.
+      const beat = 60000 / bpm;
+      let n = 0;
+      bed.every(beat, () => {
+        const t = now() + 0.02, accent = n % 4 === 0, o = osc("sine", accent ? 62 : 74), g = gain(0.0001);
+        o.frequency.setValueAtTime(accent ? 90 : 105, t); o.frequency.exponentialRampToValueAtTime(accent ? 48 : 60, t + 0.15);
+        env(g, t, 0.005, level * (accent ? 1 : 0.6), 0.28); o.connect(g).connect(bed.out); g.connect(reverbSend); o.start(t); o.stop(t + 0.4);
+        n++;
+      });
+    },
     rumbleBed(bed, level = 0.25) {
       const s = src(noise("brown", 8)), f = filter("lowpass", 90), g = gain(level);
       s.connect(f).connect(g).connect(bed.out); s.start(); bed.sources.push(s);
@@ -246,6 +257,11 @@ window.Soundscape = (function () {
     "bridge-night": (b) => { L.river(b, 0.11, 1300); L.wind(b, { level: 0.1, cutoff: 450, gusty: 0.5 }); },
     "mountain-road": (b) => { L.wind(b, { level: 0.12, cutoff: 800, gusty: 0.7 }); L.hooves(b, 0.025); L.pad(b, [41.2, 61.7], 0.04, 0.3); },
     "river-crossing": (b) => { L.river(b, 0.1, 1500); L.crowd(b, 0.05); L.hooves(b, 0.03); },
+    "steppe-night": (b) => { L.wind(b, { level: 0.09, cutoff: 1000, gusty: 0.6 }); L.crickets(b, 0.015); },
+    "steppe-dawn": (b) => { L.wind(b, { level: 0.12, cutoff: 900, gusty: 0.7 }); L.pad(b, [55, 82.4, 110], 0.05, 0.4); },
+    "red-fire": (b) => { L.fire(b, 0.2); L.drums(b, 0.12, 96); L.crowd(b, 0.04); },
+    "steppe-wind": (b) => { L.wind(b, { level: 0.16, cutoff: 900, gusty: 0.9 }); L.hooves(b, 0.04); },
+    raid: (b) => { L.fire(b, 0.16); L.wind(b, { level: 0.1, cutoff: 700 }); L.crowd(b, 0.05); },
     silence: () => {},
   };
 
@@ -451,6 +467,16 @@ window.Soundscape = (function () {
         burst(t, { type: "brown", f1: "lowpass", freq: 900, attack: 0.003, peak: 0.6, release: 0.07, p: -0.3 + i * 0.03, wet: 0.2 });
         burst(t, { freq: 2600, q: 2, attack: 0.002, peak: 0.12, release: 0.03 });
         t += i % 4 === 3 ? k : gap; if (i > 10) gap *= 1.15;
+      }
+    },
+    drums() {
+      // A sudden roll of war drums.
+      let t = now() + 0.05;
+      for (let i = 0; i < 12; i++) {
+        const o = osc("sine", 70), g = gain(0.0001);
+        o.frequency.setValueAtTime(100, t); o.frequency.exponentialRampToValueAtTime(50, t + 0.18);
+        env(g, t, 0.004, i % 3 === 0 ? 0.22 : 0.13, 0.3); o.connect(g).connect(master); g.connect(reverbSend); o.start(t); o.stop(t + 0.45);
+        t += i < 8 ? 0.22 : 0.4;
       }
     },
     crowd() {

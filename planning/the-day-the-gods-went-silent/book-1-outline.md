@@ -104,8 +104,17 @@ in Nyx's notebook: beneath the Vaelic in the Root Halls lies an older, curved wr
 - Brokk sees Pip's circle drawn in a notebook and goes very quiet. Dwarven legend has a word for curved, angle-less glyphs: "the first writing."
 **Cliffhanger:** Brokk says the old dwarven saying out loud: *"The first writing was carved to hold the gods to their word."*
 
-### 8. The Red Hand
-**POV:** Vessa (introduction) · **Days 1–6, the Ashen Steppe**
+### 8. The Red Hand ✅ *(written)*
+**POV:** Vessa · **Day 0 night → dawn of Day 7, the Ashen Steppe to the Hearthlands border**
+*As written:* Vessa (22, chosen by Karrog two summers ago) and her sister Ryssa (16) under the stars; at dawn
+Karrog's blessing blazes up and the border's sun-shrines go dark; Vessa saves the salt trader Edric Saltby
+from her own clan; at the Red Fire on the Anvil, Gorrath the Burned gives Karrog's red hand to anyone who
+will *"go where Karrog sends"*; Grandmother Ulla's drought story (moral gray: *"You tell me which one I should
+be grateful to"*); Ryssa takes the red hand; Urzag's war council: Karrog felt the gold and wants its maker
+alive; two hundred riders head north-west; Marrak (*"the best war any of us will ever see"*); at Gorse End the
+newly blessed raid against orders, Ryssa doesn't recognize Vessa, Urzag stops them with Karrog's word; Ryssa
+burns out from the inside (*"He's a fire. And I'm the wood."*).
+**Cliffhanger (as written):** Urzag's map: the gold is heading for Fort Harrow, and they'll be there by dusk. He's afraid: something older than Karrog felt the light too, and it's walking toward the bridge.
 - Introduce **Vessa**, a young orc champion of Karrog. Her blessing still works and is stronger than ever.
 - On the Steppe, Karrog is offering blessings freely. Urzag gathers a warband of the newly blessed.
 - Urzag's orders: ride north fast, scout the Hearthlands' collapse, and bring back "the one who lit the gold." Karrog wants Pip.
@@ -249,4 +258,4 @@ in Nyx's notebook: beneath the Vaelic in the Root Halls lies an older, curved wr
 | 6 | Lord-Commander Ressa Kell, Magistrate Corwin Pell |
 | 7 | Brokk Ironmantle, Master Venn; Hagra Stonebrow appears in Brokk's memory |
 | 5 | Archmagus Ottilie Brandt, Lark Ellery, Mother Agnes Hale (mentioned) |
-| 8 | Vessa |
+| 8 | Vessa, Ryssa, Grandmother Ulla, Gorrath the Burned, Marrak, Edric Saltby |

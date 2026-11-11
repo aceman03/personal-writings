@@ -17,7 +17,7 @@ Once a new chapter is started, every chapter before it is **locked**.
 
 | Book | Chapters locked | Locked on |
 |---|---|---|
-| The Day the Gods Went Silent, Book One | 1–6 | 2026-11-10. Unlocked by the author for a cross-chapter revision pass (repeated similes and phrases), then relocked. Chapter 6 locked when Chapter 7 began, after the Rule 1a review |
+| The Day the Gods Went Silent, Book One | 1–7 | 2026-11-10. Unlocked by the author for a cross-chapter revision pass (repeated similes and phrases), then relocked. Chapters 6 and 7 each locked when the next chapter began, after the Rule 1a review |
 
 Locked chapters change only when the author explicitly asks for a revision pass.
 
@@ -104,6 +104,10 @@ Every point-of-view character and recurring speaker should be recognizable witho
 | **Dagny** | Blunt, warm, bossy. |
 | **Brother Fen** | Fervent, devout, trembling. |
 | **Collum** | Flat and practical, like quoting the price of a pelt. |
+| **Brokk** | Gruff, proud, craftsman's terms, short declaratives; dry humor; "witch," "wall-man." |
+| **Vessa** | Direct, proud, quick to laugh; plain Steppe speech; tender only with Ryssa. |
+| **Urzag** | Few words, weighty; speaks like a man used to being listened to. |
+| **Kell** | Clipped command voice, formal, "Knight-Captain"; brittle under it. |
 
 ## 8. Moral gray
 
