@@ -33,7 +33,7 @@
     { id: "fort-harrow", name: "Fort Harrow", kind: "city", x: 392, y: 296,
       region: "The Pale Road",
       text: "A long, squat fortress of gray stone built four hundred years ago astride the river Grey on seven great arches: the only bridge for forty miles. Whoever holds it holds the road south. Its Lord-Commander once held it for nine days against a Steppe army.",
-      chapters: ["1.2"] },
+      chapters: ["1.2", "1.6", "1.7", "1.8", "1.9"] },
     { id: "thornwall-towns", name: "The Thornwall Towns", kind: "region", x: 560, y: 165,
       region: "Along the Thornwall, east and west of Greywatch",
       text: "Coldwater, Rook's Ford, Thane's Cross, Oldmere: small frontier settlements strung along the foot of the wall for fifty miles either side of Greywatch. On the night of the Silence, the skirls came over the wall without warning.",

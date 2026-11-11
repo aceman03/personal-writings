@@ -233,6 +233,23 @@
         clothing: "#1e1c20", trim: "#6a6a72", outfit: "robe", background: ["#2a2a30", "#0d0d10"] }),
     },
 
+    {
+      id: "ansel-rooke", name: "Ansel Rooke", epithet: "Harness-mender of Fort Harrow", group: "Fort Harrow",
+      facts: { Race: "Human", Home: "Fort Harrow, on the river Grey", Power: "A leather-mending circle, learned from his mother" },
+      firstAppears: "1.9",
+      description: "A bald, brown, sixty-year-old man, creased as an old saddle and smelling of neatsfoot oil. For forty-one years he has mended the garrison's leather in the back of the tack-room with a circle his mother taught him, and kept the door shut while he did it.",
+      portrait: P({ alt: "Ansel Rooke", age: "old", skin: "tan", hair: "bald", beard: "stubble", beardColor: "#8a8a84",
+        clothing: "#5a4632", trim: "#8a6a44", outfit: "apron", background: ["#3a2e22", "#100c08"] }),
+    },
+    {
+      id: "tamsin-reed", name: "Tamsin Reed", epithet: "Laundress of Rook's Ford", group: "Fort Harrow",
+      facts: { Race: "Human", Home: "Rook's Ford, in the Thornwall towns", Power: "A circle for heating wash-water, learned from her grandmother" },
+      firstAppears: "1.9",
+      description: "A big, raw-handed laundress of about thirty, red from lye to the elbows, who fled south from Rook's Ford with the rest of the wall towns. She heats her wash-water with her grandmother's circle because it saves wood. She has never thought of herself as anything else.",
+      portrait: P({ alt: "Tamsin Reed", age: "adult", skin: "fair", hair: "bun", hairColor: "#8a4a2a",
+        clothing: "#7a7064", trim: "#b8a890", outfit: "apron", background: ["#3a3530", "#0f0d0b"] }),
+    },
+
     // ── The Ashen Steppe ──
     {
       id: "vessa", name: "Vessa of the Tahrun", epithet: "Champion of the Red Hand", group: "The Ashen Steppe",
@@ -358,19 +375,22 @@
     "meg-ashby":        { gender: "female", age: "young", accent: "en-GB", mood: "grief" },
     "brother-fen":      { gender: "male",   age: "old",   accent: "en-GB", pitch: 1.05, rate: 0.95, mood: "awe" },
     toman:              { gender: "male",   age: "young", accent: "en-GB", mood: "shaken" },
+    ansel:              { gender: "male",   age: "old",   accent: "en-GB", pitch: 0.92, rate: 0.95, mood: "dry" },
+    tamsin:             { gender: "female", age: "adult", accent: "en-GB", pitch: 1.0, mood: "shaken" },
+    soldier:            { gender: "male",   age: "adult", accent: "en-GB", mood: "shaken" },
     collum:             { gender: "male",   age: "old",   accent: "en-US", pitch: 0.85, mood: "stern" },
     "young-dawnwarden": { gender: "male",   age: "young", accent: "en-GB", mood: "shaken" },
     "student":          { gender: "female", age: "young", accent: "en-US", mood: "calm" },
   };
   // Characters whose dialogue tags use a short speaker id.
   const SPEAKER_ID = { "grandmother-ulla": "ulla", "brokk-ironmantle": "brokk", "ressa-kell": "kell", "corwin-pell": "pell", "queen-isolde": "queen", "orvald-greaves": "greaves", "mother-wrenna": "wrenna",
-    "ottilie-brandt": "archmagus", "lark-ellery": "lark" };
+    "ottilie-brandt": "archmagus", "lark-ellery": "lark", "ansel-rooke": "ansel", "tamsin-reed": "tamsin" };
   CHARACTERS.forEach((c) => { const v = VOICES[c.id] || VOICES[SPEAKER_ID[c.id]]; if (v) c.voice = v; });
   window.VOICE_PROFILES = Object.assign(window.VOICE_PROFILES || {}, VOICES);
   window.VOICE_NAMES = Object.assign(window.VOICE_NAMES || {},
     Object.fromEntries(CHARACTERS.map((c) => [c.id, c.name])),
     { "young-dawnwarden": "A young Dawnwarden", student: "A second-year student", queen: "The queen",
-      toman: "Sir Toman", vessa: "Vessa", ryssa: "Ryssa", ulla: "Grandmother Ulla", marrak: "Marrak", edric: "Edric Saltby", brokk: "Brokk Ironmantle", venn: "Master Venn", kell: "Lord-Commander Ressa Kell", pell: "Magistrate Corwin Pell", archmagus: "Archmagus Ottilie Brandt", lark: "Lark Ellery", queen: "Queen Isolde", rhoan: "Crown Prince Rhoan", greaves: "High Chancellor Greaves", wrenna: "Mother Wrenna", nurse: "Corvel's nursemaid", steward: "A palace steward", "market-mother": "A mother in the market", penn: "Lady Agathe Penn", collum: "Collum the trapper", "meg-ashby": "Meg Ashby" });
+      toman: "Sir Toman", vessa: "Vessa", ryssa: "Ryssa", ulla: "Grandmother Ulla", marrak: "Marrak", edric: "Edric Saltby", brokk: "Brokk Ironmantle", venn: "Master Venn", kell: "Lord-Commander Ressa Kell", pell: "Magistrate Corwin Pell", archmagus: "Archmagus Ottilie Brandt", lark: "Lark Ellery", queen: "Queen Isolde", rhoan: "Crown Prince Rhoan", greaves: "High Chancellor Greaves", wrenna: "Mother Wrenna", nurse: "Corvel's nursemaid", steward: "A palace steward", "market-mother": "A mother in the market", penn: "Lady Agathe Penn", collum: "Collum the trapper", "meg-ashby": "Meg Ashby", soldier: "A soldier of Fort Harrow" });
 
   const GROUPS = ["Solmere", "The Collegium of Halvenreach", "Greywatch", "Fort Harrow", "The Ashen Steppe", "Beyond the Hearthlands", "The Gods"];
   const SERIES = "the-day-the-gods-went-silent";

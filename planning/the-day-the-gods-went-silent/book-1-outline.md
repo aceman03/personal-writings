@@ -113,7 +113,8 @@ will *"go where Karrog sends"*; Grandmother Ulla's drought story (moral gray: *"
 be grateful to"*); Ryssa takes the red hand; Urzag's war council: Karrog felt the gold and wants its maker
 alive; two hundred riders head north-west; Marrak (*"the best war any of us will ever see"*); at Gorse End the
 newly blessed raid against orders, Ryssa doesn't recognize Vessa, Urzag stops them with Karrog's word; Ryssa
-burns out from the inside (*"He's a fire. And I'm the wood."*).
+burns out from the inside (*"He's a fire. And I'm the wood."*). Vessa paints the red hand on her face with
+her dead sister's hand.
 **Cliffhanger (as written):** Urzag's map: the gold is heading for Fort Harrow, and they'll be there by dusk. He's afraid: something older than Karrog felt the light too, and it's walking toward the bridge.
 - Introduce **Vessa**, a young orc champion of Karrog. Her blessing still works and is stronger than ever.
 - On the Steppe, Karrog is offering blessings freely. Urzag gathers a warband of the newly blessed.
@@ -121,8 +122,23 @@ burns out from the inside (*"He's a fire. And I'm the wood."*).
 - Vessa rides with them. She sees what Karrog's new blessings do to people who take them carelessly.
 **Cliffhanger:** Urzag tells her where they're going: Fort Harrow. Karrog has felt the gold light, and so has something older.
 
-### 9. The Siege of the Bridge
-**POV:** Aldric, Nyx · **Days 7–8**
+### 9. The Siege of the Bridge ✅ *(written)*
+**POV:** Nyx, Aldric · **Day 5 → dawn of Day 8**
+*As written:* Kell's crier calls for anyone with a circle; two come: Ansel Rooke (harness-mender, 41 years of a
+secret mending circle) and Tamsin Reed (laundress, a wash-water circle and a deep well). Nyx teaches them to feel
+their wells; Brokk cuts feed-stones in the killing passage. All seven wards lit by midnight of Day 6. Brother
+Fen begins preaching that the witches cut the Warden's name out of the gate (the pyre's wood is chosen). Dusk
+of Day 7: Urzag's riders light red fires on the north ridge and wait. All three giants advance, driving the
+skirls ahead of them like beaters; the skirls flow around the orcs' hill. The wards burn the first waves; skirls
+climb the piers. Aldric fights without Aurem and finds the drills were always his. Two giants stop on the valley
+floor; the one from the Lantern House comes on alone. Kell freezes (*"It will hold"*); Aldric gives the orders
+and Captain Dunmore obeys. Tamsin nearly burns out on a feed-stone; Nyx chooses to stop. Sir Toman holds the
+stair foot so the others can carry Tamsin out (*"Steady"*). Pip lights gold on the tower roof: the skirls flee,
+Aldric feels Aurem for one heartbeat, the giant walks through the gold and reaches for Pip, and its hand breaks
+the bridge. Four of seven arches fall, the center tower with them. Losses: Toman, two of Brokk's kin, seven of
+Greywatch's thirty-eight, more than a hundred of Kell's garrison; some cut off on the north bank. The giant
+stops in the river and waits again.
+**Cliffhanger (as written):** At first light, across the gap, a lone orc rider with a small red handprint over her left cheek and eye watches, not the giant, but Pip.
 - Night assault on Fort Harrow: skirls from the north, the giant behind them.
 - Aldric fights without a god and leads without permission when Kell freezes.
 - Nyx, Brokk and the fort's two hedge-mages hold the bridge wards together.
@@ -259,3 +275,4 @@ burns out from the inside (*"He's a fire. And I'm the wood."*).
 | 7 | Brokk Ironmantle, Master Venn; Hagra Stonebrow appears in Brokk's memory |
 | 5 | Archmagus Ottilie Brandt, Lark Ellery, Mother Agnes Hale (mentioned) |
 | 8 | Vessa, Ryssa, Grandmother Ulla, Gorrath the Burned, Marrak, Edric Saltby |
+| 9 | Ansel Rooke, Tamsin Reed, Captain Dunmore, Captain Lowry |

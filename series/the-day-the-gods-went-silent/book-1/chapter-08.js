@@ -314,9 +314,11 @@ She died a little before dawn, in her sister's arms. Not the agony Vessa had bee
 
 By dawn, fourteen of the newly blessed had died the same way.
 
+The champions painted Karrog's hand on their faces when they rode to war. Vessa never had. She had always thought it vain, a thing for men like Marrak, who liked to be looked at. Now she took the pot of red ochre out of Marrak's saddlebag without asking him, and opened her sister's crimson fingers one by one, and pressed them into the paint. Then she laid Ryssa's hand over her own face, across her left cheek and eye, and held it there until the shape had set.
+
 {{mood: stern}}
 
-Urzag found her at dawn and squatted beside her in the frosty grass, where she sat with her sister's body wrapped in a horse-blanket across her knees. He didn't say he was sorry. Orcs didn't, much. He sat with her in silence, which was better.
+Urzag found her at dawn and squatted beside her in the frosty grass, where she sat with her sister's body wrapped in a horse-blanket across her knees. He looked at the mark on her face for a while and said nothing about it. He didn't say he was sorry either. Orcs didn't, much. He sat with her in silence, which was better.
 
 {{urzag, hushed}}"Karrog gives what you can hold,"{{/}} he said finally. {{urzag, grief}}"He always has. That was the bargain. Now he's giving everyone everything, as fast as they'll take it, and he doesn't care what it costs them."{{/}} He looked out over the hills to the north-west, toward the Grey. {{urzag, dread}}"I've served him twenty years, girl. I've never known him in a hurry. He's in a hurry now."{{/}}
 
@@ -330,7 +332,7 @@ Urzag found her at dawn and squatted beside her in the frosty grass, where she s
 
 Urzag didn't answer at once. He reached inside his coat and took out a scrap of hide, and unrolled it on the frozen ground between them. It was a map: a rough one, scratched with a knife point and rubbed with soot. The border hills. The Kharn, a jagged line of peaks to the north. And a river, running east to west across the top of it, with a single mark scratched across it where a road crossed.
 
-{{urzag, hushed}}"The gold went south,"{{/}} he said. {{urzag, hushed}}"Karrog's been pulling at me like a lodestone since the first night. Every champion feels it. North and west. And it's been moving. Down out of the wall country, along the old road, toward the river."{{/}} He laid one thick finger on the mark across the river. {{urzag, stern}}"The only bridge over the Grey for forty miles. A stone fort the southerners built on it, four hundred years back. Wherever the gold is going, it has to cross there."{{/}}
+{{urzag, hushed}}"The gold went south,"{{/}} he said. {{urzag, hushed}}"Karrog's been pulling at me like a lodestone since the first night. Every champion feels it. North and west. It came down out of the wall country, along the old road, to the river. Then it stopped. It hasn't moved since the third day."{{/}} He laid one thick finger on the mark across the river. {{urzag, stern}}"The only bridge over the Grey for forty miles. A stone fort the southerners built on it, four hundred years back. That's where it's sitting."{{/}}
 
 Vessa knew the name. Every orc on the Steppe knew the name. Nine years ago, a warlord had ridden north with eight thousand riders and the whole Steppe behind him, and a paladin had held that bridge against him for nine days.
 

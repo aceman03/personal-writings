@@ -262,6 +262,7 @@ window.Soundscape = (function () {
     "red-fire": (b) => { L.fire(b, 0.2); L.drums(b, 0.12, 96); L.crowd(b, 0.04); },
     "steppe-wind": (b) => { L.wind(b, { level: 0.16, cutoff: 900, gusty: 0.9 }); L.hooves(b, 0.04); },
     raid: (b) => { L.fire(b, 0.16); L.wind(b, { level: 0.1, cutoff: 700 }); L.crowd(b, 0.05); },
+    siege: (b) => { L.river(b, 0.1, 1300); L.crowd(b, 0.06); L.fire(b, 0.06); L.wind(b, { level: 0.07, cutoff: 500, gusty: 0.5 }); },
     silence: () => {},
   };
 
@@ -424,6 +425,25 @@ window.Soundscape = (function () {
       clang(t, 0.09, rand(-0.3, 0.3));
       burst(t, { freq: 4000, q: 0.7, attack: 0.002, peak: 0.25, release: 0.08 });
       clang(t + rand(0.35, 0.6), 0.06, rand(-0.3, 0.3));
+    },
+    crossbow() {
+      // The string's snap and buzz, then the bolt striking home.
+      const t = now() + 0.02;
+      burst(t, { freq: 1800, q: 4, attack: 0.001, peak: 0.5, release: 0.05, p: -0.2 });
+      const o = osc("triangle", 140), g = gain(0.0001);
+      o.frequency.setValueAtTime(160, t); o.frequency.exponentialRampToValueAtTime(90, t + 0.25);
+      env(g, t, 0.003, 0.08, 0.22); o.connect(g).connect(master); o.start(t); o.stop(t + 0.3);
+      burst(t + 0.32, { type: "brown", f1: "lowpass", freq: 700, attack: 0.002, peak: 0.6, release: 0.08, p: 0.3, wet: 0.3 });
+    },
+    collapse() {
+      // Masonry cracking, a long grinding fall, and the river taking it.
+      const t = now();
+      [0, 0.5, 1.1].forEach((d) => burst(t + d, { type: "brown", f1: "lowpass", freq: 1400, attack: 0.002, peak: 0.7, release: 0.12, p: rand(-0.4, 0.4), wet: 0.5 }));
+      SFX.rumble();
+      for (let i = 0; i < 14; i++) burst(t + 1.5 + rand(0, 3), { type: "brown", f1: "lowpass", freq: rand(300, 900), attack: 0.01, peak: rand(0.2, 0.5), release: 0.25, p: rand(-0.7, 0.7), wet: 0.4 });
+      const s = src(noise("pink", 6), false), f = filter("bandpass", 900, 0.6), g = gain(0.0001);
+      g.gain.setValueAtTime(0.0001, t + 2.5); g.gain.exponentialRampToValueAtTime(0.25, t + 3.5); g.gain.exponentialRampToValueAtTime(0.0001, t + 8);
+      s.connect(f).connect(g).connect(master); g.connect(reverbSend); s.start(t + 2.5, 0, 5.6);
     },
     heartbeat() {
       let t = now() + 0.05;
