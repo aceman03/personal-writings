@@ -215,6 +215,15 @@
         clothing: "#e9e1cf", trim: "#d9a441", outfit: "armor", emblem: "sun", background: ["#4a4030", "#12100c"] }),
     },
 
+    {
+      id: "sir-bram", name: "Sir Bram", epithet: "Knight of the Order of the Dawn", group: "Greywatch",
+      facts: { Race: "Human", Home: "Greywatch", Power: "Blessed by Aurem, until the Silence" },
+      firstAppears: "1.6",
+      description: "The other of the two younger knights under Aldric's command at Greywatch. Square-jawed, devout and correct, he keeps the south gatehouse at Fort Harrow and does his duty exactly as he was taught it.",
+      portrait: P({ alt: "Sir Bram", age: "young", skin: "light", hair: "cropped", hairColor: "#3a2a1e", stern: true,
+        clothing: "#e9e1cf", trim: "#d9a441", outfit: "armor", emblem: "sun", background: ["#40382a", "#100e0a"] }),
+    },
+
     // ── Fort Harrow ──
     {
       id: "ressa-kell", name: "Lord-Commander Ressa Kell", epithet: "Commander of Fort Harrow", group: "Fort Harrow",
@@ -375,9 +384,12 @@
     "meg-ashby":        { gender: "female", age: "young", accent: "en-GB", mood: "grief" },
     "brother-fen":      { gender: "male",   age: "old",   accent: "en-GB", pitch: 1.05, rate: 0.95, mood: "awe" },
     toman:              { gender: "male",   age: "young", accent: "en-GB", mood: "shaken" },
+    "sir-bram":         { gender: "male",   age: "young", accent: "en-GB", pitch: 0.92, mood: "stern" },
     ansel:              { gender: "male",   age: "old",   accent: "en-GB", pitch: 0.92, rate: 0.95, mood: "dry" },
     tamsin:             { gender: "female", age: "adult", accent: "en-GB", pitch: 1.0, mood: "shaken" },
     soldier:            { gender: "male",   age: "adult", accent: "en-GB", mood: "shaken" },
+    "camp-woman":       { gender: "female", age: "adult", accent: "en-GB", mood: "shaken" },
+    "camp-man":         { gender: "male",   age: "adult", accent: "en-GB", pitch: 0.85, mood: "menacing" },
     collum:             { gender: "male",   age: "old",   accent: "en-US", pitch: 0.85, mood: "stern" },
     "young-dawnwarden": { gender: "male",   age: "young", accent: "en-GB", mood: "shaken" },
     "student":          { gender: "female", age: "young", accent: "en-US", mood: "calm" },
@@ -390,7 +402,7 @@
   window.VOICE_NAMES = Object.assign(window.VOICE_NAMES || {},
     Object.fromEntries(CHARACTERS.map((c) => [c.id, c.name])),
     { "young-dawnwarden": "A young Dawnwarden", student: "A second-year student", queen: "The queen",
-      toman: "Sir Toman", vessa: "Vessa", ryssa: "Ryssa", ulla: "Grandmother Ulla", marrak: "Marrak", edric: "Edric Saltby", brokk: "Brokk Ironmantle", venn: "Master Venn", kell: "Lord-Commander Ressa Kell", pell: "Magistrate Corwin Pell", archmagus: "Archmagus Ottilie Brandt", lark: "Lark Ellery", queen: "Queen Isolde", rhoan: "Crown Prince Rhoan", greaves: "High Chancellor Greaves", wrenna: "Mother Wrenna", nurse: "Corvel's nursemaid", steward: "A palace steward", "market-mother": "A mother in the market", penn: "Lady Agathe Penn", collum: "Collum the trapper", "meg-ashby": "Meg Ashby", soldier: "A soldier of Fort Harrow" });
+      toman: "Sir Toman", vessa: "Vessa", ryssa: "Ryssa", ulla: "Grandmother Ulla", marrak: "Marrak", edric: "Edric Saltby", brokk: "Brokk Ironmantle", venn: "Master Venn", kell: "Lord-Commander Ressa Kell", pell: "Magistrate Corwin Pell", archmagus: "Archmagus Ottilie Brandt", lark: "Lark Ellery", queen: "Queen Isolde", rhoan: "Crown Prince Rhoan", greaves: "High Chancellor Greaves", wrenna: "Mother Wrenna", nurse: "Corvel's nursemaid", steward: "A palace steward", "market-mother": "A mother in the market", penn: "Lady Agathe Penn", collum: "Collum the trapper", "meg-ashby": "Meg Ashby", soldier: "A soldier of Fort Harrow", "camp-woman": "A woman of Rook's Ford", "camp-man": "A man in the crowd" });
 
   const GROUPS = ["Solmere", "The Collegium of Halvenreach", "Greywatch", "Fort Harrow", "The Ashen Steppe", "Beyond the Hearthlands", "The Gods"];
   const SERIES = "the-day-the-gods-went-silent";

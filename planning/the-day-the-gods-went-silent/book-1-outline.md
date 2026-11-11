@@ -147,8 +147,19 @@ stops in the river and waits again.
 - The bridge falls.
 **Cliffhanger:** Across the broken bridge, in the giant's blue light, Aldric sees a rider in red watching: an orc with a red hand painted on her face.
 
-### 10. Grubbers
-**POV:** Nyx · **Days 9–10**
+### 10. Grubbers ✅ *(written)*
+**POV:** Nyx · **Dawn of Day 8 → dusk of Day 10**
+*As written:* No one kneels at dawn. The fort's food stores went into the Grey with the arches; the first fights
+over food; Pell's ration line runs out; Kell sits silent and her captains report to Aldric. The red fires leave
+the ridge, and Collum names Wyck's Ford, twelve miles east, where the orcs crossed nine years ago. Pip wakes:
+she knew the giant would come for her (*"The voice said to"*), and the voice now says *"there's somebody who
+needs me."* Fen's sermon: the giant came for the witches' blue, not the gold. He's half right and protecting
+Pip without knowing it. Nyx could save herself by telling the truth about Pip, and doesn't. Day 10: the mob
+takes Tamsin, beats Ansel, seizes Nyx; Brokk and four kin stand; Sir Bram stands with Fen. Aldric keeps his word
+*"in front of whoever you like"* (*"I swore an oath to Aurem. I gave my word to her. One of them is still here
+to hold me to it."*). Bram leads 22 of the 31 Greywatch men and about a thousand refugees south, with Fen. Meg
+Ashby and Rosie stand in front of the pyre first, then Dagny, Pell, Hask, Dunmore and the nine; the mob melts.
+**Cliffhanger (as written):** Pip is gone. Her bare footprints run straight east along the river toward Wyck's Ford, where a red fire is burning.
 - The survivors are scattered south of the river. Panic turns ugly.
 - Brother Fen preaches that mages caused the Silence; the refugees turn on Nyx, Brokk and the fort's hedge-mages.
 - A mob builds a pyre, exactly as Nyx predicted.
@@ -276,3 +287,4 @@ stops in the river and waits again.
 | 5 | Archmagus Ottilie Brandt, Lark Ellery, Mother Agnes Hale (mentioned) |
 | 8 | Vessa, Ryssa, Grandmother Ulla, Gorrath the Burned, Marrak, Edric Saltby |
 | 9 | Ansel Rooke, Tamsin Reed, Captain Dunmore, Captain Lowry |
+| 10 | Sir Bram speaks (first named in 6) |
