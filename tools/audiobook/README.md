@@ -30,7 +30,7 @@ node tools/audiobook/export-plan.js /tmp/plans 16       # chapter numbers, or no
 
 # 2. Record.
 python3 tools/audiobook/render.py --model kokoro-v1.0.onnx --voices voices-v1.0.bin \
-    --plans /tmp/plans --chapters 16 --narrator bm_george
+    --plans /tmp/plans --chapters 16    # narrator: George and Fable blended, 2 semitones down
 ```
 
 ## Voices

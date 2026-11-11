@@ -30,7 +30,7 @@ US_F = ["af_heart", "af_bella", "af_kore", "af_nova", "af_sarah", "af_aoede", "a
 # Steppe and the dwarves get American voices, to set them apart from the
 # Hearthlanders. Anyone not listed is cast from their voice profile.
 CAST = {
-    "aldric-vane": "bm_fable", "nyx-thornbriar": "bf_emma", "hask-morrow": "bm_lewis", "pip": "bf_lily",
+    "aldric-vane": "bm_daniel", "nyx-thornbriar": "bf_emma", "hask-morrow": "bm_lewis", "pip": "bf_lily",
     "dagny-holt": "bf_isabella", "toman": "am_liam", "sir-bram": "am_liam", "brother-fen": "am_echo",
     "collum": "am_adam", "meg-ashby": "af_sky",
     "kell": "bf_alice", "pell": "am_eric", "venn": "am_puck", "ansel": "am_michael", "tamsin": "af_bella",
@@ -54,16 +54,16 @@ MOOD = {
 }
 
 
-def cast_for(speaker, profile, narrator):
+def cast_for(speaker, profile, narrator_voices):
     v = CAST.get(speaker)
     if not v:
         p = profile or {}
         brit = (p.get("accent") or "en-GB").lower().startswith("en-gb")
         pool = (BRIT_F if brit else US_F) if p.get("gender") == "female" else (BRIT_M if brit else US_M)
         v = pool[sum(map(ord, speaker or "x")) % len(pool)]
-    if v == narrator:  # never let a character share the narrator's voice
+    if v in narrator_voices:  # never let a character share the narrator's voice
         for alt in (BRIT_M + US_M) if v[1] == "m" else (BRIT_F + US_F):
-            if alt != narrator:
+            if alt not in narrator_voices:
                 return alt
     return v
 
@@ -73,15 +73,16 @@ def lang_of(voice):
 
 
 def narrator_style(kokoro, spec):
-    """A voice name, or a blend such as "bm_george:0.6+bm_lewis:0.4"."""
+    """A voice name, or a blend such as "bm_george:0.6+bm_lewis:0.4".
+    Returns the style and the list of voices in it."""
     if "+" not in spec and ":" not in spec:
-        return spec, spec
+        return spec, [spec]
     style, names = 0, []
     for part in spec.split("+"):
         name, _, w = part.partition(":")
         style = style + float(w or 1) * kokoro.get_voice_style(name.strip())
         names.append(name.strip())
-    return style, names[0]
+    return style, names
 
 
 def shift_pitch(audio, semitones):
@@ -99,7 +100,8 @@ def shift_pitch(audio, semitones):
 
 
 def render_chapter(kokoro, plan_file, narrator, pace, narrator_pitch=0.0):
-    narrator_voice, narrator_name = narrator_style(kokoro, narrator)
+    narrator_voice, narrator_names = narrator_style(kokoro, narrator)
+    narrator_name = narrator_names[0]
     data = json.load(open(plan_file))
     plan, profiles = data["plan"], data["profiles"]
     rng = random.Random(data["chapter"])  # the same pauses every time it's rebuilt
@@ -107,7 +109,7 @@ def render_chapter(kokoro, plan_file, narrator, pace, narrator_pitch=0.0):
     for c in plan:
         text = c["text"].strip()
         if c["dialogue"] and c["speaker"]:
-            voice = cast_for(c["speaker"], profiles.get(c["speaker"]), narrator_name)
+            voice = cast_for(c["speaker"], profiles.get(c["speaker"]), narrator_names)
             prof = profiles.get(c["speaker"]) or {}
             mood = c["mood"] or prof.get("mood") or "calm"
             rate = 1 + ((prof.get("rate") or 1) - 1) * 0.5
@@ -162,8 +164,8 @@ def main():
     ap.add_argument("--voices", required=True)
     ap.add_argument("--plans", required=True)
     ap.add_argument("--chapters", nargs="*", type=int)
-    ap.add_argument("--narrator", default="bm_george")
-    ap.add_argument("--narrator-pitch", type=float, default=0.0, help="semitones, e.g. -1.5 for a deeper narrator")
+    ap.add_argument("--narrator", default="bm_george:0.5+bm_fable:0.5")
+    ap.add_argument("--narrator-pitch", type=float, default=-2.0, help="semitones, e.g. -1.5 for a deeper narrator")
     ap.add_argument("--pace", type=float, default=0.97)
     ap.add_argument("--bitrate", default="48k")
     args = ap.parse_args()
