@@ -528,6 +528,7 @@ window.Soundscape = (function () {
   function start() {
     if (!init()) return false;
     enabled = true;
+    if (paused) return true;
     ctx.resume();
     master.gain.cancelScheduledValues(now());
     master.gain.setTargetAtTime(volume, now(), 0.8);
@@ -548,9 +549,52 @@ window.Soundscape = (function () {
 
   function setVolume(v) {
     volume = v;
-    if (ctx && enabled) master.gain.setTargetAtTime(volume, now(), 0.2);
+    if (ctx && enabled && !paused) master.gain.setTargetAtTime(volume, now(), 0.2);
   }
 
-  return { start, stop, setBed, sfx, setVolume, get enabled() { return enabled; },
+  // Pause freezes the whole audio graph: the ambience and any effect that is
+  // mid-sound stop where they are, and carry on from there on resume.
+  let paused = false, suspendTimer = null;
+  function pause() {
+    if (!ctx || paused) return;
+    paused = true;
+    master.gain.cancelScheduledValues(now());
+    master.gain.setTargetAtTime(0, now(), 0.04);
+    clearTimeout(suspendTimer);
+    suspendTimer = setTimeout(() => { if (paused) ctx.suspend(); }, 180);
+  }
+  function resume() {
+    if (!ctx) return;
+    paused = false;
+    clearTimeout(suspendTimer);
+    ctx.resume();
+    master.gain.cancelScheduledValues(now());
+    master.gain.setTargetAtTime(enabled ? volume : 0, now(), 0.25);
+  }
+
+  // Start the audio clock without turning the soundscape on (the narrator uses it
+  // for timing, which keeps working when the page is in the background).
+  function wake() {
+    if (!init()) return false;
+    if (!paused) ctx.resume();
+    return true;
+  }
+
+  // Run fn after `seconds`, timed by the audio clock rather than setTimeout, which
+  // browsers slow to a crawl in background tabs. Returns a cancel function.
+  function after(seconds, fn) {
+    let done = false;
+    const fire = () => { if (!done) { done = true; fn(); } };
+    if (!ctx || ctx.state !== "running") { const t = setTimeout(fire, seconds * 1000); return () => { done = true; clearTimeout(t); }; }
+    const s = ctx.createConstantSource(), g = ctx.createGain();
+    g.gain.value = 0;
+    s.connect(g).connect(ctx.destination);
+    s.onended = () => { s.disconnect(); g.disconnect(); fire(); };
+    s.start(); s.stop(now() + Math.max(0.01, seconds));
+    return () => { done = true; try { s.stop(); } catch (e) {} };
+  }
+
+  return { start, stop, setBed, sfx, setVolume, pause, resume, wake, after,
+    get enabled() { return enabled; }, get paused() { return paused; },
     beds: Object.keys(BEDS), effects: Object.keys(SFX) };
 })();

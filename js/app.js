@@ -142,6 +142,9 @@
     if (window.Narrator) {
       window.Narrator.attach(app.querySelector(".chapter"), {
         title: `${chapterLabel(c.number)}. ${c.title}.`,
+        mediaTitle: `${chapterLabel(c.number)}: ${c.title}`,
+        series: series.title,
+        album: `${bookLabel(book.number)}: ${book.subtitle}`,
         key: `${series.slug}/${book.number}/${c.number}`,
       });
     }

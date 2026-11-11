@@ -4,51 +4,61 @@
 // - While narrating, click any word in the chapter to jump there.
 // - Highlights the sentence being read, and the current word where the
 //   voice reports word boundaries.
-// - Picks a deep, measured storyteller voice and paces it for the book:
-//   slower rate, lower pitch, longer pauses at paragraph and scene breaks,
-//   a slight shift for dialogue, and an optional low ambient drone.
+// - Prefers the most natural-sounding voice on the device (the "Natural",
+//   "Neural", "Enhanced" and "Premium" voices), and keeps their delivery close
+//   to how they were recorded: gentle mood shifts, light dialogue tags,
+//   breathing room between sentences that varies a little, like a person's.
+// - Pausing pauses everything: the voice, the ambience and any sound effect.
+// - Connects to the device's media controls (Windows media overlay, keyboard
+//   media keys, phone lock screen and notification), so listening carries on
+//   while you use other apps, and you can pause or skip from there.
 // - Remembers where you stopped in each chapter.
 (function () {
   const synth = window.speechSynthesis;
   const supported = !!(synth && window.SpeechSynthesisUtterance);
 
-  // Narrator voices to prefer, best first: deep, unhurried, British-leaning storytellers.
-  const PREFERRED = [
-    /Daniel/i, /Arthur/i, /Microsoft (Ryan|Thomas|George|Oliver)/i, /Google UK English Male/i,
-    /Microsoft (Christopher|Guy|Davis|Andrew|Brian|Eric|Roger|Steffan)/i, /Oliver/i, /Rishi/i, /Aaron/i,
-    /Alex\b/i, /Fred/i, /male/i,
-  ];
-  const PACE = { rate: 0.9, pitch: 0.82, dialoguePitch: 0.95 };
-  const GAP = { sentence: 120, paragraph: 650, scene: 1600, title: 1100 };
+  const PACE = { rate: 0.92, pitch: 0.96, dialoguePitch: 1.0 };
+  const GAP = { comma: 110, sentence: 340, tag: 90, paragraph: 750, scene: 1600, title: 1100 };
 
-  // How each mood bends the voice. Multipliers on rate and pitch; volume is absolute.
-  // `gap` stretches the pauses after a sentence in that mood.
+  // How each mood bends the voice: multipliers on rate and pitch, absolute volume,
+  // and a stretch on the pause that follows. These are the full-strength values;
+  // natural voices get a softened version (see voiceFor).
   const MOODS = {
     calm:     { rate: 1.0,  pitch: 1.0,  volume: 1.0,  gap: 1.0 },
-    warm:     { rate: 0.96, pitch: 1.04, volume: 1.0,  gap: 1.0 },
-    awe:      { rate: 0.86, pitch: 1.05, volume: 0.95, gap: 1.35 },
-    hushed:   { rate: 0.86, pitch: 0.96, volume: 0.6,  gap: 1.25 },
-    whisper:  { rate: 0.82, pitch: 0.94, volume: 0.42, gap: 1.3 },
-    shaken:   { rate: 0.92, pitch: 1.08, volume: 0.8,  gap: 1.2 },
-    tense:    { rate: 1.08, pitch: 1.0,  volume: 1.0,  gap: 0.8 },
-    urgent:   { rate: 1.18, pitch: 1.08, volume: 1.0,  gap: 0.6 },
-    dread:    { rate: 0.84, pitch: 0.9,  volume: 0.85, gap: 1.5 },
-    grief:    { rate: 0.8,  pitch: 0.9,  volume: 0.75, gap: 1.6 },
-    stern:    { rate: 0.94, pitch: 0.94, volume: 1.0,  gap: 1.0 },
-    menacing: { rate: 0.74, pitch: 0.78, volume: 0.9,  gap: 1.8 },
-    wonder:   { rate: 0.9,  pitch: 1.08, volume: 0.95, gap: 1.2 },
-    dry:      { rate: 1.02, pitch: 0.97, volume: 1.0,  gap: 0.9 },
+    warm:     { rate: 0.97, pitch: 1.03, volume: 1.0,  gap: 1.0 },
+    awe:      { rate: 0.9,  pitch: 1.04, volume: 0.95, gap: 1.3 },
+    hushed:   { rate: 0.9,  pitch: 0.97, volume: 0.7,  gap: 1.2 },
+    whisper:  { rate: 0.86, pitch: 0.96, volume: 0.55, gap: 1.25 },
+    shaken:   { rate: 0.95, pitch: 1.05, volume: 0.85, gap: 1.15 },
+    tense:    { rate: 1.06, pitch: 1.0,  volume: 1.0,  gap: 0.85 },
+    urgent:   { rate: 1.14, pitch: 1.05, volume: 1.0,  gap: 0.65 },
+    dread:    { rate: 0.88, pitch: 0.94, volume: 0.88, gap: 1.4 },
+    grief:    { rate: 0.86, pitch: 0.94, volume: 0.8,  gap: 1.5 },
+    stern:    { rate: 0.96, pitch: 0.96, volume: 1.0,  gap: 1.0 },
+    menacing: { rate: 0.82, pitch: 0.88, volume: 0.9,  gap: 1.6 },
+    wonder:   { rate: 0.92, pitch: 1.05, volume: 0.95, gap: 1.2 },
+    dry:      { rate: 1.02, pitch: 0.98, volume: 1.0,  gap: 0.9 },
   };
   const moodOf = (name) => MOODS[name] || MOODS.calm;
 
-  // ───────────── character voice casting ─────────────
-  // Character voice profiles come from window.VOICE_PROFILES (set by each series):
-  //   { gender: "female" | "male", age: "child" | "young" | "adult" | "old",
-  //     accent: "en-GB" | "en-US" | ..., pitch: 1.0, rate: 1.0, mood: "warm" }
-  const FEMALE = /Samantha|Karen|Moira|Tessa|Serena|Fiona|Victoria|Kate|Susan|Martha|Allison|Ava|Zira|Hazel|Libby|Sonia|Jenny|Aria|Emma|Michelle|Natasha|Clara|Ana\b|Joanna|Salli|Kimberly|Nicky|Veena|Female|Woman|Zoe|Amy|Olivia|Maisie|Abbi|Bella|Hollie/i;
-  const MALE = /Daniel|Arthur|Oliver|Alex\b|Fred|Tom\b|Aaron|Rishi|Gordon|Lee\b|George|Ryan|Thomas|Guy|Christopher|Eric|Davis|Andrew|Brian|Roger|Steffan|David|Mark|James|Male|Man\b|Liam|William|Noah|Ethan|Alfie|Elliot/i;
-  const AGE = { child: { pitch: 1.35, rate: 1.04 }, young: { pitch: 1.1, rate: 1.02 }, adult: { pitch: 1, rate: 1 }, old: { pitch: 0.88, rate: 0.9 } };
+  // ───────────── voices ─────────────
+  // Natural (neural) voices sound human, but fall apart when their pitch is pushed
+  // around. Older voices are already robotic, and need the help to sound varied.
+  const NATURAL = /natural|neural|online|premium|enhanced|wavenet|studio|siri/i;
+  const isNatural = (v) => !!v && NATURAL.test(v.name);
+
+  const FEMALE = /Samantha|Karen|Moira|Tessa|Serena|Fiona|Victoria|Kate|Susan|Martha|Allison|Ava|Zira|Hazel|Libby|Sonia|Jenny|Aria|Emma|Michelle|Natasha|Clara|Ana\b|Joanna|Salli|Kimberly|Nicky|Veena|Female|Woman|Zoe|Amy|Olivia|Maisie|Abbi|Bella|Hollie|Mia|Neerja|Leah|Emily|Sara|Molly|Jane/i;
+  const MALE = /Daniel|Arthur|Oliver|Alex\b|Fred|Tom\b|Aaron|Rishi|Gordon|Lee\b|George|Ryan|Thomas|Guy|Christopher|Eric|Davis|Andrew|Brian|Roger|Steffan|David|Mark|James|Male|Man\b|Liam|William|Noah|Ethan|Alfie|Elliot|Connor|Mitchell|Prabhat|Tony|Jason/i;
+  const AGE = { child: { pitch: 1.18, rate: 1.03 }, young: { pitch: 1.06, rate: 1.02 }, adult: { pitch: 1, rate: 1 }, old: { pitch: 0.93, rate: 0.93 } };
   const genderOf = (v) => (FEMALE.test(v.name) ? "female" : MALE.test(v.name) ? "male" : "unknown");
+
+  // Narrator preference: natural voices first, then British, then a storyteller's register.
+  const STORYTELLERS = /Ryan|Thomas|Arthur|Daniel|George|Oliver|Brian|Guy|Christopher|Andrew|Davis|Eric|Roger|Steffan|Alfie|Elliot|Google UK English Male/i;
+  function narratorScore(v) {
+    return (isNatural(v) ? 100 : 0) + (/^en-GB/i.test(v.lang) ? 20 : 0) +
+      (/^Google/i.test(v.name) ? 12 : 0) + (STORYTELLERS.test(v.name) ? 10 : 0) +
+      (genderOf(v) === "male" ? 4 : 0) + (v.localService === false ? 2 : 0);
+  }
 
   function castVoices(narratorVoice) {
     const profiles = window.VOICE_PROFILES || {};
@@ -61,12 +71,12 @@
       const score = (v) =>
         (v === narratorVoice ? 6 : 0) + (used.get(v.name) || 0) * 3 +
         (p.accent && !v.lang.toLowerCase().startsWith(p.accent.toLowerCase()) ? 1 : 0) -
-        (/natural|neural|online|premium|enhanced/i.test(v.name) ? 1 : 0);
+        (isNatural(v) ? 4 : 0);
       const pick = pool.slice().sort((a, b) => score(a) - score(b))[0] || narratorVoice;
       if (pick) used.set(pick.name, (used.get(pick.name) || 0) + 1);
       const age = AGE[p.age || "adult"];
       // Same voice as someone else? Nudge the pitch so they still sound distinct.
-      const nudge = pick ? 1 + ((used.get(pick.name) - 1) % 3) * 0.06 * (p.gender === "male" ? -1 : 1) : 1;
+      const nudge = pick ? 1 + ((used.get(pick.name) - 1) % 3) * 0.05 * (p.gender === "male" ? -1 : 1) : 1;
       cast[id] = {
         voice: pick, mood: p.mood,
         pitch: age.pitch * (p.pitch || 1) * nudge,
@@ -81,6 +91,7 @@
 
   function loadVoices() {
     voices = supported ? synth.getVoices().filter((v) => /^en/i.test(v.lang)) : [];
+    voices.sort((a, b) => narratorScore(b) - narratorScore(a));
     if (state) fillVoiceSelect();
   }
   if (supported) {
@@ -92,11 +103,7 @@
     const saved = localStorage.getItem("narrator.voice");
     const found = voices.find((v) => v.name === saved);
     if (found) return found;
-    for (const re of PREFERRED) {
-      const v = voices.find((x) => re.test(x.name) && /en-GB/i.test(x.lang)) || voices.find((x) => re.test(x.name));
-      if (v) return v;
-    }
-    return voices.find((v) => /en-GB/i.test(v.lang)) || voices[0] || null;
+    return voices[0] || null; // already sorted best first
   }
 
   // ───────────── text preparation ─────────────
@@ -124,9 +131,16 @@
     return words;
   }
 
-  const endsSentence = (t) => /[.!?]["')\]]*$/.test(t);
+  const endsSentence = (t) => /[.!?…]["'’”)\]]*$/.test(t);
+  const endsClause = (t) => /[,;:—–]["'’”)\]]*$/.test(t);
   const opensQuote = (t) => /^["“]/.test(t);
   const closesQuote = (t) => /["”][.,!?;:]*$/.test(t) && !/^["“][^"”]*$/.test(t);
+  const TAG_VERB = /^(said|says|asked|whispered|breathed|called|shouted|cried|murmured|answered|replied|added|told|began|went|agreed|snapped|muttered|roared|said,)$/i;
+
+  // Text as the voice should hear it. Same length as the source, character for
+  // character, so word positions still line up: dashes become commas (a breath, not
+  // "em dash"), and smart quotes become plain ones.
+  const speakable = (t) => t.replace(/[—–]/g, ",").replace(/[“”]/g, '"').replace(/[‘’]/g, "'");
 
   // Group words into speakable chunks: sentences, split again wherever the speaker
   // changes. Each chunk knows its speaker (null = narrator) and mood.
@@ -134,11 +148,25 @@
     const chunks = [];
     const push = (ws, gap, info) => {
       if (!ws.length) return;
+      // Very long sentences: break at a comma near the middle. Shorter utterances
+      // sound more natural, and some voices cut off long ones.
+      if (ws.length > 42) {
+        const mid = ws.length / 2;
+        let best = -1;
+        ws.forEach((w, k) => { if (k > 8 && k < ws.length - 8 && endsClause(w.textContent) && (best < 0 || Math.abs(k - mid) < Math.abs(best - mid))) best = k; });
+        if (best > 0) { push(ws.slice(0, best + 1), GAP.comma, info); push(ws.slice(best + 1), gap, info); return; }
+      }
       const offsets = [];
       let text = "";
-      ws.forEach((w, k) => { offsets.push(text.length); text += (k ? " " : "") + w.textContent; offsets[k] += k ? 1 : 0; });
+      ws.forEach((w, k) => {
+        // Punctuation split off by italics (*word*.) joins the word before it, with no
+        // space, or some voices read the stray mark aloud ("dot").
+        const sep = k && !/^[.,!?;:…'"”’)\]]/.test(w.textContent) ? " " : "";
+        offsets.push(text.length + sep.length);
+        text += sep + w.textContent;
+      });
       const m = moodOf(info.mood);
-      chunks.push({ start: Number(ws[0].dataset.i), words: ws, text, offsets, gap: Math.round(gap * m.gap), ...info });
+      chunks.push({ start: Number(ws[0].dataset.i), words: ws, text: speakable(text), offsets, gap: Math.round(gap * m.gap), ...info });
     };
     if (title) chunks.push({ start: 0, words: [], text: title, offsets: [], gap: GAP.title, dialogue: false, isTitle: true });
 
@@ -160,33 +188,60 @@
         const t = w.textContent;
         if (!w.closest(".say") && opensQuote(t)) inQuote = true;
         const info = infoFor(w);
-        if (cur.length && info.key !== curKey) { push(cur, GAP.sentence, curInfo); cur = []; }
+        if (cur.length && info.key !== curKey) {
+          // Dialogue running straight into its tag ("...," she said) barely pauses.
+          push(cur, !endsSentence(cur[cur.length - 1].textContent) ? GAP.tag : GAP.sentence, curInfo);
+          cur = [];
+        }
         cur.push(w); curKey = info.key; curInfo = info;
         const last = k === ws.length - 1;
         if (!w.closest(".say") && inQuote && closesQuote(t)) { push(cur, last ? GAP.paragraph : GAP.sentence, curInfo); cur = []; inQuote = false; return; }
         if (endsSentence(t) || last) { push(cur, last ? GAP.paragraph : GAP.sentence, curInfo); cur = []; }
       });
     });
+
+    // Mark dialogue tags: short narration right after a line of dialogue, such as
+    // "she said." A person reads those lightly and quickly.
+    chunks.forEach((c, i) => {
+      const prev = chunks[i - 1];
+      if (!c.dialogue && !c.isTitle && prev && prev.dialogue && c.words.length <= 8 &&
+          c.words.slice(0, 4).some((w) => TAG_VERB.test(w.textContent.replace(/[^A-Za-z,]/g, "")))) {
+        c.tag = true;
+        if (prev.gap > GAP.tag && !endsSentence(prev.words[prev.words.length - 1].textContent)) prev.gap = GAP.tag;
+      }
+    });
     return chunks;
   }
 
   // Voice, rate, pitch and volume for a chunk: who is speaking, then how they feel.
+  // Natural voices get a softened version of every shift, so they stay human.
   function voiceFor(chunk) {
-    const mood = moodOf(chunk.mood);
+    let voice = state.voice, rate = state.rate, pitch = chunk.dialogue ? PACE.dialoguePitch : PACE.pitch;
+    let mood = moodOf(chunk.mood), charPitch = 1, charRate = 1;
     if (chunk.dialogue && state.characterVoices) {
       const c = chunk.speaker && state.cast[chunk.speaker];
       if (c) {
-        const m = chunk.mood ? mood : moodOf(c.mood);
-        return { voice: c.voice || state.voice, rate: state.rate * c.rate * m.rate, pitch: Math.min(2, c.pitch * m.pitch), volume: m.volume };
+        voice = c.voice || state.voice; charPitch = c.pitch; charRate = c.rate;
+        if (!chunk.mood) mood = moodOf(c.mood);
       }
-      return { voice: state.voice, rate: state.rate * mood.rate, pitch: PACE.dialoguePitch * mood.pitch, volume: mood.volume };
     }
-    return { voice: state.voice, rate: state.rate * mood.rate, pitch: (chunk.dialogue ? PACE.dialoguePitch : PACE.pitch) * mood.pitch, volume: mood.volume };
+    const soft = isNatural(voice) ? 0.4 : 0.85; // how much of each shift to apply
+    const bend = (x) => 1 + (x - 1) * soft;
+    if (isNatural(voice)) pitch = 1; // never pitch-shift a natural voice's base register
+    pitch *= bend(charPitch) * bend(mood.pitch);
+    rate *= bend(charRate) * bend(mood.rate);
+    let volume = mood.volume;
+    if (chunk.tag) { rate *= 1.06; volume *= 0.92; }
+    return { voice, rate, pitch, volume };
   }
 
+  // A little unevenness in the pauses, as in a person's reading.
+  const breathe = (ms) => Math.round(ms * (0.88 + Math.random() * 0.24));
+
   // ───────────── soundscape ─────────────
-  // Ambience beds and sound effects come from window.Soundscape. While narrating
-  // they follow the voice; while reading silently they follow the scroll position.
+  // Ambience beds and sound effects come from window.Soundscape. They play while
+  // the narration plays and pause when it pauses. Optionally (a setting), they can
+  // also follow the scroll position while you read without narration.
   const Sound = window.Soundscape;
 
   // Attach each {{sfx}} marker to the word that follows it.
@@ -214,10 +269,11 @@
     else followScroll(true);
   }
 
-  // Reading silently: the paragraph under the reading line sets the ambience, and
-  // effects fire as their words scroll past it.
+  // Reading without narration (only when the setting is on): the paragraph under
+  // the reading line sets the ambience, and effects fire as their words scroll past it.
   function followScroll(initial) {
-    if (!state || !state.soundOn || state.playing || !Sound || !Sound.enabled) return;
+    if (!state || !state.soundOn || !state.readAlong || state.playing || !Sound || !Sound.enabled) return;
+    if (Sound.paused) Sound.resume();
     const line = window.innerHeight * 0.45;
     const blocks = [...state.prose.children].filter((b) => b.dataset.ambience);
     const here = blocks.find((b) => b.getBoundingClientRect().bottom > line) || blocks[blocks.length - 1];
@@ -233,6 +289,110 @@
       if (prev !== undefined && prev >= line && top < line) fireWord(w);
       else if (atBottom && top < window.innerHeight && top >= line) fireWord(w);
     });
+  }
+
+  // Waits between sentences run on the audio clock when it's available, so they
+  // keep time when the page is in the background (browsers throttle setTimeout there).
+  function wait(ms, fn) {
+    if (Sound && Sound.after) return Sound.after(ms / 1000, fn);
+    const t = setTimeout(fn, ms);
+    return () => clearTimeout(t);
+  }
+  function cancelWait() { if (state && state.cancelWait) { state.cancelWait(); state.cancelWait = null; } }
+
+  // ───────────── device media controls ─────────────
+  // Speech synthesis on its own doesn't count as "media" to the operating system.
+  // A quiet looping audio track does: while it plays, the page shows up in the
+  // Windows media overlay, answers keyboard media keys, and gets lock-screen and
+  // notification controls on phones. It also tells the browser the page is
+  // playing audio, which keeps it running when you switch to another app.
+  const Media = (function () {
+    const ms = "mediaSession" in navigator ? navigator.mediaSession : null;
+    let el = null, art = null;
+
+    // Ten seconds of near-silence (a faint dither, below hearing), as a WAV file.
+    function silentTrack() {
+      const rate = 8000, n = rate * 10, buf = new ArrayBuffer(44 + n * 2), v = new DataView(buf);
+      const str = (o, s) => [...s].forEach((c, i) => v.setUint8(o + i, c.charCodeAt(0)));
+      str(0, "RIFF"); v.setUint32(4, 36 + n * 2, true); str(8, "WAVE"); str(12, "fmt ");
+      v.setUint32(16, 16, true); v.setUint16(20, 1, true); v.setUint16(22, 1, true);
+      v.setUint32(24, rate, true); v.setUint32(28, rate * 2, true); v.setUint16(32, 2, true); v.setUint16(34, 16, true);
+      str(36, "data"); v.setUint32(40, n * 2, true);
+      for (let i = 0; i < n; i++) v.setInt16(44 + i * 2, (Math.random() * 3 | 0) - 1, true);
+      return URL.createObjectURL(new Blob([buf], { type: "audio/wav" }));
+    }
+
+    // Cover art for the media controls, drawn here so there's no image file to host.
+    function cover(title, sub) {
+      if (art) return art;
+      try {
+        const c = document.createElement("canvas"); c.width = c.height = 512;
+        const g = c.getContext("2d");
+        const bg = g.createRadialGradient(256, 300, 20, 256, 300, 380);
+        bg.addColorStop(0, "#3a2c14"); bg.addColorStop(1, "#0b0907");
+        g.fillStyle = bg; g.fillRect(0, 0, 512, 512);
+        g.strokeStyle = "#d9a441"; g.lineWidth = 3;
+        for (let r = 60; r <= 150; r += 30) { g.globalAlpha = 1 - (r - 60) / 140; g.beginPath(); g.arc(256, 210, r, 0, Math.PI * 2); g.stroke(); }
+        g.globalAlpha = 1; g.fillStyle = "#d9a441"; g.beginPath(); g.arc(256, 210, 34, 0, Math.PI * 2); g.fill();
+        g.textAlign = "center"; g.fillStyle = "#efe6d2"; g.font = "600 34px Georgia, serif";
+        g.fillText(title, 256, 420);
+        g.fillStyle = "#b9a98a"; g.font = "24px Georgia, serif"; g.fillText(sub, 256, 462);
+        art = c.toDataURL("image/png");
+      } catch (e) { art = null; }
+      return art;
+    }
+
+    function setup(meta, handlers) {
+      if (!el) {
+        el = new Audio(silentTrack());
+        el.loop = true;
+        el.preload = "auto";
+        el.setAttribute("aria-hidden", "true");
+      }
+      if (!ms) return;
+      const artwork = cover(meta.series || "", meta.album || "");
+      ms.metadata = new MediaMetadata({
+        title: meta.title, artist: meta.series, album: meta.album,
+        artwork: artwork ? [{ src: artwork, sizes: "512x512", type: "image/png" }] : [],
+      });
+      const set = (action, fn) => { try { ms.setActionHandler(action, fn); } catch (e) { /* unsupported action */ } };
+      set("play", handlers.play);
+      set("pause", handlers.pause);
+      set("stop", handlers.pause);
+      set("previoustrack", handlers.back);
+      set("nexttrack", handlers.fwd);
+      set("seekbackward", handlers.back);
+      set("seekforward", handlers.fwd);
+      set("seekto", (d) => handlers.seek(d.seekTime));
+    }
+
+    function playing(on) {
+      if (el) { if (on) el.play().catch(() => {}); else el.pause(); }
+      if (ms) ms.playbackState = on ? "playing" : "paused";
+    }
+
+    function position(pos, dur, rate) {
+      if (!ms || !ms.setPositionState || !(dur > 0)) return;
+      try { ms.setPositionState({ duration: dur, position: Math.min(dur, Math.max(0, pos)), playbackRate: 1 }); } catch (e) {}
+    }
+
+    function teardown() {
+      if (el) { el.pause(); }
+      if (!ms) return;
+      ["play", "pause", "stop", "previoustrack", "nexttrack", "seekbackward", "seekforward", "seekto"].forEach((a) => { try { ms.setActionHandler(a, null); } catch (e) {} });
+      ms.metadata = null;
+      ms.playbackState = "none";
+    }
+
+    return { setup, playing, position, teardown };
+  })();
+
+  // Rough timings for the media controls' progress bar: about 150 words a minute
+  // at the storyteller pace.
+  const secondsPerWord = () => 60 / (150 * state.rate / PACE.rate);
+  function syncPosition() {
+    if (!state) return;
+    Media.position(state.current * secondsPerWord(), state.words.length * secondsPerWord());
   }
 
   // ───────────── playback ─────────────
@@ -255,7 +415,7 @@
       w.classList.add("reading-word");
       setCurrent(Number(w.dataset.i));
       const r = w.getBoundingClientRect();
-      if (state.follow && (r.top < 90 || r.bottom > window.innerHeight - 130))
+      if (state.follow && !document.hidden && (r.top < 90 || r.bottom > window.innerHeight - 130))
         w.scrollIntoView({ block: "center", behavior: "smooth" });
     }
   }
@@ -269,7 +429,7 @@
 
   function remaining() {
     const left = state.words.length - state.current;
-    const mins = Math.max(1, Math.round(left / (150 * state.rate)));
+    const mins = Math.max(1, Math.round(left / (150 * state.rate / PACE.rate)));
     return `${mins} min left`;
   }
 
@@ -282,12 +442,13 @@
     const base = chunk.isTitle ? 0 : chunk.offsets[k];
     const text = chunk.text.slice(base);
     const u = new SpeechSynthesisUtterance(text);
-    const v = chunk.isTitle ? { voice: state.voice, rate: state.rate, pitch: PACE.pitch, volume: 1 } : voiceFor(chunk);
+    const v = chunk.isTitle ? { voice: state.voice, rate: state.rate * 0.95, pitch: isNatural(state.voice) ? 1 : PACE.pitch, volume: 1 } : voiceFor(chunk);
     u.voice = v.voice; u.lang = v.voice ? v.voice.lang : "en-GB";
     u.rate = Math.max(0.5, Math.min(2, v.rate));
     u.pitch = Math.max(0.1, Math.min(2, v.pitch));
-    u.volume = v.volume;
+    u.volume = Math.max(0, Math.min(1, v.volume));
     if (!chunk.isTitle) highlight(chunk, k);
+    syncPosition();
     if (state.soundOn && Sound) {
       Sound.setBed(chunk.ambience);
       if (!chunk.isTitle) {
@@ -307,11 +468,11 @@
     };
     u.onend = () => {
       if (gen !== state.gen || !state.playing) return;
-      state.timer = setTimeout(() => {
-        if (gen !== state.gen || !state.playing) return;
+      state.cancelWait = wait(breathe(chunk.gap), () => {
+        if (!state || gen !== state.gen || !state.playing) return;
         const next = state.chunks[ci + 1];
         if (next) speakChunk(ci + 1, next.start); else stop(true);
-      }, chunk.gap);
+      });
     };
     u.onerror = (e) => { if (gen === state.gen && e.error !== "interrupted" && e.error !== "canceled") stop(false); };
     state.utterance = u; // keep a reference so the browser doesn't drop the callbacks
@@ -322,14 +483,16 @@
     if (!state.voice) state.voice = bestVoice();
     state.cast = castVoices(state.voice);
     renderCastList();
-    clearTimeout(state.timer);
+    cancelWait();
     synth.cancel();
     state.playing = true;
     state.prose.classList.add("narrating");
     state.ui.root.classList.add("active");
     setPlayIcon();
     state.fired = new Set();
+    if (Sound) { Sound.wake(); Sound.resume(); }
     if (state.soundOn) startSound();
+    Media.playing(true);
     if (withTitle && state.chunks[0].isTitle) speakChunk(0, 0);
     else { const ci = chunkIndexFor(wordIndex); speakChunk(ci, Math.max(wordIndex, state.chunks[ci].start)); }
   }
@@ -338,11 +501,13 @@
     if (!state.playing) return;
     state.playing = false;
     state.gen++;
-    clearTimeout(state.timer);
+    cancelWait();
     synth.cancel(); // cancel + resume-from-word is more reliable across browsers than synth.pause()
     setPlayIcon();
+    Media.playing(false);
+    syncPosition();
+    if (Sound) Sound.pause(); // the ambience and any effect mid-sound stop with the voice
     state.prevTops = new Map();
-    followScroll(true); // keep the soundscape going, now following the page
   }
 
   function stop(finished) {
@@ -353,6 +518,7 @@
       state.current = 0;
       state.ui.progress.value = 0;
       state.ui.time.textContent = "Finished";
+      syncPosition();
     }
   }
 
@@ -365,7 +531,12 @@
   function skip(dir) {
     const ci = Math.max(0, Math.min(state.chunks.length - 1, chunkIndexFor(state.current) + dir));
     const target = state.chunks[ci].isTitle ? 0 : state.chunks[ci].start;
-    if (state.playing) playFrom(target); else { setCurrent(target); highlight(state.chunks[chunkIndexFor(target)], 0); }
+    if (state.playing) playFrom(target); else { setCurrent(target); highlight(state.chunks[chunkIndexFor(target)], 0); syncPosition(); }
+  }
+
+  function seekSeconds(sec) {
+    const i = Math.max(0, Math.min(state.words.length - 1, Math.round(sec / secondsPerWord())));
+    if (state.playing) playFrom(i); else { setCurrent(i); syncPosition(); }
   }
 
   function setSoundIcon() {
@@ -387,16 +558,17 @@
     state.ui.root.classList.toggle("playing", state.playing);
   }
 
+  const shortName = (v) => (v ? v.name.replace(/^(Microsoft|Google)\s+/, "").replace(/\s+Online.*$/, "").replace(/\s+-\s+English.*$/, "") : "Default");
+
   // Lists the characters who speak in this chapter and the voice cast for each.
   function renderCastList() {
     const names = window.VOICE_NAMES || {};
     const speakers = [...new Set([...state.prose.querySelectorAll(".say")].map((s) => s.dataset.speaker))];
-    const short = (v) => (v ? v.name.replace(/^(Microsoft|Google)\s+/, "").replace(/\s+Online.*$/, "") : "Default");
     state.ui.castList.innerHTML =
-      `<li><strong>Narrator</strong>: ${short(state.voice)}</li>` +
+      `<li><strong>Narrator</strong>: ${shortName(state.voice)}</li>` +
       speakers.map((id) => {
         const c = state.cast[id];
-        return `<li><strong>${names[id] || id}</strong>: ${c ? short(c.voice) : short(state.voice)}</li>`;
+        return `<li><strong>${names[id] || id}</strong>: ${c ? shortName(c.voice) : shortName(state.voice)}</li>`;
       }).join("");
   }
 
@@ -405,7 +577,8 @@
     if (!voices.length) { sel.innerHTML = `<option>Default voice</option>`; return; }
     const chosen = state.voice || bestVoice();
     state.voice = chosen;
-    sel.innerHTML = voices.map((v) => `<option value="${v.name}" ${chosen && v.name === chosen.name ? "selected" : ""}>${v.name.replace(/^(Microsoft|Google)\s+/, "")} (${v.lang})</option>`).join("");
+    sel.innerHTML = voices.map((v) => `<option value="${v.name}" ${chosen && v.name === chosen.name ? "selected" : ""}>${isNatural(v) ? "★ " : ""}${v.name.replace(/^(Microsoft|Google)\s+/, "")} (${v.lang})</option>`).join("");
+    state.ui.voiceTip.hidden = voices.some(isNatural);
   }
 
   // ───────────── UI ─────────────
@@ -430,22 +603,25 @@
             <svg viewBox="0 0 24 24"><path d="M4 7h10M18 7h2M4 17h4M12 17h8"/><circle cx="16" cy="7" r="2"/><circle cx="10" cy="17" r="2"/></svg></summary>
           <div class="nar-panel">
             <label>Voice <select class="nar-voice"></select></label>
+            <p class="muted small nar-voicetip" hidden>No natural-sounding voices on this device. For a far more human narrator, open the site in Microsoft Edge (its "Natural" voices are free), or on a Mac or iPhone download an "Enhanced" or "Premium" voice in Settings, under Accessibility, Spoken Content.</p>
             <label>Pace
               <select class="nar-rate">
-                <option value="0.8">Slow</option><option value="0.9" selected>Storyteller</option>
-                <option value="1">Normal</option><option value="1.15">Brisk</option><option value="1.3">Fast</option>
+                <option value="0.82">Slow</option><option value="0.92" selected>Storyteller</option>
+                <option value="1">Normal</option><option value="1.12">Brisk</option><option value="1.25">Fast</option>
               </select></label>
             <label class="inline"><input type="checkbox" class="nar-cast"> Character voices for dialogue</label>
             <details class="nar-castlist"><summary>Who's voicing whom</summary><ul></ul></details>
             <label>Soundscape volume <input type="range" class="nar-svol" min="0" max="1" step="0.05"></label>
+            <label class="inline"><input type="checkbox" class="nar-readalong"> Soundscape while reading without narration</label>
             <label class="inline"><input type="checkbox" class="nar-follow" checked> Scroll with the narration</label>
-            <p class="muted small">While narration is on, click any word to jump there. The voice depends on your device. Narrator voices like Daniel or Ryan sound best.</p>
+            <p class="muted small">Voices marked ★ sound the most natural. While narration is on, click any word to jump there. You can switch to other apps and keep listening; pause or skip from your device's media controls, media keys or lock screen.</p>
           </div>
         </details>
       </div>`;
     const q = (s) => root.querySelector(s);
     return { root, play: q(".nar-play"), back: q(".nar-back"), fwd: q(".nar-fwd"), progress: q(".nar-progress"),
-      time: q(".nar-time"), voice: q(".nar-voice"), rate: q(".nar-rate"), svol: q(".nar-svol"), sound: q(".nar-sound"), follow: q(".nar-follow"),
+      time: q(".nar-time"), voice: q(".nar-voice"), voiceTip: q(".nar-voicetip"), rate: q(".nar-rate"), svol: q(".nar-svol"),
+      sound: q(".nar-sound"), follow: q(".nar-follow"), readAlong: q(".nar-readalong"),
       castToggle: q(".nar-cast"), castList: q(".nar-castlist ul") };
   }
 
@@ -459,14 +635,18 @@
     const words = wrapWords(prose);
     linkEffects(prose);
     const ui = buildUI();
+    // The saved pace from before this update was on a different scale; map it across.
+    const oldRate = { "0.8": "0.82", "0.9": "0.92", "1.15": "1.12", "1.3": "1.25" };
+    const savedRate = localStorage.getItem("narrator.rate");
     state = {
       article, prose, words, ui, key: opts.key,
       chunks: buildChunks(prose, words, opts.title).map((c) => ({ ...c, ambience: ambienceOf(c.words[0] || prose.firstElementChild) })),
-      current: 0, ci: 0, gen: 0, playing: false, timer: null, utterance: null,
+      current: 0, ci: 0, gen: 0, playing: false, cancelWait: null, utterance: null,
       voice: null,
-      rate: Number(localStorage.getItem("narrator.rate") || PACE.rate),
+      rate: Number(oldRate[savedRate] || savedRate || PACE.rate),
       soundOn: !!window.Soundscape && localStorage.getItem("narrator.sound") !== "0",
       soundVolume: Number(localStorage.getItem("narrator.soundVolume") || 0.7),
+      readAlong: localStorage.getItem("narrator.readAlong") === "1",
       fired: new Set(), prevTops: new Map(), sfxWords: [], boundaryOK: false,
       characterVoices: localStorage.getItem("narrator.cast") !== "0",
       cast: {},
@@ -476,10 +656,16 @@
     state.sfxWords = words.filter((w) => w.dataset.sfx);
     ui.rate.value = String(state.rate);
     ui.svol.value = String(state.soundVolume);
+    ui.readAlong.checked = state.readAlong;
     setSoundIcon();
     ui.castToggle.checked = state.characterVoices;
     fillVoiceSelect();
     setPlayIcon();
+
+    Media.setup(
+      { title: opts.mediaTitle || opts.title || "Chapter", series: opts.series || document.title, album: opts.album || "" },
+      { play: () => state && !state.playing && toggle(), pause: () => state && pause(),
+        back: () => state && skip(-1), fwd: () => state && skip(1), seek: (s) => state && seekSeconds(s) });
 
     const saved = Number(localStorage.getItem("narrator.pos." + opts.key) || 0);
     if (saved > 0 && saved < words.length) {
@@ -490,7 +676,7 @@
     ui.play.addEventListener("click", toggle);
     ui.back.addEventListener("click", () => skip(-1));
     ui.fwd.addEventListener("click", () => skip(1));
-    ui.progress.addEventListener("input", () => { const i = Number(ui.progress.value); state.playing ? playFrom(i) : setCurrent(i); });
+    ui.progress.addEventListener("input", () => { const i = Number(ui.progress.value); state.playing ? playFrom(i) : (setCurrent(i), syncPosition()); });
     ui.voice.addEventListener("change", () => {
       state.voice = voices.find((v) => v.name === ui.voice.value) || null;
       localStorage.setItem("narrator.voice", ui.voice.value);
@@ -505,15 +691,22 @@
       state.soundOn = !state.soundOn;
       localStorage.setItem("narrator.sound", state.soundOn ? "1" : "0");
       setSoundIcon();
-      if (state.soundOn) startSound(); else Sound && Sound.stop();
+      if (state.soundOn) { if (state.playing || state.readAlong) startSound(); } else Sound && Sound.stop();
     });
     ui.svol.addEventListener("input", () => {
       state.soundVolume = Number(ui.svol.value);
       localStorage.setItem("narrator.soundVolume", ui.svol.value);
       if (Sound) Sound.setVolume(state.soundVolume);
     });
-    // Browsers only allow audio after a click or key press, so start on the first one.
-    state.unlock = () => { if (state && state.soundOn && Sound && !Sound.enabled) startSound(); };
+    ui.readAlong.addEventListener("change", () => {
+      state.readAlong = ui.readAlong.checked;
+      localStorage.setItem("narrator.readAlong", state.readAlong ? "1" : "0");
+      if (state.playing) return;
+      if (state.readAlong) { if (Sound) Sound.resume(); startSound(); } else if (Sound) Sound.pause();
+    });
+    // Browsers only allow audio after a click or key press. With the read-along
+    // soundscape on, start it on the first one.
+    state.unlock = () => { if (state && state.soundOn && state.readAlong && Sound && !Sound.enabled) startSound(); };
     document.addEventListener("pointerdown", state.unlock, { once: true });
     document.addEventListener("keydown", state.unlock, { once: true });
     state.onScroll = () => {
@@ -557,7 +750,8 @@
     if (!state) return;
     pause();
     clearHighlight();
-    if (Sound) Sound.stop();
+    if (Sound) { Sound.stop(); Sound.resume(); } // leave the engine unfrozen for the next page
+    Media.teardown();
     window.removeEventListener("scroll", state.onScroll);
     document.removeEventListener("pointerdown", state.unlock);
     document.removeEventListener("keydown", state.unlock);

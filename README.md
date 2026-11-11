@@ -30,9 +30,13 @@ It uses the browser's built-in speech voices, so it's free and needs no setup:
 
 - Play and pause, skip a sentence back or forward, or drag the progress bar.
 - Once narration has started, click any word to jump there. Space toggles play.
-- It prefers a deep, unhurried storyteller voice (Daniel, Ryan, George, Google UK
-  English Male and similar), reads a little slower and lower than normal, pauses
-  longer at paragraph and scene breaks, and shifts slightly for dialogue.
+- It prefers the most natural-sounding voice on the device: the neural "Natural",
+  "Enhanced" and "Premium" voices first (marked ★ in settings), then British
+  storyteller voices. Natural voices are never pitch-shifted, since that is what
+  makes them sound robotic; mood and character shifts are softened for them.
+- It reads like a person: pauses that vary a little, longer breaths at paragraph
+  and scene breaks, dialogue tags ("she said") read lightly and quickly, dashes
+  read as a breath, and very long sentences split at a comma.
 - Dialogue is read in a voice cast for each character (gender, age, accent and pitch
   from the character's voice profile in `characters.js`), chosen from the voices on
   the reader's device. Settings shows who's voicing whom.
@@ -43,11 +47,24 @@ It uses the browser's built-in speech voices, so it's free and needs no setup:
   river, a night tower, crickets and owls, a forge, a steppe campfire, the howling
   Thornwall, and the abyss) plus sound effects at key moments. Everything is
   synthesized live in `js/soundscape.js` with the Web Audio API, so there are no
-  audio files. It follows the narration, or the scroll position when reading
-  silently. Toggle it with the speaker button, and set its volume in settings.
+  audio files. It plays with the narration and pauses with it: the ambience and
+  any sound effect mid-play stop the moment you pause. A setting lets it follow
+  the scroll position when reading without narration. Toggle it with the speaker
+  button, and set its volume in settings.
+- It connects to the device's media controls through the Media Session API: the
+  Windows media overlay and keyboard media keys, and the lock screen and
+  notification controls on phones, with the chapter title and cover art. You can
+  switch to another app and keep listening, and play, pause, skip or seek from
+  there. A near-silent looping audio track registers the page as playing media,
+  and the pauses between sentences are timed by the audio clock, which keeps time
+  in background tabs.
 - It remembers where you stopped in each chapter.
 
-How it sounds depends on the voices your device has installed.
+How it sounds depends on the voices your device has installed. Microsoft Edge has
+free "Natural" voices on every platform; Macs and iPhones can download "Enhanced"
+and "Premium" voices under Settings, Accessibility, Spoken Content. Phones may stop
+browser speech when the screen locks or the browser goes to the background; that is
+up to the browser, and works best on desktop.
 
 ### Narration markup in chapter text
 
